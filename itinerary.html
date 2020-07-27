@@ -13,8 +13,10 @@
 </head>
 
 <body>
+    <div id="background-spashScreen">
+    </div>
     <div class="container-fluid main-div-ofpage-agenda">
-        <!-- header section starts from here -->
+        <!-- header section starts from here     -->
         <div class="row main-header-div">
             <div class="small-3 medium-3 large-3 columns">
                 <img src="images/logo2.jpg" width="280px" height="40px">
@@ -22,7 +24,7 @@
             <div class="small-9 medium-9 large-9 columns">
                 <div class="row header justify-content-end">
                     <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="20px" >
+                        <img src="images/question@3x.png" width="20px">
                     </div>
                     <!-- div for line -->
                     <div class="blankDiv-For-Line">
@@ -50,11 +52,11 @@
                     <div class="small-12 medium-12 large-12 insideButtonsMainDiv">
                         <!-- 1st button -->
                         <div>
-                            <a class="itinaryButton" href="itinerary.html">MY ITINERARY</a>
+                            <a class="itinaryButton1" href="#">MY ITINERARY</a>
                         </div>
                         <!-- 2nd button -->
                         <div>
-                            <a class="mainAgendaButton" href="#">MAIN AGENDA</a>
+                            <a class="mainAgendaButton1" href="agenda.html">MAIN AGENDA</a>
                         </div>
                     </div>
                 </div>
@@ -130,14 +132,14 @@
                         <!-- inside boxes main div -->
                         <div class="background-pink background-Box borderRaius-box">
                             <!-- left side -->
-                            <div class="insideBox ">
+                            <div class="insideBox">
                                 <div class="leftSide-ofBox">
                                     <h6>9:00 am - 10:00 am</h6>
                                     <h5>MST</h5>
                                 </div>
                             </div>
-                            <a href="professionalEducation.html">
-                                <div class="mainDiv-of-RightSIdeBox">
+                            <div class="mainDiv-of-RightSIdeBox">
+                                <a href="professionalEducation.html">
                                     <div>
                                         <h5>Keynote That You Did Not Have To Register For</h5>
                                     </div>
@@ -149,8 +151,9 @@
                                     <div>
                                         <h6>Ethics</h6>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+
                         </div>
                         <!-- 2nd one -->
                         <div class="background-blue-color background-Box borderRaius-box">
@@ -161,20 +164,20 @@
                                     <img class="tickImage" src="images/whit-tick.png" width="30px" />
                                 </div>
                             </div>
-                            <a href="professionalEducation.html">
-                                <div class="mainDiv-of-RightSIdeBox">
-                                    <div>
-                                        <h5>How to be bored in a mask meeting.</h5>
-                                    </div>
-                                    <div>
-                                        <p>There will be a new field in the agenda settings that allows for an
-                                            abbreviated
-                                            description to be entered. That character limit will be …</p>
-                                    </div>
-                                    <div>
-                                        <h6>Professional Responsibility</h6>
-                                    </div>
+                            <a href="professionalEducation.html"></a>
+                            <div class="mainDiv-of-RightSIdeBox">
+                                <div>
+                                    <h5>How to be bored in a mask meeting.</h5>
                                 </div>
+                                <div>
+                                    <p>There will be a new field in the agenda settings that allows for an
+                                        abbreviated
+                                        description to be entered. That character limit will be …</p>
+                                </div>
+                                <div>
+                                    <h6>Professional Responsibility</h6>
+                                </div>
+                            </div>
                             </a>
                         </div>
                         <!-- 3rd one  -->
@@ -189,10 +192,15 @@
                                     <h5>MST</h5>
                                 </div>
                             </div>
-                            <a href="professionalEducation.html">
-                                <div class="mainDiv-of-RightSIdeBox">
-                                    <div>
-                                        <h5>This happens to be on MY itinerary. Thus marked.</h5>
+                            <div class="mainDiv-of-RightSIdeBox">
+                                <a href="professionalEducation.html">
+                                    <div class="starHeadingView">
+                                        <div>
+                                            <h5>This happens to be on MY itinerary. Thus marked.</h5>
+                                        </div>
+                                        <div>
+                                            <img src="images/star.png" width="30px" />
+                                        </div>
                                     </div>
                                     <div>
                                         <p>This is the truncated description of the item. It will max out at two lines
@@ -202,16 +210,41 @@
                                     <div>
                                         <h6>Professional Responsibility</h6>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
+
                         </div>
                         <!-- ends here -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
+    <!-- header info popup -->
+    <div id="info-popup">
+        <div class="info-popup-mainDiv">
+            <div class="flex-row flex-justify-center flex-alignItem height-100">
+                <div class="inside-mainDiv width-50">
+                    <div class="text-center heading-info-popup">
+                        <h5>Instructions</h5>
+                    </div>
+                    <div class="para-popup text-center">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga.</p>
+                    </div>
+                    <!-- button -->
+                    <div class="flex-row flex-justify-center">
+                        <div class="info-button">
+                            <a href="#" class="button-header" onclick="headerHideShow()">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- rate series popup -->
     <div id="rateFunction">
         <div class="seriresPopup-Main-Div ">
@@ -527,34 +560,7 @@
             </div>
         </div>
     </div>
-    <!-- header info popup -->
-    <div id="info-popup">
-        <div class="info-popup-mainDiv">
-            <div class="flex-row flex-justify-center flex-alignItem height-100">
-                <div class="inside-mainDiv width-50">
-                    <div class="text-center heading-info-popup">
-                        <h5>Instructions</h5>
-                    </div>
-                    <div class="para-popup text-center">
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                            occaecati
-                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
-                            id
-                            est laborum et dolorum fuga.</p>
-                    </div>
-                    <!-- button -->
-                    <div class="flex-row flex-justify-center">
-                        <div class="info-button">
-                            <a href="#" class="button-header" onclick="headerHideShow()">Close</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
+    <!-- </div> -->
     <script>
         function myFunction() {
             var x = document.getElementById("filter-checkbox");
@@ -582,9 +588,15 @@
                 x.style.display = "block";
             }
         }
+
+        setTimeout(function(){
+            var x = document.getElementById("background-spashScreen");
+                x.style.display = "none";
+                var x = document.getElementsByClassName("main-div-ofpage-agenda");
+                x.style.display = "block";
+        
+        },3000)
     </script>
-
-
 </body>
 
 </html>
