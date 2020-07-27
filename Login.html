@@ -1,61 +1,59 @@
 <!DOCTYPE HTML>
 <html class="no-js" lang="en">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Squid | Virtual Meeting Connector</title>
     <link rel="stylesheet" href="dist/foundation.css">
-     <link rel="stylesheet" href="dist/foundation2.css">
+    <link rel="stylesheet" href="dist/foundation2.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/01ac7e2496.js"></script>
-
-    <style>
-        
-    </style>
-
 </head>
+
 <body>
 
-<div class="top-bar" style="position:fixed;top:0;width:100%; z-index: 999;" >
-    <div class="row ">
-        <div class="top-bar-left">
-            <ul style=" list-style-type: none;">
-                <li class="menu-text1"><img src="images/logo2.jpg" width="300px" > </li>
-             
-            </ul>
+    <div class="top-bar" style="position:fixed;top:0;width:100%; z-index: 999;">
+        <div class="row ">
+            <div class="top-bar-left">
+                <ul style=" list-style-type: none;">
+                    <li class="menu-text1"><img src="images/logo2.jpg" width="300px"> </li>
+
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<div class="docs-section-margin">&nbsp;</div>
+    <div class="docs-section-margin">&nbsp;</div>
 
-<div class="row">
-    <div class="large-12 columns">
+    <div class="row">
+        <div class="large-12 columns">
             <a href="#" class="button3 button3:hover">Instructions</a>
-            <a href="#" class="button3 button3:hover">Agenda</a>       
+            <a href="#" class="button3 button3:hover">Agenda</a>
+        </div>
+        <div class="medium-12 large- container-padded" style="text-align: center;">
+            <h4 style="color: grey;"><span>Welcome to our virtual venue! Please sign in to access your itinerary,<br>
+                    which contains links to all of your virtual sessions and content. </span></h4>
+        </div>
     </div>
-    <div class="medium-12 large- container-padded" style="text-align: center;">
-        <h4 style="color: grey;"><span>Welcome to our virtual venue! Please sign in to access your itinerary,<br> which contains links to all of your virtual sessions and content. </span></h4>
+    <hr class="docs-section-margin">
+    <div class="row column align-center medium-6 large-4 ">
+        <form class="log-in-form">
+            <h4 class="text-center" style="padding-bottom:20px;">Log in with your email account</h4>
+            <label>Email
+                <input type="email" placeholder="somebody@example.com">
+            </label>
+            <label>Password
+                <input type="password" placeholder="Password">
+            </label>
+            <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
+            <p><input type="submit" class="button2 expanded text-center" value="Log in"></input></p>
+            <p class="text-center"><a href="#">Forgot your password?</a></p>
+        </form>
     </div>
-</div>
-<hr class="docs-section-margin">
-<div class="row column align-center medium-6 large-4 ">
-<form class="log-in-form">
-  <h4 class="text-center" style="padding-bottom:20px;">Log in with your email account</h4>
-  <label>Email
-    <input type="email" placeholder="somebody@example.com">
-  </label>
-  <label>Password
-    <input type="password" placeholder="Password">
-  </label>
-  <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
-  <p><input type="submit" class="button2 expanded text-center" value="Log in"></input></p>
-  <p class="text-center"><a href="#">Forgot your password?</a></p>
-</form>
-</div>
-<div class="docs-section-margin">&nbsp;</div>
-<div class="reveal large" id="code-callout-color" data-reveal>
-<pre>
+    <div class="docs-section-margin">&nbsp;</div>
+    <div class="reveal large" id="code-callout-color" data-reveal>
+        <pre>
 &lt;div class="row"&gt;
     &lt;div class="columns"&gt;
         &lt;div class="callout"&gt;
@@ -95,13 +93,13 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
-<div class="reveal large" id="code-callout-close" data-reveal>
-<pre>
+    <div class="reveal large" id="code-callout-close" data-reveal>
+        <pre>
 &lt;div class="success callout" data-closable="slide-out-right"&gt;
     &lt;h5&gt;This a friendly message.&lt;/h5&gt;
     &lt;p&gt;And when you're done with me, I close using a Motion UI animation.&lt;/p&gt;
@@ -118,16 +116,17 @@
     &lt;/button&gt;
 &lt;/div&gt;
 </pre>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
 
-<script src="dist/foundation.js"></script>
-<script>
-    jQuery(document).ready(function () {
-        jQuery(document).foundation();
-    });
-</script>
+    <script src="dist/foundation.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery(document).foundation();
+        });
+    </script>
 </body>
+
 </html>

@@ -13,9 +13,13 @@
 </head>
 
 <body>
-    <div id="background-spashScreen">
+    <div id="container-background-spashScreen" class="flex-row justify-content-center flex-alignItem">
+
+        <img src="images/splashScreen.png">
+        <!-- <div class="background-spashScreen">
+        </div> -->
     </div>
-    <div class="container-fluid main-div-ofpage-agenda">
+    <div class="container-fluid main-div-ofpage-agenda" id="agenda-page-block">
         <!-- header section starts from here     -->
         <div class="row main-header-div">
             <div class="small-3 medium-3 large-3 columns">
@@ -562,6 +566,44 @@
     </div>
     <!-- </div> -->
     <script>
+        getParams = function (url) {
+            let params = {};
+            if (typeof document !== "undefined") {
+                let parser = document.createElement("a");
+                parser.href = url;
+                let query = parser.search.substring(1);
+                let vars = query.split("&");
+                if (vars[0] !== "") {
+                    for (let i = 0; i < vars.length; i++) {
+                        let pair = vars[i].split("=");
+                        params[pair[0]] = decodeURIComponent(pair[1]);
+                    }
+                } else {
+                    return null;
+                }
+            } else {
+                return null;
+            }
+            return params;
+        };
+
+        var noSplash=getParams(window.location.href)
+        if (noSplash && noSplash.nosplash) {
+            var y = document.getElementById("agenda-page-block");
+            y.style.display = "block";
+            var x = document.getElementById("container-background-spashScreen");
+            x.style.display = "none";
+        }
+        else {
+            setTimeout(function () {
+                var y = document.getElementById("agenda-page-block");
+                y.style.display = "block";
+                var x = document.getElementById("container-background-spashScreen");
+                x.style.display = "none";
+            }, 3000)
+        }
+
+
         function myFunction() {
             var x = document.getElementById("filter-checkbox");
             if (x.style.display === "block") {
@@ -589,13 +631,6 @@
             }
         }
 
-        setTimeout(function(){
-            var x = document.getElementById("background-spashScreen");
-                x.style.display = "none";
-                var x = document.getElementsByClassName("main-div-ofpage-agenda");
-                x.style.display = "block";
-        
-        },3000)
     </script>
 </body>
 

@@ -1,16 +1,11 @@
-#background-spashScreen{
-    background-image: url(../images/splashScreen.png);
-    width: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+#container-background-spashScreen{
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     position: fixed;
-    background-color: black;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 /* common flex properties */
 .flex-row{
@@ -151,8 +146,8 @@
   }
 /* _________________ */
 /* agenda page css starts from here */
-.main-div-ofpage-agenda{
-    display: block;
+#agenda-page-block{
+    display: none;
 }
 .main-div-ofpage-agenda .row{
     margin: 0px;
