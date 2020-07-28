@@ -1,3 +1,7 @@
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+
 #container-background-spashScreen{
     top: 0;
     bottom: 0;
@@ -42,12 +46,21 @@
     .background-pink{
     background-color: #fd43a1;
     }
+    .background-pink:hover{
+        background-color:#e7519c;
+    }
     .background-blue-color{
     background-color: #56c1fd;
+    }
+    .background-blue-color:hover{
+        background-color: #63a1c4;
     }
     .background-yellow{
     background-color: #feae2a;
     }
+    .background-yellow:hover{
+        background-color: #e7a842;
+        }
     .width-100{
         width: 100%;
     }
@@ -303,7 +316,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 15px 0px 15px;
+    padding: 12px 15px 12px 15px;
     height: 100%;
     }
     
@@ -433,18 +446,23 @@
     } */
     .professional-Page-body .below-profeesional-div .button-pro-background-orange{
         background-color: #f27220;
+        border: 1px solid #f27220;
     }
     .professional-Page-body .below-profeesional-div .button-pro-background-seaGreen{
         background-color: #17a21c;
+        border: 1px solid #17a21c;
     }
     .professional-Page-body .below-profeesional-div .button-pro-background-lightseaGreen{
         background-color: #b5e5b0;
+        border: 1px solid #b5e5b0;
     }
     .professional-Page-body .below-profeesional-div .buttonbackground-darksilver{
         background-color: #5e5e5e;
+        border: 1px solid #5e5e5e;
     }
     .professional-Page-body .below-profeesional-div .button-pro-background-silver{
         background-color: #bbbbbb;
+        border: 1px solid #bbbbbb;
     }
     .professional-Page-body .below-profeesional-div .color-white{
         color: white;

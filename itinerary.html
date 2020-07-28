@@ -7,14 +7,14 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
     <link rel="stylesheet" href="dist/foundation.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/foundation3.css">
     <script src="https://use.fontawesome.com/01ac7e2496.js"></script>
 </head>
 
 <body>
     <div id="container-background-spashScreen" class="flex-row justify-content-center flex-alignItem">
-
         <img src="images/splashScreen.png">
         <!-- <div class="background-spashScreen">
         </div> -->
@@ -107,7 +107,7 @@
                                 <div>
                                     <input placeholder="Search..." />
                                 </div>
-                                <div class="filterImage" onclick="myFunction2()">
+                                <div class="filterImage" onclick="myFunction()">
                                     <img src="images/filter.png" width="22px">
                                 </div>
                             </div>
@@ -157,7 +157,7 @@
                                 <div class="width-date-time-100">
                                     <input class="width-date-time-100" placeholder="Search..." />
                                 </div>
-                                <div class="filterImage" onclick="myFunction2()">
+                                <div class="filterImage" onclick="myFunction()">
                                     <img src="images/filter.png" width="22px">
                                 </div>
                             </div>
@@ -687,7 +687,7 @@
         }
 
 
-        function myFunction2() {
+        function myFunction() {
             var x = document.getElementById("filter-checkbox");
             if (x.style.display === "block") {
                 x.style.display = "none";
