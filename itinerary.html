@@ -51,11 +51,17 @@
         <!-- responsive header -->
         <div class="responsive-header-mainDiv">
             <div class="flex-row flex-justify-between flex-alignItem">
-                <div onclick="headerHideShow()">
-                    <img src="images/question@3x.png" width="20px">
+                <div>
+                    <img src="images/logo2.jpg" width="58%">
                 </div>
-                <div onclick="openNav()">
-                    <img src="images/hamburger.png" width="25px">
+                <div class="mobile-nav-logo">
+                    <div class="question-mark" onclick="headerHideShow()">
+                        <img src="images/question@3x.png" width="58%">
+                    </div>
+
+                    <div onclick="openNav()">
+                        <img src="images/hamburger.png" width="75%">
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,7 +119,8 @@
                             </div>
                         </div>
                         <div class="flex-row flex-justify-end">
-                            <div class="checkboex-btn-div" id="filter-checkbox">
+                            <div class="checkboex-btn-div check" id="filter-checkbox" style="
+                            display: none;">
                                 <div class="filter-heading">
                                     <h5>Filter By Track</h5>
                                 </div>
@@ -163,7 +170,8 @@
                             </div>
                         </div>
                         <div class="flex-row flex-justify-end">
-                            <div class="checkboex-btn-div" id="filter-checkbox">
+                            <div class="checkboex-btn-div" id="filter-checkbox1" style="
+                            display: none;">
                                 <div class="filter-heading">
                                     <h5>Filter By Track</h5>
                                 </div>
@@ -210,7 +218,7 @@
                                     <span>
                                         <h6>9:00 AM </h6>
                                         <h6>. .</h6>
-                                        <h6 >10:00 AM</h6>
+                                        <h6>10:00 AM</h6>
                                     </span>
                                     <h5>MST</h5>
                                 </div>
@@ -295,8 +303,8 @@
         </div>
     </div>
     <!-- header info popup -->
-     <!-- header info popup -->
-     <div id="info-popup">
+    <!-- header info popup -->
+    <div id="info-popup">
         <div class="info-popup-mainDiv">
             <div class="flex-row flex-justify-center flex-alignItem height-100 inside-popup-main-div-res">
                 <div class="inside-mainDiv width-60">
@@ -693,6 +701,12 @@
                 x.style.display = "none";
             } else {
                 x.style.display = "block";
+            }
+            var y = document.getElementById("filter-checkbox1");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
             }
         }
 

@@ -334,7 +334,7 @@ body{
     align-items: center;
     justify-content: center;
     }
-    .below-header .mainDiv-of-header .leftSide-ofBox h6{
+    .below-header .mainDiv-of-header .leftSide-ofBox h6,.leftSide-ofBox h5{
         font-family: 'Bebas Neue', cursive;
         font-size: 24px;
         font-weight: bold;
@@ -616,7 +616,7 @@ body{
         padding: 10px 10px 10px 10px;
         border-radius: 8px;
         position: absolute;
-        display: none;
+        /* display: none; */
     }
     .mainDiv-of-dateAndSearch .filter-heading h5{
         font-size: 14px;
@@ -684,7 +684,7 @@ body{
     .image-mobile-row
     {
         display: flex;
-         
+
     }
     .border-divinside-whitesection h5{
         color:#171717;
@@ -970,6 +970,14 @@ body{
 
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) { 
+    .mobile-nav-logo
+    {
+        display: flex;
+    }
+    .question-mark
+    {
+        margin-right: 5px;
+    }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
      
@@ -1086,8 +1094,9 @@ body{
         height: auto!important;
     }
     .seriresPopup-Main-Div .inside-seriresPopupmainDiv {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
+        margin-top: 20px;
     }
     .seriresPopup-Main-Div .inside-main-div{
         padding: 0px!important;
@@ -1143,7 +1152,7 @@ body{
                 padding: 0px!important;
             }
             .check-inpopup .background-white-section {
-                width: 100%!important;
+                width: 85%!important;
             }
             .mrg-res-btn-div{
                 margin: 0px 0px 0px 5px;
@@ -1169,6 +1178,14 @@ body{
 
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .mobile-nav-logo
+    {
+        display: flex;
+    }
+    .question-mark
+    {
+        margin-right: 5px;
+    }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
      
@@ -1281,8 +1298,9 @@ body{
             height: auto!important;
         }
         .seriresPopup-Main-Div .inside-seriresPopupmainDiv {
-            width: 100%;
+            width: 90%;
             flex-direction: column;
+            margin-top: 20px;
         }
         .seriresPopup-Main-Div .inside-main-div{
             padding: 0px!important;
@@ -1337,7 +1355,7 @@ body{
             padding: 0px!important;
         }
         .check-inpopup .background-white-section {
-            width: 100%!important;
+            width: 85%!important;
         }
         .mrg-res-btn-div{
             margin: 0px 0px 0px 5px;
@@ -1358,6 +1376,14 @@ body{
 
 
 @media (max-width: 684px) and (min-width: 480px) { 
+    .mobile-nav-logo
+    {
+        display: flex;
+    }
+    .question-mark
+    {
+        margin-right: 5px;
+    }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
      
@@ -1477,8 +1503,9 @@ body{
         height: auto!important;
     }
     .seriresPopup-Main-Div .inside-seriresPopupmainDiv {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
+        margin-top: 20px;
     }
     .seriresPopup-Main-Div .inside-main-div{
         padding: 0px!important;
@@ -1497,8 +1524,9 @@ body{
         height: auto!important;
     }
     .seriresPopup-Main-Div .inside-seriresPopupmainDiv {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
+        margin-top: 20px;
     }
     .seriresPopup-Main-Div .inside-main-div{
         padding: 0px!important;
@@ -1552,7 +1580,7 @@ body{
             padding: 0px!important;
         }
         .check-inpopup .background-white-section {
-            width: 100%!important;
+            width: 85%!important;
         }
         .mrg-res-btn-div{
             margin: 0px 0px 0px 5px;
@@ -1569,6 +1597,14 @@ body{
 }
 
 @media (max-width: 767px) and (min-width: 685px) {
+    .mobile-nav-logo
+    {
+        display: flex;
+    }
+    .question-mark
+    {
+        margin-right: 5px;
+    }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
      
@@ -1689,8 +1725,9 @@ body{
     height: auto!important;
 }
 .seriresPopup-Main-Div .inside-seriresPopupmainDiv {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
+    margin-top: 20px;
 }
 .seriresPopup-Main-Div .inside-main-div{
     padding: 0px!important;
@@ -1744,7 +1781,7 @@ body{
             padding: 0px!important;
         }
         .check-inpopup .background-white-section {
-            width: 100%!important;
+            width: 85%!important;
         }
         .mrg-res-btn-div{
             margin: 0px 0px 0px 5px;
@@ -1762,6 +1799,14 @@ body{
 
 
 @media (max-width: 991px) and (min-width: 768px) {
+    .mobile-nav-logo
+    {
+        display: flex;
+    }
+    .question-mark
+    {
+        margin-right: 5px;
+    }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
      
@@ -1862,8 +1907,9 @@ body{
         height: auto!important;
     }
     .seriresPopup-Main-Div .inside-seriresPopupmainDiv {
-        width: 100%;
+        width: 90%;
         flex-direction: column;
+        margin-top: 20px;
     }
     .seriresPopup-Main-Div .inside-main-div{
         padding: 0px!important;
@@ -1922,7 +1968,7 @@ body{
             padding: 0px!important;
         }
         .check-inpopup .background-white-section {
-            width: 100%!important;
+            width: 85%!important;
         }
         .mrg-res-btn-div{
             margin: 0px 0px 0px 5px;
@@ -1937,6 +1983,14 @@ body{
         }
 }
 @media (max-width: 1199px) and (min-width: 1024px) {
+    .mobile-nav-logo
+    {
+        display: flex;
+    }
+    .question-mark
+    {
+        margin-right: 5px;
+    }
     
     .check-inpopup .background-white-section{
         padding: 30px;
@@ -2003,7 +2057,7 @@ body{
             padding: 0px!important;
         }
         .check-inpopup .background-white-section {
-            width: 100%!important;
+            width: 85%!important;
         }
         .mrg-res-btn-div{
             margin: 0px 0px 0px 5px;
