@@ -618,6 +618,15 @@ body{
         position: absolute;
         /* display: none; */
     }
+    .stars
+    {
+        display: flex;
+        justify-content: space-between;   
+    }
+    .stars img{
+        margin-left: 30%;
+       
+    }
     .mainDiv-of-dateAndSearch .filter-heading h5{
         font-size: 14px;
         font-weight: 600;
@@ -980,6 +989,7 @@ body{
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
+        margin-top: 20px;
      
     }
     .check-inpopup .background-white-section{
@@ -1188,6 +1198,8 @@ body{
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
+        margin-top: 20px;
+
      
     }
     .check-inpopup .background-white-section{
@@ -1386,6 +1398,8 @@ body{
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
+        margin-top: 20px;
+
      
     }
     .check-inpopup .background-white-section{
@@ -1607,7 +1621,8 @@ body{
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
-     
+        margin-top: 20px;
+
     }
     .check-inpopup .background-white-section{
         padding: 30px;
@@ -1809,6 +1824,8 @@ body{
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
+        margin-top: 20px;
+
      
     }
     .check-inpopup .background-white-section{
