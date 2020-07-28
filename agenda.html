@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
     <link rel="stylesheet" href="dist/foundation.css">
+    <!-- <link rel="stylesheet" href="dist/responsive.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="dist/foundation3.css">
     <script src="https://use.fontawesome.com/01ac7e2496.js"></script>
@@ -22,7 +23,7 @@
             <div class="small-9 medium-9 large-9 columns">
                 <div class="row header justify-content-end">
                     <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="20px" >
+                        <img src="images/question@3x.png" width="20px">
                     </div>
                     <!-- div for line -->
                     <div class="blankDiv-For-Line">
@@ -66,10 +67,10 @@
                         <div class="first-a">
                             <a class="commonBox background-black color-white">All Days</a>
                         </div>
-                        <div>
+                        <div class="dateTime-responsive">
                             <a class="commonBox color-black">TUE JUN 23 </a>
                         </div>
-                        <div>
+                        <div class="dateTime-responsive">
                             <a class="commonBox color-black">WED JUNE 24</a>
                         </div>
                     </div>
@@ -132,12 +133,16 @@
                             <!-- left side -->
                             <div class="insideBox ">
                                 <div class="leftSide-ofBox">
-                                    <h6>9:00 am - 10:00 am</h6>
+                                    <span>
+                                        <h6>9:00 AM </h6>
+                                        <h6>. .</h6>
+                                        <h6>10:00 AM</h6>
+                                    </span>
                                     <h5>MST</h5>
                                 </div>
                             </div>
-                            <a href="professionalEducation.html">
-                                <div class="mainDiv-of-RightSIdeBox">
+                            <div class="mainDiv-of-RightSIdeBox">
+                                <a href="professionalEducation.html">
                                     <div>
                                         <h5>Keynote That You Did Not Have To Register For</h5>
                                     </div>
@@ -149,8 +154,8 @@
                                     <div>
                                         <h6>Ethics</h6>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <!-- 2nd one -->
                         <div class="background-blue-color background-Box borderRaius-box">
@@ -158,11 +163,11 @@
                             <div class="insideBox cursor-pointer" onclick="rateFunction()">
                                 <div class="leftSide-ofBox">
                                     <h4>RATE</h4>
-                                    <img class="tickImage" src="images/whit-tick.png" width="30px" />
+                                    <img class="tickImage" src="images/whit-tick.png" width="35px" />
                                 </div>
                             </div>
-                            <a href="professionalEducation.html">
-                                <div class="mainDiv-of-RightSIdeBox">
+                            <div class="mainDiv-of-RightSIdeBox">
+                                <a href="professionalEducation.html">
                                     <div>
                                         <h5>How to be bored in a mask meeting.</h5>
                                     </div>
@@ -174,8 +179,8 @@
                                     <div>
                                         <h6>Professional Responsibility</h6>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <!-- 3rd one  -->
                         <div class="headingDiv-BelowBlueBox">
@@ -185,12 +190,16 @@
                             <!-- left side -->
                             <div class="insideBox">
                                 <div class="leftSide-ofBox">
-                                    <h6>9:00 am - 10:00 am</h6>
+                                    <span>
+                                        <h6>9:00 AM </h6>
+                                        <h6>. .</h6>
+                                        <h6>10:00 AM</h6>
+                                    </span>
                                     <h5>MST</h5>
                                 </div>
                             </div>
-                            <a href="professionalEducation.html">
-                                <div class="mainDiv-of-RightSIdeBox">
+                            <div class="mainDiv-of-RightSIdeBox">
+                                <a href="professionalEducation.html">
                                     <div>
                                         <h5>This happens to be on MY itinerary. Thus marked.</h5>
                                     </div>
@@ -202,8 +211,8 @@
                                     <div>
                                         <h6>Professional Responsibility</h6>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <!-- ends here -->
                     </div>
@@ -215,9 +224,9 @@
     <!-- rate series popup -->
     <div id="rateFunction">
         <div class="seriresPopup-Main-Div ">
-            <div class="flex-row flex-justify-center flex-alignItem height-100">
+            <div class="flex-row flex-justify-center flex-alignItem height-100 responsive-height-rate">
                 <div class="width-100 inside-seriresPopupmainDiv">
-                    <div class="flex-row flex-justify-center flex-alignItem ">
+                    <div class="flex-row flex-justify-center flex-alignItem responsive-rateFunction">
                         <div class=" inside-main-div width-100">
                             <!-- left side -->
                             <div class="left-side-MainDiv ">

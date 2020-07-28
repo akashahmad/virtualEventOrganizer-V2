@@ -72,10 +72,10 @@
                         <div class="first-a">
                             <a class="commonBox background-black color-white">All Days</a>
                         </div>
-                        <div>
+                        <div class="dateTime-responsive">
                             <a class="commonBox color-black">TUE JUN 23 </a>
                         </div>
-                        <div>
+                        <div class="dateTime-responsive">
                             <a class="commonBox color-black">WED JUNE 24</a>
                         </div>
                     </div>
@@ -138,7 +138,11 @@
                             <!-- left side -->
                             <div class="insideBox">
                                 <div class="leftSide-ofBox">
-                                    <h6>9:00 am - 10:00 am</h6>
+                                    <span>
+                                        <h6>9:00 AM </h6>
+                                        <h6>. .</h6>
+                                        <h6>10:00 AM</h6>
+                                    </span>
                                     <h5>MST</h5>
                                 </div>
                             </div>
@@ -165,24 +169,24 @@
                             <div class="insideBox cursor-pointer" onclick="rateFunction()">
                                 <div class="leftSide-ofBox">
                                     <h4>RATE</h4>
-                                    <img class="tickImage" src="images/whit-tick.png" width="30px" />
+                                    <img class="tickImage" src="images/whit-tick.png" width="35px" />
                                 </div>
                             </div>
-                            <a href="professionalEducation.html"></a>
                             <div class="mainDiv-of-RightSIdeBox">
-                                <div>
-                                    <h5>How to be bored in a mask meeting.</h5>
-                                </div>
-                                <div>
-                                    <p>There will be a new field in the agenda settings that allows for an
-                                        abbreviated
-                                        description to be entered. That character limit will be …</p>
-                                </div>
-                                <div>
-                                    <h6>Professional Responsibility</h6>
-                                </div>
+                                <a href="professionalEducation.html">
+                                    <div>
+                                        <h5>How to be bored in a mask meeting.</h5>
+                                    </div>
+                                    <div>
+                                        <p>There will be a new field in the agenda settings that allows for an
+                                            abbreviated
+                                            description to be entered. That character limit will be …</p>
+                                    </div>
+                                    <div>
+                                        <h6>Professional Responsibility</h6>
+                                    </div>
+                                </a>
                             </div>
-                            </a>
                         </div>
                         <!-- 3rd one  -->
                         <div class="headingDiv-BelowBlueBox">
@@ -192,7 +196,11 @@
                             <!-- left side -->
                             <div class="insideBox">
                                 <div class="leftSide-ofBox">
-                                    <h6>9:00 am - 10:00 am</h6>
+                                    <span>
+                                        <h6>9:00 AM </h6>
+                                        <h6>. .</h6>
+                                        <h6>10:00 AM</h6>
+                                    </span>
                                     <h5>MST</h5>
                                 </div>
                             </div>
@@ -216,14 +224,12 @@
                                     </div>
                                 </a>
                             </div>
-
                         </div>
                         <!-- ends here -->
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
     <!-- header info popup -->
     <div id="info-popup">
@@ -252,9 +258,9 @@
     <!-- rate series popup -->
     <div id="rateFunction">
         <div class="seriresPopup-Main-Div ">
-            <div class="flex-row flex-justify-center flex-alignItem height-100">
+            <div class="flex-row flex-justify-center flex-alignItem height-100 responsive-height-rate">
                 <div class="width-100 inside-seriresPopupmainDiv">
-                    <div class="flex-row flex-justify-center flex-alignItem ">
+                    <div class="flex-row flex-justify-center flex-alignItem responsive-rateFunction">
                         <div class=" inside-main-div width-100">
                             <!-- left side -->
                             <div class="left-side-MainDiv ">
@@ -587,7 +593,7 @@
             return params;
         };
 
-        var noSplash=getParams(window.location.href)
+        var noSplash = getParams(window.location.href)
         if (noSplash && noSplash.nosplash) {
             var y = document.getElementById("agenda-page-block");
             y.style.display = "block";
@@ -595,6 +601,8 @@
             x.style.display = "none";
         }
         else {
+            let z = document.getElementById("container-background-spashScreen");
+            z.style.display = "flex"
             setTimeout(function () {
                 var y = document.getElementById("agenda-page-block");
                 y.style.display = "block";

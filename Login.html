@@ -8,119 +8,51 @@
     <title>Event Squid | Virtual Meeting Connector</title>
     <link rel="stylesheet" href="dist/foundation.css">
     <link rel="stylesheet" href="dist/foundation2.css">
+    <link rel="stylesheet" href="dist/foundation3.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <script src="https://use.fontawesome.com/01ac7e2496.js"></script>
 </head>
 
 <body>
 
-    <div class="top-bar" style="position:fixed;top:0;width:100%; z-index: 999;">
-        <div class="row ">
-            <div class="top-bar-left">
-                <ul style=" list-style-type: none;">
-                    <li class="menu-text1"><img src="images/logo2.jpg" width="300px"> </li>
-
-                </ul>
+    <div class="main-div-ofpopup">
+        <div class="login-popup-inside-MainDiv">
+            <div class="flex-row flex-justify-center height-100 flex-alignItem">
+                <div class="width-60 background-white-login-popop">
+                    <div class="text-center">
+                        <h4 style="color: #0a0a0a;">
+                            Welcome to our virtual venue! Please sign in to access your
+                            itinerary which contains links to all of your virtual sessions and content.
+                        </h4>
+                    </div>
+                    <div class="width-100 flex-justify-center flex-row">
+                        <form class="log-in-form width-50">
+                            <h4 class="text-center" style="padding-bottom:20px;">Log in with your email account</h4>
+                            <label>Email
+                                <input class="login-input-border " type="email" placeholder="somebody@example.com">
+                            </label>
+                            <label>Password
+                                <input class="login-input-border " type="password" placeholder="Password">
+                            </label>
+                            <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
+                            <div class="flex-row flex-justify-center">
+                                <input type="submit" class="button2 expanded text-center" value="Log in"></input>
+                            </div>
+                            <div>
+                                <p class="text-center"><a href="#">Forgot your password?</a></p>
+                            </div>
+                            <div class="flex-row flex-justify-center">
+                                <button class="close-button" data-close aria-label="Close modal" type="button">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="docs-section-margin">&nbsp;</div>
-
-    <div class="row">
-        <div class="large-12 columns">
-            <a href="#" class="button3 button3:hover">Instructions</a>
-            <a href="#" class="button3 button3:hover">Agenda</a>
-        </div>
-        <div class="medium-12 large- container-padded" style="text-align: center;">
-            <h4 style="color: grey;"><span>Welcome to our virtual venue! Please sign in to access your itinerary,<br>
-                    which contains links to all of your virtual sessions and content. </span></h4>
-        </div>
     </div>
-    <hr class="docs-section-margin">
-    <div class="row column align-center medium-6 large-4 ">
-        <form class="log-in-form">
-            <h4 class="text-center" style="padding-bottom:20px;">Log in with your email account</h4>
-            <label>Email
-                <input type="email" placeholder="somebody@example.com">
-            </label>
-            <label>Password
-                <input type="password" placeholder="Password">
-            </label>
-            <input id="show-password" type="checkbox"><label for="show-password">Show password</label>
-            <p><input type="submit" class="button2 expanded text-center" value="Log in"></input></p>
-            <p class="text-center"><a href="#">Forgot your password?</a></p>
-        </form>
-    </div>
-    <div class="docs-section-margin">&nbsp;</div>
-    <div class="reveal large" id="code-callout-color" data-reveal>
-        <pre>
-&lt;div class="row"&gt;
-    &lt;div class="columns"&gt;
-        &lt;div class="callout"&gt;
-            &lt;h5&gt;Default Callout&lt;/h5&gt;
-            &lt;p&gt;Sample Text&lt;/p&gt;
-            &lt;span&gt;&lt;/span&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="row"&gt;
-    &lt;div class="large-6 medium-6 columns"&gt;
-        &lt;div class="success callout"&gt;
-            &lt;p&gt;Success Callout&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="large-6 medium-6 columns"&gt;
-        &lt;div class="primary callout"&gt;
-            &lt;p&gt;Primary Callout&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="row"&gt;
-    &lt;div class="large-4 medium-4 columns"&gt;
-        &lt;div class="alert callout"&gt;
-            &lt;p&gt;Alert Callout&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="large-4 medium-4 columns"&gt;
-        &lt;div class="warning callout"&gt;
-            &lt;p&gt;Warning Callout&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="large-4 medium-4 columns"&gt;
-        &lt;div class="secondary callout"&gt;
-            &lt;p&gt;Secondary Callout&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-</pre>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-
-    <div class="reveal large" id="code-callout-close" data-reveal>
-        <pre>
-&lt;div class="success callout" data-closable="slide-out-right"&gt;
-    &lt;h5&gt;This a friendly message.&lt;/h5&gt;
-    &lt;p&gt;And when you're done with me, I close using a Motion UI animation.&lt;/p&gt;
-    &lt;button class="close-button" aria-label="Dismiss alert" type="button" data-close&gt;
-        &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
-    &lt;/button&gt;
-&lt;/div&gt;
-&lt;div class="alert callout" data-closable&gt;
-    &lt;h5&gt;This is Important!&lt;/h5&gt;
-    &lt;p&gt;But when you're done reading it, click the close button in the corner to dismiss this
-        alert.&lt;/p&gt;
-    &lt;button class="close-button" aria-label="Dismiss alert" type="button" data-close&gt;
-        &lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;
-    &lt;/button&gt;
-&lt;/div&gt;
-</pre>
-        <button class="close-button" data-close aria-label="Close modal" type="button">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
-
     <script src="dist/foundation.js"></script>
     <script>
         jQuery(document).ready(function () {
