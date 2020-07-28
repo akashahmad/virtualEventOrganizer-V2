@@ -317,6 +317,9 @@ body{
     .below-header .mainDiv-of-header  .insideBox{
     width: 15%;
     }
+    .Time-adjustment{
+        margin-bottom: 18%;
+    }
     
     .below-header .mainDiv-of-header .leftSide-ofBox{
     display: flex;
@@ -622,10 +625,6 @@ body{
     {
         display: flex;
         justify-content: space-between;   
-    }
-    .stars img{
-        margin-left: 30%;
-       
     }
     .mainDiv-of-dateAndSearch .filter-heading h5{
         font-size: 14px;
