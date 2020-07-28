@@ -1,7 +1,14 @@
 body{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Roboto';
 }
 
+/* @font-face{
+    font-family: Roboto;
+    src:url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+}
+*{
+    font-family: Roboto;
+} */
 #container-background-spashScreen{
     top: 0;
     bottom: 0;
@@ -231,7 +238,7 @@ body{
     color: #5e5e5e;
     font-size: 16px;
     font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     }
     .mobo-datSearch{
         display: none;
@@ -244,7 +251,7 @@ body{
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     }
     .below-header .mainDiv-of-header .inside-mainDiv{
     display: flex;
@@ -328,12 +335,12 @@ body{
     justify-content: center;
     }
     .below-header .mainDiv-of-header .leftSide-ofBox h6{
+        font-family: 'Bebas Neue', cursive;
         font-size: 24px;
         font-weight: bold;
         margin: 0px;
         line-height: 1;
         color: #ffffff;
-        width: 100%;
         text-align: center;
     }
     .below-header .mainDiv-of-header .leftSide-ofBox h4{
@@ -395,7 +402,7 @@ body{
     color: #fff;
     font-size: 16px;
     font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     }
     .below-header .buttons-mainDiv .mainAgendaButton1{
     background-color: #d5d5d5;
@@ -405,7 +412,7 @@ body{
     color: #5e5e5e;
     font-size: 16px;
     font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     }
     .mainDiv-of-RightSIdeBox .starHeadingView{
     display: flex;
@@ -430,7 +437,7 @@ body{
         text-align: center;
         color: #212120;
         margin: 0px;
-        padding: 30px 0px 30px 0px;
+        padding: 30px 18px 30px 18px;
     }
     .professional-Page-body .below-profeesional-div .btnItinrary-Text{
         width: 100%;    
@@ -673,6 +680,11 @@ body{
     .border-divinside-whitesection{
         border: 1px solid #d5d5d5;
         padding: 10px;       
+    }
+    .image-mobile-row
+    {
+        display: flex;
+         
     }
     .border-divinside-whitesection h5{
         color:#171717;
@@ -927,8 +939,7 @@ body{
         width: 0;
         position: fixed;
         z-index: 1;
-        top: 0;
-        left: 0;
+        right: 0;
         background-color: #111;
         overflow-x: hidden;
         transition: 0.5s;
@@ -951,14 +962,21 @@ body{
       .sidenav-hamburger .closebtn {
         position: absolute;
         top: 0;
-        right: 25px;
         font-size: 36px;
-        margin-left: 50px;
+        padding-left: 17px;
+        padding-top: 0;
       }
       
 
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) { 
+    .seriresPopup-Main-Div .left-side-MainDiv{
+        padding: 40px;
+     
+    }
+    .check-inpopup .background-white-section{
+        padding: 30px;
+    }
         /* header info popup */
         .info-popup-mainDiv .inside-mainDiv {
             width: 90%!important;
@@ -1043,6 +1061,12 @@ body{
         padding: 0px 15px 5px 10px!important;
         justify-content: space-between!important;
         border-bottom: 1px solid #fff;
+    }
+    .leftSide-ofBox span
+    {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
     }
     .below-header .mainDiv-of-header .leftSide-ofBox .tickImage {
         padding: 0px 0px 0px 0px!important;
@@ -1145,6 +1169,18 @@ body{
 
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .seriresPopup-Main-Div .left-side-MainDiv{
+        padding: 40px;
+     
+    }
+    .check-inpopup .background-white-section{
+        padding: 30px;
+    }
+    .leftSide-ofBox span {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
     /* header info popup */
     .info-popup-mainDiv .inside-mainDiv {
         width: 90%!important;
@@ -1321,8 +1357,20 @@ body{
 }
 
 
-@media (max-width: 684px) and (min-width: 568px) { 
+@media (max-width: 684px) and (min-width: 480px) { 
+    .seriresPopup-Main-Div .left-side-MainDiv{
+        padding: 40px;
+     
+    }
+    .check-inpopup .background-white-section{
+        padding: 30px;
+    }
     /* header info popup */
+    .leftSide-ofBox span {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
     .info-popup-mainDiv .inside-mainDiv {
         width: 90%!important;
     }
@@ -1521,7 +1569,19 @@ body{
 }
 
 @media (max-width: 767px) and (min-width: 685px) {
+    .seriresPopup-Main-Div .left-side-MainDiv{
+        padding: 40px;
+     
+    }
+    .check-inpopup .background-white-section{
+        padding: 30px;
+    }
         /* header info popup */
+        .leftSide-ofBox span {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        }
         .info-popup-mainDiv .inside-mainDiv {
             width: 90%!important;
         }
@@ -1702,6 +1762,18 @@ body{
 
 
 @media (max-width: 991px) and (min-width: 768px) {
+    .seriresPopup-Main-Div .left-side-MainDiv{
+        padding: 40px;
+     
+    }
+    .check-inpopup .background-white-section{
+        padding: 30px;
+    }
+    .leftSide-ofBox span {
+        display: flex;
+        justify-content: space-around;
+        width: 47%;
+    }
     .info-popup-mainDiv .inside-mainDiv {
         width: 90%!important;
     }
@@ -1865,6 +1937,10 @@ body{
         }
 }
 @media (max-width: 1199px) and (min-width: 1024px) {
+    
+    .check-inpopup .background-white-section{
+        padding: 30px;
+    }
         /* moboile hamburger responsive */
         .responsive-header-mainDiv{
             display: block;
