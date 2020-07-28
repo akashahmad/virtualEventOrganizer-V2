@@ -43,6 +43,22 @@
                 </div>
             </div>
         </div>
+        <!-- responsive header -->
+        <div class="responsive-header-mainDiv">
+            <div class="flex-row flex-justify-between flex-alignItem">
+                <div onclick="headerHideShow()">
+                    <img src="images/question@3x.png" width="20px">
+                </div>
+                <div onclick="openNav()">
+                    <img src="images/hamburger.png" width="25px">
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav-hamburger">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><img src="images/bitmap.png" width="40px"></a>
+            <a href="#">Hello John Doe</a>
+        </div>
         <!-- body section starts from hgere -->
         <div class="professional-Page-body flex-row flex-justify-center">
             <div class="below-profeesional-div ">
@@ -53,13 +69,13 @@
                 <!-- button and text -->
                 <div class="btnItinrary-Text flex-row">
                     <!-- button -->
-                    <div class="width-38 respponsive-rate-check-pro-width">
+                    <div class="width-38 respponsive-rate-check-pro-width-100">
                         <div class=" buttonCommon-professionalPageDiv flex-row flex-alignItem">
                             <a href="itinerary.html?nosplash=true" class="width-100">
                                 <div
                                     class="width-80 btn-background-white text-center flex-alignItem flex-row flex-justify-center button-professionPage">
                                     <img class="backArrow" src="images/backArrow.png" width="30" />
-                                    <span >BACK TO ITINERARY</span>
+                                    <span>BACK TO ITINERARY</span>
                                 </div>
                             </a>
                             <!-- <button href="#"
@@ -67,7 +83,8 @@
                                 TO ITINERARY<button> -->
                         </div>
                     </div>
-                    <div class="timing-section-div width-62 respponsive-rate-check-pro-width-100 flex-row flex-alignItem">
+                    <div
+                        class="timing-section-div width-62 respponsive-rate-check-pro-width-100 flex-row flex-alignItem">
                         <div class="flex-row inside-timing-MainDiv flex-alignItem">
                             <div class="left-time flex-row">
                                 <h5>Starts</h5>
@@ -102,6 +119,20 @@
                                     class="width-80 color-white buttonbackground-darksilver text-center flex-alignItem  flex-row flex-justify-center button-professionPage">RATE
                                     SESSION AND SPEAKERS<button>
                             </div>
+
+                            <!-- mobile responsive -->
+                            <div class="start-and-endtime-MobileBox">
+                                <div class="flex-row">
+                                    <h5>Starts </h5>
+                                    <h6> 2:30pm MST</h6>
+                                </div>
+                                <div class="flex-row">
+                                    <h4>Ends </h4>
+                                    <h6> 3:30pm MST</h6>
+                                </div>
+                            </div>
+
+
                             <!-- heading below buttons -->
                             <div class="heading-sponsors">
                                 <h6>Sponsors</h6>
@@ -169,9 +200,9 @@
         <!-- popup -->
         <div id="ratePopup">
             <div class="seriresPopup-Main-Div ">
-                <div class="flex-row flex-justify-center flex-alignItem height-100">
+                <div class="flex-row flex-justify-center flex-alignItem height-100 responsive-height-rate">
                     <div class="width-100  inside-seriresPopupmainDiv">
-                        <div class="flex-row flex-justify-center flex-alignItem ">
+                        <div class="flex-row flex-justify-center flex-alignItem responsive-rateFunction">
                             <div class="inside-main-div width-100">
                                 <!-- left side -->
                                 <div class="left-side-MainDiv ">
@@ -468,10 +499,10 @@
                         <div class="popupRating-button width-100 flex-justify-center flex-row">
                             <div class="width-70 flex-row flex-justify-around">
                                 <div class="button-rankingDiv">
-                                    <a href="itinerary.html" class="commonRannkingButton btn-raking-green"
+                                    <a href="itinerary.html?nosplash=true" class="commonRannkingButton btn-raking-green"
                                         onclick="myFunction()">DONE</a>
                                 </div>
-                                <div class="button-rankingDiv">
+                                <div class="button-rankingDiv mrg-res-btn-div">
                                     <a href="#" class="commonRannkingButton btn-raking-red"
                                         onclick="myFunction()">CANCEL</a>
                                 </div>
@@ -483,31 +514,41 @@
         </div>
 
         <!-- header info popup -->
-        <div id="info-popup">
-            <div class="info-popup-mainDiv">
-                <div class="flex-row flex-justify-center flex-alignItem height-100">
-                    <div class="inside-mainDiv width-50">
-                        <div class="text-center heading-info-popup">
-                            <h5>Instructions</h5>
-                        </div>
-                        <div class="para-popup text-center">
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                                voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                                occaecati
-                                cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
-                                id
-                                est laborum et dolorum fuga.</p>
-                        </div>
-                        <!-- button -->
-                        <div class="flex-row flex-justify-center">
-                            <div class="info-button">
-                                <a href="#" class="button-header" onclick="headerHideShow()">Close</a>
+    <!-- header info popup -->
+    <div id="info-popup">
+        <div class="info-popup-mainDiv">
+            <div class="flex-row flex-justify-center flex-alignItem height-100 inside-popup-main-div-res">
+                <div class="inside-mainDiv width-60">
+                    <div class="flex-row flex-justify-between mobo-header-responsive">
+                        <div class="text-center heading-info-popup width-30">
+                            <div class="instruction">
+                                <h5>Instructions</h5>
                             </div>
+                            <div class="contact">
+                                <h5>Contact</h5>
+                            </div>
+                        </div>
+                        <div class="para-popup text-center width-70">
+                            <ul>
+                                <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas.</li>
+                                <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</li>
+                                <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- button -->
+                    <div class="flex-row flex-justify-end">
+                        <div class="info-button">
+                            <a href="#" class="button-header" onclick="headerHideShow()">Close</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
     <script>
@@ -528,6 +569,15 @@
                 x.style.display = "block";
             }
         }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
     </script>
 </body>
 

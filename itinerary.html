@@ -48,6 +48,22 @@
                 </div>
             </div>
         </div>
+        <!-- responsive header -->
+        <div class="responsive-header-mainDiv">
+            <div class="flex-row flex-justify-between flex-alignItem">
+                <div onclick="headerHideShow()">
+                    <img src="images/question@3x.png" width="20px">
+                </div>
+                <div onclick="openNav()">
+                    <img src="images/hamburger.png" width="25px">
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav-hamburger">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><img src="images/bitmap.png" width="40px"></a>
+            <a href="#">Hello John Doe</a>
+        </div>
         <!-- body section starts from hgere -->
         <div class="mainDiv-ofBody">
             <div class="below-header">
@@ -80,7 +96,7 @@
                         </div>
                     </div>
                     <!-- present data -->
-                    <div class="mainDiv-of-dateAndSearch">
+                    <div class="mainDiv-of-dateAndSearch dataNone-mobo-res">
                         <!-- date and search -->
                         <div class="insideMainDiv-dateSearh ">
                             <!-- date -->
@@ -91,7 +107,7 @@
                                 <div>
                                     <input placeholder="Search..." />
                                 </div>
-                                <div class="filterImage" onclick="myFunction()">
+                                <div class="filterImage" onclick="myFunction2()">
                                     <img src="images/filter.png" width="22px">
                                 </div>
                             </div>
@@ -130,13 +146,66 @@
                             </div>
                         </div>
                     </div>
+                    <!-- mobile-responsive -->
+                    <!-- input first then heading -->
+                    <!-- present data -->
+                    <div class="mainDiv-of-dateAndSearch mobo-datSearch">
+                        <!-- date and search -->
+                        <div class="insideMainDiv-dateSearh ">
+                            <!-- date -->
+                            <div class="filterImage-And-Input width-date-time-100">
+                                <div class="width-date-time-100">
+                                    <input class="width-date-time-100" placeholder="Search..." />
+                                </div>
+                                <div class="filterImage" onclick="myFunction2()">
+                                    <img src="images/filter.png" width="22px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-row flex-justify-end">
+                            <div class="checkboex-btn-div" id="filter-checkbox">
+                                <div class="filter-heading">
+                                    <h5>Filter By Track</h5>
+                                </div>
+                                <div class="labelEthics">
+                                    <label class="checkbox-div">Ethics
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="labelResponsibility">
+                                    <label class="checkbox-div">Professional Responsibility
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="labelSales">
+                                    <label class="checkbox-div">Sales
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="flex-row flex-justify-around main-button-div-popup">
+                                    <div>
+                                        <a class="button-below-checkbox button-grey" href="#">Reset</a>
+                                    </div>
+                                    <div>
+                                        <a class="button-below-checkbox button-blk" href="#">Apply</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="para-mobo-rsponsive"><b class="todayText">TODAY -</b>Tuesday June 23</p>
+                        </div>
+                    </div>
                     <!-- boxes -->
                     <!-- main div of boxes -->
                     <div>
                         <!-- inside boxes main div -->
                         <div class="background-pink background-Box borderRaius-box">
                             <!-- left side -->
-                            <div class="insideBox">
+                            <div class="insideBox ">
                                 <div class="leftSide-ofBox">
                                     <span>
                                         <h6>9:00 AM </h6>
@@ -161,13 +230,12 @@
                                     </div>
                                 </a>
                             </div>
-
                         </div>
                         <!-- 2nd one -->
                         <div class="background-blue-color background-Box borderRaius-box">
                             <!-- left side -->
-                            <div class="insideBox cursor-pointer" onclick="rateFunction()">
-                                <div class="leftSide-ofBox">
+                            <div class="insideBox cursor-pointer">
+                                <div class="leftSide-ofBox" onclick="rateFunction()">
                                     <h4>RATE</h4>
                                     <img class="tickImage" src="images/whit-tick.png" width="35px" />
                                 </div>
@@ -206,13 +274,8 @@
                             </div>
                             <div class="mainDiv-of-RightSIdeBox">
                                 <a href="professionalEducation.html">
-                                    <div class="starHeadingView">
-                                        <div>
-                                            <h5>This happens to be on MY itinerary. Thus marked.</h5>
-                                        </div>
-                                        <div>
-                                            <img src="images/star.png" width="30px" />
-                                        </div>
+                                    <div>
+                                        <h5>This happens to be on MY itinerary. Thus marked.</h5>
                                     </div>
                                     <div>
                                         <p>This is the truncated description of the item. It will max out at two lines
@@ -232,21 +295,33 @@
         </div>
     </div>
     <!-- header info popup -->
-    <div id="info-popup">
+     <!-- header info popup -->
+     <div id="info-popup">
         <div class="info-popup-mainDiv">
-            <div class="flex-row flex-justify-center flex-alignItem height-100">
-                <div class="inside-mainDiv width-50">
-                    <div class="text-center heading-info-popup">
-                        <h5>Instructions</h5>
-                    </div>
-                    <div class="para-popup text-center">
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-                            est laborum et dolorum fuga.</p>
+            <div class="flex-row flex-justify-center flex-alignItem height-100 inside-popup-main-div-res">
+                <div class="inside-mainDiv width-60">
+                    <div class="flex-row flex-justify-between mobo-header-responsive">
+                        <div class="text-center heading-info-popup width-30">
+                            <div class="instruction">
+                                <h5>Instructions</h5>
+                            </div>
+                            <div class="contact">
+                                <h5>Contact</h5>
+                            </div>
+                        </div>
+                        <div class="para-popup text-center width-70">
+                            <ul>
+                                <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas.</li>
+                                <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</li>
+                                <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium</li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- button -->
-                    <div class="flex-row flex-justify-center">
+                    <div class="flex-row flex-justify-end">
                         <div class="info-button">
                             <a href="#" class="button-header" onclick="headerHideShow()">Close</a>
                         </div>
@@ -612,7 +687,7 @@
         }
 
 
-        function myFunction() {
+        function myFunction2() {
             var x = document.getElementById("filter-checkbox");
             if (x.style.display === "block") {
                 x.style.display = "none";
@@ -638,6 +713,15 @@
                 x.style.display = "block";
             }
         }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
 
     </script>
 </body>
