@@ -393,13 +393,13 @@ body{
     padding: 10px 0px 0px 0px;
     }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p{
-    font-size: calc(12px + 1vw);;
+    font-size: calc(4px + 1vw);;
     font-weight: normal;
     color: #212120;
     margin: 0px;
     }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6{
-    font-size: calc(11px + 1vw);
+    font-size: calc(4px + 1vw);
     font-weight: bold;
     text-align: right;
     color: #ffffff;
@@ -1028,6 +1028,9 @@ body{
 
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) { 
+    .info-popup-mainDiv .para-popup {
+        width: 100%!important;
+    }
     .main-header-div {
         display: none!important;
     }
@@ -1073,6 +1076,17 @@ body{
             display: block;
         }
     /* itinery and agenda page css */
+    /* font-sizes of right-side box */
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p {
+        font-size: calc(12px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h5 {
+        font-size: calc(15px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6 {
+        font-size: calc(11px + 1vw);
+    }
+    /* ends here */
     .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
         margin: 0px 0px 0px 0px!important;
     }
@@ -1234,6 +1248,9 @@ body{
    
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .info-popup-mainDiv .para-popup {
+        width: 100%!important;
+    }
     .main-header-div {
         display: none!important;
     }
@@ -1336,6 +1353,17 @@ body{
         }
         /* ------- */
         /* box-header css */
+            /* font-sizes of right-side box */
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p {
+        font-size: calc(12px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h5 {
+        font-size: calc(15px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6 {
+        font-size: calc(11px + 1vw);
+    }
+    /* ends here */
         .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
             margin: 0px 0px 0px 0px!important;
         }
@@ -1437,7 +1465,10 @@ body{
 }
 
 
-@media (max-width: 684px) and (min-width: 480px) { 
+@media (max-width: 684px) and (min-width: 480px) {
+    .info-popup-mainDiv .para-popup {
+        width: 100%!important;
+    } 
     .main-header-div {
         display: none!important;
     }
@@ -1546,6 +1577,17 @@ body{
     }
     /* ------- */
     /* box-header css */
+    /* font-sizes of right-side box */
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p {
+        font-size: calc(12px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h5 {
+        font-size: calc(15px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6 {
+        font-size: calc(11px + 1vw);
+    }
+    /* ends here */
     .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
         margin: 0px 0px 0px 0px!important;
     }
@@ -1660,6 +1702,9 @@ body{
 }
 
 @media (max-width: 767px) and (min-width: 685px) {
+    .info-popup-mainDiv .para-popup {
+        width: 100%!important;
+    }
     .main-header-div {
         display: none!important;
     }
@@ -1768,6 +1813,17 @@ body{
 }
 /* ------- */
 /* box-header css */
+    /* font-sizes of right-side box */
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p {
+        font-size: calc(12px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h5 {
+        font-size: calc(15px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6 {
+        font-size: calc(11px + 1vw);
+    }
+    /* ends here */
 .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
     margin: 0px 0px 0px 0px!important;
 }
@@ -1866,6 +1922,9 @@ body{
 
 
 @media (max-width: 991px) and (min-width: 768px) {
+    .info-popup-mainDiv .para-popup {
+        width: 100%!important;
+    }
     .main-header-div {
         display: none!important;
     }
@@ -1901,6 +1960,17 @@ body{
         display: none;
     }
     /* itinery and agenda page css */
+    /* font-sizes of right-side box */
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p {
+        font-size: calc(12px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h5 {
+        font-size: calc(15px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6 {
+        font-size: calc(11px + 1vw);
+    }
+    /* ends here */
     .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
         margin: 0px 0px 0px 0px!important;
     }
@@ -2054,6 +2124,9 @@ body{
 }
 
 @media (max-width: 1023px) and (min-width: 991px) {
+    .info-popup-mainDiv .para-popup {
+        width: 100%!important;
+    }
     .main-header-div {
         display: none!important;
     }
@@ -2067,9 +2140,7 @@ body{
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
-        margin-top: 20px;
-
-     
+        margin-top: 20px;     
     }
     .check-inpopup .background-white-section{
         padding: 30px;
@@ -2091,6 +2162,17 @@ body{
         display: none;
     }
     /* itinery and agenda page css */
+    /* font-sizes of right-side box */
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p {
+        font-size: calc(12px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h5 {
+        font-size: calc(15px + 1vw)!important;
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6 {
+        font-size: calc(11px + 1vw);
+    }
+    /* ends here */
     .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
         margin: 0px 0px 0px 0px!important;
     }
