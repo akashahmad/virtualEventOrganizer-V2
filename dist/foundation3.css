@@ -352,7 +352,7 @@ body{
     .below-header .mainDiv-of-header .leftSide-ofBox  h5{
         font-family: 'Barlow Condensed', sans-serif;
         font-size: calc(15px + 1vw);
-        font-weight: bold;
+        font-weight: 400;
         margin: 0px;
         line-height: 1;
         color: #ffffff;
