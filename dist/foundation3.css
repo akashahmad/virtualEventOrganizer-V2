@@ -340,9 +340,18 @@ body{
     align-items: center;
     justify-content: center;
     }
-    .below-header .mainDiv-of-header .leftSide-ofBox h6,.leftSide-ofBox h5{
+    .below-header .mainDiv-of-header .leftSide-ofBox h6 {
         font-family: 'Barlow Condensed', sans-serif;
-        font-size: 30px;
+        font-size:  30px;
+        font-weight: bold;
+        margin: 0px;
+        line-height: 1;
+        color: #ffffff;
+        text-align: center;
+    }
+    .below-header .mainDiv-of-header .leftSide-ofBox  h5{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: calc(15px + 1vw);
         font-weight: bold;
         margin: 0px;
         line-height: 1;
@@ -384,13 +393,13 @@ body{
     padding: 10px 0px 0px 0px;
     }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p{
-    font-size: calc(3px + 1vw);
+    font-size: calc(12px + 1vw);;
     font-weight: normal;
     color: #212120;
     margin: 0px;
     }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h6{
-    font-size: calc(4px + 1vw);
+    font-size: calc(11px + 1vw);
     font-weight: bold;
     text-align: right;
     color: #ffffff;
@@ -739,6 +748,9 @@ body{
         background-color: #ffffff;
         padding: 10px 10px 10px 10px;
     }
+    .mrg-res-btn-div {
+        padding: 0px 0px 0px 10px;
+    }
     .check-inpopup .background-white-section .button-checout-popup{
          padding: 10px 0px 10px 0px;
     }
@@ -1061,6 +1073,9 @@ body{
             display: block;
         }
     /* itinery and agenda page css */
+    .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
+        margin: 0px 0px 0px 0px!important;
+    }
     .below-header .buttons-mainDiv .itinaryButton1{
         font-size: 12px!important;
         padding: 12px 8px 12px
@@ -1321,6 +1336,9 @@ body{
         }
         /* ------- */
         /* box-header css */
+        .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
+            margin: 0px 0px 0px 0px!important;
+        }
         .padding-bottom-dots{
             width: 5%;
         }
@@ -1528,6 +1546,9 @@ body{
     }
     /* ------- */
     /* box-header css */
+    .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
+        margin: 0px 0px 0px 0px!important;
+    }
     .padding-bottom-dots{
         width: 5%;
     }
@@ -1747,6 +1768,9 @@ body{
 }
 /* ------- */
 /* box-header css */
+.below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
+    margin: 0px 0px 0px 0px!important;
+}
 .padding-bottom-dots{
     width: 5%;
 }
@@ -1877,6 +1901,9 @@ body{
         display: none;
     }
     /* itinery and agenda page css */
+    .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
+        margin: 0px 0px 0px 0px!important;
+    }
     .below-header .buttons-mainDiv .itinaryButton1{
         font-size: 14px!important;
         padding: 12px 12px 12px 12px!important;
@@ -2064,6 +2091,9 @@ body{
         display: none;
     }
     /* itinery and agenda page css */
+    .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
+        margin: 0px 0px 0px 0px!important;
+    }
     .below-header .buttons-mainDiv .itinaryButton1{
         font-size: 14px!important;
         padding: 12px 12px 12px 12px!important;
