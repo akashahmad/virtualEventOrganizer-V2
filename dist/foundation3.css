@@ -382,7 +382,7 @@ common flex properties */
     /* right side og box */
     
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox{
-   
+     border-left: 1px solid #fff;
     padding: 8px 17px 5px 17px;
     /* width: 85%; */
     }
