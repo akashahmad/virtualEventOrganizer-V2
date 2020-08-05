@@ -923,17 +923,34 @@ common flex properties */
         text-align: justify;
     } 
     /* contact-section-headerpopup */
+    
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
     .info-popup-mainDiv .para-popup .contact-section-div-headeing ul li{
+        width: 50%;
+        margin: 0px;
         list-style: none;
         font-size: 18px;
         color: #171717;
         font-weight: bold;
+        text-align: left;
     }
-    .info-popup-mainDiv .para-popup .data-body-contact ul li{
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul .data-below-head{
         list-style: none;
         font-size: 18px;
         color: #5e5e5e;
+        font-weight: 200;
+        text-align: left;
     }
+    /* .info-popup-mainDiv .para-popup .data-body-contact ul li{
+        list-style: none;
+        font-size: 18px;
+        color: #5e5e5e;
+    } */
     #contacts{
         display: none;
     }
@@ -1027,7 +1044,13 @@ common flex properties */
       
 
 /* responsive css starts from here */
-@media (max-width: 319px) and (min-width: 150px) { 
+@media (max-width: 319px) and (min-width: 150px) {
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
+        flex-direction: column!important;
+    } 
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul li {
+        width: 100%!important;
+    }
     .info-popup-mainDiv .para-popup {
         width: 100%!important;
     }
@@ -1248,6 +1271,12 @@ common flex properties */
    
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
+        flex-direction: column!important;
+    } 
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul li {
+        width: 100%!important;
+    }
     .info-popup-mainDiv .para-popup {
         width: 100%!important;
     }
@@ -1466,6 +1495,12 @@ common flex properties */
 
 
 @media (max-width: 684px) and (min-width: 480px) {
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
+        flex-direction: column!important;
+    } 
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul li {
+        width: 100%!important;
+    }
     .info-popup-mainDiv .para-popup {
         width: 100%!important;
     } 
@@ -1702,6 +1737,12 @@ common flex properties */
 }
 
 @media (max-width: 767px) and (min-width: 685px) {
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
+        flex-direction: column!important;
+    } 
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul li {
+        width: 100%!important;
+    }
     .info-popup-mainDiv .para-popup {
         width: 100%!important;
     }
@@ -1922,6 +1963,12 @@ common flex properties */
 
 
 @media (max-width: 991px) and (min-width: 768px) {
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
+        flex-direction: column!important;
+    } 
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul li {
+        width: 100%!important;
+    }
     .info-popup-mainDiv .para-popup {
         width: 100%!important;
     }
@@ -2124,6 +2171,12 @@ common flex properties */
 }
 
 @media (max-width: 1023px) and (min-width: 991px) {
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
+        flex-direction: column!important;
+    } 
+    .info-popup-mainDiv .para-popup .contact-section-div-headeing ul li {
+        width: 100%!important;
+    }
     .info-popup-mainDiv .para-popup {
         width: 100%!important;
     }
