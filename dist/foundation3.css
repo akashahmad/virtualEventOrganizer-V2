@@ -18,11 +18,11 @@ body{
     justify-content: center;
     display: none;
 }
-/* ---------- */
+/* ---------- 
 .padding-bottom-dots{
     padding: 0px 0px 12px 0px;
 }
-/* common flex properties */
+common flex properties */
 .flex-row{
     display: flex;
 }
@@ -382,7 +382,7 @@ body{
     /* right side og box */
     
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox{
-    border-left: 1px solid #fff;
+   
     padding: 8px 17px 5px 17px;
     /* width: 85%; */
     }
