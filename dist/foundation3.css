@@ -341,13 +341,16 @@ body{
     justify-content: center;
     }
     .below-header .mainDiv-of-header .leftSide-ofBox h6,.leftSide-ofBox h5{
-        font-family: 'Bebas Neue', cursive;
-        font-size: calc(11px + 1vw);
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 30px;
         font-weight: bold;
         margin: 0px;
         line-height: 1;
         color: #ffffff;
         text-align: center;
+    }
+    .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am{
+        margin: 0px 0px -16px 0px;
     }
     .below-header .mainDiv-of-header .leftSide-ofBox h4{
         font-size: calc(15px + 1vw);
@@ -358,7 +361,8 @@ body{
         text-align: center;
         }
     .below-header .mainDiv-of-header .leftSide-ofBox h5{
-    font-size: calc(10px + 1vw);
+    font-size: 22px;
+    font-weight: 200;
     text-align: left;
     color: #ffffff;
     padding: 8px 0px 0px 0px;
