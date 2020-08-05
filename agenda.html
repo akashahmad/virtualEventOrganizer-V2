@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
-    <link rel="stylesheet" href="dist/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="dist/foundation3.css">
-    <script src="https://use.fontawesome.com/01ac7e2496.js"></script>
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
+        integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container-fluid main-div-ofpage-agenda">
         <!-- header section starts from here -->
-        <div class="row main-header-div">
+        <div class="grid-x main-header-div">
             <div class="small-3 medium-3 large-3 columns">
                 <img src="images/logo2.jpg" width="280px" height="40px">
             </div>
@@ -30,15 +37,11 @@
                     </div>
                     <!-- name -->
                     <div>
-                        <span class="nameSpan">Hello John Doe</span>
+                        <span class="nameSpan">John Doe</span>
                     </div>
                     <!-- icon img -->
                     <div class="imgDiv">
                         <img src="images/bitmap.png" width="40px">
-                    </div>
-                    <!-- arrow image -->
-                    <div>
-                        <img src="images/downArrow.png" width="18px" height="18px" />
                     </div>
                 </div>
             </div>
@@ -46,27 +49,34 @@
         <!-- responsive header -->
         <div class="responsive-header-mainDiv">
             <div class="flex-row flex-justify-between flex-alignItem">
-               <div>
-                <img src="images/logo2.jpg" width="58%">
-               </div>
-               <div class="mobile-nav-logo">
-                <div class="question-mark" onclick="headerHideShow()">
-                    <img src="images/question@3x.png" width="58%">
+                <div>
+                    <img src="images/logo2.jpg" width="58%">
                 </div>
-
-                <div onclick="openNav()">
-                    <img src="images/hamburger.png" width="75%">
+                <div class="mobile-nav-logo">
+                    <div class="question-mark" onclick="headerHideShow()">
+                        <img src="images/question@3x.png" width="58%">
+                    </div>
+                    <div onclick="openNav()">
+                        <img src="images/hamburger.png" width="75%">
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
-        <div id="mySidenav" class="sidenav-hamburger">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#"><img src="images/bitmap.png" width="40px"></a>
-            <a href="#">Hello John Doe</a>
-            <!-- <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a> -->
+        <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
+            <div class="sidenav-hamburger">
+                <div class="height-100">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <div class="flex-row flex-alignItem flex-justify-center">
+                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                    </div>
+                    <div class="flex-row flex-alignItem flex-justify-center">
+                        <a href="#">Hello John Doe</a>
+                    </div>
+                    <div class="flex-row flex-alignItem flex-justify-center height-100">
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- body section starts from hgere -->
         <div class="mainDiv-ofBody">
@@ -85,9 +95,9 @@
                     </div>
                 </div>
                 <!-- days -->
-                <div class="mainDiv-of-header">
+                <div class="mainDiv-of-header ">
                     <!-- dayes inside main div -->
-                    <div class="small-12 medium-12 large-12 inside-mainDiv">
+                    <div class="small-12 medium-12 large-12 inside-mainDiv grid-padding-y grid-x">
                         <!-- first date -->
                         <div class="first-a">
                             <a class="commonBox background-black color-white">All Days</a>
@@ -102,17 +112,17 @@
                     <!-- present data -->
                     <div class="mainDiv-of-dateAndSearch dataNone-mobo-res">
                         <!-- date and search -->
-                        <div class="insideMainDiv-dateSearh ">
+                        <div class="insideMainDiv-dateSearh large-12 grid-x align-justify">
                             <!-- date -->
                             <div>
                                 <p class="para"><b class="todayText">TODAY -</b>Tuesday June 23</p>
                             </div>
-                            <div class="filterImage-And-Input">
+                            <div class="grid-x">
                                 <div>
                                     <input placeholder="Search..." />
                                 </div>
-                                <div class="filterImage" onclick="myFunction()">
-                                    <img src="images/filter.png" width="22px">
+                                <div class="filterImage " onclick="myFunction()">
+                                    <img src="images/filter.png" width="16px">
                                 </div>
                             </div>
                         </div>
@@ -162,7 +172,7 @@
                                     <input class="width-date-time-100" placeholder="Search..." />
                                 </div>
                                 <div class="filterImage" onclick="myFunction()">
-                                    <img src="images/filter.png" width="22px">
+                                    <img src="images/filter.png" width="16px">
                                 </div>
                             </div>
                         </div>
@@ -207,25 +217,28 @@
                     <!-- main div of boxes -->
                     <div>
                         <!-- inside boxes main div -->
-                        <div class="background-pink background-Box borderRaius-box">
+                        <div class="background-pink background-Box borderRaius-box grid-x large-12 small-12">
                             <!-- left side -->
-                            <div class="insideBox ">
+                            <div class="insideBox large-2">
                                 <div class="leftSide-ofBox">
-                                    <span>
+                                    <div class="time-main-Div">
                                         <h6>9:00 AM </h6>
-                                        <h6 style="margin-bottom: 18%;" >. .</h6>
+                                        <h6 class="padding-bottom-dots">. .</h6>
                                         <h6>10:00 AM</h6>
-                                    </span>
-                                    <h5>MST</h5>
+                                    </div>
+                                    <div>
+                                        <h5>MST</h5>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mainDiv-of-RightSIdeBox">
+                            <div class="mainDiv-of-RightSIdeBox large-10">
                                 <a href="professionalEducation.html">
                                     <div>
                                         <h5>Keynote That You Did Not Have To Register For</h5>
                                     </div>
                                     <div>
-                                        <p>This is the truncated description of the item. It will max out at two lines
+                                        <p>This is the truncated description of the item. It will max out at two
+                                            lines
                                             after
                                             which the user can click the “more” link and pop a full box…</p>
                                     </div>
@@ -236,15 +249,15 @@
                             </div>
                         </div>
                         <!-- 2nd one -->
-                        <div class="background-blue-color background-Box borderRaius-box">
+                        <div class="background-blue-color background-Box borderRaius-box grid-x large-12 small-12">
                             <!-- left side -->
-                            <div class="insideBox cursor-pointer">
+                            <div class="insideBox cursor-pointer large-2">
                                 <div class="leftSide-ofBox" onclick="rateFunction()">
                                     <h4>RATE</h4>
                                     <!-- <img class="tickImage" src="images/whit-tick.png" width="35px" /> -->
                                 </div>
                             </div>
-                            <div class="mainDiv-of-RightSIdeBox">
+                            <div class="mainDiv-of-RightSIdeBox large-10 ">
                                 <a href="professionalEducation.html">
                                     <div>
                                         <h5>How to be bored in a mask meeting.</h5>
@@ -264,30 +277,31 @@
                         <div class="headingDiv-BelowBlueBox">
                             <h5>Wednesday June 24</h5>
                         </div>
-                        <div class="background-yellow background-Box borderRaius-box">
+                        <div class="background-yellow background-Box borderRaius-box grid-x large-12 small-12">
                             <!-- left side -->
-                            <div class="insideBox">
+                            <div class="insideBox large-2">
                                 <div class="leftSide-ofBox">
-                                    <span>
+                                    <div class="time-main-Div">
                                         <h6>9:00 AM </h6>
-                                        <h6 class="Time-adjustment" style="margin-bottom: 18%;">. .</h6>
+                                        <h6 class="padding-bottom-dots">. .</h6>
                                         <h6>10:00 AM</h6>
-                                    </span>
+                                    </div>
                                     <h5>MST</h5>
                                 </div>
                             </div>
-                            <div class="mainDiv-of-RightSIdeBox">
+                            <div class="mainDiv-of-RightSIdeBox large-10">
                                 <a href="professionalEducation.html">
-                                    <div class="stars"> 
-                                    <div>
-                                        <h5>This happens to be on MY itinerary. Thus marked.</h5>
+                                    <div class="stars">
+                                        <div>
+                                            <h5>This happens to be on MY itinerary. Thus marked.</h5>
+                                        </div>
+                                        <div>
+                                            <img src="./images/starWhite.png" width="25px">
+                                        </div>
                                     </div>
                                     <div>
-                                        <img src="./images/silverStar.png" width="35px">
-                                    </div>
-                                </div>
-                                    <div>
-                                        <p>This is the truncated description of the item. It will max out at two lines
+                                        <p>This is the truncated description of the item. It will max out at two
+                                            lines
                                             after
                                             which the user can click the “more” link and pop a full box…</p>
                                     </div>
@@ -312,305 +326,27 @@
                     <div class="flex-row flex-justify-center flex-alignItem responsive-rateFunction">
                         <div class=" inside-main-div width-100">
                             <!-- left side -->
-                            <div class="left-side-MainDiv ">
-                                <!-- img and headings  -->
-                                <div class="flex-row">
-                                    <div>
-                                        <img src="images/work-from-home@3x.png" width="80px" />
-                                    </div>
-                                    <div class="topheading-WithImg">
-                                        <h5>How to wear a mask in a board room.</h5>
-                                    </div>
-                                </div>
-                                <!-- rating div -->
-                                <div class="mainDiv-of-ratingsData">
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Worth it</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 2nd  -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Presenter</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 3rd -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6> Materials</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 4th -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Overall</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 5th -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Have again?</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-rating-popup">
-                                        <input placeholder="Comment" />
-                                    </div>
-                                </div>
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
                             </div>
                         </div>
 
                         <!-- right side -->
-                        <div class=" inside-main-div width-100">
-                            <!-- left side -->
-                            <div class="left-side-MainDiv">
-                                <!-- img and headings  -->
-                                <div class="flex-row">
-                                    <div>
-                                        <img src="images/Mask-Group.png" width="80px" />
-                                    </div>
-                                    <div class="topheading-WithImg">
-                                        <h5 class="rating-popup-isnside-heading">Andrea Hayes</h5>
-                                        <h6>Director of Marketing, Emergency Reporting</h6>
-                                    </div>
-                                </div>
-                                <!-- rating div -->
-                                <div class="mainDiv-of-ratingsData">
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Worth it</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 2nd  -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Presenter</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 3rd -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6> Materials</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 4th -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Overall</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 5th -->
-                                    <div class="flex-row flex-justify-between">
-                                        <!-- heading rating -->
-                                        <div>
-                                            <h6>Have again?</h6>
-                                        </div>
-                                        <!-- 1st Record -->
-                                        <div class="flex-row flex-alignItem">
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/goldenStar.png" width="20px" />
-                                            </div>
-                                            <div>
-                                                <img src="images/silverStar.png" width="20px" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-rating-popup">
-                                        <input placeholder="Comment" />
-                                    </div>
-                                </div>
+                        <div class=" inside-main-div width-100 ">
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
                             </div>
                         </div>
                     </div>
                     <!-- buttons -->
-                    <div class="popupRating-button width-100 flex-justify-center flex-row">
-                        <div class="width-70 flex-row flex-justify-around">
+                    <div class="popupRating-button width-100 flex-justify-center grid-x">
+                        <div class="width-70 grid-x align-justify">
                             <div class="button-rankingDiv">
-                                <a href="#" class="commonRannkingButton btn-raking-green"
+                                <a href="#" class="button success popup"
                                     onclick="rateFunction()">DONE</a>
                             </div>
-                            <div class="button-rankingDiv">
-                                <a href="#" class="commonRannkingButton btn-raking-red"
+                            <div class="button-rankingDiv mrg-res-btn-div">
+                                <a href="#" class="button alert popup "
                                     onclick="rateFunction()">CANCEL</a>
                             </div>
                         </div>
@@ -627,13 +363,13 @@
                     <div class="flex-row flex-justify-between mobo-header-responsive">
                         <div class="text-center heading-info-popup width-30">
                             <div class="instruction">
-                                <h5>Instructions</h5>
+                                <h5 onclick="instrucionMethod()"> Instructions </h5>
                             </div>
                             <div class="contact">
-                                <h5>Contact</h5>
+                                <h5 onclick="Contact()"> Contact </h5>
                             </div>
                         </div>
-                        <div class="para-popup text-center width-70">
+                        <div class="para-popup text-center width-75" id="instructions">
                             <ul>
                                 <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                                     praesentium voluptatum deleniti atque corrupti quos dolores et quas.</li>
@@ -643,11 +379,33 @@
                                     doloremque laudantium</li>
                             </ul>
                         </div>
+                        <!-- contact section -->
+                        <div class="para-popup text-center width-75 grid-x" id="contacts">
+                            <div class="grid-x">
+                                <div class="contact-section-div-headeing ">
+                                    <ul>
+                                        <li>Name</li>
+                                        <li>Email</li>
+                                        <li>Contact Number</li>
+                                        <li>Address</li>
+                                    </ul>
+                                </div>
+                                <!-- data of contact -->
+                                <div class="data-body-contact">
+                                    <ul>
+                                        <li>John Doe</li>
+                                        <li>johndoe@gmail.com</li>
+                                        <li>+00 123 4567 890</li>
+                                        <li>Green Street Holigan, NY, USA,.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- button -->
                     <div class="flex-row flex-justify-end">
                         <div class="info-button">
-                            <a href="#" class="button-header" onclick="headerHideShow()">Close</a>
+                            <a href="#" class="button alert popup " onclick="headerHideShow()">Close</a>
                         </div>
                     </div>
                 </div>
@@ -689,13 +447,29 @@
             }
         }
 
+
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "100%";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+
+        // header popup variables
+        var z = document.getElementById("instructions");
+        var w = document.getElementById("contacts");
+
+        function instrucionMethod() {
+            z.style.display = "block";
+            w.style.display = "none";
+        }
+
+        function Contact() {
+            w.style.display = "block";
+            z.style.display = "none";
+        }
+
     </script>
 
 

@@ -1,9 +1,10 @@
 @import "settings";
 @import "foundation";
-@include foundation-flex-classes;
-@include foundation-flex-grid;
+// @include foundation-flex-classes;
+// @include foundation-flex-grid;
 /// include all modules of foundation
 @include foundation-everything;
+
 
 /// or use just particular mouldes
 // @include foundation-global-styles;

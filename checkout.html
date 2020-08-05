@@ -10,8 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="dist/foundation3.css">
-    <script src="https://use.fontawesome.com/01ac7e2496.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
+        integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+
+
 </head>
 
 <body>
@@ -31,15 +39,11 @@
                     </div>
                     <!-- name -->
                     <div>
-                        <span class="nameSpan">Hello John Doe</span>
+                        <span class="nameSpan">John Doe</span>
                     </div>
                     <!-- icon img -->
                     <div class="imgDiv">
                         <img src="images/bitmap.png" width="40px">
-                    </div>
-                    <!-- arrow image -->
-                    <div>
-                        <img src="images/downArrow.png" width="18px" height="18px" />
                     </div>
                 </div>
             </div>
@@ -49,55 +53,62 @@
             <div class="flex-row flex-justify-between flex-alignItem">
                 <div>
                     <img src="images/logo2.jpg" width="58%">
-                   </div>
-                   <div class="mobile-nav-logo">
+                </div>
+                <div class="mobile-nav-logo">
                     <div class="question-mark" onclick="headerHideShow()">
                         <img src="images/question@3x.png" width="58%">
                     </div>
-    
+
                     <div onclick="openNav()">
                         <img src="images/hamburger.png" width="75%">
                     </div>
                 </div>
             </div>
         </div>
-        <div id="mySidenav" class="sidenav-hamburger">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#"><img src="images/bitmap.png" width="40px"></a>
-            <a href="#">Hello John Doe</a>
-            <!-- <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a> -->
+        <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
+            <div class="sidenav-hamburger">
+                <div class="height-100">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <div class="flex-row flex-alignItem flex-justify-center">
+                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                    </div>
+                    <div class="flex-row flex-alignItem flex-justify-center">
+                        <a href="#">Hello John Doe</a>
+                    </div>
+                    <div class="flex-row flex-alignItem flex-justify-center height-100">
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- body section starts from hgere -->
-        <div class="professional-Page-body flex-row flex-justify-center">
+        <div class="professional-Page-body grid-x align-center">
             <div class="below-profeesional-div ">
                 <!-- heading inside box -->
-                <div class="heading-div">
-                    <h5>How to wear a mask in a board meeting and not fall asleep from lack of oxygen</h5>
+                <div class="heading-div grid-x large-12 text-center">
+                    <h5 class="large-12">How to wear a mask in a board meeting and not fall asleep from lack of oxygen
+                    </h5>
                 </div>
                 <!-- button and text -->
-                <div class="btnItinrary-Text flex-row">
+                <div class=" grid-x large-12">
                     <!-- button -->
-                    <div class="width-38 respponsive-rate-check-pro-width-100">
-                        <div class=" buttonCommon-professionalPageDiv flex-row flex-alignItem">
-                            <a href="itinerary.html?nosplash=true" class="width-100">
-                                <div
-                                    class="width-80 btn-background-white text-center flex-alignItem flex-row flex-justify-center button-professionPage">
+                    <div class="large-4 medium-6 small-12">
+                        <div class=" buttonCommon-professionalPageDiv grid-x">
+                            <a href="itinerary.html?nosplash=true" class=" large-10 medium-10 small-12 ">
+                                <div class="large-12 small-12 medium-12 clear button">
                                     <img class="backArrow" src="images/backArrow.png" width="30" />
                                     <span>BACK TO ITINERARY</span>
                                 </div>
                             </a>
                         </div>
                     </div>
-                    <div
-                        class="timing-section-div width-62  respponsive-rate-check-pro-width-100 flex-row flex-alignItem">
-                        <div class="flex-row inside-timing-MainDiv flex-alignItem">
-                            <div class="left-time flex-row">
+                    <div class="timing-section-div large-8 medium-8 small-12 grid-x flex-alignItem">
+                        <div class="grid-x inside-timing-MainDiv">
+                            <div class="left-time grid-x">
                                 <h5>Starts</h5>
                                 <h6>2:30 pm MST</h6>
                             </div>
-                            <div class="right-time flex-row">
+                            <div class="right-time grid-x">
                                 <h5>Ends</h5>
                                 <h6>3:30 pm MST</h6>
                             </div>
@@ -107,72 +118,69 @@
                 <!-- below start and end date -->
                 <!-- below time section -->
                 <div class="professionalEducation-section">
-                    <div class="flex-row responsive-flex-column-rate-check-pro">
+                    <div class="large-12 medium-12 grid-x responsive-flex-column-rate-check-pro ">
                         <!-- leftside buttons-->
-                        <div class="width-38 respponsive-rate-check-pro-width-100">
-                            <div class="buttonCommon-professionalPageDiv flex-row flex-alignItem">
-                                <button
-                                    class="width-80 color-white button-pro-background-orange text-center flex-alignItem flex-row flex-justify-center button-professionPage">
+                        <div class="large-4 small-12 medium-6">
+                            <div class="buttonCommon-professionalPageDiv ">
+                                <button type="button" class="large-10 medium-10 cursor-pointer alert button small-12">
                                     JOIN SESSION<button>
                             </div>
-                            <div class=" buttonCommon-professionalPageDiv flex-row flex-alignItem">
+                            <div class=" buttonCommon-professionalPageDiv ">
                                 <button onclick="myFunction()"
-                                    class=" width-80 color-white button-pro-background-seaGreen text-center flex-alignItem flex-row flex-justify-center button-professionPage">
+                                    class=" large-10 medium-10 cursor-pointer primary button small-12">
                                     CHECK-IN<button>
                             </div>
-                            <div class="buttonCommon-professionalPageDiv flex-row flex-alignItem">
-                                <button
-                                    class="width-80 color-white button-pro-background-silver text-center flex-alignItem  flex-row flex-justify-center button-professionPage">RATE
+                            <div class="buttonCommon-professionalPageDiv">
+                                <button class="large-10 medium-10 cursor-pointer secondary button small-12 ">RATE
                                     SESSION AND SPEAKERS<button>
                             </div>
 
-
                             <!-- mobile responsive -->
-                            <div class="start-and-endtime-MobileBox">
-                                <div class="flex-row">
+                            <div class="start-and-endtime-MobileBox medium-10">
+                                <div class="grid-x">
                                     <h5>Starts </h5>
                                     <h6> 2:30pm MST</h6>
                                 </div>
-                                <div class="flex-row">
+                                <div class="grid-x">
                                     <h4>Ends </h4>
                                     <h6> 3:30pm MST</h6>
                                 </div>
                             </div>
                             <!-- heading below buttons -->
-                            <div class="heading-sponsors">
+                            <div class="heading-sponsors medium-10">
                                 <h6>Sponsors</h6>
                             </div>
                             <!-- below sponsors heading -->
-                            <div class="buttonImageDiv flex-alignItem">
+                            <div class="buttonImageDiv flex-alignItem medium-10">
                                 <button href="#"
-                                    class="width-80 text-center flex-alignItem  flex-row flex-justify-center button-professionPage">
+                                    class="width-80 grid-x align-center button-professionPage">
                                     <img src="images/rover.png" width="80px" />
                                     <button>
                             </div>
-                            <div class="buttonImageDiv flex-alignItem">
+                            <div class="buttonImageDiv flex-alignItem medium-10">
                                 <button href="#"
-                                    class="width-80 text-center flex-alignItem  flex-row flex-justify-center button-professionPage">
+                                    class="width-80 text-center grid-x align-center button-professionPage">
                                     <img src="images/mueller.png" width="90px" />
                                     <button>
                             </div>
                         </div>
                         <!-- right section -->
-                        <div class="right-side width-62 respponsive-rate-check-pro-width-100">
-                            <div class="heading-h5-h6 flex-row responsive-flex-column-rate-check-pro">
+                        <div class="large-8 right-side small-12 medium-6">
+                            <div class="heading-h5-h6 grid-x responsive-flex-column-rate-check-pro">
                                 <h5>Professional Education: </h5>
                                 <h6>Ethics 1.5 hours</h6>
                             </div>
-                            <div class="description">
+                            <div class="description large-12">
                                 <h5>Description</h5>
                                 <p>This is the description of the session provided in the agenda. The sponsors are shown
                                     below and to the right. This is what it is and that’s all there is. There can be
                                     lots of content or not a lot of content. It doesn’t matter.</p>
                             </div>
                             <div>
-                                <div class="speakers-heading flex-row">
+                                <div class="speakers-heading large-12 medium-12">
                                     <h5>Speakers</h5>
                                 </div>
-                                <div class="flex-row  ">
+                                <div class="grid-x medium-12">
                                     <div>
                                         <img src="images/Mask-Group.png" width="80px" />
                                     </div>
@@ -189,9 +197,15 @@
                                 <div class="downloads-heading">
                                     <h5>Downloads</h5>
                                 </div>
-                                <div class="succses-link">
-                                    <img src="images/pdf.png" width="50px" />
-                                    <a>How to succeed by success</a>
+                                <div class="succses-link grid-x">
+                                    <div>
+                                        <img src="images/pdf.png" width="50px" />
+                                    </div>
+                                    <div class="grid-x flex-alignItem">
+                                        <u>
+                                            <a>How to succeed by success</a>
+                                        </u>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -225,14 +239,12 @@
                             </div>
                         </div>
                         <div class="width-100 flex-row flex-justify-center">
-                            <div class="width-50 flex-row flex-justify-around buttonsdiv-cover">
+                            <div class="width-50 grid-x align-justify buttonsdiv-cover">
                                 <div>
-                                    <a href="rateSession.html"
-                                        class="button-otside-border background-outsideborder-red">Done</a>
+                                    <a href="rateSession.html" class=" button alert popup ">Done</a>
                                 </div>
                                 <div class="mrg-res-btn-div">
-                                    <a href="#" class="button-otside-border background-outsideborder-grey"
-                                        onclick="myFunction()">Cancel</a>
+                                    <a href="#" class="button success popup" onclick="myFunction()">Cancel</a>
                                 </div>
                             </div>
                         </div>
@@ -249,13 +261,13 @@
                         <div class="flex-row flex-justify-between mobo-header-responsive">
                             <div class="text-center heading-info-popup width-30">
                                 <div class="instruction">
-                                    <h5>Instructions</h5>
+                                    <h5 onclick="instrucionMethod()"> Instructions </h5>
                                 </div>
                                 <div class="contact">
-                                    <h5>Contact</h5>
+                                    <h5 onclick="Contact()"> Contact </h5>
                                 </div>
                             </div>
-                            <div class="para-popup text-center width-70">
+                            <div class="para-popup text-center width-75" id="instructions">
                                 <ul>
                                     <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                                         praesentium voluptatum deleniti atque corrupti quos dolores et quas.</li>
@@ -265,11 +277,33 @@
                                         doloremque laudantium</li>
                                 </ul>
                             </div>
+                            <!-- contact section -->
+                            <div class="para-popup text-center width-75 grid-x" id="contacts">
+                                <div class="grid-x">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <li>Name</li>
+                                            <li>Email</li>
+                                            <li>Contact Number</li>
+                                            <li>Address</li>
+                                        </ul>
+                                    </div>
+                                    <!-- data of contact -->
+                                    <div class="data-body-contact">
+                                        <ul>
+                                            <li>John Doe</li>
+                                            <li>johndoe@gmail.com</li>
+                                            <li>+00 123 4567 890</li>
+                                            <li>Green Street Holigan, NY, USA,.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <!-- button -->
                         <div class="flex-row flex-justify-end">
                             <div class="info-button">
-                                <a href="#" class="button-header" onclick="headerHideShow()">Close</a>
+                                <a href="#" class="button alert popup " onclick="headerHideShow()">Close</a>
                             </div>
                         </div>
                     </div>
@@ -297,11 +331,25 @@
         }
 
         function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("mySidenav").style.width = "100%";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // header popup variables
+        var z = document.getElementById("instructions");
+        var w = document.getElementById("contacts");
+
+        function instrucionMethod() {
+            z.style.display = "block";
+            w.style.display = "none";
+        }
+
+        function Contact() {
+            w.style.display = "block";
+            z.style.display = "none";
         }
 
     </script>
