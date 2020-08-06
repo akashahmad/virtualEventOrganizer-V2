@@ -787,6 +787,22 @@ common flex properties */
     border-radius: 4px!important;    
     padding: 10px 20px 10px 20px!important;       
    }
+    .button.alert.popupCheckoutgrey{
+    background-color:#BBBBBB!important;
+    border: 1px solid #BBBBBB!important;
+    font-size: 16px!important;
+    color: #fff!important;
+    border-radius: 4px!important;
+    padding: 10px 20px 10px 20px!important;       
+   }
+    .button.success.popupCheckoutBlack{
+    background-color:#171717!important;
+    border: 1px solid #171717!important;
+    font-size: 16px!important;
+    color: #fff!important;
+    border-radius: 4px!important;
+    padding: 10px 20px 10px 20px!important;       
+   }
    .check-inpopup .background-white-section .buttonsdiv-cover{
     padding: 25px 0px 10px 0px;
    }
@@ -928,8 +944,9 @@ common flex properties */
     .info-popup-mainDiv .para-popup ul li{
         font-size: 16px;
         color: #5e5e5e;
-        padding: 10px 15px 10px 15px;
-        text-align: justify;
+        padding: 10px 0px 10px 15px;
+        margin: 0px;
+        /* text-align: justify; */
     } 
     /* contact-section-headerpopup */
     
@@ -1072,7 +1089,7 @@ common flex properties */
     }
     .question-mark
     {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
@@ -1298,7 +1315,7 @@ common flex properties */
     }
     .question-mark
     {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
@@ -1522,7 +1539,7 @@ common flex properties */
     }
     .question-mark
     {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
@@ -1764,7 +1781,7 @@ common flex properties */
     }
     .question-mark
     {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
@@ -1990,7 +2007,7 @@ common flex properties */
     }
     .question-mark
     {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
@@ -2198,7 +2215,7 @@ common flex properties */
     }
     .question-mark
     {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     .seriresPopup-Main-Div .left-side-MainDiv{
         padding: 40px;
@@ -2396,7 +2413,7 @@ common flex properties */
     }
     .question-mark
     {
-        margin-right: 5px;
+        margin-right: 12px;
     }
     
     .check-inpopup .background-white-section{
