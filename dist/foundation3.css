@@ -44,6 +44,9 @@ common flex properties */
  .flex-alignItem{
     align-items: center;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .text-center{
     text-align: center;
 }
@@ -78,6 +81,9 @@ common flex properties */
     .width-15{
         width: 15%;
     }
+    .width-30{
+        width: 30%;
+    }
     .width-38{
         width: 38%;
     }
@@ -111,6 +117,9 @@ common flex properties */
     .min-max-data-popup{
         min-height: 400px;
         max-height: 900px;
+    }
+    .pad-10{
+        padding: 10px;
     }
     /* ------------------------ */
     /* common css of checkbox */
@@ -329,7 +338,7 @@ common flex properties */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 12px 15px 12px 15px;
+    padding: 12px 10px 12px 10px;
     height: 100%;
     }
     
@@ -757,14 +766,14 @@ common flex properties */
     .check-inpopup .background-white-section .button-checout-popup button{
         border-radius: 8px;
         padding: 10px 0px 10px 0px;
-         background-color: #ec1f1b;
+         background-color: #cc0000;
          color: #fff;
          font-size: 16px;
          font-weight: 500px;
    }
    .button.alert.popup{
-    background-color:#ec1f1b!important;
-    border: 1px solid #ec1f1b!important;
+    background-color:#cc0000!important;
+    border: 1px solid #cc0000!important;
     font-size: 16px!important;
     color: #fff!important;
     border-radius: 4px!important;
@@ -2404,7 +2413,7 @@ common flex properties */
             display: block;
         }
         .below-header .mainDiv-of-header .leftSide-ofBox{
-            padding: 10px 15px 10px 15px!important;
+            padding: 10px 7px 10px 7px!important;
         }
         /* login */
         .login-page-div-width-100{

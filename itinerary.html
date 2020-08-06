@@ -356,7 +356,7 @@
                                             <li class="data-below-head">johndoe@gmail.com</li>
                                         </ul>
                                         <ul class="grid-x ">
-                                            <li >Contact Number</li>
+                                            <li>Contact Number</li>
                                             <li class="data-below-head">+00 123 4567 890</li>
                                         </ul>
                                         <ul class="grid-x ">
@@ -381,27 +381,45 @@
     <!-- rate series popup -->
     <div id="rateFunction">
         <div class="seriresPopup-Main-Div ">
-            <div class="grid-x align-center flex-alignItem height-100 responsive-height-rate">
+            <div class="grid-x height-100 responsive-height-rate">
                 <div class="width-100 inside-seriresPopupmainDiv">
-                    <div class="flex-row flex-justify-center flex-alignItem responsive-rateFunction">
-                        <div class=" inside-main-div width-100">
+                    <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
+                        <div class="inside-main-div large-4 small-12">
                             <!-- left side -->
                             <div class="left-side-MainDiv min-max-data-popup">
                                 <!-- add data here -->
                             </div>
                         </div>
+
                         <!-- right side -->
-                        <div class=" inside-main-div width-100">
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv  min-max-data-popup">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                        <!-- 3rd box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup ">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                        <!-- 4th box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
                             <div class="left-side-MainDiv min-max-data-popup">
                                 <!-- add data here -->
                             </div>
                         </div>
                     </div>
                     <!-- buttons -->
-                    <div class="popupRating-button width-100 flex-justify-center grid-x">
+                    <div class="popupRating-button width-100 align-center grid-x">
                         <div class="width-70 grid-x align-spaced">
                             <div class="button-rankingDiv">
-                                <a href="#" class="button success popup" onclick="rateFunction()">DONE</a>
+                                <a class="button success popup" onclick="rateFunction()">DONE</a>
                             </div>
                             <div class="button-rankingDiv mrg-res-btn-div">
                                 <a href="#" class="button alert popup " onclick="rateFunction()">CANCEL</a>
@@ -411,106 +429,105 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- </div> -->
-    <script>
-        getParams = function (url) {
-            let params = {};
-            if (typeof document !== "undefined") {
-                let parser = document.createElement("a");
-                parser.href = url;
-                let query = parser.search.substring(1);
-                let vars = query.split("&");
-                if (vars[0] !== "") {
-                    for (let i = 0; i < vars.length; i++) {
-                        let pair = vars[i].split("=");
-                        params[pair[0]] = decodeURIComponent(pair[1]);
+        <!-- </div> -->
+        <script>
+            getParams = function (url) {
+                let params = {};
+                if (typeof document !== "undefined") {
+                    let parser = document.createElement("a");
+                    parser.href = url;
+                    let query = parser.search.substring(1);
+                    let vars = query.split("&");
+                    if (vars[0] !== "") {
+                        for (let i = 0; i < vars.length; i++) {
+                            let pair = vars[i].split("=");
+                            params[pair[0]] = decodeURIComponent(pair[1]);
+                        }
+                    } else {
+                        return null;
                     }
                 } else {
                     return null;
                 }
-            } else {
-                return null;
-            }
-            return params;
-        };
+                return params;
+            };
 
-        var noSplash = getParams(window.location.href)
-        if (noSplash && noSplash.nosplash) {
-            var y = document.getElementById("agenda-page-block");
-            y.style.display = "block";
-            var x = document.getElementById("container-background-spashScreen");
-            x.style.display = "none";
-        }
-        else {
-            let z = document.getElementById("container-background-spashScreen");
-            z.style.display = "flex"
-            setTimeout(function () {
+            var noSplash = getParams(window.location.href)
+            if (noSplash && noSplash.nosplash) {
                 var y = document.getElementById("agenda-page-block");
                 y.style.display = "block";
                 var x = document.getElementById("container-background-spashScreen");
                 x.style.display = "none";
-            }, 3000)
-        }
-
-
-        function myFunction() {
-            var x = document.getElementById("filter-checkbox");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
             }
-            var y = document.getElementById("filter-checkbox1");
-            if (y.style.display === "block") {
-                y.style.display = "none";
-            } else {
-                y.style.display = "block";
+            else {
+                let z = document.getElementById("container-background-spashScreen");
+                z.style.display = "flex"
+                setTimeout(function () {
+                    var y = document.getElementById("agenda-page-block");
+                    y.style.display = "block";
+                    var x = document.getElementById("container-background-spashScreen");
+                    x.style.display = "none";
+                }, 3000)
             }
-        }
 
-        function rateFunction() {
-            var x = document.getElementById("rateFunction");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
+
+            function myFunction() {
+                var x = document.getElementById("filter-checkbox");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+                var y = document.getElementById("filter-checkbox1");
+                if (y.style.display === "block") {
+                    y.style.display = "none";
+                } else {
+                    y.style.display = "block";
+                }
             }
-        }
 
-        function headerHideShow() {
-            var x = document.getElementById("info-popup");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
+            function rateFunction() {
+                var x = document.getElementById("rateFunction");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
             }
-        }
 
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "100%";
-        }
+            function headerHideShow() {
+                var x = document.getElementById("info-popup");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "100%";
+            }
 
-        // header popup variables
-        var z = document.getElementById("instructions");
-        var w = document.getElementById("contacts");
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
 
-        function instrucionMethod() {
-            z.style.display = "block";
-            w.style.display = "none";
-        }
+            // header popup variables
+            var z = document.getElementById("instructions");
+            var w = document.getElementById("contacts");
 
-        function Contact() {
-            w.style.display = "block";
-            z.style.display = "none";
-        }
+            function instrucionMethod() {
+                z.style.display = "block";
+                w.style.display = "none";
+            }
+
+            function Contact() {
+                w.style.display = "block";
+                z.style.display = "none";
+            }
 
 
-    </script>
+        </script>
 </body>
 
 </html>
