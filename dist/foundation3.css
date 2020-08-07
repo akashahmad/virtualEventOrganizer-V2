@@ -411,17 +411,29 @@ common flex properties */
     padding: 5px 0px 0px 0px;
     }
     /* right side og box */
-    
+    .box-left-pad-top{
+        padding: 0px 17px 5px 17px;        
+    }
+    .box-left-pad{
+        padding: 8px 17px 5px 17px;        
+    }
+
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox{
      border-left: 1px solid #fff;
-    padding: 8px 17px 5px 17px;
+    /* padding: 8px 17px 5px 17px; */
     /* width: 85%; */
+    }
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox .heading5{
+        font-size: calc(8px + 1vw);
+        font-weight: bold;
+        color: #212120;
+        padding: 0px 0px 0px 0px;
     }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox h5{
     font-size: calc(8px + 1vw);
     font-weight: bold;
     color: #212120;
-    padding: 10px 0px 0px 0px;
+    padding: 8px 0px 0px 0px;
     }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox p{
     font-size: calc(4px + 1vw);;
@@ -1128,6 +1140,9 @@ common flex properties */
 
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) {
+    .check-inpopup .background-white-section .time-of-popup p{
+        font-size: 12px!important;
+    }
     .professional-Page-body .below-profeesional-div .below-peakerHeading {
         padding: 0px 0px 0px 0px!important;
     }
@@ -1360,6 +1375,9 @@ common flex properties */
    
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .check-inpopup .background-white-section .time-of-popup p{
+        font-size: 12px!important;
+    }
     .professional-Page-body .below-profeesional-div .below-peakerHeading {
         padding: 0px 0px 0px 0px!important;
     }
