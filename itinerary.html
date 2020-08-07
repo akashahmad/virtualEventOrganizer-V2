@@ -18,6 +18,13 @@
     <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
         integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -39,8 +46,8 @@
             </div>
             <div class="small-9 medium-9 large-9 ">
                 <div class="grid-x header justify-content-end">
-                    <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="20px">
+                    <div class="imgDiv cursor-pointer">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
                     </div>
                     <!-- div for line -->
                     <div class="blankDiv-For-Line">
@@ -74,8 +81,8 @@
                     </div>
                 </div>
                 <div class="mobile-nav-logo">
-                    <div class="question-mark" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="25px">
+                    <div class="question-mark">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
                     </div>
                     <div onclick="openNav()">
                         <img src="images/hamburger.png" width="30px">
@@ -256,8 +263,7 @@
                             </div>
                             <div class="mainDiv-of-RightSIdeBox box-left-pad-top large-10">
                                 <div class="grid-x align-left">
-                                    <div class="cursor-pointer" onclick="removeCheckOut()"
-                                        id="cancelImg">
+                                    <div class="cursor-pointer" onclick="removeCheckOut()" id="cancelImg">
                                         <img src="images/cancel.png" width="15px" />
                                     </div>
                                 </div>
@@ -283,7 +289,7 @@
                         <!-- 2nd one -->
                         <div class="background-blue-color background-Box borderRaius-box grid-x large-12 small-12">
                             <!-- left side -->
-                            <div class="insideBox cursor-pointer large-2" onclick="rateFunction()">
+                            <div class="insideBox cursor-pointer large-2" data-open="rateModel">
                                 <div class="leftSide-ofBox">
                                     <h4>RATE</h4>
                                     <img class="tickImage" src="images/whit-tick.png" width="35px" />
@@ -345,7 +351,7 @@
     </div>
     <!-- header info popup -->
     <!-- header info popup -->
-    <div id="info-popup">
+    <div class="reveal" id="exampleModal1" data-reveal>
         <div class="info-popup-mainDiv">
             <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
                 <div class="inside-mainDiv width-60">
@@ -400,7 +406,8 @@
                     <!-- button -->
                     <div class="grid-x flex-justify-end">
                         <div class="info-button">
-                            <button href="#" class="button alert popup " onclick="headerHideShow()">Close</button>
+                            <button href="#" class="button alert popup " data-close
+                                aria-label="Close modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -409,11 +416,11 @@
     </div>
     <!-- rate series popup -->
     <!-- id="rateFunction" -->
-    <div id="rateFunction">
+    <div id="rateModel" data-reveal>
         <div class="seriresPopup-Main-Div ">
             <div class=" height-100 responsive-height-rate">
                 <div class="large-12 small-12 grid-x align-left pad-10">
-                    <a onclick="rateFunction()"><img src="images/cross2.png" width="35px" /></a>
+                    <a data-close aria-label="rateModel"><img src="images/cross2.png" width="35px" /></a>
                 </div>
                 <div class="width-100 inside-seriresPopupmainDiv">
                     <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
@@ -452,10 +459,10 @@
                     <div class="popupRating-button width-100 align-center grid-x">
                         <div class="width-70 grid-x align-spaced">
                             <div class="button-rankingDiv mrg-res-btn-div">
-                                <button class="button alert popup " onclick="rateFunction()">CANCEL</button>
+                                <button class="button alert popup " data-close aria-label="rateModel">CANCEL</button>
                             </div>
                             <div class="button-rankingDiv">
-                                <button class="button success popup" onclick="rateFunction()">DONE</button>
+                                <button class="button success popup" data-close aria-label="rateModel">DONE</button>
                             </div>
                         </div>
                     </div>
@@ -465,6 +472,7 @@
     </div>
     <script>
 
+        $(document).foundation();
 
         if (typeof (Storage) !== "undefined") {
             var local = localStorage.getItem("checkIn");

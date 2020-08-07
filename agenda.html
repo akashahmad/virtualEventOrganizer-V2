@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <script type="text/css"
         src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
@@ -19,6 +20,13 @@
     <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
         integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+        crossorigin="anonymous"></script>
 
 
 </head>
@@ -37,8 +45,9 @@
             </div>
             <div class="small-9 medium-9 large-9 ">
                 <div class="grid-x header justify-content-end">
-                    <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="20px">
+                    <!-- onclick="headerHideShow()" -->
+                    <div class="imgDiv cursor-pointer"  >
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
                     </div>
                     <!-- div for line -->
                     <div class="blankDiv-For-Line">
@@ -72,8 +81,9 @@
                     </div>
                 </div>
                 <div class="mobile-nav-logo">
-                    <div class="question-mark" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="25px">
+                    <!-- onclick="headerHideShow() -->
+                    <div class="question-mark"  >
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
                     </div>
                     <div onclick="openNav()">
                         <img src="images/hamburger.png" width="30px">
@@ -142,7 +152,7 @@
                                 <div>
                                     <input placeholder="Search..." />
                                 </div>
-                                <div class="filterImage " onclick="myFunction()">--
+                                <div class="filterImage " onclick="myFunction()">
                                     <img src="images/filter.png" width="16px">
                                 </div>
                             </div>
@@ -198,7 +208,7 @@
                             </div>
                         </div>
                         <div class="grid-x align-left">
-                            <div class="checkboex-btn-div" id="filter-checkbox1" style="display: none;">
+                            <div class="checkboex-btn-div" id="filter-checkbox1"  style="display: none;">
                                 <div class="filter-heading">
                                     <h5>Filter By Track</h5>
                                 </div>
@@ -279,7 +289,7 @@
                         <div class="background-blue-color background-Box borderRaius-box grid-x large-12 small-12">
                             <!-- left side -->
                             <div class="insideBox cursor-pointer large-2">
-                                <div class="leftSide-ofBox" onclick="rateFunction()">
+                                <div class="leftSide-ofBox" data-open="rateModel">
                                     <h4>RATE</h4>
                                     <!-- <img class="tickImage" src="images/whit-tick.png" width="35px" /> -->
                                 </div>
@@ -346,11 +356,12 @@
     </div>
 
     <!-- rate series popup -->
-    <div id="rateFunction">
+    <!-- id="rateFunction" -->
+    <div  id="rateModel" data-reveal >
         <div class="seriresPopup-Main-Div ">
             <div class="height-100 responsive-height-rate">
                 <div class="large-12 small-12 grid-x align-left pad-10">
-                    <a onclick="rateFunction()"><img src="images/cross2.png" width="35px" /></a>
+                    <a data-close aria-label="rateModel"><img src="images/cross2.png" width="35px" /></a>
                 </div>
                 <div class="width-100 inside-seriresPopupmainDiv">
                     <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
@@ -389,10 +400,10 @@
                     <div class="popupRating-button width-100 align-center grid-x">
                         <div class="width-70 grid-x align-spaced">
                             <div class="button-rankingDiv mrg-res-btn-div">
-                                <a href="#" class="button alert popup " onclick="rateFunction()">CANCEL</a>
+                                <button  class="button alert popup " data-close aria-label="rateModel" >CANCEL</button>
                             </div>
                             <div class="button-rankingDiv">
-                                <a class="button success popup" onclick="rateFunction()">DONE</a>
+                                <button class="button success popup" data-close aria-label="rateModel" >DONE</button>
                             </div>
                         </div>
                     </div>
@@ -403,7 +414,8 @@
 
     <!-- header info popup -->
     <!-- header info popup -->
-    <div id="info-popup">
+    <!-- id="info-popup" -->
+    <div  class="reveal" id="exampleModal1" data-reveal>
         <div class="info-popup-mainDiv">
             <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
                 <div class="inside-mainDiv width-60">
@@ -458,17 +470,21 @@
                     <!-- button -->
                     <div class="grid-x flex-justify-end">
                         <div class="info-button">
-                            <a href="#" class="button alert popup " onclick="headerHideShow()">Close</a>
+                            <button href="#" class="button alert popup "
+                            data-close aria-label="Close modal"
+                            >Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- </div> -->
 
 
     <script>
 
+        $(document).foundation();
 
         if (typeof (Storage) !== "undefined") {
             var local = localStorage.getItem("checkIn");
@@ -500,23 +516,6 @@
                 y.style.display = "none";
             } else {
                 y.style.display = "block";
-            }
-        }
-        function rateFunction() {
-            var x = document.getElementById("rateFunction");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
-        function headerHideShow() {
-            var x = document.getElementById("info-popup");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
             }
         }
 

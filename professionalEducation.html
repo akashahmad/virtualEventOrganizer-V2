@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
         integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -38,8 +44,8 @@
             </div>
             <div class="small-9 medium-9 large-9">
                 <div class="grid-x header justify-content-end">
-                    <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="20px">
+                    <div class="imgDiv cursor-pointer">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
                     </div>
                     <!-- div for line -->
                     <div class="blankDiv-For-Line">
@@ -73,8 +79,8 @@
                     </div>
                 </div>
                 <div class="mobile-nav-logo">
-                    <div class="question-mark" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="25px">
+                    <div class="question-mark">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
                     </div>
 
                     <div onclick="openNav()">
@@ -238,7 +244,7 @@
             </div>
         </div>
         <!-- header info popup -->
-        <div id="info-popup">
+        <div class="reveal" id="exampleModal1" data-reveal>
             <div class="info-popup-mainDiv">
                 <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
                     <div class="inside-mainDiv width-60">
@@ -293,7 +299,8 @@
                         <!-- button -->
                         <div class="grid-x flex-justify-end">
                             <div class="info-button">
-                                <button href="#" class="button alert popup " onclick="headerHideShow()">Close</button>
+                                <button href="#" class="button alert popup " data-close
+                                    aria-label="Close modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -303,6 +310,9 @@
 
     </div>
     <script>
+
+        $(document).foundation();
+
         function myFunction() {
             var x = document.getElementById("checkoutPopup");
             if (x.style.display === "block") {

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/css" src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
+    <script type="text/css"
+        src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
     <link rel="stylesheet" href="dist/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
@@ -13,13 +14,19 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
-    <link rel="stylesheet" 
+    <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
-        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok="  crossorigin="anonymous">
+        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
     <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
         integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -37,8 +44,8 @@
             </div>
             <div class="small-9 medium-9 large-9 ">
                 <div class="grid-x header justify-content-end">
-                    <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="20px">
+                    <div class="imgDiv cursor-pointer">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
                     </div>
                     <!-- div for line -->
                     <div class="blankDiv-For-Line">
@@ -72,8 +79,8 @@
                     </div>
                 </div>
                 <div class="mobile-nav-logo">
-                    <div class="question-mark" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="25px">
+                    <div class="question-mark">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
                     </div>
 
                     <div onclick="openNav()">
@@ -144,15 +151,16 @@
                                     JOIN SESSION
                                 </button>
                             </div>
-                            <div class=" buttonCommon-professionalPageDiv popup-outside-checkout-btn">
-                                <button onclick="myFunction()" id="checkinButton"
+                            <div class="buttonCommon-professionalPageDiv popup-outside-checkout-btn"
+                                data-open="checkInOutModel">
+                                <button id="checkinButton"
                                     class=" large-10 medium-10 cursor-pointer success button small-12">
                                     CHECK-IN
                                 </button>
                             </div>
                             <div class="buttonCommon-professionalPageDiv">
                                 <button class="large-10 medium-10 cursor-pointer warning button small-12"
-                                    onclick="ratePopupFunction()" id="rateButton">RATE
+                                    data-open="rateModel" id="rateButton">RATE
                                     SESSION AND SPEAKERS
                                 </button>
                             </div>
@@ -236,7 +244,7 @@
             </div>
         </div>
         <!-- popup -->
-        <div id="checkoutPopup-hideShow">
+        <div id="checkInOutModel" data-reveal>
             <div class="check-inpopup">
                 <div class="grid-x flex-justify-center flex-alignItem height-100">
                     <div class="background-white-section">
@@ -272,7 +280,8 @@
                                 <a href="#" class="button alert popupCheckoutgrey" onclick="myFunction()">Cancel</a>
                             </div> -->
                                 <div class="mrg-res-btn-div">
-                                    <button class="button success popupCheckoutBlack" onclick="done()">Done</button>
+                                    <button class="button success popupCheckoutBlack" data-close
+                                        aria-label="checkInOutModel">Done</button>
 
                                     <!-- onclick="window.location.href='rateSession.html'" -->
                                 </div>
@@ -284,7 +293,7 @@
         </div>
         <!-- header info popup -->
         <!-- header info popup -->
-        <div id="info-popup">
+        <div class="reveal" id="exampleModal1" data-reveal>
             <div class="info-popup-mainDiv">
                 <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
                     <div class="inside-mainDiv width-60">
@@ -339,7 +348,7 @@
                         <!-- button -->
                         <div class="grid-x flex-justify-end">
                             <div class="info-button">
-                                <button class="button alert popup " onclick="headerHideShow()">Close</button>
+                                <button class="button alert popup " data-close aria-label="Close modal">Close</button>
                             </div>
                         </div>
                     </div>
@@ -349,11 +358,11 @@
     </div>
 
     <!-- popup -->
-    <div id="ratePopup">
+    <div id="rateModel" data-reveal>
         <div class="seriresPopup-Main-Div ">
             <div class="height-100 responsive-height-rate">
                 <div class="large-12 small-12 grid-x align-left pad-10">
-                    <a onclick="ratePopupFunction()"><img src="images/cross2.png" width="35px" /></a>
+                    <a data-close aria-label="rateModel"><img src="images/cross2.png" width="35px" /></a>
                 </div>
                 <div class="width-100 inside-seriresPopupmainDiv">
                     <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
@@ -393,11 +402,11 @@
                     <div class="popupRating-button width-100 align-center grid-x">
                         <div class="width-70 grid-x align-spaced">
                             <div class="button-rankingDiv mrg-res-btn-div">
-                                <button href="#" class="button alert popup "
-                                    onclick="ratePopupFunction()">CANCEL</button>
+                                <button href="#" class="button alert popup " data-close
+                                    aria-label="rateModel">CANCEL</button>
                             </div>
                             <div class="button-rankingDiv">
-                                <button onclick="ratePopupFunction()" class="button success popup">DONE</button>
+                                <button data-close aria-label="rateModel" class="button success popup">DONE</button>
                             </div>
                         </div>
                     </div>
@@ -407,6 +416,8 @@
     </div>
 
     <script>
+
+        $(document).foundation();
 
         function codeButtonDisplableCheck(value) {
             if (value.length !== 0) {
