@@ -14,218 +14,220 @@
 
     <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
-          integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
     <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
-          integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+        integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
 
 
 </head>
 
 <body>
-<div class="container-fluid main-div-ofpage-agenda">
-    <!-- header section starts from here     -->
-    <div class="grid-x main-header-div">
-        <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
-            <div>
-                <img src="images/3m.png" width="40px"/>
-            </div>
-            <div class="conclave-heading">
-                <h6>COVID Conclave 2020</h6>
-            </div>
-        </div>
-        <div class="small-9 medium-9 large-9 ">
-            <div class="grid-x header justify-content-end">
-                <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                    <img src="images/question@3x.png" width="20px">
-                </div>
-                <!-- div for line -->
-                <div class="blankDiv-For-Line">
-                </div>
-                <!-- name -->
+    <div class="container-fluid main-div-ofpage-agenda">
+        <!-- header section starts from here     -->
+        <div class="grid-x main-header-div">
+            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
                 <div>
-                    <span class="nameSpan">John Doe</span>
-                </div>
-                <!-- icon img -->
-                <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
-                    <img src="images/bitmap.png" width="40px">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- logout-popup -->
-    <div class="grid-x large-12 align-left">
-        <div class="logout-box-div" id="logout-popup">
-            <button class="button success popupCheckoutBlack">Logout</button>
-        </div>
-    </div>
-    <!-- responsive header -->
-    <div class="responsive-header-mainDiv">
-        <div class="grid-x flex-justify-between flex-alignItem">
-            <div class="grid-x flex-alignItem">
-                <div>
-                    <img src="images/3m.png" width="40px"/>
+                    <img src="images/3m.png" width="40px" />
                 </div>
                 <div class="conclave-heading">
                     <h6>COVID Conclave 2020</h6>
                 </div>
             </div>
-            <div class="mobile-nav-logo">
-                <div class="question-mark" onclick="headerHideShow()">
-                    <img src="images/question@3x.png" width="45px">
+            <div class="small-9 medium-9 large-9 ">
+                <div class="grid-x header justify-content-end">
+                    <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
+                        <img src="images/question@3x.png" width="20px">
+                    </div>
+                    <!-- div for line -->
+                    <div class="blankDiv-For-Line">
+                    </div>
+                    <!-- name -->
+                    <div>
+                        <span class="nameSpan">John Doe</span>
+                    </div>
+                    <!-- icon img -->
+                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
+                        <img src="images/bitmap.png" width="40px">
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- logout-popup -->
+        <div class="grid-x large-12 align-left">
+            <div class="logout-box-div" id="logout-popup">
+                <button class="button success popupCheckoutBlack">Logout</button>
+            </div>
+        </div>
+        <!-- responsive header -->
+        <div class="responsive-header-mainDiv">
+            <div class="grid-x flex-justify-between flex-alignItem">
+                <div class="grid-x flex-alignItem">
+                    <div>
+                        <img src="images/3m.png" width="40px" />
+                    </div>
+                    <div class="conclave-heading">
+                        <h6>COVID Conclave 2020</h6>
+                    </div>
+                </div>
+                <div class="mobile-nav-logo">
+                    <div class="question-mark" onclick="headerHideShow()">
+                        <img src="images/question@3x.png" width="32px">
+                    </div>
 
-                <div onclick="openNav()">
-                    <img src="images/hamburger.png" width="75%">
+                    <div onclick="openNav()">
+                        <img src="images/hamburger.png" width="45px">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
-        <div class="sidenav-hamburger">
-            <div class="height-100">
-                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-                <div class="grid-x flex-alignItem flex-justify-center">
-                    <a href="#"><img src="images/bitmap.png" width="70px"></a>
-                </div>
-                <div class="grid-x flex-alignItem flex-justify-center">
-                    <a href="#">Hello John Doe</a>
-                </div>
-                <div class="grid-x flex-alignItem flex-justify-center height-100">
-                    <a href="#">Logout</a>
+        <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
+            <div class="sidenav-hamburger">
+                <div class="height-100">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                    </div>
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#">Hello John Doe</a>
+                    </div>
+                    <div class="grid-x flex-alignItem flex-justify-center height-100">
+                        <a href="#">Logout</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- body section starts from hgere -->
-    <div class="professional-Page-body grid-x align-center">
-        <div class="below-profeesional-div ">
-            <!-- heading inside box -->
-            <div class="heading-div grid-x large-12 text-center">
-                <h5 class="large-12">How to wear a mask in a board meeting and not fall asleep from lack of oxygen
-                </h5>
-            </div>
-            <!-- button and text -->
-            <div class=" grid-x large-12">
-                <!-- button -->
-                <div class="large-4 medium-6 small-12">
-                    <div class=" buttonCommon-professionalPageDiv grid-x">
-                        <button onclick="window.location.href='itinerary.html?nosplash=true'"
+        <!-- body section starts from hgere -->
+        <div class="professional-Page-body grid-x align-center">
+            <div class="below-profeesional-div ">
+                <!-- heading inside box -->
+                <div class="heading-div grid-x large-12 text-center">
+                    <h5 class="large-12">How to wear a mask in a board meeting and not fall asleep from lack of oxygen
+                    </h5>
+                </div>
+                <!-- button and text -->
+                <div class=" grid-x large-12">
+                    <!-- button -->
+                    <div class="large-4 medium-6 small-12">
+                        <div class=" buttonCommon-professionalPageDiv grid-x">
+                            <button onclick="window.location.href='itinerary.html?nosplash=true'"
                                 class=" large-10 small-12 medium-10">
-                            <div class="large-12 small-12 medium-12 clear button">
-                                <img class="backArrow" src="images/backArrow.png" width="30"/>
-                                <span>BACK TO ITINERARY</span>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-                <div class="timing-section-div large-8 medium-8 small-12 grid-x flex-alignItem">
-                    <div class="grid-x inside-timing-MainDiv">
-                        <div class="left-time grid-x">
-                            <h5>Starts</h5>
-                            <h6>2:30 pm MST</h6>
-                        </div>
-                        <div class="right-time grid-x">
-                            <h5>Ends</h5>
-                            <h6>3:30 pm MST</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- below start and end date -->
-            <!-- below time section -->
-            <div class="professionalEducation-section">
-                <div class="large-12 medium-12 grid-x responsive-flex-column-rate-check-pro ">
-                    <!-- leftside buttons-->
-                    <div class="large-4 small-12 medium-6">
-                        <div class="buttonCommon-professionalPageDiv ">
-                            <button type="button" class="large-10 medium-10 cursor-pointer alert button small-12">
-                                JOIN SESSION
+                                <div class="large-12 small-12 medium-12 clear button">
+                                    <img class="backArrow" src="images/backArrow.png" width="30" />
+                                    <span>BACK TO ITINERARY</span>
+                                </div>
                             </button>
                         </div>
-                        <div class=" buttonCommon-professionalPageDiv popup-outside-checkout-btn">
-                            <button onclick="myFunction()" id="checkinButton"
+                    </div>
+                    <div class="timing-section-div large-8 medium-8 small-12 grid-x flex-alignItem">
+                        <div class="grid-x inside-timing-MainDiv">
+                            <div class="left-time grid-x">
+                                <h5>Starts</h5>
+                                <h6>2:30 pm MST</h6>
+                            </div>
+                            <div class="right-time grid-x">
+                                <h5>Ends</h5>
+                                <h6>3:30 pm MST</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- below start and end date -->
+                <!-- below time section -->
+                <div class="professionalEducation-section">
+                    <div class="large-12 medium-12 grid-x responsive-flex-column-rate-check-pro ">
+                        <!-- leftside buttons-->
+                        <div class="large-4 small-12 medium-6">
+                            <div class="buttonCommon-professionalPageDiv ">
+                                <button type="button" class="large-10 medium-10 cursor-pointer alert button small-12">
+                                    JOIN SESSION
+                                </button>
+                            </div>
+                            <div class=" buttonCommon-professionalPageDiv popup-outside-checkout-btn">
+                                <button onclick="myFunction()" id="checkinButton"
                                     class=" large-10 medium-10 cursor-pointer success button small-12">
-                                CHECK-IN
-                            </button>
-                        </div>
-                        <div class="buttonCommon-professionalPageDiv">
-                            <button class="large-10 medium-10 cursor-pointer warning button small-12"
-                                    onclick="ratePopupFunction()" id="rateButton"
-                            >RATE
-                                SESSION AND SPEAKERS
-                            </button>
-                        </div>
+                                    CHECK-IN
+                                </button>
+                            </div>
+                            <div class="buttonCommon-professionalPageDiv">
+                                <button class="large-10 medium-10 cursor-pointer warning button small-12"
+                                    onclick="ratePopupFunction()" id="rateButton">RATE
+                                    SESSION AND SPEAKERS
+                                </button>
+                            </div>
 
-                        <!-- mobile responsive -->
-                        <div class="start-and-endtime-MobileBox medium-10">
-                            <div class="grid-x">
-                                <h5>Starts </h5>
-                                <h6> 2:30pm MST</h6>
-                            </div>
-                            <div class="grid-x">
-                                <h4>Ends </h4>
-                                <h6> 3:30pm MST</h6>
-                            </div>
-                        </div>
-                        <!-- heading below buttons -->
-                        <div class="heading-sponsors medium-10">
-                            <h6>Sponsors</h6>
-                        </div>
-                        <!-- below sponsors heading -->
-                        <div class="buttonImageDiv flex-alignItem medium-10">
-                            <button href="#" class="large-12 grid-x align-center button-professionPage">
-                                <img src="images/rover.png" width="80px"/>
-                            </button>
-                        </div>
-                        <div class="buttonImageDiv flex-alignItem medium-10">
-                            <button href="#" class="large-12 grid-x align-center button-professionPage">
-                                <img src="images/mueller.png" width="90px"/>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- right section -->
-                    <div class="large-8 right-side small-12 medium-6">
-                        <div class="heading-h5-h6 grid-x responsive-flex-column-rate-check-pro">
-                            <h5>Professional Education: </h5>
-                            <h6>Ethics 1.5 hours</h6>
-                        </div>
-                        <div class="description large-12">
-                            <h5>Description</h5>
-                            <p>This is the description of the session provided in the agenda. The sponsors are shown
-                                below and to the right. This is what it is and that’s all there is. There can be
-                                lots of content or not a lot of content. It doesn’t matter.</p>
-                        </div>
-                        <div>
-                            <div class="speakers-heading large-12 medium-12">
-                                <h5>Speakers</h5>
-                            </div>
-                            <div class="grid-x medium-12">
-                                <div>
-                                    <img src="images/Mask-Group.png" width="80px"/>
-                                </div>
-                                <div class="below-peakerHeading">
-                                    <h6>Andrea Hayes</h6>
-                                    <p>Director of Marketing, Emergency Reporting</p>
+                            <!-- mobile responsive -->
+                            <div class="pad-top-bottom-10">
+                                <div class="start-and-endtime-MobileBox medium-10 ">
+                                    <div class="grid-x">
+                                        <h5>Starts </h5>
+                                        <h6> 2:30pm MST</h6>
+                                    </div>
+                                    <div class="grid-x">
+                                        <h4>Ends </h4>
+                                        <h6> 3:30pm MST</h6>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="belowImage-Para">
-                                <p>This is Andrea’s bio. There can only be so many characters before the user must
-                                    click somewhere to reveal Andrea’s bio and rating stuff and other session stuff.
-                                    It will function just like the mobile optimized website in that regard.</p>
+                            <!-- heading below buttons -->
+                            <div class="heading-sponsors medium-10">
+                                <h6>Sponsors</h6>
                             </div>
-                            <div class="downloads-heading">
-                                <h5>Downloads</h5>
+                            <!-- below sponsors heading -->
+                            <div class="buttonImageDiv flex-alignItem medium-10">
+                                <button href="#" class="large-12 grid-x align-center button-professionPage">
+                                    <img src="images/rover.png" width="80px" />
+                                </button>
                             </div>
-                            <div class="succses-link grid-x">
-                                <div>
-                                    <img src="images/pdf.png" width="50px"/>
+                            <div class="buttonImageDiv flex-alignItem medium-10 pad-top-bottom-10">
+                                <button href="#" class="large-12 grid-x align-center button-professionPage">
+                                    <img src="images/mueller.png" width="90px" />
+                                </button>
+                            </div>
+                        </div>
+                        <!-- right section -->
+                        <div class="large-8 right-side small-12 medium-6">
+                            <div class="heading-h5-h6 grid-x responsive-flex-column-rate-check-pro">
+                                <h5>Professional Education: </h5>
+                                <h6>Ethics 1.5 hours</h6>
+                            </div>
+                            <div class="description large-12">
+                                <h5>Description</h5>
+                                <p>This is the description of the session provided in the agenda. The sponsors are shown
+                                    below and to the right. This is what it is and that’s all there is. There can be
+                                    lots of content or not a lot of content. It doesn’t matter.</p>
+                            </div>
+                            <div>
+                                <div class="speakers-heading large-12 medium-12">
+                                    <h5>Speakers</h5>
                                 </div>
-                                <div class="grid-x flex-alignItem">
-                                    <u>
-                                        <a>How to succeed by success</a>
-                                    </u>
+                                <div class="grid-x medium-12">
+                                    <div>
+                                        <img src="images/Mask-Group.png" width="80px" />
+                                    </div>
+                                    <div class="below-peakerHeading">
+                                        <h6>Andrea Hayes</h6>
+                                        <p>Director of Marketing, Emergency Reporting</p>
+                                    </div>
+                                </div>
+                                <div class="belowImage-Para">
+                                    <p>This is Andrea’s bio. There can only be so many characters before the user must
+                                        click somewhere to reveal Andrea’s bio and rating stuff and other session stuff.
+                                        It will function just like the mobile optimized website in that regard.</p>
+                                </div>
+                                <div class="downloads-heading">
+                                    <h5>Downloads</h5>
+                                </div>
+                                <div class="succses-link grid-x">
+                                    <div>
+                                        <img src="images/pdf.png" width="50px" />
+                                    </div>
+                                    <div class="grid-x flex-alignItem">
+                                        <u>
+                                            <a>How to succeed by success</a>
+                                        </u>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,369 +235,369 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- popup -->
-    <div id="checkoutPopup-hideShow">
-        <div class="check-inpopup">
-            <div class="grid-x flex-justify-center flex-alignItem height-100">
-                <div class="background-white-section">
-                    <div class="border-divinside-whitesection">
-                        <div>
-                            <div class="text-center ">
-                                <h5>Check In/Out</h5>
-                            </div>
-                            <div class="grid-x flex-justify-center main-div-of-popup-time">
-                                <div class="width-70 time-of-popup grid-x flex-alignItem flex-justify-center text-center"
-                                     id="checked-time-box">
-                                    <p>Checked In: 10:55 AM MST</p>
+        <!-- popup -->
+        <div id="checkoutPopup-hideShow">
+            <div class="check-inpopup">
+                <div class="grid-x flex-justify-center flex-alignItem height-100">
+                    <div class="background-white-section">
+                        <div class="border-divinside-whitesection">
+                            <div>
+                                <div class="text-center ">
+                                    <h5>Check In/Out</h5>
                                 </div>
-                            </div>
-                            <div class="mainDiv-of-input-button-popup-checkout">
-                                <div class="input-checout-popup grid-x flex-alignItem flex-justify-center">
-                                    <input class="width-70 " placeholder="Check-In Code" id="checkinCode"
-                                           onkeyup="codeButtonDisplableCheck(this.value)"/>
+                                <div class="grid-x flex-justify-center main-div-of-popup-time">
+                                    <div class="width-70 time-of-popup grid-x flex-alignItem flex-justify-center text-center"
+                                        id="checked-time-box">
+                                        <p>Checked In: 10:55 AM MST</p>
+                                    </div>
                                 </div>
-                                <!-- button-checout-popup -->
-                                <div class=" grid-x flex-alignItem align-center popup-inside-checkout-btn">
-                                    <button onclick="checkInOut()" disabled
+                                <div class="mainDiv-of-input-button-popup-checkout">
+                                    <div class="input-checout-popup grid-x flex-alignItem flex-justify-center">
+                                        <input class="width-70 " placeholder="Check-In Code" id="checkinCode"
+                                            onkeyup="codeButtonDisplableCheck(this.value)" />
+                                    </div>
+                                    <!-- button-checout-popup -->
+                                    <div class=" grid-x flex-alignItem align-center popup-inside-checkout-btn">
+                                        <button onclick="checkInOut()" disabled
                                             class="large-8 success button checkInOut" id="belowInputButton">Check
-                                        In
-                                    </button>
+                                            In
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="width-100 grid-x flex-justify-center">
-                        <div class="grid-x align-justify buttonsdiv-cover">
-                            <!-- <div>
+                        <div class="width-100 grid-x flex-justify-center">
+                            <div class="grid-x align-justify buttonsdiv-cover">
+                                <!-- <div>
                                 <a href="#" class="button alert popupCheckoutgrey" onclick="myFunction()">Cancel</a>
                             </div> -->
-                            <div class="mrg-res-btn-div">
-                                <button class="button success popupCheckoutBlack" onclick="done()">Done</button>
+                                <div class="mrg-res-btn-div">
+                                    <button class="button success popupCheckoutBlack" onclick="done()">Done</button>
 
-                                <!-- onclick="window.location.href='rateSession.html'" -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- header info popup -->
-    <!-- header info popup -->
-    <div id="info-popup">
-        <div class="info-popup-mainDiv">
-            <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
-                <div class="inside-mainDiv width-60">
-                    <div class="grid-x align-justify mobo-header-responsive">
-                        <div class="heading-info-popup ">
-                            <div class="instruction">
-                                <h5 onclick="instrucionMethod()"> Instructions </h5>
-                            </div>
-                            <div class="contact">
-                                <h5 onclick="Contact()"> Contact </h5>
-                            </div>
-                        </div>
-                        <div class="para-popup width-75" id="instructions">
-                            <ul>
-                                <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas.
-                                </li>
-                                <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-                                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-                                </li>
-                                <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- contact section -->
-                        <div class="para-popup width-75 grid-x" id="contacts">
-                            <div class="grid-x">
-                                <div class="contact-section-div-headeing ">
-                                    <ul>
-                                        <ul class="grid-x">
-                                            <li>Name</li>
-                                            <li class="data-below-head">John Doe</li>
-                                        </ul>
-                                        <ul class="grid-x ">
-                                            <li>Email</li>
-                                            <li class="data-below-head">johndoe@gmail.com</li>
-                                        </ul>
-                                        <ul class="grid-x ">
-                                            <li>Contact Number</li>
-                                            <li class="data-below-head">+00 123 4567 890</li>
-                                        </ul>
-                                        <ul class="grid-x ">
-                                            <li>Address</li>
-                                            <li class="data-below-head">Green Street Holigan, NY, USA,.</li>
-                                        </ul>
-                                    </ul>
+                                    <!-- onclick="window.location.href='rateSession.html'" -->
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- button -->
-                    <div class="grid-x flex-justify-end">
-                        <div class="info-button">
-                            <button class="button alert popup " onclick="headerHideShow()">Close</button>
+                </div>
+            </div>
+        </div>
+        <!-- header info popup -->
+        <!-- header info popup -->
+        <div id="info-popup">
+            <div class="info-popup-mainDiv">
+                <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
+                    <div class="inside-mainDiv width-60">
+                        <div class="grid-x align-justify mobo-header-responsive">
+                            <div class="heading-info-popup ">
+                                <div class="instruction">
+                                    <h5 onclick="instrucionMethod()"> Instructions </h5>
+                                </div>
+                                <div class="contact">
+                                    <h5 onclick="Contact()"> Contact </h5>
+                                </div>
+                            </div>
+                            <div class="para-popup width-75" id="instructions">
+                                <ul>
+                                    <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                                    </li>
+                                    <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                        culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                    </li>
+                                    <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                        doloremque laudantium
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- contact section -->
+                            <div class="para-popup width-75 grid-x" id="contacts">
+                                <div class="grid-x">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <ul class="grid-x">
+                                                <li>Name</li>
+                                                <li class="data-below-head">John Doe</li>
+                                            </ul>
+                                            <ul class="grid-x ">
+                                                <li>Email</li>
+                                                <li class="data-below-head">johndoe@gmail.com</li>
+                                            </ul>
+                                            <ul class="grid-x ">
+                                                <li>Contact Number</li>
+                                                <li class="data-below-head">+00 123 4567 890</li>
+                                            </ul>
+                                            <ul class="grid-x ">
+                                                <li>Address</li>
+                                                <li class="data-below-head">Green Street Holigan, NY, USA,.</li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button -->
+                        <div class="grid-x flex-justify-end">
+                            <div class="info-button">
+                                <button class="button alert popup " onclick="headerHideShow()">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- popup -->
-<div id="ratePopup">
-    <div class="seriresPopup-Main-Div ">
-        <div class="height-100 responsive-height-rate">
-            <div class="large-12 small-12 grid-x align-left pad-10">
-                <a onclick="ratePopupFunction()"><img src="images/cancel.png" width="35px"/></a>
-            </div>
-            <div class="width-100 inside-seriresPopupmainDiv">
-                <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv min-max-data-popup">
-                            <!-- add data here -->
-                        </div>
-                    </div>
-
-                    <!-- right side -->
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv  min-max-data-popup">
-                            <!-- add data here -->
-                        </div>
-                    </div>
-
-                    <!-- 3rd box -->
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv min-max-data-popup ">
-                            <!-- add data here -->
-                        </div>
-                    </div>
-
-                    <!-- 4th box -->
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv min-max-data-popup">
-                            <!-- add data here -->
-                        </div>
-                    </div>
-
+    <!-- popup -->
+    <div id="ratePopup">
+        <div class="seriresPopup-Main-Div ">
+            <div class="height-100 responsive-height-rate">
+                <div class="large-12 small-12 grid-x align-left pad-10">
+                    <a onclick="ratePopupFunction()"><img src="images/cancel.png" width="35px" /></a>
                 </div>
-                <!-- buttons -->
-                <div class="popupRating-button width-100 align-center grid-x">
-                    <div class="width-70 grid-x align-spaced">
-                        <div class="button-rankingDiv mrg-res-btn-div">
-                            <button href="#" class="button alert popup " onclick="ratePopupFunction()">CANCEL</button>
+                <div class="width-100 inside-seriresPopupmainDiv">
+                    <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
+                            </div>
                         </div>
-                        <div class="button-rankingDiv">
-                            <button onclick="ratePopupFunction()" class="button success popup">DONE</button>
+
+                        <!-- right side -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv  min-max-data-popup">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                        <!-- 3rd box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup ">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                        <!-- 4th box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- buttons -->
+                    <div class="popupRating-button width-100 align-center grid-x">
+                        <div class="width-70 grid-x align-spaced">
+                            <div class="button-rankingDiv mrg-res-btn-div">
+                                <button href="#" class="button alert popup "
+                                    onclick="ratePopupFunction()">CANCEL</button>
+                            </div>
+                            <div class="button-rankingDiv">
+                                <button onclick="ratePopupFunction()" class="button success popup">DONE</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<script>
+    <script>
 
-    function codeButtonDisplableCheck(value) {
-        if (value.length !== 0) {
-            document.getElementById("belowInputButton").disabled = false;
+        function codeButtonDisplableCheck(value) {
+            if (value.length !== 0) {
+                document.getElementById("belowInputButton").disabled = false;
+            }
+            else {
+                document.getElementById("belowInputButton").disabled = true;
+            }
         }
-        else {
-            document.getElementById("belowInputButton").disabled = true;
-        }
-    }
 
-    function ratePopupFunction() {
-        var x = document.getElementById("ratePopup");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
+        function ratePopupFunction() {
+            var x = document.getElementById("ratePopup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("checkoutPopup-hideShow");
             x.style.display = "block";
         }
-    }
 
-    function myFunction() {
-        var x = document.getElementById("checkoutPopup-hideShow");
-        x.style.display = "block";
-    }
-
-    function headerHideShow() {
-        var x = document.getElementById("info-popup");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+        function headerHideShow() {
+            var x = document.getElementById("info-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-    }
 
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-
-    // header popup variables
-    var z = document.getElementById("instructions");
-    var w = document.getElementById("contacts");
-
-    function instrucionMethod() {
-        z.style.display = "block";
-        w.style.display = "none";
-    }
-
-    function Contact() {
-        w.style.display = "block";
-        z.style.display = "none";
-    }
-
-    function logoutHideShow() {
-        var x = document.getElementById("logout-popup");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
         }
-    }
 
-    function done() {
-        var x = document.getElementById("checkoutPopup-hideShow");
-        x.style.display = "none";
-    }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
 
-    function checkInOut() {
+        // header popup variables
+        var z = document.getElementById("instructions");
+        var w = document.getElementById("contacts");
+
+        function instrucionMethod() {
+            z.style.display = "block";
+            w.style.display = "none";
+        }
+
+        function Contact() {
+            w.style.display = "block";
+            z.style.display = "none";
+        }
+
+        function logoutHideShow() {
+            var x = document.getElementById("logout-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function done() {
+            var x = document.getElementById("checkoutPopup-hideShow");
+            x.style.display = "none";
+        }
+
+        function checkInOut() {
+
+            if (typeof (Storage) !== "undefined") {
+                var local = localStorage.getItem("checkIn");
+                if (local) {
+                    if (document.getElementById("checkinCode").value == "54321") {
+                        localStorage.removeItem("checkIn");
+                        document.getElementById("checked-time-box").style.display = "none"
+                        document.getElementById("checkinCode").value = ""
+                        document.getElementById("checkinButton").innerHTML = "CHECK IN";
+                        document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
+                        document.getElementById("belowInputButton").disabled = true;
+                        document.getElementById("rateButton").disabled = true;
+                        if (document.getElementById("belowInputButton").classList.contains('alert')) {
+                            document.getElementById("belowInputButton").classList.remove('alert');
+                            document.getElementById("belowInputButton").classList.add('success');
+
+                        }
+                        else {
+                            document.getElementById("belowInputButton").classList.add('success');
+                        }
+
+                        if (document.getElementById("checkinButton").classList.contains('alert')) {
+                            document.getElementById("checkinButton").classList.remove('alert');
+                            document.getElementById("checkinButton").classList.add('success');
+
+                        }
+                        else {
+                            document.getElementById("checkinButton").classList.add('success');
+                        }
+
+                    } else {
+                        window.alert("Check-Out code is incorrect");
+                    }
+                }
+                else {
+                    if (document.getElementById("checkinCode").value == "12345") {
+                        localStorage.setItem("checkIn", "true");
+                        document.getElementById("checked-time-box").style.display = "block"
+                        document.getElementById("checkinCode").value = ""
+                        document.getElementById("checkinButton").innerHTML = "CHECK OUT";
+                        document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
+                        document.getElementById("belowInputButton").disabled = true;
+                        document.getElementById("rateButton").disabled = false;
+                        if (document.getElementById("belowInputButton").classList.contains('success')) {
+                            document.getElementById("belowInputButton").classList.remove('success');
+                            document.getElementById("belowInputButton").classList.add('alert');
+
+                        }
+                        else {
+                            document.getElementById("belowInputButton").classList.add('alert');
+                        }
+
+                        if (document.getElementById("checkinButton").classList.contains('success')) {
+                            document.getElementById("checkinButton").classList.remove('success');
+                            document.getElementById("checkinButton").classList.add('alert');
+
+                        }
+                        else {
+                            document.getElementById("checkinButton").classList.add('alert');
+                        }
+
+                    } else {
+                        window.alert("Check-In code is incorrect");
+                    }
+
+
+                }
+            }
+        }
 
         if (typeof (Storage) !== "undefined") {
             var local = localStorage.getItem("checkIn");
             if (local) {
-                if (document.getElementById("checkinCode").value == "54321") {
-                    localStorage.removeItem("checkIn");
-                    document.getElementById("checked-time-box").style.display = "none"
-                    document.getElementById("checkinCode").value = ""
-                    document.getElementById("checkinButton").innerHTML = "CHECK IN";
-                    document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
-                    document.getElementById("belowInputButton").disabled = true;
-                    document.getElementById("rateButton").disabled = true;
-                    if (document.getElementById("belowInputButton").classList.contains('alert')) {
-                        document.getElementById("belowInputButton").classList.remove('alert');
-                        document.getElementById("belowInputButton").classList.add('success');
+                document.getElementById("checkinButton").innerHTML = "CHECK OUT";
+                document.getElementById("checked-time-box").style.display = "block"
+                document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
+                document.getElementById("rateButton").disabled = false;
+                if (document.getElementById("belowInputButton").classList.contains('success')) {
+                    document.getElementById("belowInputButton").classList.remove('success');
+                    document.getElementById("belowInputButton").classList.add('alert');
 
-                    }
-                    else {
-                        document.getElementById("belowInputButton").classList.add('success');
-                    }
+                }
+                else {
+                    document.getElementById("belowInputButton").classList.add('alert');
+                }
 
-                    if (document.getElementById("checkinButton").classList.contains('alert')) {
-                        document.getElementById("checkinButton").classList.remove('alert');
-                        document.getElementById("checkinButton").classList.add('success');
+                if (document.getElementById("checkinButton").classList.contains('success')) {
+                    document.getElementById("checkinButton").classList.remove('success');
+                    document.getElementById("checkinButton").classList.add('alert');
 
-                    }
-                    else {
-                        document.getElementById("checkinButton").classList.add('success');
-                    }
-
-                } else {
-                    window.alert("Check-Out code is incorrect");
+                }
+                else {
+                    document.getElementById("checkinButton").classList.add('alert');
                 }
             }
             else {
-                if (document.getElementById("checkinCode").value == "12345") {
-                    localStorage.setItem("checkIn", "true");
-                    document.getElementById("checked-time-box").style.display = "block"
-                    document.getElementById("checkinCode").value = ""
-                    document.getElementById("checkinButton").innerHTML = "CHECK OUT";
-                    document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
-                    document.getElementById("belowInputButton").disabled = true;
-                    document.getElementById("rateButton").disabled = false;
-                    if (document.getElementById("belowInputButton").classList.contains('success')) {
-                        document.getElementById("belowInputButton").classList.remove('success');
-                        document.getElementById("belowInputButton").classList.add('alert');
+                document.getElementById("checkinButton").innerHTML = "CHECK IN";
+                document.getElementById("checked-time-box").style.display = "none"
+                document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
+                document.getElementById("rateButton").disabled = true;
+                if (document.getElementById("belowInputButton").classList.contains('alert')) {
+                    document.getElementById("belowInputButton").classList.remove('alert');
+                    document.getElementById("belowInputButton").classList.add('success');
 
-                    }
-                    else {
-                        document.getElementById("belowInputButton").classList.add('alert');
-                    }
-
-                    if (document.getElementById("checkinButton").classList.contains('success')) {
-                        document.getElementById("checkinButton").classList.remove('success');
-                        document.getElementById("checkinButton").classList.add('alert');
-
-                    }
-                    else {
-                        document.getElementById("checkinButton").classList.add('alert');
-                    }
-
-                } else {
-                    window.alert("Check-In code is incorrect");
+                }
+                else {
+                    document.getElementById("belowInputButton").classList.add('success');
                 }
 
+                if (document.getElementById("checkinButton").classList.contains('alert')) {
+                    document.getElementById("checkinButton").classList.remove('alert');
+                    document.getElementById("checkinButton").classList.add('success');
 
+                }
+                else {
+                    document.getElementById("checkinButton").classList.add('success');
+                }
             }
         }
-    }
 
-    if (typeof (Storage) !== "undefined") {
-        var local = localStorage.getItem("checkIn");
-        if (local) {
-            document.getElementById("checkinButton").innerHTML = "CHECK OUT";
-            document.getElementById("checked-time-box").style.display = "block"
-            document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
-            document.getElementById("rateButton").disabled = false;
-            if (document.getElementById("belowInputButton").classList.contains('success')) {
-                document.getElementById("belowInputButton").classList.remove('success');
-                document.getElementById("belowInputButton").classList.add('alert');
-
-            }
-            else {
-                document.getElementById("belowInputButton").classList.add('alert');
-            }
-
-            if (document.getElementById("checkinButton").classList.contains('success')) {
-                document.getElementById("checkinButton").classList.remove('success');
-                document.getElementById("checkinButton").classList.add('alert');
-
-            }
-            else {
-                document.getElementById("checkinButton").classList.add('alert');
-            }
-        }
-        else {
-            document.getElementById("checkinButton").innerHTML = "CHECK IN";
-            document.getElementById("checked-time-box").style.display = "none"
-            document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
-            document.getElementById("rateButton").disabled = true;
-            if (document.getElementById("belowInputButton").classList.contains('alert')) {
-                document.getElementById("belowInputButton").classList.remove('alert');
-                document.getElementById("belowInputButton").classList.add('success');
-
-            }
-            else {
-                document.getElementById("belowInputButton").classList.add('success');
-            }
-
-            if (document.getElementById("checkinButton").classList.contains('alert')) {
-                document.getElementById("checkinButton").classList.remove('alert');
-                document.getElementById("checkinButton").classList.add('success');
-
-            }
-            else {
-                document.getElementById("checkinButton").classList.add('success');
-            }
-        }
-    }
-
-</script>
+    </script>
 </body>
 
 </html>

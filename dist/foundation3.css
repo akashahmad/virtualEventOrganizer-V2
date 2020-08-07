@@ -121,6 +121,9 @@ common flex properties */
     .pad-10{
         padding: 10px;
     }
+    .pad-top-bottom-10{
+        padding: 10px 0px 10px 0px;
+    }
     /* ------------------------ */
     /* common css of checkbox */
     /* The container */
@@ -1125,6 +1128,9 @@ common flex properties */
 
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) {
+    .conclave-heading h6{
+        font-size: 11px!important;
+    }
     .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
         flex-direction: column!important;
     } 
@@ -1351,6 +1357,9 @@ common flex properties */
    
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .conclave-heading h6{
+        font-size: 11px!important;
+    }
     .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
         flex-direction: column!important;
     } 
@@ -1575,6 +1584,9 @@ common flex properties */
 
 
 @media (max-width: 684px) and (min-width: 480px) {
+    .conclave-heading h6{
+        font-size: 11px!important;
+    }
     .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
         flex-direction: column!important;
     } 
