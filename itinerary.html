@@ -256,15 +256,17 @@
                                 </div>
                             </div>
                             <div class="mainDiv-of-RightSIdeBox large-10">
-                                <a href="professionalEducation.html">
-                                    <div class="grid-x align-justify ">
+                                <div class="grid-x align-justify ">
+                                    <a href="professionalEducation.html">
                                         <div>
                                             <h5>Keynote That You Did Not Have To Register For</h5>
                                         </div>
-                                        <div onclick="removeCheckOut()" id="cancelImg">
-                                            <img src="images/cancel.png" width="15px" />
-                                        </div>
+                                    </a>
+                                    <div class="cursor-pointer" onclick="removeCheckOut()" id="cancelImg">
+                                        <img src="images/cancel.png" width="15px" />
                                     </div>
+                                </div>
+                                <a href="professionalEducation.html">
                                     <div>
                                         <p>This is the truncated description of the item. It will max out at two lines
                                             after
@@ -472,10 +474,11 @@
             }
         }
 
-        function removeCheckOut(){
+        function removeCheckOut() {
             var local = localStorage.getItem("checkIn");
-            if(local){
+            if (local) {
                 localStorage.removeItem("checkIn");
+                document.getElementById("cancelImg").style.display = "none"
             }
         }
 
