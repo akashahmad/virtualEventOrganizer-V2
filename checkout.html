@@ -149,7 +149,9 @@
                                     CHECK-IN<button>
                             </div>
                             <div class="buttonCommon-professionalPageDiv">
-                                <button class="large-10 medium-10 cursor-pointer secondary button small-12 ">RATE
+                                <button class="large-10 medium-10 cursor-pointer warning button small-12"
+                                onclick="ratePopupFunction()" id="rateButton"
+                                >RATE
                                     SESSION AND SPEAKERS<button>
                             </div>
 
@@ -338,7 +340,63 @@
         </div>
     </div>
 
-    <div id="result"></div>
+    <!-- popup -->
+    <div id="ratePopup">
+        <div class="seriresPopup-Main-Div ">
+            <div class="height-100 responsive-height-rate">
+                <div class="large-12 small-12 grid-x align-left pad-10">
+                    <a onclick="ratePopupFunction()"><img src="images/cancel.png" width="35px" /></a>
+                </div>
+                <div class="width-100 inside-seriresPopupmainDiv">
+                    <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv  min-max-data-popup">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                        <!-- 3rd box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup ">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                        <!-- 4th box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- buttons -->
+                    <div class="popupRating-button width-100 align-center grid-x">
+                        <div class="width-70 grid-x align-spaced">
+                            <div class="button-rankingDiv mrg-res-btn-div">
+                                <button href="#" class="button alert popup " onclick="ratePopupFunction()">CANCEL</button>
+                            </div>
+                            <div class="button-rankingDiv">
+                                <button onclick="ratePopupFunction()" class="button success popup">DONE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
 
         function codeButtonDisplableCheck(value) {
@@ -350,11 +408,18 @@
             }
         }
 
+        function ratePopupFunction() {
+            var x = document.getElementById("ratePopup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
         function myFunction() {
             var x = document.getElementById("checkoutPopup-hideShow");
             x.style.display = "block";
-
-
         }
 
         function headerHideShow() {
@@ -414,7 +479,7 @@
                         document.getElementById("checkinButton").innerHTML = "CHECK IN";
                         document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
                         document.getElementById("belowInputButton").disabled = true;
-
+                        document.getElementById("rateButton").disabled=true;
                         if (document.getElementById("belowInputButton").classList.contains('alert')) {
                             document.getElementById("belowInputButton").classList.remove('alert');
                             document.getElementById("belowInputButton").classList.add('success');
@@ -445,7 +510,7 @@
                         document.getElementById("checkinButton").innerHTML = "CHECK OUT";
                         document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
                         document.getElementById("belowInputButton").disabled = true;
-
+                        document.getElementById("rateButton").disabled=false;
                         if (document.getElementById("belowInputButton").classList.contains('success')) {
                             document.getElementById("belowInputButton").classList.remove('success');
                             document.getElementById("belowInputButton").classList.add('alert');
@@ -479,7 +544,7 @@
                 document.getElementById("checkinButton").innerHTML = "CHECK OUT";
                 document.getElementById("checked-time-box").style.display = "block"
                 document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
-
+                document.getElementById("rateButton").disabled=false;
                 if (document.getElementById("belowInputButton").classList.contains('success')) {
                     document.getElementById("belowInputButton").classList.remove('success');
                     document.getElementById("belowInputButton").classList.add('alert');
@@ -502,6 +567,7 @@
                 document.getElementById("checkinButton").innerHTML = "CHECK IN";
                 document.getElementById("checked-time-box").style.display = "none"
                 document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
+                document.getElementById("rateButton").disabled=true;
                 if (document.getElementById("belowInputButton").classList.contains('alert')) {
                     document.getElementById("belowInputButton").classList.remove('alert');
                     document.getElementById("belowInputButton").classList.add('success');
