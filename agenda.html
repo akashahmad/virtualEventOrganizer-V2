@@ -12,512 +12,517 @@
 
     <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
-        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+          href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+          integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
 
     <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
-        integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+          integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container-fluid main-div-ofpage-agenda">
-        <!-- header section starts from here -->
-        <div class="grid-x main-header-div">
-            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
+<div class="container-fluid main-div-ofpage-agenda">
+    <!-- header section starts from here -->
+    <div class="grid-x main-header-div">
+        <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
+            <div>
+                <img src="images/3m.png" width="40px"/>
+            </div>
+            <div class="conclave-heading">
+                <h6>COVID Conclave 2020</h6>
+            </div>
+        </div>
+        <div class="small-9 medium-9 large-9 ">
+            <div class="grid-x header justify-content-end">
+                <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
+                    <img src="images/question@3x.png" width="20px">
+                </div>
+                <!-- div for line -->
+                <div class="blankDiv-For-Line">
+                </div>
+                <!-- name -->
                 <div>
-                    <img src="images/3m.png" width="40px" />
+                    <span class="nameSpan">John Doe</span>
+                </div>
+                <!-- icon img -->
+                <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
+                    <img src="images/bitmap.png" width="40px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- logout-popup -->
+    <div class="grid-x large-12 align-left">
+        <div class="logout-box-div" id="logout-popup">
+            <button class="button success popupCheckoutBlack">Logout</button>
+        </div>
+    </div>
+    <!-- responsive header -->
+    <div class="responsive-header-mainDiv">
+        <div class="grid-x flex-justify-between flex-alignItem">
+            <div class="grid-x flex-alignItem">
+                <div>
+                    <img src="images/3m.png" width="40px"/>
                 </div>
                 <div class="conclave-heading">
                     <h6>COVID Conclave 2020</h6>
                 </div>
             </div>
-            <div class="small-9 medium-9 large-9 ">
-                <div class="grid-x header justify-content-end">
-                    <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="20px">
-                    </div>
-                    <!-- div for line -->
-                    <div class="blankDiv-For-Line">
-                    </div>
-                    <!-- name -->
+            <div class="mobile-nav-logo">
+                <div class="question-mark" onclick="headerHideShow()">
+                    <img src="images/question@3x.png" width="45px">
+                </div>
+                <div onclick="openNav()">
+                    <img src="images/hamburger.png" width="75%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
+        <div class="sidenav-hamburger">
+            <div class="height-100">
+                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                <div class="grid-x flex-alignItem flex-justify-center">
+                    <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                </div>
+                <div class="grid-x flex-alignItem flex-justify-center">
+                    <a href="#">Hello John Doe</a>
+                </div>
+                <div class="grid-x flex-alignItem flex-justify-center height-100">
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body section starts from hgere -->
+    <div class="mainDiv-ofBody">
+        <div class="below-header">
+            <!-- buttons -->
+            <div class="buttons-mainDiv">
+                <div class="small-12 medium-12 large-12 insideButtonsMainDiv">
+                    <!-- 1st button -->
                     <div>
-                        <span class="nameSpan">John Doe</span>
+                        <button class="itinaryButton cursor-pointer"
+                                onclick="window.location.href='itinerary.html?nosplash=true'">MY ITINERARY
+                        </button>
                     </div>
-                    <!-- icon img -->
-                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
-                        <img src="images/bitmap.png" width="40px">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- logout-popup -->
-        <div class="grid-x large-12 align-left">
-            <div class="logout-box-div" id="logout-popup">
-                <button class="button success popupCheckoutBlack">Logout</button>
-            </div>
-        </div>
-        <!-- responsive header -->
-        <div class="responsive-header-mainDiv">
-            <div class="grid-x flex-justify-between flex-alignItem">
-                <div class="grid-x flex-alignItem">
+                    <!-- 2nd button -->
                     <div>
-                        <img src="images/3m.png" width="40px" />
-                    </div>
-                    <div class="conclave-heading">
-                        <h6>COVID Conclave 2020</h6>
-                    </div>
-                </div>
-                <div class="mobile-nav-logo">
-                    <div class="question-mark" onclick="headerHideShow()">
-                        <img src="images/question@3x.png" width="45px">
-                    </div>
-                    <div onclick="openNav()">
-                        <img src="images/hamburger.png" width="75%">
+                        <button class="mainAgendaButton cursor-pointer" href="#">MAIN AGENDA</button>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
-            <div class="sidenav-hamburger">
-                <div class="height-100">
-                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-                    <div class="grid-x flex-alignItem flex-justify-center">
-                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+            <!-- days -->
+            <div class="mainDiv-of-header ">
+                <!-- dayes inside main div -->
+                <div class="small-12 medium-12 large-12 inside-mainDiv grid-padding-y grid-x">
+                    <!-- first date -->
+                    <div class="first-a">
+                        <a class="commonBox background-black color-white">All Days</a>
                     </div>
-                    <div class="grid-x flex-alignItem flex-justify-center">
-                        <a href="#">Hello John Doe</a>
+                    <div class="dateTime-responsive">
+                        <a class="commonBox color-black">TUE JUN 23 </a>
                     </div>
-                    <div class="grid-x flex-alignItem flex-justify-center height-100">
-                        <a href="#">Logout</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- body section starts from hgere -->
-        <div class="mainDiv-ofBody">
-            <div class="below-header">
-                <!-- buttons -->
-                <div class="buttons-mainDiv">
-                    <div class="small-12 medium-12 large-12 insideButtonsMainDiv">
-                        <!-- 1st button -->
-                        <div>
-                            <button class="itinaryButton cursor-pointer" onclick="window.location.href='itinerary.html?nosplash=true'" >MY ITINERARY</button>
-                        </div>
-                        <!-- 2nd button -->
-                        <div>
-                            <button class="mainAgendaButton cursor-pointer" href="#">MAIN AGENDA</button>
-                        </div>
+                    <div class="dateTime-responsive">
+                        <a class="commonBox color-black">WED JUNE 24</a>
                     </div>
                 </div>
-                <!-- days -->
-                <div class="mainDiv-of-header ">
-                    <!-- dayes inside main div -->
-                    <div class="small-12 medium-12 large-12 inside-mainDiv grid-padding-y grid-x">
-                        <!-- first date -->
-                        <div class="first-a">
-                            <a class="commonBox background-black color-white">All Days</a>
+                <!-- present data -->
+                <div class="mainDiv-of-dateAndSearch dataNone-mobo-res">
+                    <!-- date and search -->
+                    <div class="insideMainDiv-dateSearh large-12 grid-x align-justify">
+                        <!-- date -->
+                        <div>
+                            <p class="para"><b class="todayText">TODAY -</b>Tuesday June 23</p>
                         </div>
-                        <div class="dateTime-responsive">
-                            <a class="commonBox color-black">TUE JUN 23 </a>
-                        </div>
-                        <div class="dateTime-responsive">
-                            <a class="commonBox color-black">WED JUNE 24</a>
-                        </div>
-                    </div>
-                    <!-- present data -->
-                    <div class="mainDiv-of-dateAndSearch dataNone-mobo-res">
-                        <!-- date and search -->
-                        <div class="insideMainDiv-dateSearh large-12 grid-x align-justify">
-                            <!-- date -->
+                        <div class="grid-x">
                             <div>
-                                <p class="para"><b class="todayText">TODAY -</b>Tuesday June 23</p>
+                                <input placeholder="Search..."/>
                             </div>
-                            <div class="grid-x">
+                            <div class="filterImage " onclick="myFunction()">
+                                <img src="images/filter.png" width="16px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-x align-left">
+                        <div class="checkboex-btn-div" id="filter-checkbox" style="display: none;">
+                            <div class="filter-heading">
+                                <h5>Filter By Track</h5>
+                            </div>
+                            <div class="labelEthics">
+                                <label class="checkbox-div">Ethics
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="labelResponsibility">
+                                <label class="checkbox-div">Professional Responsibility
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="labelSales">
+                                <label class="checkbox-div">Sales
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="grid-x align-spaced main-button-div-popup">
                                 <div>
-                                    <input placeholder="Search..." />
+                                    <button class="button alert popupCheckoutgrey">Reset</button>
                                 </div>
-                                <div class="filterImage " onclick="myFunction()">
-                                    <img src="images/filter.png" width="16px">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-x align-left">
-                            <div class="checkboex-btn-div" id="filter-checkbox" style="display: none;">
-                                <div class="filter-heading">
-                                    <h5>Filter By Track</h5>
-                                </div>
-                                <div class="labelEthics">
-                                    <label class="checkbox-div">Ethics
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="labelResponsibility">
-                                    <label class="checkbox-div">Professional Responsibility
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="labelSales">
-                                    <label class="checkbox-div">Sales
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid-x align-spaced main-button-div-popup">
-                                    <div>
-                                        <button class="button alert popupCheckoutgrey" >Reset</button>
-                                    </div> 
-                                    <div>
-                                        <button class="button success popupCheckoutBlack" >Apply</button>
-                                    </div>
+                                <div>
+                                    <button class="button success popupCheckoutBlack">Apply</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- mobile-responsive -->
-                    <!-- input first then heading -->
-                    <!-- present data -->
-                    <div class="mainDiv-of-dateAndSearch mobo-datSearch">
-                        <!-- date and search -->
-                        <div class="insideMainDiv-dateSearh ">
-                            <!-- date -->
-                            <div class="filterImage-And-Input width-date-time-100">
-                                <div class="width-date-time-100">
-                                    <input class="width-date-time-100" placeholder="Search..." />
-                                </div>
-                                <div class="filterImage" onclick="myFunction()">
-                                    <img src="images/filter.png" width="16px">
-                                </div>
+                </div>
+                <!-- mobile-responsive -->
+                <!-- input first then heading -->
+                <!-- present data -->
+                <div class="mainDiv-of-dateAndSearch mobo-datSearch">
+                    <!-- date and search -->
+                    <div class="insideMainDiv-dateSearh ">
+                        <!-- date -->
+                        <div class="filterImage-And-Input width-date-time-100">
+                            <div class="width-date-time-100">
+                                <input class="width-date-time-100" placeholder="Search..."/>
                             </div>
-                        </div>
-                        <div class="grid-x align-left">
-                            <div class="checkboex-btn-div" id="filter-checkbox1" style="display: none;">
-                                <div class="filter-heading">
-                                    <h5>Filter By Track</h5>
-                                </div>
-                                <div class="labelEthics">
-                                    <label class="checkbox-div">Ethics
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="labelResponsibility">
-                                    <label class="checkbox-div">Professional Responsibility
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="labelSales">
-                                    <label class="checkbox-div">Sales
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="grid-x align-spaced main-button-div-popup">
-                                    <div>
-                                        <button class="button alert popupCheckoutgrey" >Reset</button>
-                                    </div>
-                                    <div>
-                                        <button class="button success popupCheckoutBlack " >Apply</button>
-                                    </div>
-                                </div>
+                            <div class="filterImage" onclick="myFunction()">
+                                <img src="images/filter.png" width="16px">
                             </div>
-                        </div>
-                        <div>
-                            <p class="para-mobo-rsponsive"><b class="todayText">TODAY -</b>Tuesday June 23</p>
                         </div>
                     </div>
-                    <!-- boxes -->
-                    <!-- main div of boxes -->
+                    <div class="grid-x align-left">
+                        <div class="checkboex-btn-div" id="filter-checkbox1" style="display: none;">
+                            <div class="filter-heading">
+                                <h5>Filter By Track</h5>
+                            </div>
+                            <div class="labelEthics">
+                                <label class="checkbox-div">Ethics
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="labelResponsibility">
+                                <label class="checkbox-div">Professional Responsibility
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="labelSales">
+                                <label class="checkbox-div">Sales
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="grid-x align-spaced main-button-div-popup">
+                                <div>
+                                    <button class="button alert popupCheckoutgrey">Reset</button>
+                                </div>
+                                <div>
+                                    <button class="button success popupCheckoutBlack ">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div>
-                        <!-- inside boxes main div -->
-                        <div class="background-pink background-Box borderRaius-box grid-x large-12 small-12">
-                            <!-- left side -->
-                            <div class="insideBox large-2">
-                                <div class="leftSide-ofBox">
-                                    <div class="time-main-Div">
-                                        <h6 class="nine-Am">9:00 AM </h6>
-                                        <h6 class="padding-bottom-dots">..</h6>
-                                        <h6>10:00 AM</h6>
-                                    </div>
-                                    <div>
-                                        <h5>MST</h5>
-                                    </div>
+                        <p class="para-mobo-rsponsive"><b class="todayText">TODAY -</b>Tuesday June 23</p>
+                    </div>
+                </div>
+                <!-- boxes -->
+                <!-- main div of boxes -->
+                <div>
+                    <!-- inside boxes main div -->
+                    <div class="background-pink background-Box borderRaius-box grid-x large-12 small-12">
+                        <!-- left side -->
+                        <div class="insideBox large-2">
+                            <div class="leftSide-ofBox">
+                                <div class="time-main-Div">
+                                    <h6 class="nine-Am">9:00 AM </h6>
+                                    <h6 class="padding-bottom-dots">..</h6>
+                                    <h6>10:00 AM</h6>
                                 </div>
-                            </div>
-                            <div class="mainDiv-of-RightSIdeBox large-10">
-                                <a href="professionalEducation.html">
-                                    <div>
-                                        <h5>Keynote That You Did Not Have To Register For</h5>
-                                    </div>
-                                    <div>
-                                        <p>This is the truncated description of the item. It will max out at two
-                                            lines
-                                            after
-                                            which the user can click the “more” link and pop a full box…</p>
-                                    </div>
-                                    <div>
-                                        <h6>Ethics</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- 2nd one -->
-                        <div class="background-blue-color background-Box borderRaius-box grid-x large-12 small-12">
-                            <!-- left side -->
-                            <div class="insideBox cursor-pointer large-2">
-                                <div class="leftSide-ofBox" onclick="rateFunction()">
-                                    <h4>RATE</h4>
-                                    <!-- <img class="tickImage" src="images/whit-tick.png" width="35px" /> -->
-                                </div>
-                            </div>
-                            <div class="mainDiv-of-RightSIdeBox large-10 ">
-                                <a href="professionalEducation.html">
-                                    <div>
-                                        <h5>How to be bored in a mask meeting.</h5>
-                                    </div>
-                                    <div>
-                                        <p>There will be a new field in the agenda settings that allows for an
-                                            abbreviated
-                                            description to be entered. That character limit will be …</p>
-                                    </div>
-                                    <div>
-                                        <h6>Professional Responsibility</h6>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- 3rd one  -->
-                        <div class="headingDiv-BelowBlueBox">
-                            <h5>Wednesday June 24</h5>
-                        </div>
-                        <div class="background-yellow background-Box borderRaius-box grid-x large-12 small-12">
-                            <!-- left side -->
-                            <div class="insideBox large-2">
-                                <div class="leftSide-ofBox">
-                                    <div class="time-main-Div">
-                                        <h6 class="nine-Am">9:00 AM </h6>
-                                        <h6 class="padding-bottom-dots">..</h6>
-                                        <h6>10:00 AM</h6>
-                                    </div>
+                                <div>
                                     <h5>MST</h5>
                                 </div>
                             </div>
-                            <div class="mainDiv-of-RightSIdeBox large-10">
-                                <a href="professionalEducation.html">
-                                    <div class="stars">
-                                        <div>
-                                            <h5>This happens to be on MY itinerary. Thus marked.</h5>
-                                        </div>
-                                        <div>
-                                            <img src="./images/starWhite.png" width="25px">
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <p>This is the truncated description of the item. It will max out at two
-                                            lines
-                                            after
-                                            which the user can click the “more” link and pop a full box…</p>
-                                    </div>
-                                    <div>
-                                        <h6>Professional Responsibility</h6>
-                                    </div>
-                                </a>
-                            </div>
                         </div>
-                        <!-- ends here -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- rate series popup -->
-    <div id="rateFunction">
-        <div class="seriresPopup-Main-Div ">
-            <div class="height-100 responsive-height-rate">
-                <div class="large-12 small-12 grid-x align-left pad-10">
-                    <a onclick="rateFunction()"><img src="images/cancel.png" width="35px" /></a>
-                </div>
-                <div class="width-100 inside-seriresPopupmainDiv">
-                    <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
-                        <div class="inside-main-div large-4 small-12">
-                            <!-- left side -->
-                            <div class="left-side-MainDiv min-max-data-popup">
-                                <!-- add data here -->
-                            </div>
-                        </div>
-
-                        <!-- right side -->
-                        <div class="inside-main-div large-4 small-12">
-                            <!-- left side -->
-                            <div class="left-side-MainDiv  min-max-data-popup">
-                                <!-- add data here -->
-                            </div>
-                        </div>
-
-                        <!-- 3rd box -->
-                        <div class="inside-main-div large-4 small-12">
-                            <!-- left side -->
-                            <div class="left-side-MainDiv min-max-data-popup ">
-                                <!-- add data here -->
-                            </div>
-                        </div>
-
-                        <!-- 4th box -->
-                        <div class="inside-main-div large-4 small-12">
-                            <!-- left side -->
-                            <div class="left-side-MainDiv min-max-data-popup">
-                                <!-- add data here -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- buttons -->
-                    <div class="popupRating-button width-100 align-center grid-x">
-                        <div class="width-70 grid-x align-spaced">
-                            <div class="button-rankingDiv mrg-res-btn-div">
-                                <a href="#" class="button alert popup " onclick="rateFunction()">CANCEL</a>
-                            </div>
-                            <div class="button-rankingDiv">
-                                <a class="button success popup" onclick="rateFunction()">DONE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- header info popup -->
-    <!-- header info popup -->
-    <div id="info-popup">
-        <div class="info-popup-mainDiv">
-            <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
-                <div class="inside-mainDiv width-60">
-                    <div class="grid-x align-justify mobo-header-responsive">
-                        <div class="heading-info-popup ">
-                            <div class="instruction">
-                                <h5 onclick="instrucionMethod()"> Instructions </h5>
-                            </div>
-                            <div class="contact">
-                                <h5 onclick="Contact()"> Contact </h5>
-                            </div>
-                        </div>
-                        <div class="para-popup width-75" id="instructions">
-                            <ul>
-                                <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas.</li>
-                                <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-                                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</li>
-                                <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                    doloremque laudantium</li>
-                            </ul>
-                        </div>
-                        <!-- contact section -->
-                        <div class="para-popup width-75 grid-x" id="contacts">
-                            <div class="grid-x">
-                                <div class="contact-section-div-headeing ">
-                                    <ul>
-                                        <ul class="grid-x">
-                                            <li>Name</li>
-                                            <li class="data-below-head">John Doe</li>
-                                        </ul>
-                                        <ul class="grid-x ">
-                                            <li>Email</li>
-                                            <li class="data-below-head">johndoe@gmail.com</li>
-                                        </ul>
-                                        <ul class="grid-x ">
-                                            <li>Contact Number</li>
-                                            <li class="data-below-head">+00 123 4567 890</li>
-                                        </ul>
-                                        <ul class="grid-x ">
-                                            <li>Address</li>
-                                            <li class="data-below-head">Green Street Holigan, NY, USA,.</li>
-                                        </ul>
-                                    </ul>
+                        <div class="mainDiv-of-RightSIdeBox large-10">
+                            <a href="professionalEducation.html">
+                                <div>
+                                    <h5>Keynote That You Did Not Have To Register For</h5>
                                 </div>
-                            </div>
+                                <div>
+                                    <p>This is the truncated description of the item. It will max out at two
+                                        lines
+                                        after
+                                        which the user can click the “more” link and pop a full box…</p>
+                                </div>
+                                <div>
+                                    <h6>Ethics</h6>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <!-- button -->
-                    <div class="grid-x flex-justify-end">
-                        <div class="info-button">
-                            <a href="#" class="button alert popup " onclick="headerHideShow()">Close</a>
+                    <!-- 2nd one -->
+                    <div class="background-blue-color background-Box borderRaius-box grid-x large-12 small-12">
+                        <!-- left side -->
+                        <div class="insideBox cursor-pointer large-2">
+                            <div class="leftSide-ofBox" onclick="rateFunction()">
+                                <h4>RATE</h4>
+                                <!-- <img class="tickImage" src="images/whit-tick.png" width="35px" /> -->
+                            </div>
+                        </div>
+                        <div class="mainDiv-of-RightSIdeBox large-10 ">
+                            <a href="professionalEducation.html">
+                                <div>
+                                    <h5>How to be bored in a mask meeting.</h5>
+                                </div>
+                                <div>
+                                    <p>There will be a new field in the agenda settings that allows for an
+                                        abbreviated
+                                        description to be entered. That character limit will be …</p>
+                                </div>
+                                <div>
+                                    <h6>Professional Responsibility</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3rd one  -->
+                    <div class="headingDiv-BelowBlueBox">
+                        <h5>Wednesday June 24</h5>
+                    </div>
+                    <div class="background-yellow background-Box borderRaius-box grid-x large-12 small-12">
+                        <!-- left side -->
+                        <div class="insideBox large-2">
+                            <div class="leftSide-ofBox">
+                                <div class="time-main-Div">
+                                    <h6 class="nine-Am">9:00 AM </h6>
+                                    <h6 class="padding-bottom-dots">..</h6>
+                                    <h6>10:00 AM</h6>
+                                </div>
+                                <h5>MST</h5>
+                            </div>
+                        </div>
+                        <div class="mainDiv-of-RightSIdeBox large-10">
+                            <a href="professionalEducation.html">
+                                <div class="stars">
+                                    <div>
+                                        <h5>This happens to be on MY itinerary. Thus marked.</h5>
+                                    </div>
+                                    <div>
+                                        <img src="./images/starWhite.png" width="25px">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>This is the truncated description of the item. It will max out at two
+                                        lines
+                                        after
+                                        which the user can click the “more” link and pop a full box…</p>
+                                </div>
+                                <div>
+                                    <h6>Professional Responsibility</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- ends here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- rate series popup -->
+<div id="rateFunction">
+    <div class="seriresPopup-Main-Div ">
+        <div class="height-100 responsive-height-rate">
+            <div class="large-12 small-12 grid-x align-left pad-10">
+                <a onclick="rateFunction()"><img src="images/cancel.png" width="35px"/></a>
+            </div>
+            <div class="width-100 inside-seriresPopupmainDiv">
+                <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
+                    <div class="inside-main-div large-4 small-12">
+                        <!-- left side -->
+                        <div class="left-side-MainDiv min-max-data-popup">
+                            <!-- add data here -->
+                        </div>
+                    </div>
+
+                    <!-- right side -->
+                    <div class="inside-main-div large-4 small-12">
+                        <!-- left side -->
+                        <div class="left-side-MainDiv  min-max-data-popup">
+                            <!-- add data here -->
+                        </div>
+                    </div>
+
+                    <!-- 3rd box -->
+                    <div class="inside-main-div large-4 small-12">
+                        <!-- left side -->
+                        <div class="left-side-MainDiv min-max-data-popup ">
+                            <!-- add data here -->
+                        </div>
+                    </div>
+
+                    <!-- 4th box -->
+                    <div class="inside-main-div large-4 small-12">
+                        <!-- left side -->
+                        <div class="left-side-MainDiv min-max-data-popup">
+                            <!-- add data here -->
+                        </div>
+                    </div>
+                </div>
+                <!-- buttons -->
+                <div class="popupRating-button width-100 align-center grid-x">
+                    <div class="width-70 grid-x align-spaced">
+                        <div class="button-rankingDiv mrg-res-btn-div">
+                            <a href="#" class="button alert popup " onclick="rateFunction()">CANCEL</a>
+                        </div>
+                        <div class="button-rankingDiv">
+                            <a class="button success popup" onclick="rateFunction()">DONE</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- </div> -->
+</div>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("filter-checkbox");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-            var y = document.getElementById("filter-checkbox1");
-            if (y.style.display === "block") {
-                y.style.display = "none";
-            } else {
-                y.style.display = "block";
-            }
+<!-- header info popup -->
+<!-- header info popup -->
+<div id="info-popup">
+    <div class="info-popup-mainDiv">
+        <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
+            <div class="inside-mainDiv width-60">
+                <div class="grid-x align-justify mobo-header-responsive">
+                    <div class="heading-info-popup ">
+                        <div class="instruction">
+                            <h5 onclick="instrucionMethod()"> Instructions </h5>
+                        </div>
+                        <div class="contact">
+                            <h5 onclick="Contact()"> Contact </h5>
+                        </div>
+                    </div>
+                    <div class="para-popup width-75" id="instructions">
+                        <ul>
+                            <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                            </li>
+                            <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                            </li>
+                            <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque laudantium
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- contact section -->
+                    <div class="para-popup width-75 grid-x" id="contacts">
+                        <div class="grid-x">
+                            <div class="contact-section-div-headeing ">
+                                <ul>
+                                    <ul class="grid-x">
+                                        <li>Name</li>
+                                        <li class="data-below-head">John Doe</li>
+                                    </ul>
+                                    <ul class="grid-x ">
+                                        <li>Email</li>
+                                        <li class="data-below-head">johndoe@gmail.com</li>
+                                    </ul>
+                                    <ul class="grid-x ">
+                                        <li>Contact Number</li>
+                                        <li class="data-below-head">+00 123 4567 890</li>
+                                    </ul>
+                                    <ul class="grid-x ">
+                                        <li>Address</li>
+                                        <li class="data-below-head">Green Street Holigan, NY, USA,.</li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- button -->
+                <div class="grid-x flex-justify-end">
+                    <div class="info-button">
+                        <a href="#" class="button alert popup " onclick="headerHideShow()">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- </div> -->
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("filter-checkbox");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
-        function rateFunction() {
-            var x = document.getElementById("rateFunction");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+        var y = document.getElementById("filter-checkbox1");
+        if (y.style.display === "block") {
+            y.style.display = "none";
+        } else {
+            y.style.display = "block";
         }
-
-        function headerHideShow() {
-            var x = document.getElementById("info-popup");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+    }
+    function rateFunction() {
+        var x = document.getElementById("rateFunction");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
+    }
 
-        function logoutHideShow() {
-            var x = document.getElementById("logout-popup");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+    function headerHideShow() {
+        var x = document.getElementById("info-popup");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
+    }
 
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "100%";
+    function logoutHideShow() {
+        var x = document.getElementById("logout-popup");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
+    }
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
 
-        // header popup variables
-        var z = document.getElementById("instructions");
-        var w = document.getElementById("contacts");
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 
-        function instrucionMethod() {
-            z.style.display = "block";
-            w.style.display = "none";
-        }
+    // header popup variables
+    var z = document.getElementById("instructions");
+    var w = document.getElementById("contacts");
 
-        function Contact() {
-            w.style.display = "block";
-            z.style.display = "none";
-        }
+    function instrucionMethod() {
+        z.style.display = "block";
+        w.style.display = "none";
+    }
 
-    </script>
+    function Contact() {
+        w.style.display = "block";
+        z.style.display = "none";
+    }
+
+</script>
 
 
 </body>
