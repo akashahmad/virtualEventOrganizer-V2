@@ -198,18 +198,26 @@ common flex properties */
 #agenda-page-block{
     display: none;
 }
-.main-div-ofpage-agenda .row{
+/* .main-div-ofpage-agenda .row{
     margin: 0px;
     max-width: 100%;
-    }
+    } */
     .main-div-ofpage-agenda .main-header-div{
-    padding: 10px 8px 10px 8px;
+    padding: 10px 8px 10px 12px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
     background-color: #ffffff;
     }
-    .main-div-ofpage-agenda .main-header-div .header .row{
-    margin: 0px;
+    .conclave-heading{
+        padding: 4px 5px 0px 5px;
     }
+    .conclave-heading h6{
+        margin: 0px;
+        font-size: 20px;
+        color: #5e5e5e;
+    }
+    /* .main-div-ofpage-agenda .main-header-div .header .row{
+    margin: 0px;
+    } */
     .main-div-ofpage-agenda .main-header-div .justify-content-end{
     display: flex;
     justify-content: flex-end;
@@ -235,6 +243,17 @@ common flex properties */
     }
     .main-div-ofpage-agenda .mainDiv-ofBody .below-header{
     width: 85%;
+    }
+
+    .logout-box-div{
+        background-color: #fff;
+        padding: 14px 30px 0px 30px;
+        position: absolute;
+        margin: 2px;
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13)
+    }
+    #logout-popup{
+        display: none;
     }
     /* below header  */
     
@@ -430,10 +449,12 @@ common flex properties */
     color: #fff;
     font-size: 16px;
     font-weight: bold;
+    margin: 0px;
     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     }
     .below-header .buttons-mainDiv .mainAgendaButton1{
     background-color: #d5d5d5;
+    margin: 0px;
     padding: 12px 15px 12px 15px;
     border-top-right-radius:10px ;
     border-bottom-right-radius:10px ;
@@ -482,6 +503,23 @@ common flex properties */
         font-size: 16px;
         font-weight: 500;
     }
+    .popup-outside-checkout-btn .alert.button{
+        background: #cc0000!important;
+        color: white!important;
+        border-radius: 8px!important;
+        border: 1px solid #cc0000!important;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .popup-inside-checkout-btn .alert.button{
+        background: #cc0000!important;
+        color: white!important;
+        border-radius: 8px!important;
+        border: 1px solid #cc0000!important;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0px 10px 0px;
+    }
     .success.button{
         background: #b5e5b0!important;
         color: white!important;
@@ -500,6 +538,14 @@ common flex properties */
     }
     /* checkout button */
     .primary.button{
+        background: #17a21c!important;
+        color: white!important;
+        border-radius: 8px!important;
+        border: 1px solid #17a21c!important;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .success.button{
         background: #17a21c!important;
         color: white!important;
         border-radius: 8px!important;
@@ -669,17 +715,17 @@ common flex properties */
     .mainDiv-of-dateAndSearch .labelEthics label{
         font-size: 14px;
         font-weight: normal;
-        color: #fd43a1;
+        color: #535353;
     }
     .mainDiv-of-dateAndSearch .labelResponsibility label{
         font-size: 14px;
         font-weight: normal;
-        color: #56c1fd;
+        color: #535353;
     }
     .mainDiv-of-dateAndSearch .labelSales label{
         font-size: 14px;
         font-weight: normal;
-        color: #feae2a;
+        color: #535353;
     }
     .main-button-div-popup{
         padding: 25px 0px 10px 0px;
@@ -771,6 +817,14 @@ common flex properties */
          font-size: 16px;
          font-weight: 500px;
    }
+   .success.button.checkInOut{
+    font-size: 16px!important;
+    color: #fff!important;
+    border-radius: 4px!important;
+    margin: 10px 0px 10px 0px!important;
+    background-color: #17a21c!important;
+    /* padding: 10px 20px 10px 20px!important;        */
+}
    .button.alert.popup{
     background-color:#cc0000!important;
     border: 1px solid #cc0000!important;
@@ -1021,7 +1075,7 @@ common flex properties */
         box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
         background-color: #ffffff;
     }
-
+    
     /* sidenavc css */
     .main-hamburger-div-sidenav{
         transition: 0.5s;       

@@ -26,12 +26,17 @@
 <body>
     <div class="container-fluid main-div-ofpage-agenda">
         <!-- header section starts from here     -->
-        <div class="row main-header-div">
-            <div class="small-3 medium-3 large-3 columns">
-                <img src="images/logo2.jpg" width="280px" height="40px">
+        <div class="grid-x main-header-div">
+            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
+                <div>
+                    <img src="images/3m.png" width="40px" />
+                </div>
+                <div class="conclave-heading">
+                    <h6>COVID Conclave 2020</h6>
+                </div>
             </div>
-            <div class="small-9 medium-9 large-9 columns">
-                <div class="row header justify-content-end">
+            <div class="small-9 medium-9 large-9 ">
+                <div class="grid-x header justify-content-end">
                     <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
                         <img src="images/question@3x.png" width="20px">
                     </div>
@@ -43,17 +48,28 @@
                         <span class="nameSpan">John Doe</span>
                     </div>
                     <!-- icon img -->
-                    <div class="imgDiv">
+                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
                         <img src="images/bitmap.png" width="40px">
                     </div>
                 </div>
             </div>
         </div>
+        <!-- logout-popup -->
+        <div class="grid-x large-12 align-left">
+            <div class="logout-box-div" id="logout-popup">
+                <button class="button success popupCheckoutBlack">Logout</button>
+            </div>
+        </div>
         <!-- responsive header -->
         <div class="responsive-header-mainDiv">
             <div class="flex-row flex-justify-between flex-alignItem">
-                <div>
-                    <img src="images/logo2.jpg" width="58%">
+                <div class="grid-x flex-alignItem">
+                    <div>
+                        <img src="images/3m.png" width="40px" />
+                    </div>
+                    <div class="conclave-heading">
+                        <h6>COVID Conclave 2020</h6>
+                    </div>
                 </div>
                 <div class="mobile-nav-logo">
                     <div class="question-mark" onclick="headerHideShow()">
@@ -95,12 +111,13 @@
                     <!-- button -->
                     <div class="large-4 medium-6 small-12">
                         <div class=" buttonCommon-professionalPageDiv grid-x">
-                            <a href="itinerary.html?nosplash=true" class=" large-10 medium-10 small-12 ">
+                            <button onclick="window.location.href='itinerary.html?nosplash=true'"
+                                class=" large-10 small-12 medium-10">
                                 <div class="large-12 small-12 medium-12 clear button">
                                     <img class="backArrow" src="images/backArrow.png" width="30" />
                                     <span>BACK TO ITINERARY</span>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="timing-section-div large-8 medium-8 small-12 grid-x flex-alignItem">
@@ -126,9 +143,9 @@
                                 <button type="button" class="large-10 medium-10 cursor-pointer alert button small-12">
                                     JOIN SESSION<button>
                             </div>
-                            <div class=" buttonCommon-professionalPageDiv ">
-                                <button onclick="myFunction()"
-                                    class=" large-10 medium-10 cursor-pointer primary button small-12">
+                            <div class=" buttonCommon-professionalPageDiv popup-outside-checkout-btn">
+                                <button onclick="myFunction()" id="checkinButton"
+                                    class=" large-10 medium-10 cursor-pointer success button small-12">
                                     CHECK-IN<button>
                             </div>
                             <div class="buttonCommon-professionalPageDiv">
@@ -223,27 +240,34 @@
                                     <h5>Check In/Out</h5>
                                 </div>
                                 <div class="flex-row flex-justify-center main-div-of-popup-time">
-                                    <div class="width-70 time-of-popup flex-row flex-alignItem flex-justify-center">
-                                        <p>10:55 am MST</p>
+                                    <div class="width-70 time-of-popup flex-row flex-alignItem flex-justify-center text-center"
+                                        id="checked-time-box">
+                                        <p>Checked In: 10:55 AM MST</p>
                                     </div>
                                 </div>
                                 <div class="mainDiv-of-input-button-popup-checkout">
                                     <div class="input-checout-popup flex-row flex-alignItem flex-justify-center">
-                                        <input class="width-70 " placeholder="Check-Out code" />
+                                        <input class="width-70 " placeholder="Check-In Code" id="checkinCode"
+                                            onkeyup="codeButtonDisplableCheck(this.value)" />
                                     </div>
-                                    <div class="button-checout-popup flex-row flex-alignItem flex-justify-center">
-                                        <button class="width-70 ">Check Out</button>
+                                    <!-- button-checout-popup -->
+                                    <div class=" grid-x flex-alignItem align-center popup-inside-checkout-btn">
+                                        <button onclick="checkInOut()" disabled
+                                            class="large-8 success button checkInOut" id="belowInputButton">Check
+                                            In</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="width-100 flex-row flex-justify-center">
                             <div class="grid-x align-justify buttonsdiv-cover">
-                                <div>
+                                <!-- <div>
                                     <a href="#" class="button alert popupCheckoutgrey" onclick="myFunction()">Cancel</a>
-                                </div>
-                                <div  class="mrg-res-btn-div">
-                                    <a href="rateSession.html" class="button success popupCheckoutBlack  ">Done</a>
+                                </div> -->
+                                <div class="mrg-res-btn-div">
+                                    <button class="button success popupCheckoutBlack" onclick="done()">Done</button>
+
+                                    <!-- onclick="window.location.href='rateSession.html'" -->
                                 </div>
                             </div>
                         </div>
@@ -305,7 +329,7 @@
                         <!-- button -->
                         <div class="grid-x flex-justify-end">
                             <div class="info-button">
-                                <a href="#" class="button alert popup " onclick="headerHideShow()">Close</a>
+                                <button class="button alert popup " onclick="headerHideShow()">Close</button>
                             </div>
                         </div>
                     </div>
@@ -313,14 +337,24 @@
             </div>
         </div>
     </div>
+
+    <div id="result"></div>
     <script>
+
+        function codeButtonDisplableCheck(value) {
+            if (value.length !== 0) {
+                document.getElementById("belowInputButton").disabled = false;
+            }
+            else {
+                document.getElementById("belowInputButton").disabled = true;
+            }
+        }
+
         function myFunction() {
             var x = document.getElementById("checkoutPopup-hideShow");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+            x.style.display = "block";
+
+
         }
 
         function headerHideShow() {
@@ -352,6 +386,140 @@
         function Contact() {
             w.style.display = "block";
             z.style.display = "none";
+        }
+
+        function logoutHideShow() {
+            var x = document.getElementById("logout-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function done() {
+            var x = document.getElementById("checkoutPopup-hideShow");
+            x.style.display = "none";
+        }
+
+        function checkInOut() {
+
+            if (typeof (Storage) !== "undefined") {
+                var local = localStorage.getItem("checkIn");
+                if (local) {
+                    if (document.getElementById("checkinCode").value == "54321") {
+                        localStorage.removeItem("checkIn");
+                        document.getElementById("checked-time-box").style.display = "none"
+                        document.getElementById("checkinCode").value = ""
+                        document.getElementById("checkinButton").innerHTML = "CHECK IN";
+                        document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
+                        document.getElementById("belowInputButton").disabled = true;
+
+                        if (document.getElementById("belowInputButton").classList.contains('alert')) {
+                            document.getElementById("belowInputButton").classList.remove('alert');
+                            document.getElementById("belowInputButton").classList.add('success');
+
+                        }
+                        else {
+                            document.getElementById("belowInputButton").classList.add('success');
+                        }
+
+                        if (document.getElementById("checkinButton").classList.contains('alert')) {
+                            document.getElementById("checkinButton").classList.remove('alert');
+                            document.getElementById("checkinButton").classList.add('success');
+
+                        }
+                        else {
+                            document.getElementById("checkinButton").classList.add('success');
+                        }
+
+                    } else {
+                        window.alert("Check-Out code is incorrect");
+                    }
+                }
+                else {
+                    if (document.getElementById("checkinCode").value == "12345") {
+                        localStorage.setItem("checkIn", "true");
+                        document.getElementById("checked-time-box").style.display = "block"
+                        document.getElementById("checkinCode").value = ""
+                        document.getElementById("checkinButton").innerHTML = "CHECK OUT";
+                        document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
+                        document.getElementById("belowInputButton").disabled = true;
+
+                        if (document.getElementById("belowInputButton").classList.contains('success')) {
+                            document.getElementById("belowInputButton").classList.remove('success');
+                            document.getElementById("belowInputButton").classList.add('alert');
+
+                        }
+                        else {
+                            document.getElementById("belowInputButton").classList.add('alert');
+                        }
+
+                        if (document.getElementById("checkinButton").classList.contains('success')) {
+                            document.getElementById("checkinButton").classList.remove('success');
+                            document.getElementById("checkinButton").classList.add('alert');
+
+                        }
+                        else {
+                            document.getElementById("checkinButton").classList.add('alert');
+                        }
+
+                    } else {
+                        window.alert("Check-In code is incorrect");
+                    }
+
+
+                }
+            }
+        }
+
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                document.getElementById("checkinButton").innerHTML = "CHECK OUT";
+                document.getElementById("checked-time-box").style.display = "block"
+                document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
+
+                if (document.getElementById("belowInputButton").classList.contains('success')) {
+                    document.getElementById("belowInputButton").classList.remove('success');
+                    document.getElementById("belowInputButton").classList.add('alert');
+
+                }
+                else {
+                    document.getElementById("belowInputButton").classList.add('alert');
+                }
+
+                if (document.getElementById("checkinButton").classList.contains('success')) {
+                    document.getElementById("checkinButton").classList.remove('success');
+                    document.getElementById("checkinButton").classList.add('alert');
+
+                }
+                else {
+                    document.getElementById("checkinButton").classList.add('alert');
+                }
+            }
+            else {
+                document.getElementById("checkinButton").innerHTML = "CHECK IN";
+                document.getElementById("checked-time-box").style.display = "none"
+                document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
+                if (document.getElementById("belowInputButton").classList.contains('alert')) {
+                    document.getElementById("belowInputButton").classList.remove('alert');
+                    document.getElementById("belowInputButton").classList.add('success');
+
+                }
+                else {
+                    document.getElementById("belowInputButton").classList.add('success');
+                }
+
+                if (document.getElementById("checkinButton").classList.contains('alert')) {
+                    document.getElementById("checkinButton").classList.remove('alert');
+                    document.getElementById("checkinButton").classList.add('success');
+
+                }
+                else {
+                    document.getElementById("checkinButton").classList.add('success');
+                }
+            }
         }
 
     </script>

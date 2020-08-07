@@ -25,12 +25,17 @@
 <body>
     <div class="container-fluid main-div-ofpage-agenda">
         <!-- header section starts from here     -->
-        <div class="row main-header-div">
-            <div class="small-3 medium-3 large-3 columns">
-                <img src="images/logo2.jpg" width="280px" height="40px">
+        <div class="grid-x main-header-div">
+            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
+                <div>
+                    <img src="images/3m.png" width="40px" />
+                </div>
+                <div class="conclave-heading">
+                    <h6>COVID Conclave 2020</h6>
+                </div>
             </div>
-            <div class="small-9 medium-9 large-9 columns">
-                <div class="row header justify-content-end">
+            <div class="small-9 medium-9 large-9">
+                <div class="grid-x header justify-content-end">
                     <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
                         <img src="images/question@3x.png" width="20px">
                     </div>
@@ -42,17 +47,28 @@
                         <span class="nameSpan">John Doe</span>
                     </div>
                     <!-- icon img -->
-                    <div class="imgDiv">
-                        <img src="images/bitmap.png" width="40px">
+                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
+                        <img src="images/bitmap.png" width="40px" >
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- logout-popup -->
+        <div class="grid-x large-12 align-left">
+            <div class="logout-box-div" id="logout-popup">
+                <button class="button success popupCheckoutBlack">Logout</button>
             </div>
         </div>
         <!-- responsive header -->
         <div class="responsive-header-mainDiv ">
             <div class="flex-row flex-justify-between flex-alignItem">
-                <div>
-                    <img src="images/logo2.jpg" width="58%">
+                <div class="grid-x flex-alignItem">
+                    <div>
+                        <img src="images/3m.png" width="40px" />
+                    </div>
+                    <div class="conclave-heading">
+                        <h6>COVID Conclave 2020</h6>
+                    </div>
                 </div>
                 <div class="mobile-nav-logo">
                     <div class="question-mark" onclick="headerHideShow()">
@@ -95,12 +111,13 @@
                     <!-- button -->
                     <div class="large-4 small-12 medium-6">
                         <div class=" buttonCommon-professionalPageDiv grid-x">
-                            <a href="itinerary.html?nosplash=true" class=" large-10 medium-10 small-12 ">
+                            <button onclick="window.location.href='itinerary.html?nosplash=true'"
+                                class=" large-10 small-12 medium-10">
                                 <div class="large-12 small-12 medium-12 clear button">
                                     <img class="backArrow" src="images/backArrow.png" width="30" />
                                     <span>BACK TO ITINERARY</span>
                                 </div>
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="large-8 timing-section-div medium-8 small-12 grid-x flex-alignItem">
@@ -224,7 +241,7 @@
             <div class="seriresPopup-Main-Div ">
                 <div class="height-100 responsive-height-rate">
                     <div class="large-12 small-12 grid-x align-left pad-10">
-                        <a onclick="myFunction()"><img src="images/cancel.png" width="35px"/></a>
+                        <a onclick="myFunction()"><img src="images/cancel.png" width="35px" /></a>
                     </div>
                     <div class="width-100 inside-seriresPopupmainDiv">
                         <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
@@ -264,10 +281,10 @@
                         <div class="popupRating-button width-100 align-center grid-x">
                             <div class="width-70 grid-x align-spaced">
                                 <div class="button-rankingDiv mrg-res-btn-div">
-                                    <a href="#" class="button alert popup " onclick="myFunction()">CANCEL</a>
+                                    <button href="#" class="button alert popup " onclick="myFunction()">CANCEL</button>
                                 </div>
                                 <div class="button-rankingDiv">
-                                    <a class="button success popup" onclick="myFunction()">DONE</a>
+                                    <button onclick="myFunction()" class="button success popup">DONE</button>
                                 </div>
                             </div>
                         </div>
@@ -329,7 +346,7 @@
                         <!-- button -->
                         <div class="grid-x flex-justify-end">
                             <div class="info-button">
-                                <a href="#" class="button alert popup " onclick="headerHideShow()">Close</a>
+                                <button class="button alert popup " onclick="headerHideShow()">Close</button>
                             </div>
                         </div>
                     </div>
@@ -379,6 +396,14 @@
             z.style.display = "none";
         }
 
+        function logoutHideShow() {
+            var x = document.getElementById("logout-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
 
     </script>
 </body>

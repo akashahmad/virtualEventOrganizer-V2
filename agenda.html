@@ -24,11 +24,16 @@
     <div class="container-fluid main-div-ofpage-agenda">
         <!-- header section starts from here -->
         <div class="grid-x main-header-div">
-            <div class="small-3 medium-3 large-3 columns">
-                <img src="images/logo2.jpg" width="280px" height="40px">
+            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
+                <div>
+                    <img src="images/3m.png" width="40px" />
+                </div>
+                <div class="conclave-heading">
+                    <h6>COVID Conclave 2020</h6>
+                </div>
             </div>
-            <div class="small-9 medium-9 large-9 columns">
-                <div class="row header justify-content-end">
+            <div class="small-9 medium-9 large-9 ">
+                <div class="grid-x header justify-content-end">
                     <div class="imgDiv cursor-pointer" onclick="headerHideShow()">
                         <img src="images/question@3x.png" width="20px">
                     </div>
@@ -40,17 +45,28 @@
                         <span class="nameSpan">John Doe</span>
                     </div>
                     <!-- icon img -->
-                    <div class="imgDiv">
+                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
                         <img src="images/bitmap.png" width="40px">
                     </div>
                 </div>
             </div>
         </div>
+        <!-- logout-popup -->
+        <div class="grid-x large-12 align-left">
+            <div class="logout-box-div" id="logout-popup">
+                <button class="button success popupCheckoutBlack">Logout</button>
+            </div>
+        </div>
         <!-- responsive header -->
         <div class="responsive-header-mainDiv">
             <div class="flex-row flex-justify-between flex-alignItem">
-                <div>
-                    <img src="images/logo2.jpg" width="58%">
+                <div class="grid-x flex-alignItem">
+                    <div>
+                        <img src="images/3m.png" width="40px" />
+                    </div>
+                    <div class="conclave-heading">
+                        <h6>COVID Conclave 2020</h6>
+                    </div>
                 </div>
                 <div class="mobile-nav-logo">
                     <div class="question-mark" onclick="headerHideShow()">
@@ -86,11 +102,11 @@
                     <div class="small-12 medium-12 large-12 insideButtonsMainDiv">
                         <!-- 1st button -->
                         <div>
-                            <a class="itinaryButton" href="itinerary.html?nosplash=true">MY ITINERARY</a>
+                            <button class="itinaryButton cursor-pointer" onclick="window.location.href='itinerary.html?nosplash=true'" >MY ITINERARY</button>
                         </div>
                         <!-- 2nd button -->
                         <div>
-                            <a class="mainAgendaButton" href="#">MAIN AGENDA</a>
+                            <button class="mainAgendaButton cursor-pointer" href="#">MAIN AGENDA</button>
                         </div>
                     </div>
                 </div>
@@ -126,7 +142,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex-row flex-justify-end">
+                        <div class="grid-x align-left">
                             <div class="checkboex-btn-div" id="filter-checkbox" style="display: none;">
                                 <div class="filter-heading">
                                     <h5>Filter By Track</h5>
@@ -149,12 +165,12 @@
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                <div class="flex-row flex-justify-around main-button-div-popup">
+                                <div class="grid-x align-spaced main-button-div-popup">
                                     <div>
-                                        <a class="button-below-checkbox button-grey" href="#">Reset</a>
-                                    </div>
+                                        <button class="button alert popupCheckoutgrey" >Reset</button>
+                                    </div> 
                                     <div>
-                                        <a class="button-below-checkbox button-blk" href="#">Apply</a>
+                                        <button class="button success popupCheckoutBlack" >Apply</button>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +192,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex-row flex-justify-end">
+                        <div class="grid-x align-left">
                             <div class="checkboex-btn-div" id="filter-checkbox1" style="display: none;">
                                 <div class="filter-heading">
                                     <h5>Filter By Track</h5>
@@ -199,12 +215,12 @@
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                <div class="flex-row flex-justify-around main-button-div-popup">
+                                <div class="grid-x align-spaced main-button-div-popup">
                                     <div>
-                                        <a class="button-below-checkbox button-grey" href="#">Reset</a>
+                                        <button class="button alert popupCheckoutgrey" >Reset</button>
                                     </div>
                                     <div>
-                                        <a class="button-below-checkbox button-blk" href="#">Apply</a>
+                                        <button class="button success popupCheckoutBlack " >Apply</button>
                                     </div>
                                 </div>
                             </div>
@@ -323,7 +339,7 @@
         <div class="seriresPopup-Main-Div ">
             <div class="height-100 responsive-height-rate">
                 <div class="large-12 small-12 grid-x align-left pad-10">
-                    <a onclick="rateFunction()"><img src="images/cancel.png" width="35px"/></a>
+                    <a onclick="rateFunction()"><img src="images/cancel.png" width="35px" /></a>
                 </div>
                 <div class="width-100 inside-seriresPopupmainDiv">
                     <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
@@ -470,6 +486,14 @@
             }
         }
 
+        function logoutHideShow() {
+            var x = document.getElementById("logout-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
 
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
