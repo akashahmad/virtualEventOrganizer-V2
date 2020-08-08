@@ -798,6 +798,11 @@ common flex properties */
         font-size: 20px;
         font-weight: 600;
     }
+    .checkin-alert h2{
+        color:#171717;
+        font-size: 20px;
+        font-weight: 600;
+    }
     .check-inpopup .background-white-section .main-div-of-popup-time{
         padding: 30px 0px 30px 0px;
     }

@@ -1175,7 +1175,29 @@
             </div>
         </div>
     </div>
+
+
     <!-- ends here -->
+    <!--incorrect checkin checkout start-->
+    <div class="tiny reveal checkin-alert" id="errorCheckInPopup" data-reveal>
+        <h2 class="text-center">Alert</h2>
+        <p class="text-center">Check In Code Is Incorrect.</p>
+        <button class="close-button" onclick="closeCheckInCorrect()" aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!--incorrect checkin checkout end-->
+
+    <!--incorrect checkout  start-->
+    <div class="tiny reveal checkin-alert" id="errorCheckOutPopup" data-reveal>
+        <h2 class="text-center">Alert</h2>
+        <p class="text-center">Check Out Code Is Incorrect.</p>
+        <button class="close-button" onclick="closeCheckOutInCorrect()" aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!--incorrect  checkout end-->
+
 
     <script>
 
@@ -1200,6 +1222,14 @@
         var type14 = true;
         var type15 = true;
         var type16 = true;
+        function closeCheckInCorrect() {
+            $('#errorCheckInPopup').foundation('close');
+            $('#checkInOutModel').foundation('open');
+        }
+        function closeCheckOutInCorrect() {
+            $('#errorCheckOutPopup').foundation('close');
+            $('#checkInOutModel').foundation('open');
+        }
 
         function mouseLeave(key) {
             switch (key) {
@@ -1632,8 +1662,9 @@
                             document.getElementById("checkinButton").classList.add('alert');
                         }
 
-                    } else {
-                        $('#errorCheckInPopup').foundation('open');
+                    }
+                    else {
+                        $('#errorCheckOutPopup').foundation('open');
                         // window.alert("Check In code is incorrect");
                     }
 
