@@ -918,10 +918,15 @@ margin: 0px;
 }
 
 .checkin-alert h2 {
-    color: #171717;
+    color: #cc0000;
     font-size: 20px;
     font-weight: 600;
 }
+
+.checkin-alert .pad-arround {
+    padding: 12px 12px 12px 12px;
+}
+
 
 .check-inpopup .background-white-section .main-div-of-popup-time {
     padding: 30px 0px 30px 0px;
