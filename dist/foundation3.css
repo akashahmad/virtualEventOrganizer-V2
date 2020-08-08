@@ -1023,6 +1023,7 @@ common flex properties */
         border:  1px solid #d5d5d5;
         padding: 5px 10px 0px 10px;
         border-radius: 4px;
+        margin: 2px;
     }
     .info-popup-mainDiv .para-popup ul{
         padding: 0px 0px 0px 15px;
