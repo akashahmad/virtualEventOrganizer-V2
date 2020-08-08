@@ -803,7 +803,14 @@ common flex properties */
     }
     .check-inpopup .background-white-section .time-of-popup{
         border-radius: 8px; 
-        background-color: #17a21c;
+    }
+    .check-inpopup .background-white-section .main-div-of-popup-time .button.success{
+        background-color: #17a21c!important;
+        border: 1px solid #17a21c!important;
+    }
+    .check-inpopup .background-white-section .main-div-of-popup-time .button.alert{
+        background-color: #cc0000!important;
+        border: 1px solid #cc0000!important;
     }
     .check-inpopup .background-white-section .time-of-popup p{
         font-size: 16px;
@@ -914,6 +921,10 @@ common flex properties */
         border: solid 1px #d5d5d5;
         background-color: #ffffff;
     }
+    .director-heading h6{
+        margin: 0px;
+        padding: 0px 0px 0px 10px;
+    }
     .seriresPopup-Main-Div .left-side-MainDiv .topheading-WithImg h5{
         padding: 0px 10px 0px 10px;
         margin: 0px;
@@ -939,6 +950,10 @@ common flex properties */
         width: 100%;
         height: 50px;
     } */
+    .rate-image-width img{
+        width: 30px;
+        margin: 0px 2px 0px 2px;
+    }
     .inside-main-div .heading-staRate{
         align-items: center;
         padding: 0px 5px 0px 5px;
@@ -949,7 +964,7 @@ common flex properties */
         color: #171717;
     }   
     .inside-main-div .body-headingstaRate h6{
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 600;
         color: #171717;
     }   
@@ -1008,8 +1023,8 @@ common flex properties */
     }
     .info-popup-mainDiv .inside-mainDiv .heading-info-popup .instruction h5{
         font-size: 20px;
-        font-weight: bold;
-        color: #171717;
+        font-weight: 600;
+        color: #222222;
         padding: 10px 0px 0px 0px;
         cursor: pointer;
         text-align: left;
@@ -1017,7 +1032,7 @@ common flex properties */
     .info-popup-mainDiv .inside-mainDiv .heading-info-popup .contact h5{
         font-size: 20px;
         font-weight: bold;
-        color: #171717;
+        color: #3b91cc;
         padding: 10px 0px 0px 0px;
         text-align: left;
         cursor: pointer;
@@ -1161,6 +1176,9 @@ common flex properties */
 
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) {
+    .rate-image-width img{
+        width: 23px!important;
+    }
     .check-inpopup .background-white-section .time-of-popup p{
         font-size: 12px!important;
     }
@@ -1396,6 +1414,9 @@ common flex properties */
    
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .rate-image-width img{
+        width: 23px!important;
+    }
     .check-inpopup .background-white-section .time-of-popup p{
         font-size: 12px!important;
     }
@@ -1629,6 +1650,9 @@ common flex properties */
 
 
 @media (max-width: 684px) and (min-width: 480px) {
+    .rate-image-width img{
+        width: 23px!important;
+    }
     .professional-Page-body .below-profeesional-div .below-peakerHeading {
         padding: 0px 0px 0px 0px!important;
     }
@@ -2316,6 +2340,12 @@ common flex properties */
 }
 
 @media (max-width: 1023px) and (min-width: 991px) {
+    .rate-image-width img{
+        width: 27px!important;
+    }
+    .rate-image-width img{
+        width: 26px!important;
+    }
     .info-popup-mainDiv .para-popup .contact-section-div-headeing ul {
         flex-direction: column!important;
     } 
@@ -2523,6 +2553,9 @@ common flex properties */
 
 
 @media (max-width: 1199px) and (min-width: 1024px) {
+    .rate-image-width img{
+        width: 22px!important;
+    }
     .row.main-header-div {
         display: block;
     }
