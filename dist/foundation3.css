@@ -924,6 +924,7 @@ common flex properties */
     .director-heading h6{
         margin: 0px;
         padding: 0px 0px 0px 10px;
+        font-size: 14px;
     }
     .seriresPopup-Main-Div .left-side-MainDiv .topheading-WithImg h5{
         padding: 0px 10px 0px 10px;
@@ -951,7 +952,7 @@ common flex properties */
         height: 50px;
     } */
     .rate-image-width img{
-        width: 30px;
+        width: 25px;
         margin: 0px 2px 0px 2px;
     }
     .inside-main-div .heading-staRate{
@@ -2554,7 +2555,7 @@ common flex properties */
 
 @media (max-width: 1199px) and (min-width: 1024px) {
     .rate-image-width img{
-        width: 22px!important;
+        width: 18px!important;
     }
     .row.main-header-div {
         display: block;
