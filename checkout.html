@@ -155,7 +155,7 @@
                                 data-open="checkInOutModel">
                                 <button id="checkinButton"
                                     class=" large-10 medium-10 cursor-pointer success button small-12">
-                                    CHECK-IN
+                                    CHECK IN
                                 </button>
                             </div>
                             <div class="buttonCommon-professionalPageDiv">
@@ -184,12 +184,12 @@
                             </div>
                             <!-- below sponsors heading -->
                             <div class="buttonImageDiv flex-alignItem medium-10">
-                                <button href="#" class="large-12 grid-x align-center button-professionPage">
+                                <button class="large-12 grid-x align-center button-professionPage">
                                     <img src="images/rover.png" width="80px" />
                                 </button>
                             </div>
                             <div class="buttonImageDiv flex-alignItem medium-10 pad-top-bottom-10">
-                                <button href="#" class="large-12 grid-x align-center button-professionPage">
+                                <button class="large-12 grid-x align-center button-professionPage">
                                     <img src="images/mueller.png" width="90px" />
                                 </button>
                             </div>
@@ -251,7 +251,7 @@
                         <div class="border-divinside-whitesection">
                             <div>
                                 <div class="text-center ">
-                                    <h5>Check In/Out</h5>
+                                    <h5 id="titleCheck">Check In</h5>
                                 </div>
                                 <div class="grid-x flex-justify-center main-div-of-popup-time">
                                     <div class="large-9 small-12 time-of-popup grid-x flex-alignItem flex-justify-center text-center"
@@ -261,13 +261,13 @@
                                 </div>
                                 <div class="mainDiv-of-input-button-popup-checkout">
                                     <div class="input-checout-popup grid-x flex-alignItem flex-justify-center">
-                                        <input class="width-70 " placeholder="Check-In Code" id="checkinCode"
+                                        <input class="large-9 small-12" placeholder="Check-In Code" id="checkinCode"
                                             onkeyup="codeButtonDisplableCheck(this.value)" />
                                     </div>
                                     <!-- button-checout-popup -->
                                     <div class=" grid-x flex-alignItem align-center popup-inside-checkout-btn">
                                         <button onclick="checkInOut()" disabled
-                                            class="large-8 success button checkInOut" id="belowInputButton">Check
+                                            class="large-9 small-12 success button checkInOut" id="belowInputButton">Check
                                             In
                                         </button>
                                     </div>
@@ -755,7 +755,7 @@
                     <!-- <div class="popupRating-button width-100 align-center grid-x">
                         <div class="width-70 grid-x align-spaced">
                             <div class="button-rankingDiv mrg-res-btn-div">
-                                <button href="#" class="button alert popup " data-close
+                                <button class="button alert popup " data-close
                                     aria-label="rateModel">CANCEL</button>
                             </div>
                             <div class="button-rankingDiv">
@@ -850,10 +850,12 @@
                         document.getElementById("checked-time-box").style.display = "none"
                         document.getElementById("checkinCode").value = ""
                         document.getElementById("checkinButton").innerHTML = "CHECK IN";
-                        document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
-                        document.getElementById("checkinCode").placeholder = "CHECK-IN CODE";
+                        document.getElementById("belowInputButton").innerHTML = "CHECK IN";
+                        document.getElementById("checkinCode").placeholder = "CHECK IN CODE";
                         document.getElementById("belowInputButton").disabled = true;
                         document.getElementById("rateButton").disabled = true;
+                        document.getElementById("titleCheck").innerHTML = "Check In";
+                        
                         if (document.getElementById("belowInputButton").classList.contains('alert')) {
                             document.getElementById("belowInputButton").classList.remove('alert');
                             document.getElementById("belowInputButton").classList.add('success');
@@ -881,11 +883,13 @@
                         localStorage.setItem("checkIn", "true");
                         document.getElementById("checked-time-box").style.display = "block"
                         document.getElementById("checkinCode").value = ""
-                        document.getElementById("checkinButton").innerHTML = "CHECK OUT";
-                        document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
-                        document.getElementById("checkinCode").placeholder = "CHECK-OUT CODE";
+                        document.getElementById("checkinButton").innerHTML = "Check Out";
+                        document.getElementById("belowInputButton").innerHTML = "CHECK OUT";
+                        document.getElementById("checkinCode").placeholder = "CHECK OUT CODE";
                         document.getElementById("belowInputButton").disabled = true;
                         document.getElementById("rateButton").disabled = false;
+                        document.getElementById("titleCheck").innerHTML = "Check Out";
+
                         if (document.getElementById("belowInputButton").classList.contains('success')) {
                             document.getElementById("belowInputButton").classList.remove('success');
                             document.getElementById("belowInputButton").classList.add('alert');
@@ -905,7 +909,7 @@
                         }
 
                     } else {
-                        window.alert("Check-In code is incorrect");
+                        window.alert("Check In code is incorrect");
                     }
 
 
@@ -918,9 +922,11 @@
             if (local) {
                 document.getElementById("checkinButton").innerHTML = "CHECK OUT";
                 document.getElementById("checked-time-box").style.display = "block"
-                document.getElementById("belowInputButton").innerHTML = "CHECK-OUT";
-                document.getElementById("checkinCode").placeholder = "CHECK-OUT CODE";
+                document.getElementById("belowInputButton").innerHTML = "CHECK OUT";
+                document.getElementById("checkinCode").placeholder = "CHECK OUT CODE";
                 document.getElementById("rateButton").disabled = false;
+                document.getElementById("titleCheck").innerHTML = "Check Out";
+
                 if (document.getElementById("belowInputButton").classList.contains('success')) {
                     document.getElementById("belowInputButton").classList.remove('success');
                     document.getElementById("belowInputButton").classList.add('alert');
@@ -942,9 +948,11 @@
             else {
                 document.getElementById("checkinButton").innerHTML = "CHECK IN";
                 document.getElementById("checked-time-box").style.display = "none"
-                document.getElementById("belowInputButton").innerHTML = "CHECK-IN";
-                document.getElementById("checkinCode").placeholder = "CHECK-IN CODE";
+                document.getElementById("belowInputButton").innerHTML = "CHECK IN";
+                document.getElementById("checkinCode").placeholder = "CHECK IN CODE";
                 document.getElementById("rateButton").disabled = true;
+                document.getElementById("titleCheck").innerHTML = "Check In";
+
                 if (document.getElementById("belowInputButton").classList.contains('alert')) {
                     document.getElementById("belowInputButton").classList.remove('alert');
                     document.getElementById("belowInputButton").classList.add('success');

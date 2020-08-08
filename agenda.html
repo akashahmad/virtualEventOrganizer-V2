@@ -164,25 +164,26 @@
                                 </div>
                                 <div class="labelEthics">
                                     <label class="checkbox-div">Ethics
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="DesktopcheckBoxReset">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="labelResponsibility">
                                     <label class="checkbox-div">Professional Responsibility
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="DesktopcheckBoxReset2">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="labelSales">
                                     <label class="checkbox-div">Sales
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="DesktopcheckBoxReset3">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="grid-x align-spaced main-button-div-popup">
                                     <div>
-                                        <button class="button alert popupCheckoutgrey">Reset</button>
+                                        <button class="button alert popupCheckoutgrey"
+                                            onclick="restCheckBox()">Reset</button>
                                     </div>
                                     <div>
                                         <button class="button success popupCheckoutBlack">Apply</button>
@@ -214,25 +215,26 @@
                                 </div>
                                 <div class="labelEthics">
                                     <label class="checkbox-div">Ethics
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="mobilecheckBoxReset">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="labelResponsibility">
                                     <label class="checkbox-div">Professional Responsibility
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="mobilecheckBoxReset2">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="labelSales">
                                     <label class="checkbox-div">Sales
-                                        <input type="checkbox">
+                                        <input type="checkbox" id="mobilecheckBoxReset3">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
                                 <div class="grid-x align-spaced main-button-div-popup">
                                     <div>
-                                        <button class="button alert popupCheckoutgrey">Reset</button>
+                                        <button class="button alert popupCheckoutgrey"
+                                            onclick="mobileRestCheckBox()">Reset</button>
                                     </div>
                                     <div>
                                         <button class="button success popupCheckoutBlack ">Apply</button>
@@ -263,15 +265,19 @@
                                 </div>
                             </div>
                             <div class="mainDiv-of-RightSIdeBox box-left-pad-top large-10">
+                                <div class="grid-x align-left">
+                                    <div id="cancelimage-Div">
+                                        <div class="cursor-pointer" onclick="removeCheckOut()" id="cancelImg">
+                                            <img src="images/cancel.png" width="15px" />
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="grid-x align-justify ">
                                     <a href="professionalEducation.html">
                                         <div>
-                                            <h5>Keynote That You Did Not Have To Register For</h5>
+                                            <h5 class="heading5">Keynote That You Did Not Have To Register For</h5>
                                         </div>
                                     </a>
-                                    <div class="cursor-pointer" onclick="removeCheckOut()" id="cancelImg">
-                                        <img src="images/cancel.png" width="15px" />
-                                    </div>
                                 </div>
                                 <a href="professionalEducation.html">
                                     <div>
@@ -713,7 +719,7 @@
                                         <img src="images/goldenStar.png" width="30px" />
                                         <img src="images/goldenStar.png" width="30px" />
                                         <img src="images/silverStar.png" width="30px" />
-                                        <img src="images/silverStar.png" width="30px" />
+                                        0 <img src="images/silverStar.png" width="30px" />
                                         <img src="images/silverStar.png" width="30px" />
                                         <img src="images/silverStar.png" width="30px" />
                                     </div>
@@ -838,13 +844,27 @@
 
         $(document).foundation();
 
+        function restCheckBox() {
+            document.getElementById("DesktopcheckBoxReset").checked = false;
+            document.getElementById("DesktopcheckBoxReset2").checked = false;
+            document.getElementById("DesktopcheckBoxReset3").checked = false;
+        }
+
+        function mobileRestCheckBox() {
+            document.getElementById("mobilecheckBoxReset").checked = false;
+            document.getElementById("mobilecheckBoxReset2").checked = false;
+            document.getElementById("mobilecheckBoxReset3").checked = false;
+        }
+
         if (typeof (Storage) !== "undefined") {
             var local = localStorage.getItem("checkIn");
             if (local) {
                 document.getElementById("cancelImg").style.display = "block"
+                document.getElementById("cancelimage-Div").style.padding = "0px 0px 0px 0px"
             }
             else {
                 document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
             }
         }
 
@@ -853,6 +873,7 @@
             if (local) {
                 localStorage.removeItem("checkIn");
                 document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
             }
         }
 
