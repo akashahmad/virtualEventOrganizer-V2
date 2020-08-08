@@ -1204,10 +1204,14 @@ margin: 0px;
 .info-popup-mainDiv .inside-mainDiv .heading-info-popup .contact h5 {
     font-size: 20px;
     font-weight: bold;
-    color: #3b91cc;
+    color: #222222;
     padding: 10px 0px 0px 0px;
     text-align: left;
     cursor: pointer;
+}
+
+.info-popup-mainDiv .inside-mainDiv .heading-info-popup .active h5 {
+    color: #3b91cc!important;
 }
 
 .info-popup-mainDiv .para-popup {

@@ -6,6 +6,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkout.html" afterPath="$PROJECT_DIR$/checkout.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/foundation3.css" afterPath="$PROJECT_DIR$/dist/foundation3.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itinerary.html" afterPath="$PROJECT_DIR$/itinerary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/professionalEducation.html" afterPath="$PROJECT_DIR$/professionalEducation.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="itinerary.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="itinerary.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/itinerary.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="460" column="64" lean-forward="false" selection-start-line="460" selection-start-column="64" selection-end-line="460" selection-end-column="64" />
+            <state relative-caret-position="80">
+              <caret line="365" column="45" lean-forward="true" selection-start-line="365" selection-start-column="45" selection-end-line="365" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,8 +47,8 @@
       <file leaf-file-name="foundation3.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/foundation3.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="1071" column="21" lean-forward="false" selection-start-line="1071" selection-start-column="21" selection-end-line="1071" selection-end-column="21" />
+            <state relative-caret-position="171">
+              <caret line="1213" column="29" lean-forward="true" selection-start-line="1213" selection-start-column="29" selection-end-line="1213" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -56,18 +57,18 @@
       <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checkout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="402" column="64" lean-forward="false" selection-start-line="402" selection-start-column="64" selection-end-line="402" selection-end-column="64" />
+            <state relative-caret-position="97">
+              <caret line="303" column="0" lean-forward="false" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="agenda.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="agenda.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/agenda.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="384" column="42" lean-forward="true" selection-start-line="384" selection-start-column="42" selection-end-line="384" selection-end-column="42" />
+            <state relative-caret-position="37">
+              <caret line="1164" column="39" lean-forward="false" selection-start-line="1164" selection-start-column="0" selection-end-line="1165" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,8 +77,8 @@
       <file leaf-file-name="professionalEducation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/professionalEducation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="112" column="52" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="52" />
+            <state relative-caret-position="40">
+              <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -103,11 +104,20 @@
       <find>border-divinside-whitesection</find>
       <find>check In</find>
       <find>contact</find>
-      <find>contact</find>
       <find>large-5</find>
-      <find>.info-popup-mainDiv .para-popup</find>
       <find>how to</find>
       <find>how to wear</find>
+      <find>contact</find>
+      <find>.info-popup-mainDiv .para-popup</find>
+      <find>class</find>
+      <find>.rem</find>
+      <find>.</find>
+      <find>classli</find>
+      <find>classlist</find>
+      <find>Contact</find>
+      <find>id=&quot;contact</find>
+      <find>contact(</find>
+      <find>Contact(</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -126,11 +136,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Login.html" />
-        <option value="$PROJECT_DIR$/professionalEducation.html" />
         <option value="$PROJECT_DIR$/dist/foundation3.css" />
-        <option value="$PROJECT_DIR$/itinerary.html" />
-        <option value="$PROJECT_DIR$/checkout.html" />
         <option value="$PROJECT_DIR$/agenda.html" />
+        <option value="$PROJECT_DIR$/checkout.html" />
+        <option value="$PROJECT_DIR$/professionalEducation.html" />
+        <option value="$PROJECT_DIR$/itinerary.html" />
       </list>
     </option>
   </component>
@@ -294,7 +304,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5227000" />
+    <option name="totallyTimeSpent" value="6092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="692" extended-state="0" />
@@ -574,44 +584,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/foundation3.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1071" column="21" lean-forward="false" selection-start-line="1071" selection-start-column="21" selection-end-line="1071" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="402" column="64" lean-forward="false" selection-start-line="402" selection-start-column="64" selection-end-line="402" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/itinerary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="460" column="64" lean-forward="false" selection-start-line="460" selection-start-column="64" selection-end-line="460" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/professionalEducation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="112" column="52" lean-forward="false" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="52" />
+        <state relative-caret-position="171">
+          <caret line="1213" column="29" lean-forward="true" selection-start-line="1213" selection-start-column="29" selection-end-line="1213" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/agenda.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="384" column="42" lean-forward="true" selection-start-line="384" selection-start-column="42" selection-end-line="384" selection-end-column="42" />
+        <state relative-caret-position="37">
+          <caret line="1164" column="39" lean-forward="false" selection-start-line="1164" selection-start-column="0" selection-end-line="1165" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="303" column="0" lean-forward="false" selection-start-line="303" selection-start-column="0" selection-end-line="303" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/professionalEducation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="252" column="0" lean-forward="false" selection-start-line="252" selection-start-column="0" selection-end-line="252" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/itinerary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="365" column="45" lean-forward="true" selection-start-line="365" selection-start-column="45" selection-end-line="365" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

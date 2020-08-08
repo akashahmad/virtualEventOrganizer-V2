@@ -360,10 +360,10 @@
                 <div class="inside-mainDiv large-9 small-12">
                     <div class="grid-x align-justify mobo-header-responsive">
                         <div class="heading-info-popup large-2">
-                            <div class="instruction">
+                            <div class="instruction active" id="instruction">
                                 <h5 onclick="instrucionMethod()"> Instructions </h5>
                             </div>
-                            <div class="contact">
+                            <div class="contact" id="contact">
                                 <h5 onclick="Contact()"> Contact </h5>
                             </div>
                         </div>
@@ -1653,11 +1653,15 @@
         var w = document.getElementById("contacts");
 
         function instrucionMethod() {
+            document.getElementById("contact").classList.remove('active');
+            document.getElementById("instruction").classList.add('active');
             z.style.display = "block";
             w.style.display = "none";
         }
 
         function Contact() {
+            document.getElementById("instruction").classList.remove('active');
+            document.getElementById("contact").classList.add('active');
             w.style.display = "block";
             z.style.display = "none";
         }
