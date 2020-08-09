@@ -1219,11 +1219,22 @@ margin: 0px;
     color: #3b91cc!important;
 }
 
-.info-popup-mainDiv .para-popup {
+.info-popup-mainDiv .para-popup-bordor{
     border: 1px solid #d5d5d5;
-    padding: 5px 10px 0px 10px;
     border-radius: 4px;
+}
+
+.info-popup-mainDiv .para-popup {
+    padding: 5px 10px 0px 10px;
     margin: 15px 8px 15px 8px;
+}
+
+.info-popup-mainDiv .contact-popup>div:nth-child(2) {
+    border-left: 1px solid black;
+}
+
+.info-popup-mainDiv .contact-popup .contact-section-div-headeing ul li{
+    width: 100%!important;
 }
 
 .info-popup-mainDiv .para-popup ul {
