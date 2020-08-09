@@ -1156,10 +1156,10 @@
 <!-- ends here -->
 
 <!-- header info popup -->
-<div class="reveal" id="exampleModal1" data-reveal>
+<div class="reveal small" id="exampleModal1" data-reveal>
     <div class="info-popup-mainDiv">
         <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
-            <div class="inside-mainDiv large-9 small-12">
+            <div class="inside-mainDiv large-12 small-12">
                 <div class="grid-x align-justify mobo-header-responsive">
                     <div class="heading-info-popup large-2">
                         <div class="instruction active" id="instruction">
@@ -1169,7 +1169,7 @@
                             <h5 onclick="Contact()"> Contact </h5>
                         </div>
                     </div>
-                    <div class="para-popup para-popup-bordor width-75" id="instructions">
+                    <div class="para-popup para-popup-bordor width-70" id="instructions">
                         <ul>
                             <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
                                 praesentium voluptatum deleniti atque corrupti quos dolores et quas.
@@ -1180,15 +1180,13 @@
                             <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
                                 doloremque laudantium
                             </li>
-                            <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-                                culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-                            </li>
+
                         </ul>
                     </div>
                     <!-- contact section -->
-                    <div id="contacts" class="large-10">
-                        <div class="grid-x align-left contact-popup">
-                            <div class="para-popup large-5">
+                    <div id="contacts" class="align-right">
+                        <div class="grid-x flex-justify-start contact-popup">
+                            <div class="para-popup align-left large-8">
                                 <div class="contact-section-div-headeing ">
                                     <ul>
                                         <li class="data-below-head">John Doe</li>
@@ -1198,7 +1196,7 @@
                                 </div>
                             </div>
                             <!-- contact 2 -->
-                            <div class="para-popup large-5">
+                            <div class="para-popup large-8">
                                 <div class="contact-section-div-headeing ">
                                     <ul>
                                         <li class="data-below-head">John Doe</li>
@@ -1209,18 +1207,17 @@
                             </div>
                         </div>
                         <!-- button -->
-                        <div class="grid-x flex-justify-end">
-                            <div class="info-button">
-                                <button class="button alert popup " data-close
-                                        aria-label="Close modal">Close
-                                </button>
-                            </div>
+                        <div class="grid-x large-8 flex-justify-end">
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
 </div>
 </div>
 <!-- </div> -->

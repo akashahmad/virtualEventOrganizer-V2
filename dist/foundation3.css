@@ -29,7 +29,8 @@ common flex properties */
 }
 
 .flex-column {
-    display: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-justify-around {
@@ -308,7 +309,7 @@ margin: 0px;
 /* below header  */
 
 .color-white {
-    color: "#fff";
+    color: #ffff;
 }
 
 .color-black {
@@ -927,7 +928,6 @@ margin: 0px;
     padding: 12px 12px 12px 12px;
 }
 
-
 .check-inpopup .background-white-section .main-div-of-popup-time {
     padding: 30px 0px 30px 0px;
 }
@@ -979,7 +979,7 @@ margin: 0px;
     background-color: #cc0000;
     color: #fff;
     font-size: 16px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .success.button.checkInOut {
@@ -1073,7 +1073,7 @@ margin: 0px;
     background-color: #ffffff;
 }
 
-.seriresPopup-Main-Div .left-side-MainDiv .height-common{
+.seriresPopup-Main-Div .left-side-MainDiv .height-common {
     min-height: 62px;
 }
 
@@ -1178,23 +1178,15 @@ margin: 0px;
 
 /* info popup */
 .info-popup-mainDiv {
-    z-index: 3;
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
+
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .info-popup-mainDiv .inside-mainDiv {
-    background-color: #fff;
-    padding: 25px 35px 20px 35px;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
+
+    padding: 25px 35px 20px;
 }
 
 .info-popup-mainDiv .inside-mainDiv .heading-info-popup .instruction h5 {
@@ -1216,29 +1208,24 @@ margin: 0px;
 }
 
 .info-popup-mainDiv .inside-mainDiv .heading-info-popup .active h5 {
-    color: #3b91cc!important;
-}
-
-.info-popup-mainDiv .para-popup-bordor{
-    border: 1px solid #d5d5d5;
-    border-radius: 4px;
+    color: #3b91cc !important;
 }
 
 .info-popup-mainDiv .para-popup {
     padding: 5px 10px 0px 10px;
-    margin: 15px 8px 15px 8px;
+    margin: 0px 8px 5px 8px;
 }
 
-.info-popup-mainDiv .contact-popup>div:nth-child(2) {
-    border-left: 1px solid black;
-}
-
-.info-popup-mainDiv .contact-popup .contact-section-div-headeing ul li{
-    width: 100%!important;
+.info-popup-mainDiv .contact-popup .contact-section-div-headeing ul li {
+    width: 100% !important;
 }
 
 .info-popup-mainDiv .para-popup ul {
     padding: 0px 0px 0px 15px;
+}
+
+.info-popup-mainDiv .contact-popup > div:nth-child(2) {
+    border-top: 1px solid lightgray;
 }
 
 .info-popup-mainDiv .para-popup ul li {
@@ -1271,7 +1258,7 @@ margin: 0px;
     list-style: none;
     font-size: 18px;
     color: #5e5e5e;
-    font-weight: 200;
+    font-weight: 400;
     text-align: left;
 }
 
@@ -1670,6 +1657,14 @@ margin: 0px;
 }
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox {
+        border-left: 0px;
+    }
+
+    .info-popup-mainDiv .inside-mainDiv {
+        padding: 0px;
+    }
+
     .rate-image-width img {
         width: 23px !important;
     }
@@ -1957,6 +1952,10 @@ margin: 0px;
 }
 
 @media (max-width: 684px) and (min-width: 480px) {
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox {
+        border-left: 0px;
+    }
+
     .rate-image-width img {
         width: 23px !important;
     }
@@ -2264,6 +2263,14 @@ margin: 0px;
 }
 
 @media (max-width: 767px) and (min-width: 685px) {
+    .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox {
+        border-left: 0px;
+    }
+
+    .info-popup-mainDiv .inside-mainDiv {
+        padding: 0px;
+    }
+
     .professional-Page-body .below-profeesional-div .below-peakerHeading {
         padding: 0px 0px 0px 0px !important;
     }
