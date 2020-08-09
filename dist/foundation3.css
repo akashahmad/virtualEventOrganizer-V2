@@ -9,6 +9,11 @@ body {
 *{
     font-family: Roboto;
 } */
+
+.reveal .active {
+    border: none !important;
+}
+
 #container-background-spashScreen {
     top: 0;
     bottom: 0;
