@@ -14,6 +14,10 @@ body {
     border: none !important;
 }
 
+.reveal{
+    border: none !important;
+}
+
 #container-background-spashScreen {
     top: 0;
     bottom: 0;
