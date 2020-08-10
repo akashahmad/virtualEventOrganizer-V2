@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/css"
-            src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
+        src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
     <link rel="stylesheet" href="dist/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
@@ -15,1129 +15,1131 @@
 
     <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
-          integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
     <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
-          integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+        integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
-            integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
-            crossorigin="anonymous"></script>
+        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
-<div class="container-fluid main-div-ofpage-agenda">
-    <!-- header section starts from here -->
-    <div class="grid-x main-header-div">
-        <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
-            <div>
-                <img src="images/3m.png" width="40px"/>
-            </div>
-            <div class="conclave-heading">
-                <h6>COVID Conclave 2020</h6>
-            </div>
-        </div>
-        <div class="small-9 medium-9 large-9 ">
-            <div class="grid-x header justify-content-end">
-                <!-- onclick="headerHideShow()" -->
-                <div class="imgDiv cursor-pointer">
-                    <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
-                </div>
-                <!-- div for line -->
-                <div class="blankDiv-For-Line">
-                </div>
-                <!-- name -->
+    <div class="container-fluid main-div-ofpage-agenda">
+        <!-- header section starts from here -->
+        <div class="grid-x main-header-div">
+            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
                 <div>
-                    <span class="nameSpan">John Doe</span>
-                </div>
-                <!-- icon img -->
-                <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
-                    <img src="images/bitmap.png" width="40px">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- logout-popup -->
-    <div class="grid-x large-12 align-left">
-        <div class="logout-box-div" id="logout-popup">
-            <button class="button success popupCheckoutBlack">Logout</button>
-        </div>
-    </div>
-    <!-- responsive header -->
-    <div class="responsive-header-mainDiv">
-        <div class="grid-x flex-justify-between flex-alignItem">
-            <div class="grid-x flex-alignItem">
-                <div>
-                    <img src="images/3m.png" width="40px"/>
+                    <img src="images/3m.png" width="40px" />
                 </div>
                 <div class="conclave-heading">
                     <h6>COVID Conclave 2020</h6>
                 </div>
             </div>
-            <div class="mobile-nav-logo">
-                <!-- onclick="headerHideShow() -->
-                <div class="question-mark">
-                    <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
-                </div>
-                <div onclick="openNav()">
-                    <img src="images/hamburger.png" width="30px">
+            <div class="small-9 medium-9 large-9 ">
+                <div class="grid-x header justify-content-end">
+                    <!-- onclick="headerHideShow()" -->
+                    <div class="imgDiv cursor-pointer">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
+                    </div>
+                    <!-- div for line -->
+                    <div class="blankDiv-For-Line">
+                    </div>
+                    <!-- name -->
+                    <div>
+                        <span class="nameSpan">John Doe</span>
+                    </div>
+                    <!-- icon img -->
+                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
+                        <img src="images/bitmap.png" width="40px">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
-        <div class="sidenav-hamburger">
-            <div class="height-100">
-                <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-                <div class="grid-x flex-alignItem flex-justify-center">
-                    <a href="#"><img src="images/bitmap.png" width="70px"></a>
+        <!-- logout-popup -->
+        <div class="grid-x large-12 align-left">
+            <div class="logout-box-div" id="logout-popup">
+                <button class="button success popupCheckoutBlack">Logout</button>
+            </div>
+        </div>
+        <!-- responsive header -->
+        <div class="responsive-header-mainDiv">
+            <div class="grid-x flex-justify-between flex-alignItem">
+                <div class="grid-x flex-alignItem">
+                    <div>
+                        <img src="images/3m.png" width="40px" />
+                    </div>
+                    <div class="conclave-heading">
+                        <h6>COVID Conclave 2020</h6>
+                    </div>
                 </div>
-                <div class="grid-x flex-alignItem flex-justify-center">
-                    <a href="#">Hello John Doe</a>
-                </div>
-                <div class="grid-x flex-alignItem flex-justify-center height-100">
-                    <a href="#">Logout</a>
+                <div class="mobile-nav-logo">
+                    <!-- onclick="headerHideShow() -->
+                    <div class="question-mark">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
+                    </div>
+                    <div onclick="openNav()">
+                        <img src="images/hamburger.png" width="30px">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- body section starts from hgere -->
-    <div class="mainDiv-ofBody">
-        <div class="below-header">
-            <!-- buttons -->
-            <div class="buttons-mainDiv">
-                <div class="small-12 medium-12 large-12 insideButtonsMainDiv">
-                    <!-- 1st button -->
-                    <div>
-                        <button class="itinaryButton cursor-pointer"
-                                onclick="window.location.href='itinerary.html?nosplash=true'">MY ITINERARY
-                        </button>
+        <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
+            <div class="sidenav-hamburger">
+                <div class="height-100">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
                     </div>
-                    <!-- 2nd button -->
-                    <div>
-                        <button class="mainAgendaButton cursor-pointer" href="#">MAIN AGENDA</button>
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#">Hello John Doe</a>
+                    </div>
+                    <div class="grid-x flex-alignItem flex-justify-center height-100">
+                        <a href="#">Logout</a>
                     </div>
                 </div>
             </div>
-            <!-- days -->
-            <div class="mainDiv-of-header ">
-                <!-- dayes inside main div -->
-                <div class="small-12 medium-12 large-12 inside-mainDiv grid-padding-y grid-x">
-                    <!-- first date -->
-                    <div class="first-a">
-                        <a class="commonBox background-black color-white">All Days</a>
-                    </div>
-                    <div class="dateTime-responsive">
-                        <a class="commonBox color-black">TUE JUN 23 </a>
-                    </div>
-                    <div class="dateTime-responsive">
-                        <a class="commonBox color-black">WED JUNE 24</a>
-                    </div>
-                </div>
-                <!-- present data -->
-                <div class="mainDiv-of-dateAndSearch dataNone-mobo-res">
-                    <!-- date and search -->
-                    <div class="insideMainDiv-dateSearh large-12 grid-x align-justify">
-                        <!-- date -->
+        </div>
+        <!-- body section starts from hgere -->
+        <div class="mainDiv-ofBody">
+            <div class="below-header">
+                <!-- buttons -->
+                <div class="buttons-mainDiv">
+                    <div class="small-12 medium-12 large-12 insideButtonsMainDiv">
+                        <!-- 1st button -->
                         <div>
-                            <p class="para"><b class="todayText">TODAY -</b>Tuesday June 23</p>
+                            <button class="itinaryButton cursor-pointer"
+                                onclick="window.location.href='itinerary.html?nosplash=true'">MY ITINERARY
+                            </button>
                         </div>
-                        <div class="grid-x">
+                        <!-- 2nd button -->
+                        <div>
+                            <button class="mainAgendaButton cursor-pointer" href="#">MAIN AGENDA</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- days -->
+                <div class="mainDiv-of-header ">
+                    <!-- dayes inside main div -->
+                    <div class="small-12 medium-12 large-12 inside-mainDiv grid-padding-y grid-x">
+                        <!-- first date -->
+                        <div class="first-a">
+                            <a class="commonBox background-black color-white">All Days</a>
+                        </div>
+                        <div class="dateTime-responsive">
+                            <a class="commonBox color-black">TUE JUN 23 </a>
+                        </div>
+                        <div class="dateTime-responsive">
+                            <a class="commonBox color-black">WED JUNE 24</a>
+                        </div>
+                    </div>
+                    <!-- present data -->
+                    <div class="mainDiv-of-dateAndSearch dataNone-mobo-res">
+                        <!-- date and search -->
+                        <div class="insideMainDiv-dateSearh large-12 grid-x align-justify">
+                            <!-- date -->
                             <div>
-                                <input placeholder="Search..."/>
+                                <p class="para"><b class="todayText">TODAY -</b>Tuesday June 23</p>
                             </div>
-                            <div class="filterImage " onclick="myFunction()">
-                                <img src="images/filter.png" width="16px">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-x align-left">
-                        <div class="checkboex-btn-div" id="filter-checkbox" style="display: none;">
-                            <div class="filter-heading">
-                                <h5>Filter By Track</h5>
-                            </div>
-                            <div class="labelEthics">
-                                <label class="checkbox-div">Ethics
-                                    <input type="checkbox" id="DesktopcheckBoxReset">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="labelResponsibility">
-                                <label class="checkbox-div">Professional Responsibility
-                                    <input type="checkbox" id="DesktopcheckBoxReset2">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="labelSales">
-                                <label class="checkbox-div">Sales
-                                    <input type="checkbox" id="DesktopcheckBoxReset3">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="grid-x align-spaced main-button-div-popup">
+                            <div class="grid-x">
                                 <div>
-                                    <button class="button alert popupCheckoutgrey"
-                                            onclick="restCheckBox()">Reset
-                                    </button>
+                                    <input placeholder="Search..." />
                                 </div>
-                                <div>
-                                    <button class="button success popupCheckoutBlack">Apply</button>
+                                <div class="filterImage " onclick="myFunction()">
+                                    <img src="images/filter.png" width="16px">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- mobile-responsive -->
-                <!-- input first then heading -->
-                <!-- present data -->
-                <div class="mainDiv-of-dateAndSearch mobo-datSearch">
-                    <!-- date and search -->
-                    <div class="insideMainDiv-dateSearh ">
-                        <!-- date -->
-                        <div class="filterImage-And-Input width-date-time-100">
-                            <div class="width-date-time-100">
-                                <input class="width-date-time-100" placeholder="Search..."/>
-                            </div>
-                            <div class="filterImage" onclick="myFunction()">
-                                <img src="images/filter.png" width="16px">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-x align-left">
-                        <div class="checkboex-btn-div" id="filter-checkbox1" style="display: none;">
-                            <div class="filter-heading">
-                                <h5>Filter By Track</h5>
-                            </div>
-                            <div class="labelEthics">
-                                <label class="checkbox-div">Ethics
-                                    <input type="checkbox" id="mobilecheckBoxReset">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="labelResponsibility">
-                                <label class="checkbox-div">Professional Responsibility
-                                    <input type="checkbox" id="mobilecheckBoxReset2">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="labelSales">
-                                <label class="checkbox-div">Sales
-                                    <input type="checkbox" id="mobilecheckBoxReset3">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="grid-x align-spaced main-button-div-popup">
-                                <div>
-                                    <button class="button alert popupCheckoutgrey"
-                                            onclick="mobileRestCheckBox()">Reset
-                                    </button>
+                        <div class="grid-x align-left">
+                            <div class="checkboex-btn-div" id="filter-checkbox" style="display: none;">
+                                <div class="filter-heading">
+                                    <h5>Filter By Track</h5>
                                 </div>
-                                <div>
-                                    <button class="button success popupCheckoutBlack ">Apply</button>
+                                <div class="labelEthics">
+                                    <label class="checkbox-div">Ethics
+                                        <input type="checkbox" id="DesktopcheckBoxReset">
+                                        <span class="checkmark"></span>
+                                    </label>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="para-mobo-rsponsive"><b class="todayText">TODAY -</b>Tuesday June 23</p>
-                    </div>
-                </div>
-                <!-- boxes -->
-                <!-- main div of boxes -->
-                <div>
-                    <!-- inside boxes main div -->
-                    <div class="background-pink background-Box borderRaius-box grid-x large-12 small-12">
-                        <!-- left side -->
-                        <div class="insideBox large-2">
-                            <div class="leftSide-ofBox">
-                                <div class="time-main-Div">
-                                    <h6 class="nine-Am">9:00 AM </h6>
-                                    <h6 class="padding-bottom-dots">..</h6>
-                                    <h6>10:00 AM</h6>
+                                <div class="labelResponsibility">
+                                    <label class="checkbox-div">Professional Responsibility
+                                        <input type="checkbox" id="DesktopcheckBoxReset2">
+                                        <span class="checkmark"></span>
+                                    </label>
                                 </div>
-                                <div>
-                                    <h5>MST</h5>
+                                <div class="labelSales">
+                                    <label class="checkbox-div">Sales
+                                        <input type="checkbox" id="DesktopcheckBoxReset3">
+                                        <span class="checkmark"></span>
+                                    </label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="mainDiv-of-RightSIdeBox box-left-pad-top large-10">
-                            <div class="grid-x align-left">
-                                <div id="cancelimage-Div">
-                                    <div class="cursor-pointer" onclick="removeCheckOut()" id="cancelImg">
-                                        <img src="images/cancel.png" width="15px"/>
+                                <div class="grid-x align-spaced main-button-div-popup">
+                                    <div>
+                                        <button class="button alert popupCheckoutgrey" onclick="restCheckBox()">Reset
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="button success popupCheckoutBlack"
+                                            onclick="myFunction()">Apply</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-x align-justify ">
+                        </div>
+                    </div>
+                    <!-- mobile-responsive -->
+                    <!-- input first then heading -->
+                    <!-- present data -->
+                    <div class="mainDiv-of-dateAndSearch mobo-datSearch">
+                        <!-- date and search -->
+                        <div class="insideMainDiv-dateSearh ">
+                            <!-- date -->
+                            <div class="filterImage-And-Input width-date-time-100">
+                                <div class="width-date-time-100">
+                                    <input class="width-date-time-100" placeholder="Search..." />
+                                </div>
+                                <div class="filterImage" onclick="myFunction()">
+                                    <img src="images/filter.png" width="16px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-x align-left">
+                            <div class="checkboex-btn-div" id="filter-checkbox1" style="display: none;">
+                                <div class="filter-heading">
+                                    <h5>Filter By Track</h5>
+                                </div>
+                                <div class="labelEthics">
+                                    <label class="checkbox-div">Ethics
+                                        <input type="checkbox" id="mobilecheckBoxReset">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="labelResponsibility">
+                                    <label class="checkbox-div">Professional Responsibility
+                                        <input type="checkbox" id="mobilecheckBoxReset2">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="labelSales">
+                                    <label class="checkbox-div">Sales
+                                        <input type="checkbox" id="mobilecheckBoxReset3">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="grid-x align-spaced main-button-div-popup">
+                                    <div>
+                                        <button class="button alert popupCheckoutgrey"
+                                            onclick="mobileRestCheckBox()">Reset
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="button success popupCheckoutBlack "
+                                            onclick="myFunction()">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="para-mobo-rsponsive"><b class="todayText">TODAY -</b>Tuesday June 23</p>
+                        </div>
+                    </div>
+                    <!-- boxes -->
+                    <!-- main div of boxes -->
+                    <div>
+                        <!-- inside boxes main div -->
+                        <div class="background-pink background-Box borderRaius-box grid-x large-12 small-12">
+                            <!-- left side -->
+                            <div class="insideBox large-2">
+                                <div class="leftSide-ofBox">
+                                    <div class="time-main-Div">
+                                        <h6 class="nine-Am">9:00 AM </h6>
+                                        <h6 class="padding-bottom-dots">..</h6>
+                                        <h6>10:00 AM</h6>
+                                    </div>
+                                    <div>
+                                        <h5>MST</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainDiv-of-RightSIdeBox box-left-pad-top large-10">
+                                <div class="grid-x align-left">
+                                    <div id="cancelimage-Div">
+                                        <div class="cursor-pointer" onclick="removeCheckOut()" id="cancelImg">
+                                            <img src="images/cancel.png" width="15px" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-x align-justify ">
+                                    <a href="professionalEducation.html">
+                                        <div>
+                                            <h5 class="heading5">Keynote That You Did Not Have To Register For</h5>
+                                        </div>
+                                    </a>
+                                </div>
                                 <a href="professionalEducation.html">
                                     <div>
-                                        <h5 class="heading5">Keynote That You Did Not Have To Register For</h5>
+                                        <p>This is the truncated description of the item. It will max out at two lines
+                                            after
+                                            which the user can click the “more” link and pop a full box…</p>
+                                    </div>
+                                    <div>
+                                        <h6>Ethics</h6>
                                     </div>
                                 </a>
                             </div>
-                            <a href="professionalEducation.html">
-                                <div>
-                                    <p>This is the truncated description of the item. It will max out at two lines
-                                        after
-                                        which the user can click the “more” link and pop a full box…</p>
-                                </div>
-                                <div>
-                                    <h6>Ethics</h6>
-                                </div>
-                            </a>
                         </div>
-                    </div>
-                    <!-- 2nd one -->
-                    <div class="background-blue-color background-Box borderRaius-box grid-x large-12 small-12">
-                        <!-- left side -->
-                        <div class="insideBox cursor-pointer large-2">
-                            <div class="leftSide-ofBox" data-open="rateModel">
-                                <h4>RATE</h4>
-                                <!-- <img class="tickImage" src="images/whit-tick.png" width="35px" /> -->
+                        <!-- 2nd one -->
+                        <div class="background-blue-color background-Box borderRaius-box grid-x large-12 small-12">
+                            <!-- left side -->
+                            <div class="insideBox cursor-pointer large-2">
+                                <div class="leftSide-ofBox" data-open="rateModel">
+                                    <h4>RATE</h4>
+                                    <!-- <img class="tickImage" src="images/whit-tick.png" width="35px" /> -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="mainDiv-of-RightSIdeBox large-10 box-left-pad">
-                            <a href="professionalEducation.html">
-                                <div>
-                                    <h5>How to be bored in a mask meeting.</h5>
-                                </div>
-                                <div>
-                                    <p>There will be a new field in the agenda settings that allows for an
-                                        abbreviated
-                                        description to be entered. That character limit will be …</p>
-                                </div>
-                                <div>
-                                    <h6>Professional Responsibility</h6>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- 3rd one  -->
-                    <div class="headingDiv-BelowBlueBox">
-                        <h5>Wednesday June 24</h5>
-                    </div>
-                    <div class="background-yellow background-Box borderRaius-box grid-x large-12 small-12">
-                        <!-- left side -->
-                        <div class="insideBox large-2">
-                            <div class="leftSide-ofBox">
-                                <div class="time-main-Div">
-                                    <h6 class="nine-Am">9:00 AM </h6>
-                                    <h6 class="padding-bottom-dots">..</h6>
-                                    <h6>10:00 AM</h6>
-                                </div>
-                                <h5>MST</h5>
-                            </div>
-                        </div>
-                        <div class="mainDiv-of-RightSIdeBox box-left-pad large-10">
-                            <a href="professionalEducation.html">
-                                <div class="stars">
+                            <div class="mainDiv-of-RightSIdeBox large-10 box-left-pad">
+                                <a href="professionalEducation.html">
                                     <div>
-                                        <h5>This happens to be on MY itinerary. Thus marked.</h5>
+                                        <h5>How to be bored in a mask meeting.</h5>
                                     </div>
                                     <div>
-                                        <img src="./images/starWhite.png" width="25px">
+                                        <p>There will be a new field in the agenda settings that allows for an
+                                            abbreviated
+                                            description to be entered. That character limit will be …</p>
                                     </div>
-                                </div>
-                                <div>
-                                    <p>This is the truncated description of the item. It will max out at two
-                                        lines
-                                        after
-                                        which the user can click the “more” link and pop a full box…</p>
-                                </div>
-                                <div>
-                                    <h6>Professional Responsibility</h6>
-                                </div>
-                            </a>
+                                    <div>
+                                        <h6>Professional Responsibility</h6>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
+                        <!-- 3rd one  -->
+                        <div class="headingDiv-BelowBlueBox">
+                            <h5>Wednesday June 24</h5>
+                        </div>
+                        <div class="background-yellow background-Box borderRaius-box grid-x large-12 small-12">
+                            <!-- left side -->
+                            <div class="insideBox large-2">
+                                <div class="leftSide-ofBox">
+                                    <div class="time-main-Div">
+                                        <h6 class="nine-Am">9:00 AM </h6>
+                                        <h6 class="padding-bottom-dots">..</h6>
+                                        <h6>10:00 AM</h6>
+                                    </div>
+                                    <h5>MST</h5>
+                                </div>
+                            </div>
+                            <div class="mainDiv-of-RightSIdeBox box-left-pad large-10">
+                                <a href="professionalEducation.html">
+                                    <div class="stars">
+                                        <div>
+                                            <h5>This happens to be on MY itinerary. Thus marked.</h5>
+                                        </div>
+                                        <div>
+                                            <img src="./images/starWhite.png" width="25px">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>This is the truncated description of the item. It will max out at two
+                                            lines
+                                            after
+                                            which the user can click the “more” link and pop a full box…</p>
+                                    </div>
+                                    <div>
+                                        <h6>Professional Responsibility</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- ends here -->
                     </div>
-                    <!-- ends here -->
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- rate series popup -->
-<!-- id="rateFunction" -->
-<!-- id="rateFunction" -->
-<div id="rateModel" data-reveal>
-    <div class="seriresPopup-Main-Div ">
-        <div class=" height-100 responsive-height-rate">
-            <div class="large-12 small-12 grid-x align-left pad-10">
-                <a data-close aria-label="rateModel"><img src="images/cross2.png" width="35px"/></a>
-            </div>
-            <div class="width-100 inside-seriresPopupmainDiv">
-                <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv min-max-data-popup">
-                            <!-- add data here -->
-                            <div class="grid-x height-common">
-                                <div>
-                                    <img src="images/work-from-home@3x.png" width="62px"/>
-                                </div>
-                                <div class="grid-x heading-staRate">
-                                    <h5>How to wear a mask in a board room.</h5>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star1" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,1,10)"/>
-                                    <img src="images/silverStar.png" id="star2" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,2,10)"/>
-                                    <img src="images/silverStar.png" id="star3" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,3,10)"/>
-                                    <img src="images/silverStar.png" id="star4" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,4,10)"/>
-                                    <img src="images/silverStar.png" id="star5" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,5,10)"/>
-                                    <img src="images/silverStar.png" id="star6" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,6,10)"/>
-                                    <img src="images/silverStar.png" id="star7" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,7,10)"/>
-                                    <img src="images/silverStar.png" id="star8" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,8,10)"/>
-                                    <img src="images/silverStar.png" id="star9" onclick="activeStars('reviewType1')"
-                                         onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,9,10)"/>
-                                    <img src="images/silverStar.png" id="star10"
-                                         onclick="activeStars('reviewType1')" onmouseout="mouseLeave('reviewType1')"
-                                         onmouseover="changeStar(1,10,10)"/>
-                                </div>
-                            </div>
-                            <!-- 2nd one -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star11"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,11,20)"/>
-                                    <img src="images/silverStar.png" id="star12"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,12,20)"/>
-                                    <img src="images/silverStar.png" id="star13"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11, 13,20)"/>
-                                    <img src="images/silverStar.png" id="star14"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,14,20)"/>
-                                    <img src="images/silverStar.png" id="star15"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,15,20)"/>
-                                    <img src="images/silverStar.png" id="star16"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,16,20)"/>
-                                    <img src="images/silverStar.png" id="star17"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,17,20)"/>
-                                    <img src="images/silverStar.png" id="star18"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,18,20)"/>
-                                    <img src="images/silverStar.png" id="star19"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,19,20)"/>
-                                    <img src="images/silverStar.png" id="star20"
-                                         onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
-                                         onmouseover="changeStar(11,20,20)"/>
-                                </div>
-                            </div>
-                            <!-- 3rd  -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star21"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,21,30)"/>
-                                    <img src="images/silverStar.png" id="star22"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,22,30)"/>
-                                    <img src="images/silverStar.png" id="star23"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21, 23,30)"/>
-                                    <img src="images/silverStar.png" id="star24"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,24,30)"/>
-                                    <img src="images/silverStar.png" id="star25"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,25,30)"/>
-                                    <img src="images/silverStar.png" id="star26"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,26,30)"/>
-                                    <img src="images/silverStar.png" id="star27"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,27,30)"/>
-                                    <img src="images/silverStar.png" id="star28"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,28,30)"/>
-                                    <img src="images/silverStar.png" id="star29"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,29,30)"/>
-                                    <img src="images/silverStar.png" id="star30"
-                                         onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
-                                         onmouseover="changeStar(21,30,30)"/>
-                                </div>
-                            </div>
-                            <!-- 4th -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star31"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,31,40)"/>
-                                    <img src="images/silverStar.png" id="star32"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,32,40)"/>
-                                    <img src="images/silverStar.png" id="star33"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31, 33,40)"/>
-                                    <img src="images/silverStar.png" id="star34"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,34,40)"/>
-                                    <img src="images/silverStar.png" id="star35"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,35,40)"/>
-                                    <img src="images/silverStar.png" id="star36"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,36,40)"/>
-                                    <img src="images/silverStar.png" id="star37"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,37,40)"/>
-                                    <img src="images/silverStar.png" id="star38"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,38,40)"/>
-                                    <img src="images/silverStar.png" id="star39"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,39,40)"/>
-                                    <img src="images/silverStar.png" id="star40"
-                                         onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
-                                         onmouseover="changeStar(31,40,40)"/>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <textarea placeholder="Enter Comments"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- right side -->
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv  min-max-data-popup">
-                            <!-- add data here -->
-                            <div class="grid-x">
-                                <div>
-                                    <img src="images/rate-session.png" width="62px"/>
-                                </div>
-                                <div class="director-heading">
-                                    <div>
-                                        <h6><b>Andrea Hayes</b></h6>
-                                    </div>
-                                    <div>
-                                        <h6>Director of Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <h6>Emergency Reporting</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star41"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,41,50)"/>
-                                    <img src="images/silverStar.png" id="star42"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,42,50)"/>
-                                    <img src="images/silverStar.png" id="star43"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41, 43,50)"/>
-                                    <img src="images/silverStar.png" id="star44"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,44,50)"/>
-                                    <img src="images/silverStar.png" id="star45"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,45,50)"/>
-                                    <img src="images/silverStar.png" id="star46"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,46,50)"/>
-                                    <img src="images/silverStar.png" id="star47"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,47,50)"/>
-                                    <img src="images/silverStar.png" id="star48"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,48,50)"/>
-                                    <img src="images/silverStar.png" id="star49"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,49,50)"/>
-                                    <img src="images/silverStar.png" id="star50"
-                                         onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
-                                         onmouseover="changeStar(41,50,50)"/>
-                                </div>
-                            </div>
-                            <!-- 2nd one -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star51"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,51,60)"/>
-                                    <img src="images/silverStar.png" id="star52"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,52,60)"/>
-                                    <img src="images/silverStar.png" id="star53"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51, 53,60)"/>
-                                    <img src="images/silverStar.png" id="star54"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,54,60)"/>
-                                    <img src="images/silverStar.png" id="star55"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,55,60)"/>
-                                    <img src="images/silverStar.png" id="star56"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,56,60)"/>
-                                    <img src="images/silverStar.png" id="star57"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,57,60)"/>
-                                    <img src="images/silverStar.png" id="star58"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,58,60)"/>
-                                    <img src="images/silverStar.png" id="star59"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,59,60)"/>
-                                    <img src="images/silverStar.png" id="star60"
-                                         onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
-                                         onmouseover="changeStar(51,60,60)"/>
-                                </div>
-                            </div>
-                            <!-- 3rd  -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star61"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,61,70)"/>
-                                    <img src="images/silverStar.png" id="star62"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,62,70)"/>
-                                    <img src="images/silverStar.png" id="star63"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61, 63,70)"/>
-                                    <img src="images/silverStar.png" id="star64"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,64,70)"/>
-                                    <img src="images/silverStar.png" id="star65"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,65,70)"/>
-                                    <img src="images/silverStar.png" id="star66"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,66,70)"/>
-                                    <img src="images/silverStar.png" id="star67"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,67,70)"/>
-                                    <img src="images/silverStar.png" id="star68"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,68,70)"/>
-                                    <img src="images/silverStar.png" id="star69"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,69,70)"/>
-                                    <img src="images/silverStar.png" id="star70"
-                                         onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
-                                         onmouseover="changeStar(61,70,70)"/>
-                                </div>
-                            </div>
-                            <!-- 4th -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star71"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,71,80)"/>
-                                    <img src="images/silverStar.png" id="star72"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,72,80)"/>
-                                    <img src="images/silverStar.png" id="star73"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71, 73,80)"/>
-                                    <img src="images/silverStar.png" id="star74"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,74,80)"/>
-                                    <img src="images/silverStar.png" id="star75"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,75,80)"/>
-                                    <img src="images/silverStar.png" id="star76"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,76,80)"/>
-                                    <img src="images/silverStar.png" id="star77"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,77,80)"/>
-                                    <img src="images/silverStar.png" id="star78"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,78,80)"/>
-                                    <img src="images/silverStar.png" id="star79"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,79,80)"/>
-                                    <img src="images/silverStar.png" id="star80"
-                                         onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
-                                         onmouseover="changeStar(71,80,80)"/>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <textarea placeholder="Enter Comments"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3rd box -->
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv min-max-data-popup ">
-                            <!-- add data here -->
-                            <div class="grid-x">
-                                <div>
-                                    <img src="images/rate-session.png" width="62px"/>
-                                </div>
-                                <div class="director-heading">
-                                    <div>
-                                        <h6><b>Andrea Hayes</b></h6>
-                                    </div>
-                                    <div>
-                                        <h6>Director of Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <h6>Emergency Reporting</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star81"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,81,90)"/>
-                                    <img src="images/silverStar.png" id="star82"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,82,90)"/>
-                                    <img src="images/silverStar.png" id="star83"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81, 83,90)"/>
-                                    <img src="images/silverStar.png" id="star84"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,84,90)"/>
-                                    <img src="images/silverStar.png" id="star85"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,85,90)"/>
-                                    <img src="images/silverStar.png" id="star86"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,86,90)"/>
-                                    <img src="images/silverStar.png" id="star87"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,87,90)"/>
-                                    <img src="images/silverStar.png" id="star88"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,88,90)"/>
-                                    <img src="images/silverStar.png" id="star89"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,89,90)"/>
-                                    <img src="images/silverStar.png" id="star90"
-                                         onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
-                                         onmouseover="changeStar(81,90,90)"/>
-                                </div>
-                            </div>
-                            <!-- 2nd one -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star91"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,91,100)"/>
-                                    <img src="images/silverStar.png" id="star92"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,92,100)"/>
-                                    <img src="images/silverStar.png" id="star93"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91, 93,100)"/>
-                                    <img src="images/silverStar.png" id="star94"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,94,100)"/>
-                                    <img src="images/silverStar.png" id="star95"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,95,100)"/>
-                                    <img src="images/silverStar.png" id="star96"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,96,100)"/>
-                                    <img src="images/silverStar.png" id="star97"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,97,100)"/>
-                                    <img src="images/silverStar.png" id="star98"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,98,100)"/>
-                                    <img src="images/silverStar.png" id="star99"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,99,100)"/>
-                                    <img src="images/silverStar.png" id="star100"
-                                         onclick="activeStars('reviewType10')"
-                                         onmouseout="mouseLeave('reviewType10')"
-                                         onmouseover="changeStar(91,100,100)"/>
-                                </div>
-                            </div>
-                            <!-- 3rd  -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star101"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,101,110)"/>
-                                    <img src="images/silverStar.png" id="star102"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,102,110)"/>
-                                    <img src="images/silverStar.png" id="star103"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101, 103,110)"/>
-                                    <img src="images/silverStar.png" id="star104"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,104,110)"/>
-                                    <img src="images/silverStar.png" id="star105"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,105,110)"/>
-                                    <img src="images/silverStar.png" id="star106"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,106,110)"/>
-                                    <img src="images/silverStar.png" id="star107"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,107,110)"/>
-                                    <img src="images/silverStar.png" id="star108"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,108,110)"/>
-                                    <img src="images/silverStar.png" id="star109"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,109,110)"/>
-                                    <img src="images/silverStar.png" id="star110"
-                                         onclick="activeStars('reviewType11')"
-                                         onmouseout="mouseLeave('reviewType11')"
-                                         onmouseover="changeStar(101,110,110)"/>
-                                </div>
-                            </div>
-                            <!-- 4th -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star111"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,111,120)"/>
-                                    <img src="images/silverStar.png" id="star112"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,112,120)"/>
-                                    <img src="images/silverStar.png" id="star113"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111, 113,120)"/>
-                                    <img src="images/silverStar.png" id="star114"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,114,120)"/>
-                                    <img src="images/silverStar.png" id="star115"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,115,120)"/>
-                                    <img src="images/silverStar.png" id="star116"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,116,120)"/>
-                                    <img src="images/silverStar.png" id="star117"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,117,120)"/>
-                                    <img src="images/silverStar.png" id="star118"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,118,120)"/>
-                                    <img src="images/silverStar.png" id="star119"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,119,120)"/>
-                                    <img src="images/silverStar.png" id="star120"
-                                         onclick="activeStars('reviewType12')"
-                                         onmouseout="mouseLeave('reviewType12')"
-                                         onmouseover="changeStar(111,120,120)"/>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <textarea placeholder="Enter Comments"></textarea>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4th box -->
-                    <div class="inside-main-div large-4 small-12">
-                        <!-- left side -->
-                        <div class="left-side-MainDiv min-max-data-popup">
-                            <!-- add data here -->
-                            <div class="grid-x">
-                                <div>
-                                    <img src="images/rate-session.png" width="62px"/>
-                                </div>
-                                <div class="director-heading">
-                                    <div>
-                                        <h6><b>Andrea Hayes</b></h6>
-                                    </div>
-                                    <div>
-                                        <h6>Director of Marketing</h6>
-                                    </div>
-                                    <div>
-                                        <h6>Emergency Reporting</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star121"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,121,130)"/>
-                                    <img src="images/silverStar.png" id="star122"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,122,130)"/>
-                                    <img src="images/silverStar.png" id="star123"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121, 123,130)"/>
-                                    <img src="images/silverStar.png" id="star124"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,124,130)"/>
-                                    <img src="images/silverStar.png" id="star125"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,125,130)"/>
-                                    <img src="images/silverStar.png" id="star126"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,126,130)"/>
-                                    <img src="images/silverStar.png" id="star127"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,127,130)"/>
-                                    <img src="images/silverStar.png" id="star128"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,128,130)"/>
-                                    <img src="images/silverStar.png" id="star129"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,129,130)"/>
-                                    <img src="images/silverStar.png" id="star130"
-                                         onclick="activeStars('reviewType13')"
-                                         onmouseout="mouseLeave('reviewType13')"
-                                         onmouseover="changeStar(121,130,130)"/>
-                                </div>
-                            </div>
-                            <!-- 2nd one -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star131"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,131,140)"/>
-                                    <img src="images/silverStar.png" id="star132"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,132,140)"/>
-                                    <img src="images/silverStar.png" id="star133"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131, 133,140)"/>
-                                    <img src="images/silverStar.png" id="star134"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,134,140)"/>
-                                    <img src="images/silverStar.png" id="star135"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,135,140)"/>
-                                    <img src="images/silverStar.png" id="star136"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,136,140)"/>
-                                    <img src="images/silverStar.png" id="star137"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,137,140)"/>
-                                    <img src="images/silverStar.png" id="star138"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,138,140)"/>
-                                    <img src="images/silverStar.png" id="star139"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,139,140)"/>
-                                    <img src="images/silverStar.png" id="star140"
-                                         onclick="activeStars('reviewType14')"
-                                         onmouseout="mouseLeave('reviewType14')"
-                                         onmouseover="changeStar(131,140,140)"/>
-                                </div>
-                            </div>
-                            <!-- 3rd  -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star141"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,141,150)"/>
-                                    <img src="images/silverStar.png" id="star142"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,142,150)"/>
-                                    <img src="images/silverStar.png" id="star143"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141, 143,150)"/>
-                                    <img src="images/silverStar.png" id="star144"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,144,150)"/>
-                                    <img src="images/silverStar.png" id="star145"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,145,150)"/>
-                                    <img src="images/silverStar.png" id="star146"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,146,150)"/>
-                                    <img src="images/silverStar.png" id="star147"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,147,150)"/>
-                                    <img src="images/silverStar.png" id="star148"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,148,150)"/>
-                                    <img src="images/silverStar.png" id="star149"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,149,150)"/>
-                                    <img src="images/silverStar.png" id="star150"
-                                         onclick="activeStars('reviewType15')"
-                                         onmouseout="mouseLeave('reviewType15')"
-                                         onmouseover="changeStar(141,150,150)"/>
-                                </div>
-                            </div>
-                            <!-- 4th -->
-                            <div class="MainDiv-Bodyrate">
-                                <div class="body-headingstaRate">
-                                    <h6>Was the session worth attending?</h6>
-                                </div>
-                                <div class="grid-x rate-image-width">
-                                    <img src="images/silverStar.png" id="star151"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,151,160)"/>
-                                    <img src="images/silverStar.png" id="star152"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,152,160)"/>
-                                    <img src="images/silverStar.png" id="star153"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151, 153,160)"/>
-                                    <img src="images/silverStar.png" id="star154"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,154,160)"/>
-                                    <img src="images/silverStar.png" id="star155"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,155,160)"/>
-                                    <img src="images/silverStar.png" id="star156"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,156,160)"/>
-                                    <img src="images/silverStar.png" id="star157"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,157,160)"/>
-                                    <img src="images/silverStar.png" id="star158"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,158,160)"/>
-                                    <img src="images/silverStar.png" id="star159"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,159,160)"/>
-                                    <img src="images/silverStar.png" id="star160"
-                                         onclick="activeStars('reviewType16')"
-                                         onmouseout="mouseLeave('reviewType16')"
-                                         onmouseover="changeStar(151,160,160)"/>
-                                </div>
-                            </div>
-                            <div class="MainDiv-Bodyrate">
-                                <textarea placeholder="Enter Comments"></textarea>
-                            </div>
-                        </div>
-                    </div>
+    <!-- rate series popup -->
+    <!-- id="rateFunction" -->
+    <!-- id="rateFunction" -->
+    <div id="rateModel" data-reveal>
+        <div class="seriresPopup-Main-Div ">
+            <div class=" height-100 responsive-height-rate">
+                <div class="large-12 small-12 grid-x align-left pad-10">
+                    <a data-close aria-label="rateModel"><img src="images/cross2.png" width="35px" /></a>
                 </div>
-                <!-- buttons -->
-                <!-- <div class="popupRating-button width-100 align-center grid-x">
+                <div class="width-100 inside-seriresPopupmainDiv">
+                    <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
+                                <div class="grid-x height-common">
+                                    <div>
+                                        <img src="images/work-from-home@3x.png" width="62px" />
+                                    </div>
+                                    <div class="grid-x heading-staRate">
+                                        <h5>How to wear a mask in a board room.</h5>
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star1" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,1,10)" />
+                                        <img src="images/silverStar.png" id="star2" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,2,10)" />
+                                        <img src="images/silverStar.png" id="star3" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,3,10)" />
+                                        <img src="images/silverStar.png" id="star4" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,4,10)" />
+                                        <img src="images/silverStar.png" id="star5" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,5,10)" />
+                                        <img src="images/silverStar.png" id="star6" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,6,10)" />
+                                        <img src="images/silverStar.png" id="star7" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,7,10)" />
+                                        <img src="images/silverStar.png" id="star8" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,8,10)" />
+                                        <img src="images/silverStar.png" id="star9" onclick="activeStars('reviewType1')"
+                                            onmouseout="mouseLeave('reviewType1')" onmouseover="changeStar(1,9,10)" />
+                                        <img src="images/silverStar.png" id="star10"
+                                            onclick="activeStars('reviewType1')" onmouseout="mouseLeave('reviewType1')"
+                                            onmouseover="changeStar(1,10,10)" />
+                                    </div>
+                                </div>
+                                <!-- 2nd one -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star11"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,11,20)" />
+                                        <img src="images/silverStar.png" id="star12"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,12,20)" />
+                                        <img src="images/silverStar.png" id="star13"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11, 13,20)" />
+                                        <img src="images/silverStar.png" id="star14"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,14,20)" />
+                                        <img src="images/silverStar.png" id="star15"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,15,20)" />
+                                        <img src="images/silverStar.png" id="star16"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,16,20)" />
+                                        <img src="images/silverStar.png" id="star17"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,17,20)" />
+                                        <img src="images/silverStar.png" id="star18"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,18,20)" />
+                                        <img src="images/silverStar.png" id="star19"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,19,20)" />
+                                        <img src="images/silverStar.png" id="star20"
+                                            onclick="activeStars('reviewType2')" onmouseout="mouseLeave('reviewType2')"
+                                            onmouseover="changeStar(11,20,20)" />
+                                    </div>
+                                </div>
+                                <!-- 3rd  -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star21"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,21,30)" />
+                                        <img src="images/silverStar.png" id="star22"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,22,30)" />
+                                        <img src="images/silverStar.png" id="star23"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21, 23,30)" />
+                                        <img src="images/silverStar.png" id="star24"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,24,30)" />
+                                        <img src="images/silverStar.png" id="star25"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,25,30)" />
+                                        <img src="images/silverStar.png" id="star26"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,26,30)" />
+                                        <img src="images/silverStar.png" id="star27"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,27,30)" />
+                                        <img src="images/silverStar.png" id="star28"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,28,30)" />
+                                        <img src="images/silverStar.png" id="star29"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,29,30)" />
+                                        <img src="images/silverStar.png" id="star30"
+                                            onclick="activeStars('reviewType3')" onmouseout="mouseLeave('reviewType3')"
+                                            onmouseover="changeStar(21,30,30)" />
+                                    </div>
+                                </div>
+                                <!-- 4th -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star31"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,31,40)" />
+                                        <img src="images/silverStar.png" id="star32"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,32,40)" />
+                                        <img src="images/silverStar.png" id="star33"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31, 33,40)" />
+                                        <img src="images/silverStar.png" id="star34"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,34,40)" />
+                                        <img src="images/silverStar.png" id="star35"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,35,40)" />
+                                        <img src="images/silverStar.png" id="star36"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,36,40)" />
+                                        <img src="images/silverStar.png" id="star37"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,37,40)" />
+                                        <img src="images/silverStar.png" id="star38"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,38,40)" />
+                                        <img src="images/silverStar.png" id="star39"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,39,40)" />
+                                        <img src="images/silverStar.png" id="star40"
+                                            onclick="activeStars('reviewType4')" onmouseout="mouseLeave('reviewType4')"
+                                            onmouseover="changeStar(31,40,40)" />
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <textarea placeholder="Enter Comments"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv  min-max-data-popup">
+                                <!-- add data here -->
+                                <div class="grid-x">
+                                    <div>
+                                        <img src="images/rate-session.png" width="62px" />
+                                    </div>
+                                    <div class="director-heading">
+                                        <div>
+                                            <h6><b>Andrea Hayes</b></h6>
+                                        </div>
+                                        <div>
+                                            <h6>Director of Marketing</h6>
+                                        </div>
+                                        <div>
+                                            <h6>Emergency Reporting</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star41"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,41,50)" />
+                                        <img src="images/silverStar.png" id="star42"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,42,50)" />
+                                        <img src="images/silverStar.png" id="star43"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41, 43,50)" />
+                                        <img src="images/silverStar.png" id="star44"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,44,50)" />
+                                        <img src="images/silverStar.png" id="star45"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,45,50)" />
+                                        <img src="images/silverStar.png" id="star46"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,46,50)" />
+                                        <img src="images/silverStar.png" id="star47"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,47,50)" />
+                                        <img src="images/silverStar.png" id="star48"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,48,50)" />
+                                        <img src="images/silverStar.png" id="star49"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,49,50)" />
+                                        <img src="images/silverStar.png" id="star50"
+                                            onclick="activeStars('reviewType5')" onmouseout="mouseLeave('reviewType5')"
+                                            onmouseover="changeStar(41,50,50)" />
+                                    </div>
+                                </div>
+                                <!-- 2nd one -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star51"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,51,60)" />
+                                        <img src="images/silverStar.png" id="star52"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,52,60)" />
+                                        <img src="images/silverStar.png" id="star53"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51, 53,60)" />
+                                        <img src="images/silverStar.png" id="star54"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,54,60)" />
+                                        <img src="images/silverStar.png" id="star55"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,55,60)" />
+                                        <img src="images/silverStar.png" id="star56"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,56,60)" />
+                                        <img src="images/silverStar.png" id="star57"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,57,60)" />
+                                        <img src="images/silverStar.png" id="star58"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,58,60)" />
+                                        <img src="images/silverStar.png" id="star59"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,59,60)" />
+                                        <img src="images/silverStar.png" id="star60"
+                                            onclick="activeStars('reviewType6')" onmouseout="mouseLeave('reviewType6')"
+                                            onmouseover="changeStar(51,60,60)" />
+                                    </div>
+                                </div>
+                                <!-- 3rd  -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star61"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,61,70)" />
+                                        <img src="images/silverStar.png" id="star62"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,62,70)" />
+                                        <img src="images/silverStar.png" id="star63"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61, 63,70)" />
+                                        <img src="images/silverStar.png" id="star64"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,64,70)" />
+                                        <img src="images/silverStar.png" id="star65"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,65,70)" />
+                                        <img src="images/silverStar.png" id="star66"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,66,70)" />
+                                        <img src="images/silverStar.png" id="star67"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,67,70)" />
+                                        <img src="images/silverStar.png" id="star68"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,68,70)" />
+                                        <img src="images/silverStar.png" id="star69"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,69,70)" />
+                                        <img src="images/silverStar.png" id="star70"
+                                            onclick="activeStars('reviewType7')" onmouseout="mouseLeave('reviewType7')"
+                                            onmouseover="changeStar(61,70,70)" />
+                                    </div>
+                                </div>
+                                <!-- 4th -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star71"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,71,80)" />
+                                        <img src="images/silverStar.png" id="star72"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,72,80)" />
+                                        <img src="images/silverStar.png" id="star73"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71, 73,80)" />
+                                        <img src="images/silverStar.png" id="star74"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,74,80)" />
+                                        <img src="images/silverStar.png" id="star75"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,75,80)" />
+                                        <img src="images/silverStar.png" id="star76"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,76,80)" />
+                                        <img src="images/silverStar.png" id="star77"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,77,80)" />
+                                        <img src="images/silverStar.png" id="star78"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,78,80)" />
+                                        <img src="images/silverStar.png" id="star79"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,79,80)" />
+                                        <img src="images/silverStar.png" id="star80"
+                                            onclick="activeStars('reviewType8')" onmouseout="mouseLeave('reviewType8')"
+                                            onmouseover="changeStar(71,80,80)" />
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <textarea placeholder="Enter Comments"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3rd box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup ">
+                                <!-- add data here -->
+                                <div class="grid-x">
+                                    <div>
+                                        <img src="images/rate-session.png" width="62px" />
+                                    </div>
+                                    <div class="director-heading">
+                                        <div>
+                                            <h6><b>Andrea Hayes</b></h6>
+                                        </div>
+                                        <div>
+                                            <h6>Director of Marketing</h6>
+                                        </div>
+                                        <div>
+                                            <h6>Emergency Reporting</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star81"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,81,90)" />
+                                        <img src="images/silverStar.png" id="star82"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,82,90)" />
+                                        <img src="images/silverStar.png" id="star83"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81, 83,90)" />
+                                        <img src="images/silverStar.png" id="star84"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,84,90)" />
+                                        <img src="images/silverStar.png" id="star85"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,85,90)" />
+                                        <img src="images/silverStar.png" id="star86"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,86,90)" />
+                                        <img src="images/silverStar.png" id="star87"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,87,90)" />
+                                        <img src="images/silverStar.png" id="star88"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,88,90)" />
+                                        <img src="images/silverStar.png" id="star89"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,89,90)" />
+                                        <img src="images/silverStar.png" id="star90"
+                                            onclick="activeStars('reviewType9')" onmouseout="mouseLeave('reviewType9')"
+                                            onmouseover="changeStar(81,90,90)" />
+                                    </div>
+                                </div>
+                                <!-- 2nd one -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star91"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,91,100)" />
+                                        <img src="images/silverStar.png" id="star92"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,92,100)" />
+                                        <img src="images/silverStar.png" id="star93"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91, 93,100)" />
+                                        <img src="images/silverStar.png" id="star94"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,94,100)" />
+                                        <img src="images/silverStar.png" id="star95"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,95,100)" />
+                                        <img src="images/silverStar.png" id="star96"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,96,100)" />
+                                        <img src="images/silverStar.png" id="star97"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,97,100)" />
+                                        <img src="images/silverStar.png" id="star98"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,98,100)" />
+                                        <img src="images/silverStar.png" id="star99"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,99,100)" />
+                                        <img src="images/silverStar.png" id="star100"
+                                            onclick="activeStars('reviewType10')"
+                                            onmouseout="mouseLeave('reviewType10')"
+                                            onmouseover="changeStar(91,100,100)" />
+                                    </div>
+                                </div>
+                                <!-- 3rd  -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star101"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,101,110)" />
+                                        <img src="images/silverStar.png" id="star102"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,102,110)" />
+                                        <img src="images/silverStar.png" id="star103"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101, 103,110)" />
+                                        <img src="images/silverStar.png" id="star104"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,104,110)" />
+                                        <img src="images/silverStar.png" id="star105"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,105,110)" />
+                                        <img src="images/silverStar.png" id="star106"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,106,110)" />
+                                        <img src="images/silverStar.png" id="star107"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,107,110)" />
+                                        <img src="images/silverStar.png" id="star108"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,108,110)" />
+                                        <img src="images/silverStar.png" id="star109"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,109,110)" />
+                                        <img src="images/silverStar.png" id="star110"
+                                            onclick="activeStars('reviewType11')"
+                                            onmouseout="mouseLeave('reviewType11')"
+                                            onmouseover="changeStar(101,110,110)" />
+                                    </div>
+                                </div>
+                                <!-- 4th -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star111"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,111,120)" />
+                                        <img src="images/silverStar.png" id="star112"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,112,120)" />
+                                        <img src="images/silverStar.png" id="star113"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111, 113,120)" />
+                                        <img src="images/silverStar.png" id="star114"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,114,120)" />
+                                        <img src="images/silverStar.png" id="star115"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,115,120)" />
+                                        <img src="images/silverStar.png" id="star116"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,116,120)" />
+                                        <img src="images/silverStar.png" id="star117"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,117,120)" />
+                                        <img src="images/silverStar.png" id="star118"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,118,120)" />
+                                        <img src="images/silverStar.png" id="star119"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,119,120)" />
+                                        <img src="images/silverStar.png" id="star120"
+                                            onclick="activeStars('reviewType12')"
+                                            onmouseout="mouseLeave('reviewType12')"
+                                            onmouseover="changeStar(111,120,120)" />
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <textarea placeholder="Enter Comments"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4th box -->
+                        <div class="inside-main-div large-4 small-12">
+                            <!-- left side -->
+                            <div class="left-side-MainDiv min-max-data-popup">
+                                <!-- add data here -->
+                                <div class="grid-x">
+                                    <div>
+                                        <img src="images/rate-session.png" width="62px" />
+                                    </div>
+                                    <div class="director-heading">
+                                        <div>
+                                            <h6><b>Andrea Hayes</b></h6>
+                                        </div>
+                                        <div>
+                                            <h6>Director of Marketing</h6>
+                                        </div>
+                                        <div>
+                                            <h6>Emergency Reporting</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star121"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,121,130)" />
+                                        <img src="images/silverStar.png" id="star122"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,122,130)" />
+                                        <img src="images/silverStar.png" id="star123"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121, 123,130)" />
+                                        <img src="images/silverStar.png" id="star124"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,124,130)" />
+                                        <img src="images/silverStar.png" id="star125"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,125,130)" />
+                                        <img src="images/silverStar.png" id="star126"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,126,130)" />
+                                        <img src="images/silverStar.png" id="star127"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,127,130)" />
+                                        <img src="images/silverStar.png" id="star128"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,128,130)" />
+                                        <img src="images/silverStar.png" id="star129"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,129,130)" />
+                                        <img src="images/silverStar.png" id="star130"
+                                            onclick="activeStars('reviewType13')"
+                                            onmouseout="mouseLeave('reviewType13')"
+                                            onmouseover="changeStar(121,130,130)" />
+                                    </div>
+                                </div>
+                                <!-- 2nd one -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star131"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,131,140)" />
+                                        <img src="images/silverStar.png" id="star132"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,132,140)" />
+                                        <img src="images/silverStar.png" id="star133"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131, 133,140)" />
+                                        <img src="images/silverStar.png" id="star134"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,134,140)" />
+                                        <img src="images/silverStar.png" id="star135"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,135,140)" />
+                                        <img src="images/silverStar.png" id="star136"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,136,140)" />
+                                        <img src="images/silverStar.png" id="star137"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,137,140)" />
+                                        <img src="images/silverStar.png" id="star138"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,138,140)" />
+                                        <img src="images/silverStar.png" id="star139"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,139,140)" />
+                                        <img src="images/silverStar.png" id="star140"
+                                            onclick="activeStars('reviewType14')"
+                                            onmouseout="mouseLeave('reviewType14')"
+                                            onmouseover="changeStar(131,140,140)" />
+                                    </div>
+                                </div>
+                                <!-- 3rd  -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star141"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,141,150)" />
+                                        <img src="images/silverStar.png" id="star142"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,142,150)" />
+                                        <img src="images/silverStar.png" id="star143"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141, 143,150)" />
+                                        <img src="images/silverStar.png" id="star144"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,144,150)" />
+                                        <img src="images/silverStar.png" id="star145"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,145,150)" />
+                                        <img src="images/silverStar.png" id="star146"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,146,150)" />
+                                        <img src="images/silverStar.png" id="star147"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,147,150)" />
+                                        <img src="images/silverStar.png" id="star148"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,148,150)" />
+                                        <img src="images/silverStar.png" id="star149"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,149,150)" />
+                                        <img src="images/silverStar.png" id="star150"
+                                            onclick="activeStars('reviewType15')"
+                                            onmouseout="mouseLeave('reviewType15')"
+                                            onmouseover="changeStar(141,150,150)" />
+                                    </div>
+                                </div>
+                                <!-- 4th -->
+                                <div class="MainDiv-Bodyrate">
+                                    <div class="body-headingstaRate">
+                                        <h6>Was the session worth attending?</h6>
+                                    </div>
+                                    <div class="grid-x rate-image-width">
+                                        <img src="images/silverStar.png" id="star151"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,151,160)" />
+                                        <img src="images/silverStar.png" id="star152"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,152,160)" />
+                                        <img src="images/silverStar.png" id="star153"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151, 153,160)" />
+                                        <img src="images/silverStar.png" id="star154"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,154,160)" />
+                                        <img src="images/silverStar.png" id="star155"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,155,160)" />
+                                        <img src="images/silverStar.png" id="star156"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,156,160)" />
+                                        <img src="images/silverStar.png" id="star157"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,157,160)" />
+                                        <img src="images/silverStar.png" id="star158"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,158,160)" />
+                                        <img src="images/silverStar.png" id="star159"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,159,160)" />
+                                        <img src="images/silverStar.png" id="star160"
+                                            onclick="activeStars('reviewType16')"
+                                            onmouseout="mouseLeave('reviewType16')"
+                                            onmouseover="changeStar(151,160,160)" />
+                                    </div>
+                                </div>
+                                <div class="MainDiv-Bodyrate">
+                                    <textarea placeholder="Enter Comments"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- buttons -->
+                    <!-- <div class="popupRating-button width-100 align-center grid-x">
                         <div class="width-70 grid-x align-spaced">
                             <div class="button-rankingDiv mrg-res-btn-div">
                                 <button class="button alert popup " data-close aria-label="rateModel">CANCEL</button>
@@ -1147,431 +1149,431 @@
                             </div>
                         </div>
                     </div> -->
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- ends here -->
+    <!-- ends here -->
 
-<!-- header info popup -->
-<div class="reveal small" id="exampleModal1" data-reveal>
-    <div class="info-popup-mainDiv">
-        <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
-            <div class="inside-mainDiv large-12 small-12">
-                <div class="grid-x align-justify mobo-header-responsive">
-                    <div class="heading-info-popup large-2">
-                        <div class="instruction active" id="instruction">
-                            <h5 onclick="instrucionMethod()"> Instructions </h5>
-                        </div>
-                        <div class="contact" id="contact">
-                            <h5 onclick="Contact()"> Contact </h5>
-                        </div>
-                    </div>
-                    <div class="para-popup para-popup-bordor width-70" id="instructions">
-                        <ul>
-                            <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                praesentium voluptatum deleniti atque corrupti quos dolores et quas.
-                            </li>
-                            <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-                                culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
-                            </li>
-                            <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                                doloremque laudantium
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- contact section -->
-                    <div id="contacts" class="align-right">
-                        <div class="grid-x flex-justify-start contact-popup">
-                            <div class="para-popup align-left large-8">
-                                <div class="contact-section-div-headeing ">
-                                    <ul>
-                                        <li class="data-below-head">John Doe</li>
-                                        <li class="data-below-head">johndoe@gmail.com</li>
-                                        <li class="data-below-head">+00 123 4567 890</li>
-                                    </ul>
-                                </div>
+    <!-- header info popup -->
+    <div class="reveal small" id="exampleModal1" data-reveal>
+        <div class="info-popup-mainDiv">
+            <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
+                <div class="inside-mainDiv large-12 small-12">
+                    <div class="grid-x align-justify mobo-header-responsive">
+                        <div class="heading-info-popup large-2">
+                            <div class="instruction active" id="instruction">
+                                <h5 onclick="instrucionMethod()"> Instructions </h5>
                             </div>
-                            <!-- contact 2 -->
-                            <div class="para-popup large-8">
-                                <div class="contact-section-div-headeing ">
-                                    <ul>
-                                        <li class="data-below-head">John Doe</li>
-                                        <li class="data-below-head">johndoe@gmail.com</li>
-                                        <li class="data-below-head">+00 123 4567 890</li>
-                                    </ul>
-                                </div>
+                            <div class="contact" id="contact">
+                                <h5 onclick="Contact()"> Contact </h5>
                             </div>
                         </div>
-                        <!-- button -->
-                        <div class="grid-x large-8 flex-justify-end">
+                        <div class="para-popup para-popup-bordor width-70" id="instructions">
+                            <ul>
+                                <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                                </li>
+                                <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                </li>
+                                <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium
+                                </li>
 
+                            </ul>
+                        </div>
+                        <!-- contact section -->
+                        <div id="contacts" class="align-right">
+                            <div class="grid-x flex-justify-start contact-popup">
+                                <div class="para-popup align-left large-8">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <li class="data-below-head">John Doe</li>
+                                            <li class="data-below-head">johndoe@gmail.com</li>
+                                            <li class="data-below-head">+00 123 4567 890</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- contact 2 -->
+                                <div class="para-popup large-8">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <li class="data-below-head">John Doe</li>
+                                            <li class="data-below-head">johndoe@gmail.com</li>
+                                            <li class="data-below-head">+00 123 4567 890</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="grid-x large-8 flex-justify-end">
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
     </div>
-    <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-    </button>
-</div>
-</div>
-<!-- </div> -->
+    </div>
+    <!-- </div> -->
 
 
-<script>
+    <script>
 
 
-    var type1 = true;
-    var type2 = true;
-    var type3 = true;
-    var type4 = true;
+        var type1 = true;
+        var type2 = true;
+        var type3 = true;
+        var type4 = true;
 
-    var type5 = true;
-    var type6 = true;
-    var type7 = true;
-    var type8 = true;
+        var type5 = true;
+        var type6 = true;
+        var type7 = true;
+        var type8 = true;
 
-    var type9 = true;
-    var type10 = true;
-    var type11 = true;
-    var type12 = true;
+        var type9 = true;
+        var type10 = true;
+        var type11 = true;
+        var type12 = true;
 
-    var type13 = true;
-    var type14 = true;
-    var type15 = true;
-    var type16 = true;
+        var type13 = true;
+        var type14 = true;
+        var type15 = true;
+        var type16 = true;
 
-    function mouseLeave(key) {
-        switch (key) {
-            case 'reviewType1': {
-                if (type1) {
-                    for (var i = 1; i <= 10; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+        function mouseLeave(key) {
+            switch (key) {
+                case 'reviewType1': {
+                    if (type1) {
+                        for (var i = 1; i <= 10; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType2': {
-                if (type2) {
-                    for (var i = 11; i <= 20; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType2': {
+                    if (type2) {
+                        for (var i = 11; i <= 20; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType3': {
-                if (type3) {
-                    for (var i = 21; i <= 30; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType3': {
+                    if (type3) {
+                        for (var i = 21; i <= 30; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType4': {
-                if (type4) {
-                    for (var i = 31; i <= 40; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType4': {
+                    if (type4) {
+                        for (var i = 31; i <= 40; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType5': {
-                if (type5) {
-                    for (var i = 41; i <= 50; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType5': {
+                    if (type5) {
+                        for (var i = 41; i <= 50; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType6': {
-                if (type6) {
-                    for (var i = 51; i <= 60; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType6': {
+                    if (type6) {
+                        for (var i = 51; i <= 60; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType7': {
-                if (type7) {
-                    for (var i = 61; i <= 70; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType7': {
+                    if (type7) {
+                        for (var i = 61; i <= 70; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType8': {
-                if (type8) {
-                    for (var i = 71; i <= 80; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType8': {
+                    if (type8) {
+                        for (var i = 71; i <= 80; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
 
-            case 'reviewType9': {
-                if (type9) {
-                    for (var i = 81; i <= 90; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType9': {
+                    if (type9) {
+                        for (var i = 81; i <= 90; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType10': {
-                if (type10) {
-                    for (var i = 91; i <= 100; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType10': {
+                    if (type10) {
+                        for (var i = 91; i <= 100; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType11': {
-                if (type11) {
-                    for (var i = 101; i <= 110; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType11': {
+                    if (type11) {
+                        for (var i = 101; i <= 110; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType12': {
-                if (type12) {
-                    for (var i = 111; i <= 120; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType12': {
+                    if (type12) {
+                        for (var i = 111; i <= 120; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType13': {
-                if (type13) {
-                    for (var i = 121; i <= 130; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType13': {
+                    if (type13) {
+                        for (var i = 121; i <= 130; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType14': {
-                if (type14) {
-                    for (var i = 131; i <= 140; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType14': {
+                    if (type14) {
+                        for (var i = 131; i <= 140; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            case 'reviewType15': {
-                if (type15) {
-                    for (var i = 141; i <= 150; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType15': {
+                    if (type15) {
+                        for (var i = 141; i <= 150; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
 
-            case 'reviewType16': {
-                if (type16) {
-                    for (var i = 151; i <= 160; i++) {
-                        document.getElementById("star" + i).src = "images/silverStar.png"
+                case 'reviewType16': {
+                    if (type16) {
+                        for (var i = 151; i <= 160; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
                     }
+                    break;
                 }
-                break;
-            }
 
-            default:
-                break;
+                default:
+                    break;
+            }
         }
-    }
 
-    function activeStars(key) {
-        switch (key) {
-            case 'reviewType1': {
-                type1 = false;
-                break;
-            }
-            case 'reviewType2': {
-                type2 = false;
-                break;
-            }
-            case 'reviewType3': {
-                type3 = false;
-                break;
-            }
+        function activeStars(key) {
+            switch (key) {
+                case 'reviewType1': {
+                    type1 = false;
+                    break;
+                }
+                case 'reviewType2': {
+                    type2 = false;
+                    break;
+                }
+                case 'reviewType3': {
+                    type3 = false;
+                    break;
+                }
 
-            case 'reviewType4': {
-                type4 = false;
-                break;
-            }
-            case 'reviewType5': {
-                type5 = false;
-                break;
-            }
+                case 'reviewType4': {
+                    type4 = false;
+                    break;
+                }
+                case 'reviewType5': {
+                    type5 = false;
+                    break;
+                }
 
-            case 'reviewType6': {
-                type6 = false;
-                break;
-            }
+                case 'reviewType6': {
+                    type6 = false;
+                    break;
+                }
 
-            case 'reviewType7': {
-                type7 = false;
-                break;
-            }
+                case 'reviewType7': {
+                    type7 = false;
+                    break;
+                }
 
-            case 'reviewType8': {
-                type8 = false;
-                break;
-            }
+                case 'reviewType8': {
+                    type8 = false;
+                    break;
+                }
 
-            case 'reviewType9': {
-                type9 = false;
-                break;
-            }
+                case 'reviewType9': {
+                    type9 = false;
+                    break;
+                }
 
-            case 'reviewType10': {
-                type10 = false;
-                break;
-            }
+                case 'reviewType10': {
+                    type10 = false;
+                    break;
+                }
 
-            case 'reviewType11': {
-                type11 = false;
-                break;
-            }
+                case 'reviewType11': {
+                    type11 = false;
+                    break;
+                }
 
-            case 'reviewType12': {
-                type12 = false;
-                break;
-            }
+                case 'reviewType12': {
+                    type12 = false;
+                    break;
+                }
 
-            case 'reviewType13': {
-                type13 = false;
-                break;
+                case 'reviewType13': {
+                    type13 = false;
+                    break;
+                }
+                case 'reviewType14': {
+                    type14 = false;
+                    break;
+                }
+                case 'reviewType15': {
+                    type15 = false;
+                    break;
+                }
+                case 'reviewType16': {
+                    type16 = false;
+                    break;
+                }
+                default:
+                    break;
             }
-            case 'reviewType14': {
-                type14 = false;
-                break;
-            }
-            case 'reviewType15': {
-                type15 = false;
-                break;
-            }
-            case 'reviewType16': {
-                type16 = false;
-                break;
-            }
-            default:
-                break;
         }
-    }
 
-    function changeStar(startNum, num, lastNum) {
-        for (var i = startNum; i <= num; i++) {
-            document.getElementById("star" + i).src = "images/goldenStar.png"
+        function changeStar(startNum, num, lastNum) {
+            for (var i = startNum; i <= num; i++) {
+                document.getElementById("star" + i).src = "images/goldenStar.png"
+            }
+            for (var i = (((num == 1) || (num == 11) || (num == 21) || (num == 31) || (num == 41) || (num == 51) || (num == 61) || (num == 71) || (num == 81) || (num == 91) || (num == 101) || (num == 111) || (num == 121) || (num == 131) || (num == 141) || (num == 151)) ? num : num + 1); i <= lastNum; i++) {
+                document.getElementById("star" + i).src = "images/silverStar.png"
+            }
         }
-        for (var i = (((num == 1) || (num == 11) || (num == 21) || (num == 31) || (num == 41) || (num == 51) || (num == 61) || (num == 71) || (num == 81) || (num == 91) || (num == 101) || (num == 111) || (num == 121) || (num == 131) || (num == 141) || (num == 151)) ? num : num + 1); i <= lastNum; i++) {
-            document.getElementById("star" + i).src = "images/silverStar.png"
+
+        $(document).foundation();
+
+        function restCheckBox() {
+            document.getElementById("DesktopcheckBoxReset").checked = false;
+            document.getElementById("DesktopcheckBoxReset2").checked = false;
+            document.getElementById("DesktopcheckBoxReset3").checked = false;
         }
-    }
 
-    $(document).foundation();
-
-    function restCheckBox() {
-        document.getElementById("DesktopcheckBoxReset").checked = false;
-        document.getElementById("DesktopcheckBoxReset2").checked = false;
-        document.getElementById("DesktopcheckBoxReset3").checked = false;
-    }
-
-    function mobileRestCheckBox() {
-        document.getElementById("mobilecheckBoxReset").checked = false;
-        document.getElementById("mobilecheckBoxReset2").checked = false;
-        document.getElementById("mobilecheckBoxReset3").checked = false;
-    }
-
-    if (typeof (Storage) !== "undefined") {
-        var local = localStorage.getItem("checkIn");
-        if (local) {
-            document.getElementById("cancelImg").style.display = "block"
-            document.getElementById("cancelimage-Div").style.padding = "0px 0px 0px 0px"
+        function mobileRestCheckBox() {
+            document.getElementById("mobilecheckBoxReset").checked = false;
+            document.getElementById("mobilecheckBoxReset2").checked = false;
+            document.getElementById("mobilecheckBoxReset3").checked = false;
         }
-        else {
-            document.getElementById("cancelImg").style.display = "none"
-            document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                document.getElementById("cancelImg").style.display = "block"
+                document.getElementById("cancelimage-Div").style.padding = "0px 0px 0px 0px"
+            }
+            else {
+                document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
         }
-    }
 
-    function removeCheckOut() {
-        var local = localStorage.getItem("checkIn");
-        if (local) {
-            localStorage.removeItem("checkIn");
-            document.getElementById("cancelImg").style.display = "none"
-            document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+        function removeCheckOut() {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                localStorage.removeItem("checkIn");
+                document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
         }
-    }
 
-    function myFunction() {
-        var x = document.getElementById("filter-checkbox");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+        function myFunction() {
+            var x = document.getElementById("filter-checkbox");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            var y = document.getElementById("filter-checkbox1");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            }
         }
-        var y = document.getElementById("filter-checkbox1");
-        if (y.style.display === "block") {
-            y.style.display = "none";
-        } else {
-            y.style.display = "block";
+
+        function logoutHideShow() {
+            var x = document.getElementById("logout-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-    }
 
-    function logoutHideShow() {
-        var x = document.getElementById("logout-popup");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
         }
-    }
 
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-    }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
+        // header popup variables
+        var z = document.getElementById("instructions");
+        var w = document.getElementById("contacts");
 
-    // header popup variables
-    var z = document.getElementById("instructions");
-    var w = document.getElementById("contacts");
+        function instrucionMethod() {
+            document.getElementById("contact").classList.remove('active');
+            document.getElementById("instruction").classList.add('active');
+            z.style.display = "block";
+            w.style.display = "none";
+        }
 
-    function instrucionMethod() {
-        document.getElementById("contact").classList.remove('active');
-        document.getElementById("instruction").classList.add('active');
-        z.style.display = "block";
-        w.style.display = "none";
-    }
+        function Contact() {
+            document.getElementById("instruction").classList.remove('active');
+            document.getElementById("contact").classList.add('active');
+            w.style.display = "block";
+            z.style.display = "none";
+        }
 
-    function Contact() {
-        document.getElementById("instruction").classList.remove('active');
-        document.getElementById("contact").classList.add('active');
-        w.style.display = "block";
-        z.style.display = "none";
-    }
-
-</script>
+    </script>
 
 
 </body>
