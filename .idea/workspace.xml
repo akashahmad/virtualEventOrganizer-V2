@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1062c40f-ee7f-49fd-9179-b41e4143300c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/agenda.html" afterPath="$PROJECT_DIR$/agenda.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/checkout.html" afterPath="$PROJECT_DIR$/checkout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/foundation3.css" afterPath="$PROJECT_DIR$/dist/foundation3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itinerary.html" afterPath="$PROJECT_DIR$/itinerary.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foundation3.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="foundation3.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/foundation3.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
+            <state relative-caret-position="-2083">
               <caret line="1081" column="32" lean-forward="false" selection-start-line="1081" selection-start-column="32" selection-end-line="1081" selection-end-column="32" />
               <folding />
             </state>
@@ -61,11 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="checkout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/checkout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="1858" column="73" lean-forward="false" selection-start-line="1858" selection-start-column="73" selection-end-line="1858" selection-end-column="73" />
+            <state relative-caret-position="157">
+              <caret line="1890" column="42" lean-forward="true" selection-start-line="1890" selection-start-column="42" selection-end-line="1890" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -127,6 +123,7 @@
       <find>cros</find>
       <find>cancel</find>
       <find>cancel.pn</find>
+      <find>errorCheckInPopup</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -140,10 +137,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/professionalEducation.html" />
-        <option value="$PROJECT_DIR$/checkout.html" />
         <option value="$PROJECT_DIR$/itinerary.html" />
         <option value="$PROJECT_DIR$/agenda.html" />
         <option value="$PROJECT_DIR$/dist/foundation3.css" />
+        <option value="$PROJECT_DIR$/checkout.html" />
       </list>
     </option>
   </component>
@@ -321,12 +318,12 @@
       <updated>1596937637088</updated>
       <workItem from="1596937638376" duration="816000" />
       <workItem from="1597013797082" duration="18000" />
-      <workItem from="1597092625750" duration="4188000" />
+      <workItem from="1597092625750" duration="4962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7264000" />
+    <option name="totallyTimeSpent" value="8038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="692" extended-state="0" />
@@ -769,16 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="1858" column="73" lean-forward="false" selection-start-line="1858" selection-start-column="73" selection-end-line="1858" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/itinerary.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -797,9 +784,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/foundation3.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
+        <state relative-caret-position="-2083">
           <caret line="1081" column="32" lean-forward="false" selection-start-line="1081" selection-start-column="32" selection-end-line="1081" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="1890" column="42" lean-forward="true" selection-start-line="1890" selection-start-column="42" selection-end-line="1890" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
