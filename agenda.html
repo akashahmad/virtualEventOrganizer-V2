@@ -252,7 +252,7 @@
                     <!-- main div of boxes -->
                     <div>
                         <!-- inside boxes main div -->
-                        <div class="background-pink background-Box borderRaius-box grid-x large-12 small-12">
+                        <div id="pinkCard" class="background-pink background-Box borderRaius-box grid-x large-12 small-12">
                             <!-- left side -->
                             <div class="insideBox large-2">
                                 <div class="leftSide-ofBox">
@@ -1784,7 +1784,8 @@
             var local = localStorage.getItem("checkIn");
             if (local) {
                 localStorage.removeItem("checkIn");
-                document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelImg").style.display = "none";
+                document.getElementById("pinkCard").style.display = "none";
                 document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
             }
         }
