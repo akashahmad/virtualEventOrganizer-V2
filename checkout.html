@@ -1807,10 +1807,10 @@
             if (typeof (Storage) !== "undefined") {
 
                 var local = localStorage.getItem("checkIn");
-                if (local) {
+                if (local === "true") {
                     if (document.getElementById("checkinCode").value == "54321") {
-                        localStorage.removeItem("checkIn");
-                        // localStorage.setItem("checkIn", "false");
+                        // localStorage.removeItem("checkIn");
+                        localStorage.setItem("checkIn", "false");
                         document.getElementById("checkinCode").value = ""
                         document.getElementById("checkinButton").innerHTML = "CHECK IN";
                         document.getElementById("belowInputButton").innerHTML = "CHECK IN";
@@ -1850,7 +1850,7 @@
 
                     }
                 }
-                else {
+                else if(local === "false") {
                     if (document.getElementById("checkinCode").value == "12345") {
                         localStorage.setItem("checkIn", "true");
                         document.getElementById("checked-time-box").style.display = "block"
@@ -1900,7 +1900,7 @@
 
         if (typeof (Storage) !== "undefined") {
             var local = localStorage.getItem("checkIn");
-            if (local) {
+            if (local === "true") {
                 document.getElementById("checkinButton").innerHTML = "CHECK OUT";
                 // document.getElementById("checked-time-box").style.display = "block"
                 document.getElementById("belowInputButton").innerHTML = "CHECK OUT";
@@ -1938,7 +1938,7 @@
             }
             else {
                 document.getElementById("checkinButton").innerHTML = "CHECK IN";
-                // document.getElementById("checked-time-box").style.display = "none"
+                document.getElementById("checked-time-box").style.display = "none"
                 document.getElementById("belowInputButton").innerHTML = "CHECK IN";
                 document.getElementById("checkinCode").placeholder = "CHECK IN CODE";
                 document.getElementById("checked-time-box").innerHTML = "Checked Out: 11:00 am MDT"
