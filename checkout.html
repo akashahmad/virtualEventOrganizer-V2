@@ -1815,9 +1815,10 @@
                     localStorage.setItem("checkIn", "false");
                     document.getElementById("checkinCode").value = ""
                     document.getElementById("checkinButton").innerHTML = "CHECK IN";
-                    document.getElementById("belowInputButton").innerHTML = "CHECK IN";
+                    document.getElementById("belowInputButton").style.display = "none";
                     document.getElementById("checkedOut-time-box").style.display = "block";
                     document.getElementById("checkinCode").placeholder = "CHECK IN CODE";
+                    document.getElementById("checkinCode").style.display = "none";
                     document.getElementById("belowInputButton").disabled = true;
                     document.getElementById("rateButton").disabled = false;
                     document.getElementById("titleCheck").innerHTML = "Check In";
