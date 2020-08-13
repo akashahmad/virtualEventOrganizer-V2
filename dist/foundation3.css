@@ -692,7 +692,7 @@ margin: 0px;
 .alert.button {
     background: #f27220 !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #f27220 !important;
     font-size: 16px;
     font-weight: 500;
@@ -701,7 +701,7 @@ margin: 0px;
 .popup-outside-checkout-btn .alert.button {
     background: #cc0000 !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #cc0000 !important;
     font-size: 16px;
     font-weight: 500;
@@ -710,7 +710,7 @@ margin: 0px;
 .popup-inside-checkout-btn .alert.button {
     background: #cc0000 !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #cc0000 !important;
     font-size: 16px;
     font-weight: 500;
@@ -720,7 +720,7 @@ margin: 0px;
 .success.button {
     background: #b5e5b0 !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #b5e5b0 !important;
     font-size: 16px;
     font-weight: 500;
@@ -729,7 +729,7 @@ margin: 0px;
 .secondary.button {
     background: #bbbbbb !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #bbbbbb !important;
     font-size: 16px;
     font-weight: 500;
@@ -739,7 +739,7 @@ margin: 0px;
 .primary.button {
     background: #17a21c !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #17a21c !important;
     font-size: 16px;
     font-weight: 500;
@@ -748,7 +748,7 @@ margin: 0px;
 .success.button {
     background: #17a21c !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #17a21c !important;
     font-size: 16px;
     font-weight: 500;
@@ -758,7 +758,7 @@ margin: 0px;
 .warning.button {
     background: #5e5e5e !important;
     color: white !important;
-    border-radius: 8px !important;
+    border-radius: 4px !important;
     border: 1px solid #5e5e5e !important;
     font-size: 16px;
     font-weight: 500;
@@ -1463,6 +1463,49 @@ margin: 0px;
     padding-top: 0;
 }
 
+/* buttons menu  */
+.menu-buttons{
+    padding: 40px 0px 40px 0px;
+}
+.first-menu-buttons button.hollow.button {
+    border-top-left-radius: 8px!important;
+    border-bottom-left-radius: 8px!important;
+    border: none;
+}
+.mid-menu-buttons button.hollow.button{
+    border: none;
+}
+.last-menu-buttons button.hollow.button{
+    border-top-right-radius: 8px!important;
+    border-bottom-right-radius: 8px!important;
+    border: none;
+}
+.bkg-grey{
+    background-color: #d5d5d5!important;
+    color: #5e5e5e!important;
+    font-weight: bold;
+}
+.background-active{
+    background-color: #56c1fd!important;
+    color: #fff!important;
+    font-weight: bold;
+}
+.border-left-right-active{
+    border-right: 1px solid #fff!important;    
+}
+.border-right-active{
+    border-right: 1px solid #fff!important;
+    border-left: 1px solid #fff!important;
+}
+.border-left-active{
+    border-left: 1px solid #fff!important;
+}
+.border-left{
+    border-left: 1px solid #5e5e5e!important;    
+}
+.border-right{
+    border-right: 1px solid #5e5e5e!important;    
+}
 /* resources page css */
 .all-img{
     width: 25px;
@@ -1480,7 +1523,18 @@ margin: 0px;
     padding: 20px;
     border-radius: 4px;
 }
-
+.font-18{
+    font-size: 18px;
+}
+.grey-text{
+    color: #9a9a9a;
+}
+.grey-text h6{
+    font-size: 16px;
+}
+.grey-text-paragraphs{
+    color: #5e5e5e;
+}
 .res-pg .horrzontal-line-div {
     padding: 15px 0px 22px 0px;
 }
@@ -1500,14 +1554,12 @@ margin: 0px;
     font-size: 16px;
     font-weight: bold;
 }
-.bkg-grey{
-    background-color: #d5d5d5;
-    color: #5e5e5e;
-}
+
 .sl-div select {
+    border-radius: 5px;
     z-index: 111!important;
     background-position: right!important;
-    padding: 0px 5px 0px 5px!important;
+    padding: 0px 10px 0px 10px!important;
     position: relative!important;
     background-image: url(../images/downArrow.png)!important;
 }
@@ -1935,7 +1987,19 @@ margin: 0px;
     }
 
     /* css end here */
-    .below-header .buttons-mainDiv .itinaryButton1 {
+    .menu-buttons{
+        padding: 20px 0px 20px 0px!important;
+    }
+    .first-menu-buttons button.hollow.button {
+        font-size: 9px!important;
+    }
+    .mid-menu-buttons button.hollow.button{
+        font-size: 9px!important;
+    }
+    .last-menu-buttons button.hollow.button{
+        font-size: 9px!important;
+    }
+    /* .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 9px !important;
         padding: 11px 10px 10px 10px !important;
     }
@@ -1957,7 +2021,7 @@ margin: 0px;
     .below-header .buttons-mainDiv .rs-agenda-btn{
         font-size: 9px!important;
         padding: 12px!important;
-    }
+    } */
 
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
@@ -2234,7 +2298,19 @@ margin: 0px;
     }
 
     /* ends here */
-    .below-header .buttons-mainDiv .itinaryButton1 {
+    .menu-buttons{
+        padding: 20px 0px 20px 0px!important;
+    }
+    .first-menu-buttons button.hollow.button {
+        font-size: 9px!important;
+    }
+    .mid-menu-buttons button.hollow.button{
+        font-size: 9px!important;
+    }
+    .last-menu-buttons button.hollow.button{
+        font-size: 9px!important;
+    }
+    /* .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 9px !important;
         padding: 11px 10px 10px 10px !important;
     }
@@ -2256,7 +2332,7 @@ margin: 0px;
     .below-header .buttons-mainDiv .rs-agenda-btn{
         font-size: 9px !important;
         padding: 12px 12px 12px 12px !important;
-    }
+    } */
 
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
@@ -2545,7 +2621,19 @@ margin: 0px;
 
     /* ends here */
     /* rate rtesponsive */
-    .below-header .buttons-mainDiv .itinaryButton1 {
+    .menu-buttons{
+        padding: 20px 0px 20px 0px!important;
+    }
+    .first-menu-buttons button.hollow.button {
+        font-size: 9px!important;
+    }
+    .mid-menu-buttons button.hollow.button{
+        font-size: 9px!important;
+    }
+    .last-menu-buttons button.hollow.button{
+        font-size: 9px!important;
+    }
+    /* .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 14px !important;
         padding: 11px 12px 11px 12px !important;
     }
@@ -2568,7 +2656,7 @@ margin: 0px;
     .below-header .buttons-mainDiv .rs-agenda-btn{
         font-size: 14px !important;
         padding: 12px 12px 12px 12px !important
-    }
+    } */
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -2821,7 +2909,7 @@ margin: 0px;
         margin: 0px 0px 0px 0px !important;
     }
 
-    .below-header .buttons-mainDiv .itinaryButton1 {
+    /* .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 14px !important;
         padding: 11px 12px 11px 12px !important;
     }
@@ -2845,7 +2933,7 @@ margin: 0px;
     .below-header .buttons-mainDiv .rs-agenda-btn{
         font-size: 14px !important;
         padding: 11px 12px 11px 12px !important;
-    }
+    } */
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -3090,7 +3178,7 @@ margin: 0px;
         margin: 0px 0px 0px 0px !important;
     }
 
-    .below-header .buttons-mainDiv .itinaryButton1 {
+    /* .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 14px !important;
         padding: 11px 12px 11px 12px !important;
     }
@@ -3108,7 +3196,7 @@ margin: 0px;
     .below-header .buttons-mainDiv .mainAgendaButton {
         font-size: 16px !important;
         padding: 11px 12px 11px 12px !important;
-    }
+    } */
 
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
