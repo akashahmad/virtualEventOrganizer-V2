@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    </link>
+    <link rel="stylesheet" href="dist/foundation.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="dist/foundation3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
+        integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid main-div-ofpage-agenda">
+        <!-- header section starts from here -->
+        <div class="grid-x main-header-div">
+            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
+                <div>
+                    <img src="images/3m.png" width="40px" />
+                </div>
+                <div class="conclave-heading">
+                    <h6>COVID Conclave 2020</h6>
+                </div>
+            </div>
+            <div class="small-9 medium-9 large-9 ">
+                <div class="grid-x header justify-content-end">
+                    <!-- onclick="headerHideShow()" -->
+                    <div class="imgDiv cursor-pointer">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
+                    </div>
+                    <!-- div for line -->
+                    <div class="blankDiv-For-Line">
+                    </div>
+                    <!-- name -->
+                    <div>
+                        <span class="nameSpan">John Doe</span>
+                    </div>
+                    <!-- icon img -->
+                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
+                        <img src="images/bitmap.png" width="40px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logout-popup -->
+        <div class="grid-x large-12 align-left">
+            <div class="logout-box-div" id="logout-popup">
+                <button class="button success popupCheckoutBlack">Logout</button>
+            </div>
+        </div>
+        <!-- responsive header -->
+        <div class="responsive-header-mainDiv">
+            <div class="grid-x flex-justify-between flex-alignItem">
+                <div class="grid-x flex-alignItem">
+                    <div>
+                        <img src="images/3m.png" width="40px" />
+                    </div>
+                    <div class="conclave-heading">
+                        <h6>COVID Conclave 2020</h6>
+                    </div>
+                </div>
+                <div class="mobile-nav-logo">
+                    <!-- onclick="headerHideShow() -->
+                    <div class="question-mark">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
+                    </div>
+                    <div onclick="openNav()">
+                        <img src="images/hamburger.png" width="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
+            <div class="sidenav-hamburger">
+                <div class="height-100">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                    </div>
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#">Hello John Doe</a>
+                    </div>
+                    <div class="grid-x flex-alignItem flex-justify-center height-100">
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body section starts from hgere -->
+        <div class="mainDiv-ofBody pad-top-bottom-30">
+            <div class="below-header grid-x">
+                <!-- left-side -->
+                <div class="large-4 small-12 itr-pg">
+                    <div class="large-9 small-12">
+                        <div class="grid-x align-center img-div">
+                            <img src="images/rover.png" class="menu-class" />
+                        </div>
+                    </div>
+                    <!-- 2nd button -->
+                    <div class="large-9 small-12 pd-30-5">
+                        <button class="button hollow secondary large-12 small-12" onclick="backPage()"
+                            id="buttonText">Back to Resources/Session</button>
+                    </div>
+                    <!-- 3rd button -->
+                    <div class="large-9 small-12 grid-x align-center">
+                        <button class=" large-12 small-12 button hollow alert" class="button" data-open="requestPopup">
+                            <img src="images/Union 4@3x.png" width="20px" />
+                            INSTANT CONTACT REQUEST
+                        </button>
+                    </div>
+                    <!-- heading section -->
+                    <div class="pad-top-bottom-30 large-9 small-12">
+                        <div>
+                            <h5><b>Resources</b></h5>
+                        </div>
+                        <!-- box below heading -->
+                        <div class="large-12 small-12 res-pg">
+                            <!-- 1st row -->
+                            <div class="grid-x large-12 small-12 align-justify ">
+                                <div class="large-8 small-6 box-head">
+                                    <h6>Kenworth Brochure - New 2020 Trucks </h6>
+                                </div>
+                                <div class="large-1 grid-x align-left small-6">
+                                    <div class="head-img grid-x">
+                                        <img src="images/downloadIcon.png" class="all-img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- horizontal line -->
+                            <div class="grid-x large-12 small-12 horrzontal-line-div">
+                                <div class="large-12 small-12 horizontal-line">
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="grid-x large-12 small-12 align-justify ">
+                                <div class="large-9 small-6 box-head">
+                                    <h6>Peterbilt Brochure - New Rigs for 2021 and Beyond</h6>
+                                </div>
+                                <div class="large-1 grid-x align-left small-6">
+                                    <div class="head-img grid-x">
+                                        <img src="images/downloadIcon.png" class="all-img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side -->
+                <div class="large-8 small-12">
+                    <div class="large-12 small-12">
+                        <h6><b>The Title Of The Video is Here</b></h6>
+                    </div>
+                    <!-- para -->
+                    <div class="large-12 small-12">
+                        <p>This is the description provided by the sponsor to accompany their video content. The content
+                            would come from a WYSIWYG editor in the Event Builder. No real limit to length.</p>
+                    </div>
+                    <!-- img -->
+                    <div class="large-12 small-12">
+                        <img src="images/Image 33@3x.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- header info popup -->
+    <div class="reveal small" id="exampleModal1" data-reveal>
+        <div class="info-popup-mainDiv">
+            <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
+                <div class="inside-mainDiv large-12 small-12">
+                    <div class="grid-x align-justify mobo-header-responsive">
+                        <div class="heading-info-popup large-2">
+                            <div class="instruction active" id="instruction">
+                                <h5 onclick="instrucionMethod()"> Instructions </h5>
+                            </div>
+                            <div class="contact" id="contact">
+                                <h5 onclick="Contact()"> Contact </h5>
+                            </div>
+                        </div>
+                        <div class="para-popup para-popup-bordor width-70" id="instructions">
+                            <ul>
+                                <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                                </li>
+                                <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                </li>
+                                <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- contact section -->
+                        <div id="contacts" class="align-right">
+                            <div class="grid-x flex-justify-start contact-popup">
+                                <div class="para-popup align-left large-8">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <li class="data-below-head">John Doe</li>
+                                            <li class="data-below-head">johndoe@gmail.com</li>
+                                            <li class="data-below-head">+00 123 4567 890</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- contact 2 -->
+                                <div class="para-popup large-8">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <li class="data-below-head">John Doe</li>
+                                            <li class="data-below-head">johndoe@gmail.com</li>
+                                            <li class="data-below-head">+00 123 4567 890</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="grid-x large-8 flex-justify-end">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <div class="reveal" id="requestPopup" data-reveal>
+        <div class="large-12 small-12">
+            <!-- img -->
+            <div class="grid-x align-center pad-top-bottom-10">
+                <img src="images/screen.png" width="60px" />
+            </div>
+            <!-- heading -->
+            <div class="grid-x align-center pad-top-bottom-10">
+                <h6><b>We will dispatch your message to John Doe!</b></h6>
+            </div>
+            <!-- paragraph -->
+            <div class="grid-x large-12 small-12 align-center">
+                <div class="grid-x large-11 small-11 text-center pad-top-bottom-10">
+                    <p>A representative of our organization will reach out to you via the email you registered with.
+                        What
+                        information would you like to include in your message?</p>
+                </div>
+            </div>
+            <!-- checkbox -->
+            <div class="grid-x align-center pad-top-bottom-10">
+                <!-- checkbox -->
+                <div class="grid-x large-11 small-11 align-justify">
+                    <div class="small-6 large-6 medium-6">
+                        <label class="check2">Use My Mobile
+                            <input type="checkbox" onclick="checkBoxButton()" id="checkboxButton">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <!-- input -->
+                    <div class="medium-6 small-6 cell large-6 medium-6">
+                        <input type="text" placeholder="000 0000 000" id="inputActiveUnactive" disabled>
+                    </div>
+                </div>
+            </div>
+            <!-- textarea -->
+            <div class="large-12 small-12 grid-x align-center">
+                <div class="large-11 small-11">
+                    <textarea placeholder="Comments" class="height-80"></textarea>
+                </div>
+            </div>
+            <!-- buttons -->
+            <div class="large-12 small-12 grid-x align-center">
+                <div class="large-6 small-6 grid-x align-left pad-l-r-5">
+                    <button class="button success popup" class="button" data-open="requestSend">Send</button>
+                </div>
+                <div class="large-6 small-6 grid-x align-right pad-l-r-5">
+                    <button class="button alert popupCheckoutgrey" class="close-button" data-close
+                        aria-label="Close modal" type="button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- request send popup -->
+    <div class="reveal tiny" id="requestSend" data-reveal data-multiple-opened="true">
+        <div class="large-12 small-12">
+            <!-- img -->
+            <div class="grid-x align-center pad-top-bottom-10">
+                <img src="images/screen.png" width="60px" />
+            </div>
+            <!-- heading -->
+            <div class="grid-x align-center pad-top-bottom-10">
+                <h6><b>Success!</b></h6>
+            </div>
+            <!-- paragraph -->
+            <div class="grid-x large-12 small-12 align-center">
+                <div class="grid-x large-12 small-12 text-center ">
+                    <p class="large-12 small-12">You will hear from us shortly!</p>
+                </div>
+            </div>
+            <!-- buttons -->
+            <div class="large-12 small-12 grid-x align-center pad-top-bottom-10">
+                <button class="button alert popupCheckoutgrey" class="close-button" data-close aria-label="Close modal"
+                    type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $(document).foundation();
+
+        function checkBoxButton() {
+            var chBox = document.getElementById("checkboxButton");
+
+            if (chBox.checked === false) {
+                // document.getElementById("checkboxButton").checked = true;
+                document.getElementById("inputActiveUnactive").disabled = true;
+            }
+            else if (chBox.checked === true) {
+                // document.getElementById("checkboxButton").checked = false;
+                document.getElementById("inputActiveUnactive").disabled = false;
+            }
+        }
+
+
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("text");
+            if (local === "resourcePage") {
+                document.getElementById("buttonText").innerHTML = "Back to Resources";
+            }
+            else if (local === "checkoutPage") {
+                document.getElementById("buttonText").innerHTML = "Back to Session";
+            }
+            else if (local === "professionalPage") {
+                document.getElementById("buttonText").innerHTML = "Back to Session";
+            }
+        }
+
+        function backPage() {
+            var local = localStorage.getItem("text");
+            if (local === "resourcePage") {
+                window.location.href = "resources.html";
+            }
+            else if (local === "checkoutPage") {
+                window.location.href = "checkout.html";
+            }
+            else if (local === "professionalPage") {
+                window.location.href = "professionalEducation.html";
+            }
+        }
+
+        function restCheckBox() {
+            document.getElementById("DesktopcheckBoxReset").checked = false;
+            document.getElementById("DesktopcheckBoxReset2").checked = false;
+            document.getElementById("DesktopcheckBoxReset3").checked = false;
+        }
+
+        function mobileRestCheckBox() {
+            document.getElementById("mobilecheckBoxReset").checked = false;
+            document.getElementById("mobilecheckBoxReset2").checked = false;
+            document.getElementById("mobilecheckBoxReset3").checked = false;
+        }
+
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                // document.getElementById("cancelImg").style.display = "block";
+                // document.getElementById("cancelimage-Div").style.padding = "0px 0px 0px 0px";
+            }
+            else {
+                document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
+        }
+
+        function removeCheckOut() {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                localStorage.removeItem("checkIn");
+                document.getElementById("cancelImg").style.display = "none";
+                document.getElementById("pinkCard").style.display = "none";
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("filter-checkbox");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            var y = document.getElementById("filter-checkbox1");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            }
+        }
+
+        function logoutHideShow() {
+            var x = document.getElementById("logout-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // header popup variables
+        var z = document.getElementById("instructions");
+        var w = document.getElementById("contacts");
+
+        function instrucionMethod() {
+            document.getElementById("contact").classList.remove('active');
+            document.getElementById("instruction").classList.add('active');
+            z.style.display = "block";
+            w.style.display = "none";
+        }
+
+        function Contact() {
+            document.getElementById("instruction").classList.remove('active');
+            document.getElementById("contact").classList.add('active');
+            w.style.display = "block";
+            z.style.display = "none";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

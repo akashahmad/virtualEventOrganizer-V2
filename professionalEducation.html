@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script type="text/css"
-        src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    </link>
     <link rel="stylesheet" href="dist/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
@@ -184,12 +184,13 @@
                             </div>
                             <!-- below sponsors heading -->
                             <div class="buttonImageDiv flex-alignItem medium-10">
-                                <button href="#" class="large-12 grid-x align-center button-professionPage">
+                                <button class="cursor-pointer large-12 grid-x align-center button-professionPage"
+                                    onclick="ChangePage()">
                                     <img src="images/rover.png" width="80px" />
                                 </button>
                             </div>
                             <div class="buttonImageDiv flex-alignItem medium-10 pad-top-bottom-10">
-                                <button href="#" class="large-12 grid-x align-center button-professionPage">
+                                <button class="large-12 grid-x align-center button-professionPage">
                                     <img src="images/mueller.png" width="90px" />
                                 </button>
                             </div>
@@ -308,11 +309,18 @@
         </div>
     </div>
     <script>
+
+
+        function ChangePage() {
+            localStorage.setItem("text", "professionalPage");
+            window.location.href = "sponsored.html";
+        }
+
         function addToItineray() {
             if (typeof (Storage) !== "undefined") {
                 localStorage.removeItem("checkIn");
             }
-            window.location.href="checkout.html"
+            window.location.href = "checkout.html"
         }
 
         $(document).foundation();

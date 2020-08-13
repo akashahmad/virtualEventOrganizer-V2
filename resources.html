@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    </link>
+    <link rel="stylesheet" href="dist/foundation.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="dist/foundation3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- foundation-prototype.min.css: Compressed CSS with prototyping classes -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-prototype.min.css"
+        integrity="sha256-BiKflOunI0SIxlTOOUCQ0HgwXrRrRwBkIYppEllPIok=" crossorigin="anonymous">
+    <!-- foundation-rtl.min.css: Compressed CSS with right-to-left reading direction -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-rtl.min.css"
+        integrity="sha256-F+9Ns8Z/1ZISonBbojH743hsmF3x3AlQdJEeD8DhQsE=" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"
+        integrity="sha512-9cXmvmK1gIDw3Tol6Xg/1SUls/CvBMgedu1aDjT519sQzy7jk+LoezyQqlzClW2LgXww4xEyuqtofg7PtWteLQ=="
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid main-div-ofpage-agenda">
+        <!-- header section starts from here -->
+        <div class="grid-x main-header-div">
+            <div class="small-3 medium-3 large-3 grid-x flex-alignItem">
+                <div>
+                    <img src="images/3m.png" width="40px" />
+                </div>
+                <div class="conclave-heading">
+                    <h6>COVID Conclave 2020</h6>
+                </div>
+            </div>
+            <div class="small-9 medium-9 large-9 ">
+                <div class="grid-x header justify-content-end">
+                    <!-- onclick="headerHideShow()" -->
+                    <div class="imgDiv cursor-pointer">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="20px">
+                    </div>
+                    <!-- div for line -->
+                    <div class="blankDiv-For-Line">
+                    </div>
+                    <!-- name -->
+                    <div>
+                        <span class="nameSpan">John Doe</span>
+                    </div>
+                    <!-- icon img -->
+                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
+                        <img src="images/bitmap.png" width="40px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- logout-popup -->
+        <div class="grid-x large-12 align-left">
+            <div class="logout-box-div" id="logout-popup">
+                <button class="button success popupCheckoutBlack">Logout</button>
+            </div>
+        </div>
+        <!-- responsive header -->
+        <div class="responsive-header-mainDiv">
+            <div class="grid-x flex-justify-between flex-alignItem">
+                <div class="grid-x flex-alignItem">
+                    <div>
+                        <img src="images/3m.png" width="40px" />
+                    </div>
+                    <div class="conclave-heading">
+                        <h6>COVID Conclave 2020</h6>
+                    </div>
+                </div>
+                <div class="mobile-nav-logo">
+                    <!-- onclick="headerHideShow() -->
+                    <div class="question-mark">
+                        <img src="images/question@3x.png" data-open="exampleModal1" width="25px">
+                    </div>
+                    <div onclick="openNav()">
+                        <img src="images/hamburger.png" width="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
+            <div class="sidenav-hamburger">
+                <div class="height-100">
+                    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                    </div>
+                    <div class="grid-x flex-alignItem flex-justify-center">
+                        <a href="#">Hello John Doe</a>
+                    </div>
+                    <div class="grid-x flex-alignItem flex-justify-center height-100">
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- body section starts from hgere -->
+        <div class="mainDiv-ofBody">
+            <div class="below-header">
+                <!-- buttons -->
+                <div class="buttons-mainDiv">
+                    <div class="small-12 medium-12 large-12 insideButtonsMainDiv">
+                        <!-- 1st button -->
+                        <div>
+                            <button class="itinaryButton cursor-pointer"
+                                onclick="window.location.href='itinerary.html?nosplash=true'">MY ITINERARY
+                            </button>
+                        </div>
+                        <!-- 2nd button -->
+                        <div>
+                            <button class="rs-agenda-btn bkg-grey Button cursor-pointer"
+                                onclick="window.location.href='agenda.html'">MAIN AGENDA
+                            </button>
+                        </div>
+                        <!-- 3rd button -->
+                        <div>
+                            <button class="mainAgendaButton bgr-agd cursor-pointer" href="#">RESOURCES</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- heading-select option -->
+                <div class="large-12 small-12 grid-x">
+                    <div class="large-10 small-12">
+                        <h5><b>Brochures</b></h5>
+                    </div>
+                    <div class="large-2 small-12 grid-x align-left sl-div">
+                        <div class="large-12 small-12">
+                            <select>
+                                <option>Sorted By</option>
+                                <option>Category</option>
+                                <option>Videos</option>
+                                <option>Documents</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- boxes of resources -->
+                <div class="large-12 small-12 ">
+                    <!-- box 1 -->
+                    <div class="large-12 small-12 res-pg">
+                        <!-- 1st row -->
+                        <div class="grid-x large-12 small-12 align-justify">
+                            <div class="large-7 small-12">
+                                <h6>Kenworth Brochure - New 2020 Trucks</h6>
+                            </div>
+                            <div class="large-4 small-16">
+                                <h6>PDF</h6>
+                            </div>
+                            <div class="large-1 grid-x align-left small-6">
+                                <div>
+                                    <img src="images/downloadIcon.png" class="all-img" class="all-img" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- horizontal line -->
+                        <div class="grid-x large-12 small-12 horrzontal-line-div">
+                            <div class="large-12 small-12 horizontal-line">
+                            </div>
+                        </div>
+                        <!-- 2nd row -->
+                        <div class="grid-x large-12 small-12 align-justify">
+                            <div class="large-7 small-12">
+                                <h6>Peterbilt Brochure - New Rigs for 2021 and Beyond</h6>
+                            </div>
+                            <div class="large-4 small-6">
+                                <h6>PDF</h6>
+                            </div>
+                            <div class="large-1 grid-x align-left small-6">
+                                <div>
+                                    <img src="images/downloadIcon.png" class="all-img" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box 2 -->
+                    <div class="large-12 small-12 bx-pad-others">
+                        <div class="res-h5">
+                            <h5><b>Data Analysis</b></h5>
+                        </div>
+                        <div class="large-12 small-12 res-pg">
+                            <!-- 1st row -->
+                            <div class="grid-x large-12 small-12 align-justify">
+                                <div class="large-7 small-12">
+                                    <h6>Data Analysis #4309 - Harvard Studies: Cambridge Division</h6>
+                                </div>
+                                <div class="large-4 small-6">
+                                    <h6>XLSX</h6>
+                                </div>
+                                <div class="large-1 grid-x align-left small-6">
+                                    <div>
+                                        <img src="images/downloadIcon.png" class="all-img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- horizontal line -->
+                            <div class="grid-x large-12 small-12 horrzontal-line-div">
+                                <div class="large-12 small-12 horizontal-line">
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="grid-x large-12 small-12 align-justify">
+                                <div class="large-7 small-12">
+                                    <h6>Non-Sponsored Video</h6>
+                                </div>
+                                <div class="large-4 small-6">
+                                    <h6>VIDEO</h6>
+                                </div>
+                                <div class="large-1 grid-x align-left small-6">
+                                    <div class="cursor-pointer" onclick="window.location.href='non-sponsored.html'">
+                                        <img src="images/circular@3x.png" class="all-img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- box 3 -->
+                    <div class="large-12 small-12 bx3-pad-others">
+                        <div class="res-h5">
+                            <h5><b>Sponsored Content</b></h5>
+                        </div>
+                        <div class="large-12 small-12 res-pg">
+                            <!-- 1st row -->
+                            <div class="grid-x large-12 small-12 align-justify">
+                                <div class="large-7 small-12">
+                                    <h6>A Sponsored Video</h6>
+                                </div>
+                                <div class="large-4 small-6">
+                                    <h6>Video</h6>
+                                </div>
+                                <div class="large-1 grid-x align-left small-6">
+                                    <div class="cursor-pointer" onclick="ChangePage()">
+                                        <img src="images/circular@3x.png" class="all-img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- horizontal line -->
+                            <div class="grid-x large-12 small-12 horrzontal-line-div">
+                                <div class="large-12 small-12 horizontal-line">
+                                </div>
+                            </div>
+                            <!-- 2nd row -->
+                            <div class="grid-x large-12 small-12 align-justify">
+                                <div class="large-7 small-12">
+                                    <h6>Uranchia Explore</h6>
+                                </div>
+                                <div class="large-4 small-6">
+                                    <h6>PPS</h6>
+                                </div>
+                                <div class="large-1 grid-x align-left small-6">
+                                    <div>
+                                        <img src="images/downloadIcon.png" class="all-img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- header info popup -->
+    <div class="reveal small" id="exampleModal1" data-reveal>
+        <div class="info-popup-mainDiv">
+            <div class="grid-x align-center flex-alignItem height-100 inside-popup-main-div-res">
+                <div class="inside-mainDiv large-12 small-12">
+                    <div class="grid-x align-justify mobo-header-responsive">
+                        <div class="heading-info-popup large-2">
+                            <div class="instruction active" id="instruction">
+                                <h5 onclick="instrucionMethod()"> Instructions </h5>
+                            </div>
+                            <div class="contact" id="contact">
+                                <h5 onclick="Contact()"> Contact </h5>
+                            </div>
+                        </div>
+                        <div class="para-popup para-popup-bordor width-70" id="instructions">
+                            <ul>
+                                <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas.
+                                </li>
+                                <li> Molestias excepturi sint occaecati cupiditate non provident, similique sunt in
+                                    culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                </li>
+                                <li> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- contact section -->
+                        <div id="contacts" class="align-right">
+                            <div class="grid-x flex-justify-start contact-popup">
+                                <div class="para-popup align-left large-8">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <li class="data-below-head">John Doe</li>
+                                            <li class="data-below-head">johndoe@gmail.com</li>
+                                            <li class="data-below-head">+00 123 4567 890</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- contact 2 -->
+                                <div class="para-popup large-8">
+                                    <div class="contact-section-div-headeing ">
+                                        <ul>
+                                            <li class="data-below-head">John Doe</li>
+                                            <li class="data-below-head">johndoe@gmail.com</li>
+                                            <li class="data-below-head">+00 123 4567 890</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="grid-x large-8 flex-justify-end">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <script>
+
+
+        $(document).foundation();
+
+        function ChangePage() {
+            localStorage.setItem("text", "resourcePage");
+            window.location.href = "sponsored.html";
+        }
+
+        function restCheckBox() {
+            document.getElementById("DesktopcheckBoxReset").checked = false;
+            document.getElementById("DesktopcheckBoxReset2").checked = false;
+            document.getElementById("DesktopcheckBoxReset3").checked = false;
+        }
+
+        function mobileRestCheckBox() {
+            document.getElementById("mobilecheckBoxReset").checked = false;
+            document.getElementById("mobilecheckBoxReset2").checked = false;
+            document.getElementById("mobilecheckBoxReset3").checked = false;
+        }
+
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                // document.getElementById("cancelImg").style.display = "block";
+                // document.getElementById("cancelimage-Div").style.padding = "0px 0px 0px 0px";
+            }
+            else {
+                document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
+        }
+
+        function removeCheckOut() {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                localStorage.removeItem("checkIn");
+                document.getElementById("cancelImg").style.display = "none";
+                document.getElementById("pinkCard").style.display = "none";
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
+        }
+
+        function myFunction() {
+            var x = document.getElementById("filter-checkbox");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            var y = document.getElementById("filter-checkbox1");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            }
+        }
+
+        function logoutHideShow() {
+            var x = document.getElementById("logout-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // header popup variables
+        var z = document.getElementById("instructions");
+        var w = document.getElementById("contacts");
+
+        function instrucionMethod() {
+            document.getElementById("contact").classList.remove('active');
+            document.getElementById("instruction").classList.add('active');
+            z.style.display = "block";
+            w.style.display = "none";
+        }
+
+        function Contact() {
+            document.getElementById("instruction").classList.remove('active');
+            document.getElementById("contact").classList.add('active');
+            w.style.display = "block";
+            z.style.display = "none";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -164,10 +164,23 @@ common flex properties */
     padding: 10px;
 }
 
+.pd-30-5 {
+    padding: 30px 0px 5px 0px;
+}
+
 .pad-top-bottom-10 {
     padding: 10px 0px 10px 0px;
 }
 
+.pad-top-bottom-30 {
+    padding: 30px 0px 30px 0px;
+}
+.pad-l-r-5{
+    padding: 0px 5px 0px 5px;
+}
+.height-80{
+    height: 80px;
+}
 /* ------------------------ */
 /* common css of checkbox */
 /* The container */
@@ -238,6 +251,74 @@ common flex properties */
     transform: rotate(45deg);
 }
 
+/* second checkbox     */
+.check2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .check2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .check2 .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+     border:1px solid #d5d5d5
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check2:hover input ~ .checkmark {
+    background-color: #fff;
+    border:1px solid #d5d5d5;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .check2 input:checked ~ .checkmark {
+    background-color: #fff;
+     border:1px solid #d5d5d5
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .check2 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .check2 .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 6px;
+    height: 14px;
+    border: solid #d5d5d5;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 /* _________________ */
 /* agenda page css starts from here */
 .row.main-header-div {
@@ -353,11 +434,11 @@ margin: 0px;
 }
 
 .below-header .buttons-mainDiv .mainAgendaButton {
-    background-color: #56c1fd;
+    /* background-color: #56c1fd; */
     padding: 12px 15px 12px 15px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: #fff;
+    /* color: #fff; */
     font-size: 16px;
     font-weight: bold;
     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
@@ -544,9 +625,13 @@ margin: 0px;
 }
 
 /* initary page css */
+.bgr-agd{
+    background-color: #56c1fd;
+    color: #fff!important;
+}
 .below-header .buttons-mainDiv .itinaryButton1 {
     background-color: #56c1fd;
-    padding: 12px 15px 12px 15px;
+    padding: 11px 15px 11px 15px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     color: #fff;
@@ -559,7 +644,7 @@ margin: 0px;
 .below-header .buttons-mainDiv .mainAgendaButton1 {
     background-color: #d5d5d5;
     margin: 0px;
-    padding: 12px 15px 12px 15px;
+    padding: 11px 15px 11px 15px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     color: #5e5e5e;
@@ -1378,6 +1463,88 @@ margin: 0px;
     padding-top: 0;
 }
 
+/* resources page css */
+.all-img{
+    width: 25px;
+}
+.bx-pad-others {
+    padding: 20px 0px 5px 0px;
+}
+.bx3-pad-others{
+    padding: 20px 0px 20px 0px;
+}
+.res-pg{
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
+    border: solid 1px #d5d5d5;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.res-pg .horrzontal-line-div {
+    padding: 15px 0px 22px 0px;
+}
+
+.res-pg .horizontal-line{ 
+    padding: 2px 0px 0px 0px;
+    background: #d5d5d5;
+}
+.res-h5{
+    padding: 10px 0px 10px 0px;
+}
+.rs-agenda-btn{
+    padding: 12px 15px 12px 15px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bkg-grey{
+    background-color: #d5d5d5;
+    color: #5e5e5e;
+}
+.sl-div select {
+    z-index: 111!important;
+    background-position: right!important;
+    padding: 0px 5px 0px 5px!important;
+    position: relative!important;
+    background-image: url(../images/downArrow.png)!important;
+}
+
+/* instant request page css */
+.itr-pg .img-div{
+    padding: 20px 0px 20px 0px;
+    border-radius: 4px;
+    border: 1px solid #d5d5d5;
+}
+.menu-class{
+    width: 100px;
+}
+.itr-pg .img-company-div{
+    padding: 20px 0px 20px 0px;
+    border-radius: 4px;
+    border: 1px solid #d5d5d5;
+}
+.company-img{
+    width: 70px;
+}
+.itr-pg .button.hollow.secondary{
+    border-radius: 4px!important;
+    color: #5e5e5e!important;
+    font-weight: 500;
+    border: 1px solid #d5d5d5!important;
+    background-color:#fff!important;
+    font-size: 16px!important;
+}
+/* sponsored page css */
+.box-head h6{
+    line-height: 26px;
+}
+.head-img {
+
+    align-items: center;
+}
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) {
     .rate-image-width img {
@@ -1482,25 +1649,28 @@ margin: 0px;
     }
 
     .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 12px !important;
-        padding: 12px 8px 12px
+        font-size: 9px !important;
+        padding: 11px 10px 10px 10px;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 12px !important;
-        padding: 12px 8px 12px
+        font-size: 9px !important;
+        padding: 11px 10px 10px 10px;
     }
 
     .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 12px !important;
-        padding: 12px 8px 12px
+        font-size: 9px !important;
+        padding: 12px 8px 12px;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 12px !important;
-        padding: 12px 8px 12px
+        font-size: 9px !important;
+        padding: 12px 8px 12px;
     }
-
+    .below-header .buttons-mainDiv .itinaryButton{
+        font-size: 9px!important;
+        padding: 12px!important;
+    }
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -1766,23 +1936,27 @@ margin: 0px;
 
     /* css end here */
     .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        font-size: 9px !important;
+        padding: 11px 10px 10px 10px !important;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        font-size: 9px !important;
+        padding: 11px 10px 10px 10px !important;
     }
 
     .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 14px !important;
+        font-size: 9px !important;
         padding: 12px 12px 12px 12px !important;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 14px !important;
+        font-size: 9px !important;
         padding: 12px 12px 12px 12px !important;
+    }
+    .below-header .buttons-mainDiv .rs-agenda-btn{
+        font-size: 9px!important;
+        padding: 12px!important;
     }
 
     .below-header .mainDiv-of-header .inside-mainDiv {
@@ -2061,22 +2235,26 @@ margin: 0px;
 
     /* ends here */
     .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        font-size: 9px !important;
+        padding: 11px 10px 10px 10px !important;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        font-size: 9px !important;
+        padding: 11px 10px 10px 10px !important;
     }
 
     .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 14px !important;
+        font-size: 9px !important;
         padding: 12px 12px 12px 12px !important;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 14px !important;
+        font-size: 9px !important;
+        padding: 12px 12px 12px 12px !important;
+    }
+    .below-header .buttons-mainDiv .rs-agenda-btn{
+        font-size: 9px !important;
         padding: 12px 12px 12px 12px !important;
     }
 
@@ -2369,12 +2547,13 @@ margin: 0px;
     /* rate rtesponsive */
     .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
+
 
     .below-header .buttons-mainDiv .mainAgendaButton1 {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
 
     .below-header .buttons-mainDiv .itinaryButton {
@@ -2386,7 +2565,10 @@ margin: 0px;
         font-size: 14px !important;
         padding: 12px 12px 12px 12px !important;
     }
-
+    .below-header .buttons-mainDiv .rs-agenda-btn{
+        font-size: 14px !important;
+        padding: 12px 12px 12px 12px !important
+    }
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -2641,24 +2823,29 @@ margin: 0px;
 
     .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
+
 
     .below-header .buttons-mainDiv .mainAgendaButton1 {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
 
     .below-header .buttons-mainDiv .itinaryButton {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
-
+    
+    .below-header .buttons-mainDiv .rs-agenda-btn{
+        font-size: 14px !important;
+        padding: 11px 12px 11px 12px !important;
+    }
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -2895,28 +3082,32 @@ margin: 0px;
     }
 
     /* ends here */
+    .rs-agenda-btn {
+        padding: 12px 15px 12px 15px;
+        font-size: 14px!important;
+    }
     .below-header .mainDiv-of-header .leftSide-ofBox .nine-Am {
         margin: 0px 0px 0px 0px !important;
     }
 
     .below-header .buttons-mainDiv .itinaryButton1 {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton1 {
         font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        padding: 11px 12px 11px 12px !important;
     }
 
     .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        font-size: 16px !important;
+        padding: 11px 12px 11px 12px !important;
     }
 
     .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
+        font-size: 16px !important;
+        padding: 11px 12px 11px 12px !important;
     }
 
     .below-header .mainDiv-of-header .inside-mainDiv {
