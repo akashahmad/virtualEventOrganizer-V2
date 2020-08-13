@@ -168,6 +168,10 @@ common flex properties */
     padding: 30px 0px 5px 0px;
 }
 
+.pad-top-bottom-5 {
+    padding: 5px 0px 5px 0px;
+}
+
 .pad-top-bottom-10 {
     padding: 10px 0px 10px 0px;
 }
@@ -180,6 +184,10 @@ common flex properties */
 }
 .height-80{
     height: 80px;
+}
+.video{
+    width: 100%;
+    height: -webkit-fill-available;
 }
 /* ------------------------ */
 /* common css of checkbox */
@@ -1597,6 +1605,35 @@ margin: 0px;
 
     align-items: center;
 }
+/* sigin page */
+.signin-pg-Div{
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+}
+.signin-content{
+    height: fit-content;
+    background-color: #fff;
+    padding: 25px;
+}
+.signin-content .form-main{
+    background-color: #e4e4e4;
+    padding: 10px 0px 10px 0px;
+    border-radius: 2px;
+}
+.signin-content .form-main .checkbox label{
+    margin: 0px;
+    padding: 0px 0px 0px 10px ;
+}
+.signin-button-div .clear.button{
+    border-radius: 4px!important;
+    background-color: #1779ba!important;
+    border-color: 1px solid !important;
+    color: #fff!important;
+    font-size: 16px!important;
+}
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) {
     .rate-image-width img {
@@ -1700,29 +1737,6 @@ margin: 0px;
         margin: 0px 0px 0px 0px !important;
     }
 
-    .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 9px !important;
-        padding: 11px 10px 10px 10px;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 9px !important;
-        padding: 11px 10px 10px 10px;
-    }
-
-    .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 9px !important;
-        padding: 12px 8px 12px;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 9px !important;
-        padding: 12px 8px 12px;
-    }
-    .below-header .buttons-mainDiv .itinaryButton{
-        font-size: 9px!important;
-        padding: 12px!important;
-    }
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -1999,29 +2013,6 @@ margin: 0px;
     .last-menu-buttons button.hollow.button{
         font-size: 9px!important;
     }
-    /* .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 9px !important;
-        padding: 11px 10px 10px 10px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 9px !important;
-        padding: 11px 10px 10px 10px !important;
-    }
-
-    .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 9px !important;
-        padding: 12px 12px 12px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 9px !important;
-        padding: 12px 12px 12px 12px !important;
-    }
-    .below-header .buttons-mainDiv .rs-agenda-btn{
-        font-size: 9px!important;
-        padding: 12px!important;
-    } */
 
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
@@ -2310,29 +2301,6 @@ margin: 0px;
     .last-menu-buttons button.hollow.button{
         font-size: 9px!important;
     }
-    /* .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 9px !important;
-        padding: 11px 10px 10px 10px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 9px !important;
-        padding: 11px 10px 10px 10px !important;
-    }
-
-    .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 9px !important;
-        padding: 12px 12px 12px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 9px !important;
-        padding: 12px 12px 12px 12px !important;
-    }
-    .below-header .buttons-mainDiv .rs-agenda-btn{
-        font-size: 9px !important;
-        padding: 12px 12px 12px 12px !important;
-    } */
 
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
@@ -2633,30 +2601,6 @@ margin: 0px;
     .last-menu-buttons button.hollow.button{
         font-size: 9px!important;
     }
-    /* .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-
-    .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important;
-    }
-    .below-header .buttons-mainDiv .rs-agenda-btn{
-        font-size: 14px !important;
-        padding: 12px 12px 12px 12px !important
-    } */
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -2909,31 +2853,6 @@ margin: 0px;
         margin: 0px 0px 0px 0px !important;
     }
 
-    /* .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-
-    .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-    
-    .below-header .buttons-mainDiv .rs-agenda-btn{
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    } */
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;
     }
@@ -3178,25 +3097,6 @@ margin: 0px;
         margin: 0px 0px 0px 0px !important;
     }
 
-    /* .below-header .buttons-mainDiv .itinaryButton1 {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton1 {
-        font-size: 14px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .itinaryButton {
-        font-size: 16px !important;
-        padding: 11px 12px 11px 12px !important;
-    }
-
-    .below-header .buttons-mainDiv .mainAgendaButton {
-        font-size: 16px !important;
-        padding: 11px 12px 11px 12px !important;
-    } */
 
     .below-header .mainDiv-of-header .inside-mainDiv {
         flex-direction: column;

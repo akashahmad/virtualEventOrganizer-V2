@@ -65,7 +65,7 @@
         <!-- logout-popup -->
         <div class="grid-x large-12 align-left">
             <div class="logout-box-div" id="logout-popup">
-                <button class="button success popupCheckoutBlack">Logout</button>
+                <button class="button success popupCheckoutBlack" onclick="SignOut()">Sign Out</button>
             </div>
         </div>
         <!-- responsive header -->
@@ -1422,6 +1422,20 @@
 
     <script>
 
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("signin");
+            if (local === "SignIn") {
+                document.getElementById("cancelImg").innerHTML = "Sign Out"
+            }
+            else {
+                document.getElementById("cancelImg").innerHTML = "Sign In"
+            }
+        }
+
+        function SignOut() {
+            localStorage.removeItem("signin");
+            window.location.href = "Login.html";
+        }
 
         var type1 = true;
         var type2 = true;

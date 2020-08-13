@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    </link>
     <link rel="stylesheet" href="dist/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
@@ -65,7 +65,7 @@
         <!-- logout-popup -->
         <div class="grid-x large-12 align-left">
             <div class="logout-box-div" id="logout-popup">
-                <button class="button success popupCheckoutBlack">Logout</button>
+                <button class="button success popupCheckoutBlack" onclick="SignOut()">Sign Out</button>
             </div>
         </div>
         <!-- responsive header -->
@@ -174,9 +174,6 @@
             </div>
         </div>
     </div>
-
-
-
     <!-- header info popup -->
     <div class="reveal small" id="exampleModal1" data-reveal>
         <div class="info-popup-mainDiv">
@@ -241,12 +238,24 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
 
 
     <script>
 
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("signin");
+            if (local === "SignIn") {
+                document.getElementById("cancelImg").innerHTML = "Sign Out"
+            }
+            else {
+                document.getElementById("cancelImg").innerHTML = "Sign In"
+            }
+        }
+
+        function SignOut() {
+            localStorage.removeItem("signin");
+            window.location.href = "Login.html";
+        }
 
         $(document).foundation();
 

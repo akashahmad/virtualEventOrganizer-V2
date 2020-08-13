@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    </link>
     <link rel="stylesheet" href="dist/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
@@ -65,7 +65,9 @@
         <!-- logout-popup -->
         <div class="grid-x large-12 align-left">
             <div class="logout-box-div" id="logout-popup">
-                <button class="button success popupCheckoutBlack">Logout</button>
+                <button class="button success popupCheckoutBlack"
+                onclick="SignOut()"
+                >Sign Out</button>
             </div>
         </div>
         <!-- responsive header -->
@@ -113,7 +115,7 @@
                 <div class="large-4 small-12 itr-pg">
                     <div class="large-9 small-12">
                         <div class="grid-x align-center img-company-div">
-                            <img src="images/3m.png" class="company-img"/>
+                            <img src="images/3m.png" class="company-img" />
                         </div>
                     </div>
                     <!-- 2nd button -->
@@ -288,6 +290,21 @@
     </div>
 
     <script>
+
+        if (typeof (Storage) !== "undefined") {
+            var local = localStorage.getItem("signin");
+            if (local === "SignIn") {
+                document.getElementById("signOut").innerHTML = "Sign Out"
+            }
+            else {
+                document.getElementById("signOut").innerHTML = "Sign In"
+            }
+        }
+
+        function SignOut() {
+            localStorage.removeItem("signin");
+            window.location.href = "Login.html";
+        }
 
         $(document).foundation();
 
