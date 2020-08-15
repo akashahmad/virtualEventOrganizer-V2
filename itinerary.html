@@ -55,12 +55,18 @@
                     <div class="blankDiv-For-Line">
                     </div>
                     <!-- name -->
-                    <div>
+                    <div id="nameSignIn">
                         <span class="nameSpan">John Doe</span>
                     </div>
+                    <!-- div for line -->
+                    <div id="signInText">
+                        <div>
+                            <span class="nameSpan cursor-pointer" onclick="signPopup()">Sign In</span>
+                        </div>
+                    </div>
                     <!-- icon img -->
-                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
-                        <img src="images/bitmap.png" width="40px">
+                    <div class="imgDiv cursor-pointer" id="imgSignIn" onclick="logoutHideShow()">
+                        <img src="images/bitmap.png" width="30px">
                     </div>
                 </div>
             </div>
@@ -68,9 +74,7 @@
         <!-- logout-popup -->
         <div class="grid-x large-12 align-left">
             <div class="logout-box-div" id="logout-popup">
-                <button class="button success popupCheckoutBlack" id="signOut"
-                onclick="SignOut()"
-                >Sign Out</button>
+                <button class="button success popupCheckoutBlack" id="signOut" onclick="SignOption()">Sign In</button>
             </div>
         </div>
         <!-- responsive header -->
@@ -1413,487 +1417,112 @@
         </div>
     </div>
     <!-- ends here -->
+    <!-- signin popup -->
+    <div class="reveal small" id="siginPopup" data-reveal>
+        <div class="large-12 smnall-12 grid-x align-center">
+            <div class="large-8 small-10 text-center">
+                <h5>Welcome to our virtual venue! Please sign in to access your
+                    itinerary which contains links to all of your virtual sessions and content.
+                </h5>
+            </div>
+            <!-- sigin data -->
+            <div class="large-12 small-12 pad-top-bottom-10">
+                <div class="large-12 small-12 grid-x align-center">
+                    <!-- singin heading -->
+                    <!-- form -->
+                    <div class="form-main  large-7 small-12">
+                        <div class="large-12 small-12 grid-x align-center pd-30-5">
+                            <h6><b>Sign in with your email account</b></h6>
+                        </div>
+                        <div class="large-12 small-12 align-center grid-x pad-top-bottom-5">
+                            <div class="large-8 small-8">
+                                <div>
+                                    <label>Email</label>
+                                </div>
+                                <div class="large-12 small-12">
+                                    <input class="login-input-border " type="email"
+                                        placeholder="somebody@example.com" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-12 small-12 align-center grid-x pad-top-bottom-5">
+                            <div class="large-8 small-8">
+                                <div>
+                                    <label>Password</label>
+                                </div>
+                                <div class="large-12 small-12">
+                                    <input class="login-input-border " type="email" placeholder="Password" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-12 small-12 align-center grid-x checkbox">
+                            <div class="large-8 small-8">
+                                <div>
+                                    <input type="checkbox" /><label for="show-password">Show
+                                        password</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-12 small-12 align-center grid-x signin-button-div">
+                            <div class="large-7 small-8">
+                                <div class="large-12 small-12 align-center grid-x">
+                                    <button class="large-8 small-8 clear button text-center"
+                                        onclick="signIn()">Signin</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
 
         if (typeof (Storage) !== "undefined") {
-            var local = localStorage.getItem("signin");
-            if(local === "SignIn"){
-                document.getElementById("signOut").innerHTML = "Sign Out"            
-            }
-            else{
-                document.getElementById("signOut").innerHTML = "Sign In"            
-            }
-        }
-
-        function SignOut() {
-            localStorage.removeItem("signin");
-            window.location.href = "Login.html";
-        }
-
-            var type1 = true;
-            var type2 = true;
-            var type3 = true;
-            var type4 = true;
-
-            var type5 = true;
-            var type6 = true;
-            var type7 = true;
-            var type8 = true;
-
-            var type9 = true;
-            var type10 = true;
-            var type11 = true;
-            var type12 = true;
-
-            var type13 = true;
-            var type14 = true;
-            var type15 = true;
-            var type16 = true;
-
-            // variable for the 5th row in rate-popup
-            var type17 = true;
-            var type18 = true;
-            var type19 = true;
-            var type20 = true;
-
-            function mouseLeave(key) {
-                switch (key) {
-                    case 'reviewType1': {
-                        if (type1) {
-                            for (var i = 1; i <= 10; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType2': {
-                        if (type2) {
-                            for (var i = 11; i <= 20; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType3': {
-                        if (type3) {
-                            for (var i = 21; i <= 30; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType4': {
-                        if (type4) {
-                            for (var i = 31; i <= 40; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType5': {
-                        if (type5) {
-                            for (var i = 41; i <= 50; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType6': {
-                        if (type6) {
-                            for (var i = 51; i <= 60; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType7': {
-                        if (type7) {
-                            for (var i = 61; i <= 70; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType8': {
-                        if (type8) {
-                            for (var i = 71; i <= 80; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-
-                    case 'reviewType9': {
-                        if (type9) {
-                            for (var i = 81; i <= 90; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType10': {
-                        if (type10) {
-                            for (var i = 91; i <= 100; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType11': {
-                        if (type11) {
-                            for (var i = 101; i <= 110; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType12': {
-                        if (type12) {
-                            for (var i = 111; i <= 120; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType13': {
-                        if (type13) {
-                            for (var i = 121; i <= 130; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType14': {
-                        if (type14) {
-                            for (var i = 131; i <= 140; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType15': {
-                        if (type15) {
-                            for (var i = 141; i <= 150; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-
-                    case 'reviewType16': {
-                        if (type16) {
-                            for (var i = 151; i <= 160; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType17': {
-                        if (type17) {
-                            for (var i = 161; i <= 170; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType18': {
-                        if (type18) {
-                            for (var i = 171; i <= 180; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType19': {
-                        if (type19) {
-                            for (var i = 181; i <= 190; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    case 'reviewType20': {
-                        if (type20) {
-                            for (var i = 191; i <= 200; i++) {
-                                document.getElementById("star" + i).src = "images/silverStar.png"
-                            }
-                        }
-                        break;
-                    }
-
-                    default:
-                        break;
-                }
-            }
-
-            function activeStars(key) {
-                switch (key) {
-                    case 'reviewType1': {
-                        type1 = false;
-                        break;
-                    }
-                    case 'reviewType2': {
-                        type2 = false;
-                        break;
-                    }
-                    case 'reviewType3': {
-                        type3 = false;
-                        break;
-                    }
-
-                    case 'reviewType4': {
-                        type4 = false;
-                        break;
-                    }
-                    case 'reviewType5': {
-                        type5 = false;
-                        break;
-                    }
-
-                    case 'reviewType6': {
-                        type6 = false;
-                        break;
-                    }
-
-                    case 'reviewType7': {
-                        type7 = false;
-                        break;
-                    }
-
-                    case 'reviewType8': {
-                        type8 = false;
-                        break;
-                    }
-
-                    case 'reviewType9': {
-                        type9 = false;
-                        break;
-                    }
-
-                    case 'reviewType10': {
-                        type10 = false;
-                        break;
-                    }
-
-                    case 'reviewType11': {
-                        type11 = false;
-                        break;
-                    }
-
-                    case 'reviewType12': {
-                        type12 = false;
-                        break;
-                    }
-
-                    case 'reviewType13': {
-                        type13 = false;
-                        break;
-                    }
-                    case 'reviewType14': {
-                        type14 = false;
-                        break;
-                    }
-                    case 'reviewType15': {
-                        type15 = false;
-                        break;
-                    }
-                    case 'reviewType16': {
-                        type16 = false;
-                        break;
-                    }
-
-                    case 'reviewType17': {
-                        type17 = false;
-                        break;
-                    }
-
-                    case 'reviewType18': {
-                        type18 = false;
-                        break;
-                    }
-
-                    case 'reviewType19': {
-                        type19 = false;
-                        break;
-                    }
-
-                    case 'reviewType20': {
-                        type20 = false;
-                        break;
-                    }
-
-
-                    default:
-                        break;
-                }
-            }
-
-            function changeStar(startNum, num, lastNum) {
-                for (var i = startNum; i <= num; i++) {
-                    document.getElementById("star" + i).src = "images/goldenStar.png"
-                }
-                for (var i = (((num == 1) || (num == 11) || (num == 21) || (num == 31) || (num == 41) || (num == 51) || (num == 61) || (num == 71) || (num == 81) || (num == 91) || (num == 101) || (num == 111) || (num == 121) || (num == 131) || (num == 141) || (num == 151) || (num == 161) || (num == 171) || (num == 181) || (num == 191)) ? num : num + 1); i <= lastNum; i++) {
-                    document.getElementById("star" + i).src = "images/silverStar.png"
-                }
-            }
-
-            $(document).foundation();
-
-            function restCheckBox() {
-                document.getElementById("DesktopcheckBoxReset").checked = false;
-                document.getElementById("DesktopcheckBoxReset2").checked = false;
-                document.getElementById("DesktopcheckBoxReset3").checked = false;
-            }
-
-            function mobileRestCheckBox() {
-                document.getElementById("mobilecheckBoxReset").checked = false;
-                document.getElementById("mobilecheckBoxReset2").checked = false;
-                document.getElementById("mobilecheckBoxReset3").checked = false;
-            }
-
-            if (typeof (Storage) !== "undefined") {
-                var local = localStorage.getItem("checkIn");
-                if (local) {
-                    document.getElementById("cancelImg").style.display = "block"
-                    document.getElementById("cancelimage-Div").style.padding = "0px 0px 0px 0px"
-                }
-                else {
-                    document.getElementById("cancelImg").style.display = "none"
-                    document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
-                }
-            }
-
-            function removeCheckOut() {
-                var local = localStorage.getItem("checkIn");
-                if (local) {
-                    localStorage.removeItem("checkIn");
-                    document.getElementById("cancelImg").style.display = "none"
-                    document.getElementById("pinkCard").style.display = "none"
-                    document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
-                }
-            }
-
-
-            getParams = function (url) {
-                var params = {};
-                if (typeof document !== "undefined") {
-                    var parser = document.createElement("a");
-                    parser.href = url;
-                    var query = parser.search.substring(1);
-                    var vars = query.split("&");
-                    if (vars[0] !== "") {
-                        for (var i = 0; i < vars.length; i++) {
-                            var pair = vars[i].split("=");
-                            params[pair[0]] = decodeURIComponent(pair[1]);
-                        }
-                    } else {
-                        return null;
-                    }
-                } else {
-                    return null;
-                }
-                return params;
-            };
-
-            var noSplash = getParams(window.location.href)
-            if (noSplash && noSplash.nosplash) {
-                var y = document.getElementById("agenda-page-block");
-                y.style.display = "block";
-                var x = document.getElementById("container-background-spashScreen");
-                x.style.display = "none";
+            var Signin = localStorage.getItem("signin");
+            if (Signin === "signIn") {
+                document.getElementById("signOut").innerHTML = "Sign Out"
+                document.getElementById("signInText").style.display = "none";
+                document.getElementById("imgSignIn").style.display = "block";
+                document.getElementById("nameSignIn").style.display = "block";                
             }
             else {
-                var z = document.getElementById("container-background-spashScreen");
-                z.style.display = "flex"
-                setTimeout(function () {
-                    var y = document.getElementById("agenda-page-block");
-                    y.style.display = "block";
-                    var x = document.getElementById("container-background-spashScreen");
-                    x.style.display = "none";
-                }, 3000)
+                document.getElementById("signOut").innerHTML = "Sign In"
+                document.getElementById("logout-popup").style.display = "none";
+                document.getElementById("imgSignIn").style.display = "none";
+                document.getElementById("nameSignIn").style.display = "none";
             }
+        }
 
+        function signPopup() {
+            $('#siginPopup').foundation('open');
+        }
 
-            function myFunction() {
-                var x = document.getElementById("filter-checkbox");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-                var y = document.getElementById("filter-checkbox1");
-                if (y.style.display === "block") {
-                    y.style.display = "none";
-                } else {
-                    y.style.display = "block";
-                }
+        function SignOption() {
+            var getStorage = localStorage.getItem("signin");
+            if (getStorage === "signIn") {
+                localStorage.removeItem("signin");
+                // document.getElementById("signOut").innerHTML = "Sign In"
+                document.getElementById("logout-popup").style.display = "none";
+                document.getElementById("signInText").style.display = "block";
+                document.getElementById("imgSignIn").style.display = "none";
+                document.getElementById("nameSignIn").style.display = "none";
             }
+        }
 
-            function rateFunction() {
-                var x = document.getElementById("rateFunction");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
+        function signIn() {
+            localStorage.setItem("signin", "signIn");
+            $('#siginPopup').foundation('close');
+            document.getElementById("signOut").innerHTML = "Sign Out"
+            document.getElementById("signInText").style.display = "none";
+            document.getElementById("imgSignIn").style.display = "block";
+            document.getElementById("nameSignIn").style.display = "block";
+        }
 
-            function headerHideShow() {
-                var x = document.getElementById("info-popup");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
-                }
-            }
-
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-
-            // header popup variables
-            var z = document.getElementById("instructions");
-            var w = document.getElementById("contacts");
-
-            function instrucionMethod() {
-                document.getElementById("contact").classList.remove('active');
-                document.getElementById("instruction").classList.add('active');
-                z.style.display = "block";
-                w.style.display = "none";
-            }
-
-            function Contact() {
-                document.getElementById("instruction").classList.remove('active');
-                document.getElementById("contact").classList.add('active');
-                w.style.display = "block";
-                z.style.display = "none";
-            }
-
-            function logoutHideShow() {
+        function logoutHideShow() {
+            var storage = localStorage.getItem("signin");
+            if (storage === "signIn") {
                 var x = document.getElementById("logout-popup");
                 if (x.style.display === "block") {
                     x.style.display = "none";
@@ -1901,6 +1530,479 @@
                     x.style.display = "block";
                 }
             }
+        }
+
+        var type1 = true;
+        var type2 = true;
+        var type3 = true;
+        var type4 = true;
+
+        var type5 = true;
+        var type6 = true;
+        var type7 = true;
+        var type8 = true;
+
+        var type9 = true;
+        var type10 = true;
+        var type11 = true;
+        var type12 = true;
+
+        var type13 = true;
+        var type14 = true;
+        var type15 = true;
+        var type16 = true;
+
+        // variable for the 5th row in rate-popup
+        var type17 = true;
+        var type18 = true;
+        var type19 = true;
+        var type20 = true;
+
+        function mouseLeave(key) {
+            switch (key) {
+                case 'reviewType1': {
+                    if (type1) {
+                        for (var i = 1; i <= 10; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType2': {
+                    if (type2) {
+                        for (var i = 11; i <= 20; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType3': {
+                    if (type3) {
+                        for (var i = 21; i <= 30; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType4': {
+                    if (type4) {
+                        for (var i = 31; i <= 40; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType5': {
+                    if (type5) {
+                        for (var i = 41; i <= 50; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType6': {
+                    if (type6) {
+                        for (var i = 51; i <= 60; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType7': {
+                    if (type7) {
+                        for (var i = 61; i <= 70; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType8': {
+                    if (type8) {
+                        for (var i = 71; i <= 80; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+
+                case 'reviewType9': {
+                    if (type9) {
+                        for (var i = 81; i <= 90; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType10': {
+                    if (type10) {
+                        for (var i = 91; i <= 100; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType11': {
+                    if (type11) {
+                        for (var i = 101; i <= 110; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType12': {
+                    if (type12) {
+                        for (var i = 111; i <= 120; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType13': {
+                    if (type13) {
+                        for (var i = 121; i <= 130; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType14': {
+                    if (type14) {
+                        for (var i = 131; i <= 140; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType15': {
+                    if (type15) {
+                        for (var i = 141; i <= 150; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+
+                case 'reviewType16': {
+                    if (type16) {
+                        for (var i = 151; i <= 160; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType17': {
+                    if (type17) {
+                        for (var i = 161; i <= 170; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType18': {
+                    if (type18) {
+                        for (var i = 171; i <= 180; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType19': {
+                    if (type19) {
+                        for (var i = 181; i <= 190; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                case 'reviewType20': {
+                    if (type20) {
+                        for (var i = 191; i <= 200; i++) {
+                            document.getElementById("star" + i).src = "images/silverStar.png"
+                        }
+                    }
+                    break;
+                }
+
+                default:
+                    break;
+            }
+        }
+
+        function activeStars(key) {
+            switch (key) {
+                case 'reviewType1': {
+                    type1 = false;
+                    break;
+                }
+                case 'reviewType2': {
+                    type2 = false;
+                    break;
+                }
+                case 'reviewType3': {
+                    type3 = false;
+                    break;
+                }
+
+                case 'reviewType4': {
+                    type4 = false;
+                    break;
+                }
+                case 'reviewType5': {
+                    type5 = false;
+                    break;
+                }
+
+                case 'reviewType6': {
+                    type6 = false;
+                    break;
+                }
+
+                case 'reviewType7': {
+                    type7 = false;
+                    break;
+                }
+
+                case 'reviewType8': {
+                    type8 = false;
+                    break;
+                }
+
+                case 'reviewType9': {
+                    type9 = false;
+                    break;
+                }
+
+                case 'reviewType10': {
+                    type10 = false;
+                    break;
+                }
+
+                case 'reviewType11': {
+                    type11 = false;
+                    break;
+                }
+
+                case 'reviewType12': {
+                    type12 = false;
+                    break;
+                }
+
+                case 'reviewType13': {
+                    type13 = false;
+                    break;
+                }
+                case 'reviewType14': {
+                    type14 = false;
+                    break;
+                }
+                case 'reviewType15': {
+                    type15 = false;
+                    break;
+                }
+                case 'reviewType16': {
+                    type16 = false;
+                    break;
+                }
+
+                case 'reviewType17': {
+                    type17 = false;
+                    break;
+                }
+
+                case 'reviewType18': {
+                    type18 = false;
+                    break;
+                }
+
+                case 'reviewType19': {
+                    type19 = false;
+                    break;
+                }
+
+                case 'reviewType20': {
+                    type20 = false;
+                    break;
+                }
+
+
+                default:
+                    break;
+            }
+        }
+
+        function changeStar(startNum, num, lastNum) {
+            for (var i = startNum; i <= num; i++) {
+                document.getElementById("star" + i).src = "images/goldenStar.png"
+            }
+            for (var i = (((num == 1) || (num == 11) || (num == 21) || (num == 31) || (num == 41) || (num == 51) || (num == 61) || (num == 71) || (num == 81) || (num == 91) || (num == 101) || (num == 111) || (num == 121) || (num == 131) || (num == 141) || (num == 151) || (num == 161) || (num == 171) || (num == 181) || (num == 191)) ? num : num + 1); i <= lastNum; i++) {
+                document.getElementById("star" + i).src = "images/silverStar.png"
+            }
+        }
+
+        $(document).foundation();
+
+        function restCheckBox() {
+            document.getElementById("DesktopcheckBoxReset").checked = false;
+            document.getElementById("DesktopcheckBoxReset2").checked = false;
+            document.getElementById("DesktopcheckBoxReset3").checked = false;
+        }
+
+        function mobileRestCheckBox() {
+            document.getElementById("mobilecheckBoxReset").checked = false;
+            document.getElementById("mobilecheckBoxReset2").checked = false;
+            document.getElementById("mobilecheckBoxReset3").checked = false;
+        }
+
+        if (typeof (Storage) !== "undefined") {
+            // var getStorage = localStorage.getItem("signin");
+            // if (getStorage === "signIn") {
+            //     localStorage.removeItem("signin");
+            //     document.getElementById("logout-popup").style.display = "none";
+            //     document.getElementById("signInText").style.display = "block";
+            //     document.getElementById("imgSignIn").style.display = "none";
+            //     document.getElementById("nameSignIn").style.display = "none";
+            // }
+            
+
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                document.getElementById("cancelImg").style.display = "block"
+                document.getElementById("cancelimage-Div").style.padding = "0px 0px 0px 0px"
+            }
+            else {
+                document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
+        }
+
+        function removeCheckOut() {
+            var local = localStorage.getItem("checkIn");
+            if (local) {
+                localStorage.removeItem("checkIn");
+                document.getElementById("cancelImg").style.display = "none"
+                document.getElementById("pinkCard").style.display = "none"
+                document.getElementById("cancelimage-Div").style.padding = "10px 0px 10px 0px"
+            }
+        }
+
+
+        getParams = function (url) {
+            var params = {};
+            if (typeof document !== "undefined") {
+                var parser = document.createElement("a");
+                parser.href = url;
+                var query = parser.search.substring(1);
+                var vars = query.split("&");
+                if (vars[0] !== "") {
+                    for (var i = 0; i < vars.length; i++) {
+                        var pair = vars[i].split("=");
+                        params[pair[0]] = decodeURIComponent(pair[1]);
+                    }
+                } else {
+                    return null;
+                }
+            } else {
+                return null;
+            }
+            return params;
+        };
+
+        var noSplash = getParams(window.location.href)
+        if (noSplash && noSplash.nosplash) {
+            var y = document.getElementById("agenda-page-block");
+            y.style.display = "block";
+            var x = document.getElementById("container-background-spashScreen");
+            x.style.display = "none";
+        }
+        else {
+            var z = document.getElementById("container-background-spashScreen");
+            z.style.display = "flex"
+            setTimeout(function () {
+                var y = document.getElementById("agenda-page-block");
+                y.style.display = "block";
+                var x = document.getElementById("container-background-spashScreen");
+                x.style.display = "none";
+            }, 3000)
+        }
+
+
+        function myFunction() {
+            var x = document.getElementById("filter-checkbox");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+            var y = document.getElementById("filter-checkbox1");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block";
+            }
+        }
+
+        function rateFunction() {
+            var x = document.getElementById("rateFunction");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function headerHideShow() {
+            var x = document.getElementById("info-popup");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        // header popup variables
+        var z = document.getElementById("instructions");
+        var w = document.getElementById("contacts");
+
+        function instrucionMethod() {
+            document.getElementById("contact").classList.remove('active');
+            document.getElementById("instruction").classList.add('active');
+            z.style.display = "block";
+            w.style.display = "none";
+        }
+
+        function Contact() {
+            document.getElementById("instruction").classList.remove('active');
+            document.getElementById("contact").classList.add('active');
+            w.style.display = "block";
+            z.style.display = "none";
+        }
 
 
     </script>

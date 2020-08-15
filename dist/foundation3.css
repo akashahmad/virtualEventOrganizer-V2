@@ -1606,19 +1606,19 @@ margin: 0px;
     align-items: center;
 }
 /* sigin page */
-.signin-pg-Div{
+/* .signin-pg-Div{
     background-color: rgba(0,0,0,0.4);
     height: 100%;
     display: flex;
     align-items: center;
     padding: 30px 0px 30px 0px;
-}
-.signin-content{
+} */
+/* .signin-content{
     height: fit-content;
     background-color: #fff;
     padding: 25px;
-}
-.signin-content .form-main{
+} */
+.form-main{
     background-color: #e4e4e4;
     padding: 10px 0px 10px 0px;
     border-radius: 2px;

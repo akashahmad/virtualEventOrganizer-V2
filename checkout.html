@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css">
+    </link>
     <link rel="stylesheet" href="dist/foundation.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
@@ -51,12 +51,18 @@
                     <div class="blankDiv-For-Line">
                     </div>
                     <!-- name -->
-                    <div>
+                    <div id="nameSignIn">
                         <span class="nameSpan">John Doe</span>
                     </div>
+                    <!-- div for line -->
+                    <div id="signInText">
+                        <div>
+                            <span class="nameSpan cursor-pointer" onclick="signPopup()">Sign In</span>
+                        </div>
+                    </div>
                     <!-- icon img -->
-                    <div class="imgDiv cursor-pointer" onclick="logoutHideShow()">
-                        <img src="images/bitmap.png" width="40px">
+                    <div class="imgDiv cursor-pointer" id="imgSignIn" onclick="logoutHideShow()">
+                        <img src="images/bitmap.png" width="30px">
                     </div>
                 </div>
             </div>
@@ -64,8 +70,8 @@
         <!-- logout-popup -->
         <div class="grid-x large-12 align-left">
             <div class="logout-box-div" id="logout-popup">
-                <button class="button success popupCheckoutBlack"                
-                onclick="SignOut()"
+                <button class="button success popupCheckoutBlack"   onclick="SignOption()"
+                id="signOut"
                 >Sign Out</button>
             </div>
         </div>
@@ -1373,30 +1379,127 @@
     </div>
     <!--incorrect  checkout end-->
 
+        <!-- signin popup -->
+        <div class="reveal small" id="siginPopup" data-reveal>
+            <div class="large-12 smnall-12 grid-x align-center">
+                <div class="large-8 small-10 text-center">
+                    <h5>Welcome to our virtual venue! Please sign in to access your
+                        itinerary which contains links to all of your virtual sessions and content.
+                    </h5>
+                </div>
+                <!-- sigin data -->
+                <div class="large-12 small-12 pad-top-bottom-10">
+                    <div class="large-12 small-12 grid-x align-center">
+                        <!-- singin heading -->
+                        <!-- form -->
+                        <div class="form-main  large-7 small-12">
+                            <div class="large-12 small-12 grid-x align-center pd-30-5">
+                                <h6><b>Sign in with your email account</b></h6>
+                            </div>
+                            <div class="large-12 small-12 align-center grid-x pad-top-bottom-5">
+                                <div class="large-8 small-8">
+                                    <div>
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="large-12 small-12">
+                                        <input class="login-input-border " type="email"
+                                            placeholder="somebody@example.com" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="large-12 small-12 align-center grid-x pad-top-bottom-5">
+                                <div class="large-8 small-8">
+                                    <div>
+                                        <label>Password</label>
+                                    </div>
+                                    <div class="large-12 small-12">
+                                        <input class="login-input-border " type="email" placeholder="Password" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="large-12 small-12 align-center grid-x checkbox">
+                                <div class="large-8 small-8">
+                                    <div>
+                                        <input type="checkbox" /><label for="show-password">Show
+                                            password</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="large-12 small-12 align-center grid-x signin-button-div">
+                                <div class="large-7 small-8">
+                                    <div class="large-12 small-12 align-center grid-x">
+                                        <button class="large-8 small-8 clear button text-center"
+                                            onclick="signIn()">Signin</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>
 
 
-if (typeof (Storage) !== "undefined") {
-            var local = localStorage.getItem("signin");
-            if(local === "SignIn"){
-                document.getElementById("signOut").innerHTML = "Sign Out"            
+        function signPopup() {
+            $('#siginPopup').foundation('open');
+        }
+
+        if (typeof (Storage) !== "undefined") {
+            var Signin = localStorage.getItem("signin");
+            if (Signin === "signIn") {
+                document.getElementById("signOut").innerHTML = "Sign Out"
+                document.getElementById("signInText").style.display = "none";
+                document.getElementById("imgSignIn").style.display = "block";
+                document.getElementById("nameSignIn").style.display = "block";                
             }
-            else{
-                document.getElementById("signOut").innerHTML = "Sign In"            
+            else {
+                document.getElementById("signOut").innerHTML = "Sign In"
+                document.getElementById("logout-popup").style.display = "none";
+                document.getElementById("imgSignIn").style.display = "none";
+                document.getElementById("nameSignIn").style.display = "none";
             }
         }
 
-        function SignOut() {
-            localStorage.removeItem("signin");
-            window.location.href = "Login.html";
+        function SignOption() {
+            var getStorage = localStorage.getItem("signin");
+            if (getStorage === "signIn") {
+                localStorage.removeItem("signin");
+                // document.getElementById("signOut").innerHTML = "Sign In"
+                document.getElementById("logout-popup").style.display = "none";
+                document.getElementById("signInText").style.display = "block";
+                document.getElementById("imgSignIn").style.display = "none";
+                document.getElementById("nameSignIn").style.display = "none";
+            }
         }
+
+        function signIn(){
+            localStorage.setItem("signin", "signIn");
+            $('#siginPopup').foundation('close');
+            document.getElementById("signOut").innerHTML = "Sign Out"
+            document.getElementById("signInText").style.display = "none";
+            document.getElementById("imgSignIn").style.display = "block";
+            document.getElementById("nameSignIn").style.display = "block";
+        }
+
+        function logoutHideShow() {
+            var storage = localStorage.getItem("signin");
+            if (storage === "signIn") {
+                var x = document.getElementById("logout-popup");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        }
+
 
         function ChangePage() {
             localStorage.setItem("text", "checkoutPage");
             window.location.href = "sponsored.html";
         }
-
 
         var type1 = true;
         var type2 = true;
@@ -1753,7 +1856,6 @@ if (typeof (Storage) !== "undefined") {
             }
         }
 
-
         $(document).foundation();
 
         function codeButtonDisplableCheck(value) {
@@ -1814,15 +1916,6 @@ if (typeof (Storage) !== "undefined") {
             z.style.display = "none";
         }
 
-        function logoutHideShow() {
-            var x = document.getElementById("logout-popup");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-
         function done() {
             var x = document.getElementById("checkoutPopup-hideShow");
             x.style.display = "none";
@@ -1831,6 +1924,7 @@ if (typeof (Storage) !== "undefined") {
         function checkInOut() {
 
             if (typeof (Storage) !== "undefined") {
+
                 var local = localStorage.getItem("checkIn");
                 if (local === "true") {
                     if (document.getElementById("checkinCode").value == "54321") {
@@ -1919,6 +2013,7 @@ if (typeof (Storage) !== "undefined") {
         }
 
         if (typeof (Storage) !== "undefined") {
+
             var local = localStorage.getItem("checkIn");
             if (local === "true") {
                 document.getElementById("checkinButton").innerHTML = "CHECK OUT";
