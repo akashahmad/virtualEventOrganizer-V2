@@ -284,18 +284,17 @@
                 <!-- checkbox -->
                 <div class="grid-x large-11 small-11 align-justify">
                     <div class="small-6 large-6 medium-6">
-                        <label class="check2 grey-text-paragraphs">Use My Mobile
-                            <input type="checkbox "  id="checkboxButton" onclick="checkBoxButton()"/>
+                        <label class="checkbox2 grey-text-paragraphs">Use My Mobile
+                            <input type="checkbox" id="checkboxButton" onclick="checkBoxMethod()" />
                             <span class="checkmark"></span>
-                        </label>
+                          </label>                          
                     </div>
-                    <!-- <div>
-                        <input type="checkbox"  id="checkboxButton" onclick="checkBoxButton()"/>
-                    </div> -->
                     <!-- input -->
                     <div class="medium-6 small-6 cell large-6 medium-6">
                         <input type="text" placeholder="000 0000 000" class="grey-text-paragraphs"
-                            id="inputActiveUnactive" disabled>
+                            id="inputActiveUnactive" disabled
+                            onkeyup="codeButtonDisplableCheck(this.value)"
+                            >
                     </div>
                 </div>
             </div>
@@ -308,10 +307,12 @@
             <!-- buttons -->
             <div class="large-12 small-12 grid-x align-center">
                 <div class="large-6 small-6 grid-x align-left pad-l-r-5">
-                    <button class="button success popup" class="button" data-open="requestSend">Send</button>
+                    <button id="requestPopupOpen" class="button success popup" class="button"  disabled
+                    onclick="checkValues()"
+                    >Send</button>
                 </div>
                 <div class="large-6 small-6 grid-x align-right pad-l-r-5">
-                    <button class="button alert popupCheckoutgrey" class="close-button" data-close
+                    <button class="button alert popupCheckoutgrey" class="close-button" data-close 
                         aria-label="Close modal" type="button">Cancel</button>
                 </div>
             </div>
@@ -404,17 +405,35 @@
 
     <script>
 
-        function checkBoxButton() {
+        function checkBoxMethod() {
             var chBox = document.getElementById("checkboxButton");
 
-            if (chBox.checked === false) {
-                document.getElementById("checkboxButton").checked = true;
+            if (chBox.checked == false) {
+                // document.getElementById("checkboxButton").checked = true;
                 document.getElementById("inputActiveUnactive").disabled = true;
             }
-            else if (chBox.checked === true) {
-                document.getElementById("checkboxButton").checked = false;
+            else if (chBox.checked == true) {
+                // document.getElementById("checkboxButton").checked = false;
                 document.getElementById("inputActiveUnactive").disabled = false;
             }
+        }
+
+        function codeButtonDisplableCheck(value) {
+            if (value.length >= 10) {
+                document.getElementById("requestPopupOpen").disabled = false;
+            }
+            else {
+                document.getElementById("requestPopupOpen").disabled = true;
+            }
+        }
+
+
+        function checkValues(){
+            $('#requestSend').foundation('open');
+            document.getElementById("inputActiveUnactive").value = "";
+            document.getElementById("checkboxButton").checked = false;
+            document.getElementById("inputActiveUnactive").disabled = true;
+            document.getElementById("requestPopupOpen").disabled = true;
         }
 
         function signPopup() {
