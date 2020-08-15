@@ -293,13 +293,13 @@ common flex properties */
   
   /* On mouse-over, add a grey background color */
   .check2:hover input ~ .checkmark {
-    background-color: #fff;
+    /* background-color: #fff; */
     border:1px solid #d5d5d5;
   }
   
   /* When the checkbox is checked, add a blue background */
   .check2 input:checked ~ .checkmark {
-    background-color: #fff;
+    background-color: red;
      border:1px solid #d5d5d5
   }
   
@@ -313,7 +313,8 @@ common flex properties */
   /* Show the checkmark when checked */
   .check2 input:checked ~ .checkmark:after {
     display: block;
-  }
+    background-color: red;
+}
   
   /* Style the checkmark/indicator */
   .check2 .checkmark:after {
@@ -321,7 +322,7 @@ common flex properties */
     top: 4px;
     width: 6px;
     height: 14px;
-    border: solid #d5d5d5;
+    border: solid red;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1633,6 +1634,10 @@ margin: 0px;
     border-color: 1px solid !important;
     color: #fff!important;
     font-size: 16px!important;
+}
+.reveal-popup{
+    padding: 40px 0px 40px 0px!important;
+    border-radius: 4px!important;
 }
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) {

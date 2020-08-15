@@ -285,10 +285,13 @@
                 <div class="grid-x large-11 small-11 align-justify">
                     <div class="small-6 large-6 medium-6">
                         <label class="check2 grey-text-paragraphs">Use My Mobile
-                            <input type="checkbox grey-text-paragraphs" onclick="checkBoxButton()" id="checkboxButton">
+                            <input type="checkbox "  id="checkboxButton" onclick="checkBoxButton()"/>
                             <span class="checkmark"></span>
                         </label>
                     </div>
+                    <!-- <div>
+                        <input type="checkbox"  id="checkboxButton" onclick="checkBoxButton()"/>
+                    </div> -->
                     <!-- input -->
                     <div class="medium-6 small-6 cell large-6 medium-6">
                         <input type="text" placeholder="000 0000 000" class="grey-text-paragraphs"
@@ -316,7 +319,7 @@
     </div>
 
     <!-- request send popup -->
-    <div class="reveal tiny" id="requestSend" data-reveal data-multiple-opened="true">
+    <div class="reveal tiny" id="requestSend" data-reveal >
         <div class="large-12 small-12">
             <!-- img -->
             <div class="grid-x align-center pad-top-bottom-10">
@@ -340,7 +343,7 @@
         </div>
     </div>
 
-    <div class="reveal small" id="siginPopup" data-reveal>
+    <div class="reveal small reveal-popup" id="siginPopup" data-reveal>
         <div class="large-12 smnall-12 grid-x align-center">
             <div class="large-8 small-10 text-center">
                 <h5>Welcome to our virtual venue! Please sign in to access your
@@ -389,7 +392,7 @@
                             <div class="large-7 small-8">
                                 <div class="large-12 small-12 align-center grid-x">
                                     <button class="large-8 small-8 clear button text-center"
-                                        onclick="signIn()">Signin</button>
+                                        onclick="signIn()">Sign In</button>
                                 </div>
                             </div>
                         </div>
@@ -400,6 +403,19 @@
     </div>
 
     <script>
+
+        function checkBoxButton() {
+            var chBox = document.getElementById("checkboxButton");
+
+            if (chBox.checked === false) {
+                document.getElementById("checkboxButton").checked = true;
+                document.getElementById("inputActiveUnactive").disabled = true;
+            }
+            else if (chBox.checked === true) {
+                document.getElementById("checkboxButton").checked = false;
+                document.getElementById("inputActiveUnactive").disabled = false;
+            }
+        }
 
         function signPopup() {
             $('#siginPopup').foundation('open');
@@ -441,21 +457,9 @@
 
         $(document).foundation();
 
-        function checkBoxButton() {
-            var chBox = document.getElementById("checkboxButton");
 
-            if (chBox.checked === false) {
-                // document.getElementById("checkboxButton").checked = true;
-                document.getElementById("inputActiveUnactive").disabled = true;
-            }
-            else if (chBox.checked === true) {
-                // document.getElementById("checkboxButton").checked = false;
-                document.getElementById("inputActiveUnactive").disabled = false;
-            }
-        }
 
-        if (typeof (Storage) !== "undefined") {
-            
+        if (typeof (Storage) !== "undefined") {            
             var Signin = localStorage.getItem("signin");
             if (Signin === "signIn") {
                 document.getElementById("signOut").innerHTML = "Sign Out"
