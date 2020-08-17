@@ -126,7 +126,9 @@ common flex properties */
 .width-50 {
     width: 50%;
 }
-
+.icon{
+    width: 60px;    
+}
 .width-60 {
     width: 60%;
 }
