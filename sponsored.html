@@ -315,7 +315,9 @@
             <!-- textarea -->
             <div class="large-12 small-12 grid-x align-center">
                 <div class="large-11 small-11">
-                    <textarea placeholder="Comments" class="height-80 grey-text-paragraphs"></textarea>
+                    <textarea placeholder="Comments" class="height-80 grey-text-paragraphs"
+                    onkeyup="commentDisplableCheck(this.value)"
+                    ></textarea>
                 </div>
             </div>
             <!-- buttons -->
@@ -451,6 +453,23 @@
             document.getElementById("inputActiveUnactive").disabled = true;
             document.getElementById("requestPopupOpen").disabled = true;
         }
+
+        function commentDisplableCheck(value) {
+            if (value.length >= 7) {
+                document.getElementById("requestPopupOpen").disabled = false;
+            }
+            else {
+                document.getElementById("requestPopupOpen").disabled = true;
+            }
+        }
+
+        // function checkComment(){
+        //     $('#requestSend').foundation('open');
+        //     document.getElementById("inputActiveUnactive").value = "";
+        //     document.getElementById("checkboxButton").checked = false;
+        //     document.getElementById("inputActiveUnactive").disabled = true;
+        //     document.getElementById("requestPopupOpen").disabled = true;
+        // }
 
         function signPopup() {
             $('#siginPopup').foundation('open');

@@ -1669,6 +1669,12 @@ margin: 0px;
 }
 /* responsive css starts from here */
 @media (max-width: 319px) and (min-width: 150px) {
+    .background-image3 {
+        height: 62px!important;
+    }
+    .all-img {
+        width: 30px!important;
+    }
     .rate-image-width img {
         width: 23px !important;
     }
@@ -1939,6 +1945,12 @@ margin: 0px;
 }
 
 @media (max-width: 479px) and (min-width: 320px) {
+    .background-image3 {
+        height: 62px!important;
+    }
+    .all-img {
+        width: 30px!important;
+    }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox {
         border-left: 0px;
     }
@@ -2227,6 +2239,12 @@ margin: 0px;
 }
 
 @media (max-width: 684px) and (min-width: 480px) {
+    .background-image3 {
+        height: 62px!important;
+    }
+    .all-img {
+        width: 30px!important;
+    }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox {
         border-left: 0px;
     }
@@ -2531,6 +2549,12 @@ margin: 0px;
 }
 
 @media (max-width: 767px) and (min-width: 685px) {
+    .background-image3 {
+        height: 62px!important;
+    }
+    .all-img {
+        width: 30px!important;
+    }
     .below-header .mainDiv-of-header .mainDiv-of-RightSIdeBox {
         border-left: 0px;
     }
@@ -2810,6 +2834,12 @@ margin: 0px;
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+    .background-image3 {
+        height: 62px!important;
+    }
+    .all-img {
+        width: 30px!important;
+    }
     .professional-Page-body .below-profeesional-div .below-peakerHeading {
         padding: 0px 0px 0px 0px !important;
     }
@@ -3046,8 +3076,14 @@ margin: 0px;
 }
 
 @media (max-width: 1023px) and (min-width: 991px) {
-    .rate-image-width img {
-        width: 27px !important;
+    .background-image3 {
+        height: 62px!important;
+    }
+    .all-img {
+        width: 30px!important;
+    }
+    .background-image3 {
+        height: 62px!important;
     }
 
     .rate-image-width img {
@@ -3291,6 +3327,9 @@ margin: 0px;
 }
 
 @media (max-width: 1199px) and (min-width: 1024px) {
+    .background-image3 {
+        height: 62px!important;
+    }
     .inside-main-div .heading-staRate{
         width: 70%;
     }
