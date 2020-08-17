@@ -1437,6 +1437,7 @@ margin: 0px;
     display: flex;
     justify-content: flex-end;
     bottom: 0;
+    z-index: 1111;
 }
 
 .sidenav-hamburger {
@@ -1517,6 +1518,7 @@ margin: 0px;
     border-right: 1px solid #5e5e5e!important;    
 }
 /* resources page css */
+
 .all-img{
     width: 25px;
 }
@@ -1575,6 +1577,31 @@ margin: 0px;
 }
 
 /* instant request page css */
+.background-image{
+    background-image: url(../images/rover.png);
+    background-size: contain;
+    height: 40px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.background-image2{
+    background-image: url(../images/3m.png);
+    background-size: contain;
+    height: 40px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.background-image3{
+    background-image: url(../images/screen.png);
+    background-size: contain;
+    height: 45px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .itr-pg .img-div{
     padding: 20px 0px 20px 0px;
     border-radius: 4px;

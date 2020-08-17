@@ -102,14 +102,24 @@
             <div class="sidenav-hamburger">
                 <div class="height-100">
                     <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-                    <div class="grid-x flex-alignItem flex-justify-center">
-                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                    <div id="mob-img-name">
+                        <div class="grid-x flex-alignItem flex-justify-center">
+                            <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                        </div>
+                        <div class="grid-x flex-alignItem flex-justify-center">
+                            <a href="#">Hello John Doe</a>
+                        </div>
                     </div>
-                    <div class="grid-x flex-alignItem flex-justify-center">
-                        <a href="#">Hello John Doe</a>
+                    <div id="singin-mob">
+                        <div class="grid-x flex-alignItem flex-justify-center">
+                            <a href="#" onclick="signPopup()">Sign In</a>
+                        </div>
                     </div>
+
                     <div class="grid-x flex-alignItem flex-justify-center height-100">
-                        <a href="#">Logout</a>
+                        <div id="signout-mobo">
+                            <a href="#" onclick="SignOption()">Sign Out</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,7 +131,9 @@
                 <div class="large-4 small-12 itr-pg">
                     <div class="large-9 small-12">
                         <div class="grid-x align-center img-div">
-                            <img src="images/rover.png" class="menu-class" />
+                            <div class="background-image">
+                                <!-- background image -->
+                            </div>  
                         </div>
                     </div>
                     <!-- 2nd button -->
@@ -265,10 +277,12 @@
         <div class="large-12 small-12">
             <!-- img -->
             <div class="grid-x align-center pad-top-bottom-10">
-                <img src="images/screen.png" class="icon" />
+                <div class="background-image3">
+                    <!-- background-image -->
+                </div>
             </div>
             <!-- heading -->
-            <div class="grid-x align-center pad-top-bottom-10">
+            <div class="grid-x align-center pad-top-bottom-10 text-center">
                 <h6><b>We will dispatch your message to John Doe!</b></h6>
             </div>
             <!-- paragraph -->
@@ -324,7 +338,9 @@
         <div class="large-12 small-12">
             <!-- img -->
             <div class="grid-x align-center pad-top-bottom-10">
-                <img src="images/screen.png" class="icon" />
+                <div class="background-image3">
+                    <!-- background-image -->
+                </div>
             </div>
             <!-- heading -->
             <div class="grid-x align-center pad-top-bottom-10">
@@ -356,7 +372,7 @@
                 <div class="large-12 small-12 grid-x align-center">
                     <!-- singin heading -->
                     <!-- form -->
-                    <div class="form-main  large-7 small-12">
+                    <div class="form-main  large-7 small-11">
                         <div class="large-12 small-12 grid-x align-center pd-30-5">
                             <h6><b>Sign in with your email account</b></h6>
                         </div>
@@ -450,6 +466,12 @@
                 document.getElementById("signInText").style.display = "block";
                 document.getElementById("imgSignIn").style.display = "none";
                 document.getElementById("nameSignIn").style.display = "none";
+
+                // sigin for mobile 
+                // document.getElementById("mySidenav").style.display = "none";
+                document.getElementById("mob-img-name").style.display = "none";
+                document.getElementById("singin-mob").style.display = "block";
+                document.getElementById("signout-mobo").style.display = "none";
             }
         }
 
@@ -460,6 +482,12 @@
             document.getElementById("signInText").style.display = "none";
             document.getElementById("imgSignIn").style.display = "block";
             document.getElementById("nameSignIn").style.display = "block";
+
+            // sigin for mobile 
+            // document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("mob-img-name").style.display = "block";
+            document.getElementById("singin-mob").style.display = "none";
+            document.getElementById("signout-mobo").style.display = "block";
         }
 
         function logoutHideShow() {
@@ -476,8 +504,6 @@
 
         $(document).foundation();
 
-
-
         if (typeof (Storage) !== "undefined") {            
             var Signin = localStorage.getItem("signin");
             if (Signin === "signIn") {
@@ -485,12 +511,20 @@
                 document.getElementById("signInText").style.display = "none";
                 document.getElementById("imgSignIn").style.display = "block";
                 document.getElementById("nameSignIn").style.display = "block";                
+                // for mobile 
+                document.getElementById("mob-img-name").style.display = "block";
+                document.getElementById("singin-mob").style.display = "none";
+                document.getElementById("signout-mobo").style.display = "block";
             }
             else {
                 document.getElementById("signOut").innerHTML = "Sign In"
                 document.getElementById("logout-popup").style.display = "none";
                 document.getElementById("imgSignIn").style.display = "none";
                 document.getElementById("nameSignIn").style.display = "none";
+                // for mobile
+                document.getElementById("mob-img-name").style.display = "none";
+                document.getElementById("singin-mob").style.display = "block";
+                document.getElementById("signout-mobo").style.display = "none";
             }
         }
 

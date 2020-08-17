@@ -101,15 +101,26 @@
         <div id="mySidenav" href="javascript:void(0)" class="closebtn main-hamburger-div-sidenav" onclick="closeNav()">
             <div class="sidenav-hamburger">
                 <div class="height-100">
-                    <div class="grid-x flex-alignItem flex-justify-center">
-                        <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                    <div id="mob-img-name">
+                        <div class="grid-x flex-alignItem flex-justify-center">
+                            <a href="#"><img src="images/bitmap.png" width="70px"></a>
+                        </div>
+                        <div class="grid-x flex-alignItem flex-justify-center">
+                            <a href="#">Hello John Doe</a>
+                        </div>
                     </div>
-                    <div class="grid-x flex-alignItem flex-justify-center">
-                        <a href="#">Hello John Doe</a>
+                    <div id="singin-mob">
+                        <div class="grid-x flex-alignItem flex-justify-center">
+                            <a href="#" onclick="signPopup()">Sign In</a>
+                        </div>
                     </div>
+
                     <div class="grid-x flex-alignItem flex-justify-center height-100">
-                        <a href="#">Logout</a>
+                        <div id="signout-mobo">
+                            <a href="#" onclick="SignOption()">Sign Out</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -1430,7 +1441,7 @@
                 <div class="large-12 small-12 grid-x align-center">
                     <!-- singin heading -->
                     <!-- form -->
-                    <div class="form-main  large-7 small-12">
+                    <div class="form-main  large-7 small-11">
                         <div class="large-12 small-12 grid-x align-center pd-30-5">
                             <h6><b>Sign in with your email account</b></h6>
                         </div>
@@ -1466,8 +1477,8 @@
                         <div class="large-12 small-12 align-center grid-x signin-button-div">
                             <div class="large-7 small-8">
                                 <div class="large-12 small-12 align-center grid-x">
-                                    <button class="large-8 small-8 clear button text-center"
-                                        onclick="signIn()">Sign In</button>
+                                    <button class="large-8 small-8 clear button text-center" onclick="signIn()">Sign
+                                        In</button>
                                 </div>
                             </div>
                         </div>
@@ -1485,13 +1496,22 @@
                 document.getElementById("signOut").innerHTML = "Sign Out"
                 document.getElementById("signInText").style.display = "none";
                 document.getElementById("imgSignIn").style.display = "block";
-                document.getElementById("nameSignIn").style.display = "block";                
+                document.getElementById("nameSignIn").style.display = "block";
+                // for mobile 
+                document.getElementById("mob-img-name").style.display = "block";
+                document.getElementById("singin-mob").style.display = "none";
+                document.getElementById("signout-mobo").style.display = "block";
             }
             else {
+
                 document.getElementById("signOut").innerHTML = "Sign In"
                 document.getElementById("logout-popup").style.display = "none";
                 document.getElementById("imgSignIn").style.display = "none";
                 document.getElementById("nameSignIn").style.display = "none";
+                // for mobile
+                document.getElementById("mob-img-name").style.display = "none";
+                document.getElementById("singin-mob").style.display = "block";
+                document.getElementById("signout-mobo").style.display = "none";
             }
         }
 
@@ -1508,6 +1528,13 @@
                 document.getElementById("signInText").style.display = "block";
                 document.getElementById("imgSignIn").style.display = "none";
                 document.getElementById("nameSignIn").style.display = "none";
+
+                // sigin for mobile 
+                // document.getElementById("mySidenav").style.display = "none";
+                document.getElementById("mob-img-name").style.display = "none";
+                document.getElementById("singin-mob").style.display = "block";
+                document.getElementById("signout-mobo").style.display = "none";
+
             }
         }
 
@@ -1518,6 +1545,12 @@
             document.getElementById("signInText").style.display = "none";
             document.getElementById("imgSignIn").style.display = "block";
             document.getElementById("nameSignIn").style.display = "block";
+
+            // sigin for mobile 
+            // document.getElementById("mySidenav").style.display = "none"; 
+            document.getElementById("mob-img-name").style.display = "block";
+            document.getElementById("singin-mob").style.display = "none";
+            document.getElementById("signout-mobo").style.display = "block";
         }
 
         function logoutHideShow() {
@@ -1881,7 +1914,7 @@
             //     document.getElementById("imgSignIn").style.display = "none";
             //     document.getElementById("nameSignIn").style.display = "none";
             // }
-            
+
 
             var local = localStorage.getItem("checkIn");
             if (local) {
