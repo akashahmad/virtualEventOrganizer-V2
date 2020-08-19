@@ -71,9 +71,7 @@
         <!-- logout-popup -->
         <div class="grid-x large-12 align-left">
             <div class="logout-box-div" id="logout-popup">
-                <button class="button success popupCheckoutBlack"                 onclick="SignOption()"
-                id="signOut"
-                >Sign Out</button>
+                <button class="button success popupCheckoutBlack" onclick="SignOption()" id="signOut">Sign Out</button>
             </div>
         </div>
         <!-- responsive header -->
@@ -136,9 +134,8 @@
                     </div>
                     <!-- 2nd button -->
                     <div class="large-9 small-12 pd-30-5">
-                        <button class="button hollow secondary large-12 small-12" 
-                        onclick="window.location.href='resources.html'"
-                        >BACK TO RESOURCES</button>
+                        <button class="button hollow secondary large-12 small-12"
+                            onclick="window.location.href='resources.html'">BACK TO RESOURCES</button>
                     </div>
                     <!-- 3rd button -->
                     <div class="large-9 small-12 grid-x align-center">
@@ -158,7 +155,18 @@
                             <!-- 1st row -->
                             <div class="grid-x large-12 small-12 align-justify pad-res1">
                                 <div class="large-7 small-12">
-                                    <h6>Kenworth T680</h6>
+                                    <div>
+                                        <h6>Kenworth T680</h6>
+                                    </div>
+                                    <div class="large-11 small-11">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span id="loremHide-Display5">
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                                illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                                explicabo qui in ea voluptate </span><span class="expend" id="less5"
+                                                onclick="showLoremText5()"><b> more…</b></span></p>
+                                    </div>
                                 </div>
                                 <div class="large-4 small-6 grey-text">
                                     <h6>PPT</h6>
@@ -177,7 +185,18 @@
                             <!-- 2nd row -->
                             <div class="grid-x large-12 small-12 align-justify pad-res2">
                                 <div class="large-7 small-12">
-                                    <h6>Kenworth T680</h6>
+                                    <div>
+                                        <h6>Kenworth T680</h6>
+                                    </div>
+                                    <div class="large-11 small-12">
+                                        <p >Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span id="loremHide-Display6">
+                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                                illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                                explicabo qui in ea voluptate </span><span class="expend" id="less6"
+                                                onclick="showLoremText6()"><b> more…</b></span></p>
+                                    </div>
                                 </div>
                                 <div class="large-4 small-6 grey-text">
                                     <h6>PDF</h6>
@@ -308,8 +327,8 @@
                         <div class="large-12 small-12 align-center grid-x signin-button-div">
                             <div class="large-7 small-8">
                                 <div class="large-12 small-12 align-center grid-x">
-                                    <button class="large-8 small-8 clear button text-center"
-                                        onclick="signIn()">Sign In</button>
+                                    <button class="large-8 small-8 clear button text-center" onclick="signIn()">Sign
+                                        In</button>
                                 </div>
                             </div>
                         </div>
@@ -321,6 +340,47 @@
 
     <script>
 
+
+        document.getElementById("loremHide-Display5").style.display = "none";
+        document.getElementById("less5").innerHTML = "more...";
+        document.getElementById("loremHide-Display6").style.display = "none";
+        document.getElementById("less6").innerHTML = "more...";
+
+        function showLoremText5() {
+            check = false;
+            var b = document.getElementById("loremHide-Display5");
+            setTimeout(function () {
+                check = true;
+            }, 1000)
+
+            if (b.style.display === "none") {
+                document.getElementById("loremHide-Display5").style.display = "block";
+                document.getElementById("less5").innerHTML = "less...";
+            }
+            else {
+                document.getElementById("loremHide-Display5").style.display = "none";
+                document.getElementById("less5").innerHTML = "more...";
+            }
+        }
+
+        function showLoremText6() {
+            check = false;
+            var b = document.getElementById("loremHide-Display6");
+            setTimeout(function () {
+                check = true;
+            }, 1000)
+
+            if (b.style.display === "none") {
+                document.getElementById("loremHide-Display6").style.display = "block";
+                document.getElementById("less6").innerHTML = "less...";
+            }
+            else {
+                document.getElementById("loremHide-Display6").style.display = "none";
+                document.getElementById("less6").innerHTML = "more...";
+            }
+        }
+
+
         function signPopup() {
             $('#siginPopup').foundation('open');
         }
@@ -331,12 +391,12 @@
                 document.getElementById("signOut").innerHTML = "Sign Out"
                 document.getElementById("signInText").style.display = "none";
                 document.getElementById("imgSignIn").style.display = "block";
-                document.getElementById("nameSignIn").style.display = "block";               
+                document.getElementById("nameSignIn").style.display = "block";
 
                 // for mobile 
                 document.getElementById("mob-img-name").style.display = "block";
                 document.getElementById("singin-mob").style.display = "none";
-                document.getElementById("signout-mobo").style.display = "block"; 
+                document.getElementById("signout-mobo").style.display = "block";
             }
             else {
                 document.getElementById("signOut").innerHTML = "Sign In"
