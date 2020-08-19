@@ -173,7 +173,12 @@ common flex properties */
 .pad-top-bottom-5 {
     padding: 5px 0px 5px 0px;
 }
-
+.pad-res1{
+    padding: 20px 20px 10px 20px;
+}
+.pad-res2{
+    padding: 20px 20px 14px 20px;
+}
 .pad-top-bottom-10 {
     padding: 10px 0px 10px 0px;
 }
@@ -1533,8 +1538,12 @@ margin: 0px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
     border: solid 1px #d5d5d5;
     background-color: #ffffff;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 4px;
+    cursor: pointer;
+}
+.res-pg:hover{
+    background: #f7f5f5;
 }
 .font-18{
     font-size: 18px;
@@ -1548,9 +1557,9 @@ margin: 0px;
 .grey-text-paragraphs{
     color: #5e5e5e;
 }
-.res-pg .horrzontal-line-div {
+/* .res-pg .horrzontal-line-div {
     padding: 15px 0px 22px 0px;
-}
+} */
 
 .res-pg .horizontal-line{ 
     padding: 2px 0px 0px 0px;
@@ -1568,13 +1577,8 @@ margin: 0px;
     font-weight: bold;
 }
 
-.sl-div select {
+.sl-div input {
     border-radius: 5px;
-    z-index: 111!important;
-    background-position: right!important;
-    padding: 0px 10px 0px 10px!important;
-    position: relative!important;
-    background-image: url(../images/downArrow.png)!important;
 }
 
 /* instant request page css */

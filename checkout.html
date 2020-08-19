@@ -385,9 +385,9 @@
     <div id="rateModel" data-reveal>
         <div class="seriresPopup-Main-Div ">
             <div class=" height-100 responsive-height-rate">
-                <div class="large-12 small-12 grid-x align-left pad-10">
+                <!-- <div class="large-12 small-12 grid-x align-left pad-10">
                     <a data-close aria-label="rateModel"><img src="images/cross2.png" width="35px" /></a>
-                </div>
+                </div> -->
                 <div class="width-100 inside-seriresPopupmainDiv">
                     <div class="grid-x align-justify flex-wrap pad-10 responsive-rateFunction">
                         <div class="inside-main-div large-4 small-12">
@@ -736,13 +736,18 @@
                                         <div>
                                             <img src="images/silverStar.png" id="star170"
                                                 onclick="activeStars('reviewType17')"
-                                                onmouseout="mouseLeave('reviewType1')"
+                                                onmouseout="mouseLeave('reviewType17')"
                                                 onmouseover="changeStar(161,170,170)" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="MainDiv-Bodyrate">
-                                    <textarea placeholder="Enter Comments"></textarea>
+                                    <textarea placeholder="Enter Comments" id="input1"></textarea>
+                                </div>
+                                <div class="large-12 small-12 grid-x align-center">
+                                    <div class="button-rankingDiv mrg-res-btn-div">
+                                        <button class="button alert popup" onclick="clearStarOne()">Clear All</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1108,7 +1113,13 @@
                                     </div>
                                 </div>
                                 <div class="MainDiv-Bodyrate">
-                                    <textarea placeholder="Enter Comments"></textarea>
+                                    <textarea placeholder="Enter Comments" id="input2"></textarea>
+                                </div>
+                                <div class="large-12 small-12 grid-x align-center">
+                                    <div class="button-rankingDiv mrg-res-btn-div">
+                                        <button class="button alert popup " onclick="clearStarOne2()">Clear
+                                            All</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1474,7 +1485,13 @@
                                     </div>
                                 </div>
                                 <div class="MainDiv-Bodyrate">
-                                    <textarea placeholder="Enter Comments"></textarea>
+                                    <textarea placeholder="Enter Comments" id="input3"></textarea>
+                                </div>
+                                <div class="large-12 small-12 grid-x align-center">
+                                    <div class="button-rankingDiv mrg-res-btn-div">
+                                        <button class="button alert popup " onclick="clearStarOne3()">Clear
+                                            All</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1840,22 +1857,28 @@
                                     </div>
                                 </div>
                                 <div class="MainDiv-Bodyrate">
-                                    <textarea placeholder="Enter Comments"></textarea>
+                                    <textarea placeholder="Enter Comments" id="input4"></textarea>
+                                </div>
+                                <div class="large-12 small-12 grid-x align-center">
+                                    <div class="button-rankingDiv mrg-res-btn-div">
+                                        <button class="button alert popup" onclick="clearStarOne4()">Clear
+                                            All</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- buttons -->
-                    <!-- <div class="popupRating-button width-100 align-center grid-x">
-                    <div class="width-70 grid-x align-spaced">
-                        <div class="button-rankingDiv mrg-res-btn-div">
-                            <button class="button alert popup " data-close aria-label="rateModel">CANCEL</button>
-                        </div>
-                        <div class="button-rankingDiv">
-                            <button class="button success popup" data-close aria-label="rateModel">DONE</button>
+                    <div class="popupRating-button width-100 align-center grid-x">
+                        <div class="width-70 grid-x align-spaced">
+                            <div class="button-rankingDiv mrg-res-btn-div">
+                                <button class="button alert popup " data-close aria-label="rateModel">CANCEL</button>
+                            </div>
+                            <div class="button-rankingDiv">
+                                <button class="button success popup" data-close aria-label="rateModel">SAVE</button>
+                            </div>
                         </div>
                     </div>
-                </div> -->
                 </div>
             </div>
         </div>
@@ -2614,6 +2637,252 @@
                 }
             }
         }
+
+
+        function clearStarOne() {
+            document.getElementById("star1").src = "images/silverStar.png"
+            document.getElementById("star2").src = "images/silverStar.png"
+            document.getElementById("star3").src = "images/silverStar.png"
+            document.getElementById("star4").src = "images/silverStar.png"
+            document.getElementById("star5").src = "images/silverStar.png"
+            document.getElementById("star6").src = "images/silverStar.png"
+            document.getElementById("star7").src = "images/silverStar.png"
+            document.getElementById("star8").src = "images/silverStar.png"
+            document.getElementById("star9").src = "images/silverStar.png"
+            document.getElementById("star10").src = "images/silverStar.png"
+
+            document.getElementById("star11").src = "images/silverStar.png"
+            document.getElementById("star12").src = "images/silverStar.png"
+            document.getElementById("star13").src = "images/silverStar.png"
+            document.getElementById("star14").src = "images/silverStar.png"
+            document.getElementById("star15").src = "images/silverStar.png"
+            document.getElementById("star16").src = "images/silverStar.png"
+            document.getElementById("star17").src = "images/silverStar.png"
+            document.getElementById("star18").src = "images/silverStar.png"
+            document.getElementById("star19").src = "images/silverStar.png"
+            document.getElementById("star20").src = "images/silverStar.png"
+
+            document.getElementById("star21").src = "images/silverStar.png"
+            document.getElementById("star22").src = "images/silverStar.png"
+            document.getElementById("star23").src = "images/silverStar.png"
+            document.getElementById("star24").src = "images/silverStar.png"
+            document.getElementById("star25").src = "images/silverStar.png"
+            document.getElementById("star26").src = "images/silverStar.png"
+            document.getElementById("star27").src = "images/silverStar.png"
+            document.getElementById("star28").src = "images/silverStar.png"
+            document.getElementById("star29").src = "images/silverStar.png"
+            document.getElementById("star30").src = "images/silverStar.png"
+
+
+            document.getElementById("star31").src = "images/silverStar.png"
+            document.getElementById("star32").src = "images/silverStar.png"
+            document.getElementById("star33").src = "images/silverStar.png"
+            document.getElementById("star34").src = "images/silverStar.png"
+            document.getElementById("star35").src = "images/silverStar.png"
+            document.getElementById("star36").src = "images/silverStar.png"
+            document.getElementById("star37").src = "images/silverStar.png"
+            document.getElementById("star38").src = "images/silverStar.png"
+            document.getElementById("star39").src = "images/silverStar.png"
+            document.getElementById("star40").src = "images/silverStar.png"
+
+            document.getElementById("star161").src = "images/silverStar.png"
+            document.getElementById("star162").src = "images/silverStar.png"
+            document.getElementById("star163").src = "images/silverStar.png"
+            document.getElementById("star164").src = "images/silverStar.png"
+            document.getElementById("star165").src = "images/silverStar.png"
+            document.getElementById("star166").src = "images/silverStar.png"
+            document.getElementById("star167").src = "images/silverStar.png"
+            document.getElementById("star168").src = "images/silverStar.png"
+            document.getElementById("star169").src = "images/silverStar.png"
+            document.getElementById("star170").src = "images/silverStar.png"
+
+            document.getElementById("input1").value = ""
+
+        }
+
+        function clearStarOne2() {
+            document.getElementById("star41").src = "images/silverStar.png"
+            document.getElementById("star42").src = "images/silverStar.png"
+            document.getElementById("star43").src = "images/silverStar.png"
+            document.getElementById("star44").src = "images/silverStar.png"
+            document.getElementById("star45").src = "images/silverStar.png"
+            document.getElementById("star46").src = "images/silverStar.png"
+            document.getElementById("star47").src = "images/silverStar.png"
+            document.getElementById("star48").src = "images/silverStar.png"
+            document.getElementById("star49").src = "images/silverStar.png"
+            document.getElementById("star50").src = "images/silverStar.png"
+
+            document.getElementById("star51").src = "images/silverStar.png"
+            document.getElementById("star52").src = "images/silverStar.png"
+            document.getElementById("star53").src = "images/silverStar.png"
+            document.getElementById("star54").src = "images/silverStar.png"
+            document.getElementById("star55").src = "images/silverStar.png"
+            document.getElementById("star56").src = "images/silverStar.png"
+            document.getElementById("star57").src = "images/silverStar.png"
+            document.getElementById("star58").src = "images/silverStar.png"
+            document.getElementById("star59").src = "images/silverStar.png"
+            document.getElementById("star60").src = "images/silverStar.png"
+
+            document.getElementById("star61").src = "images/silverStar.png"
+            document.getElementById("star62").src = "images/silverStar.png"
+            document.getElementById("star63").src = "images/silverStar.png"
+            document.getElementById("star64").src = "images/silverStar.png"
+            document.getElementById("star65").src = "images/silverStar.png"
+            document.getElementById("star66").src = "images/silverStar.png"
+            document.getElementById("star67").src = "images/silverStar.png"
+            document.getElementById("star68").src = "images/silverStar.png"
+            document.getElementById("star69").src = "images/silverStar.png"
+            document.getElementById("star70").src = "images/silverStar.png"
+
+
+            document.getElementById("star71").src = "images/silverStar.png"
+            document.getElementById("star72").src = "images/silverStar.png"
+            document.getElementById("star73").src = "images/silverStar.png"
+            document.getElementById("star74").src = "images/silverStar.png"
+            document.getElementById("star75").src = "images/silverStar.png"
+            document.getElementById("star76").src = "images/silverStar.png"
+            document.getElementById("star77").src = "images/silverStar.png"
+            document.getElementById("star78").src = "images/silverStar.png"
+            document.getElementById("star79").src = "images/silverStar.png"
+            document.getElementById("star80").src = "images/silverStar.png"
+
+            document.getElementById("star171").src = "images/silverStar.png"
+            document.getElementById("star172").src = "images/silverStar.png"
+            document.getElementById("star173").src = "images/silverStar.png"
+            document.getElementById("star174").src = "images/silverStar.png"
+            document.getElementById("star175").src = "images/silverStar.png"
+            document.getElementById("star176").src = "images/silverStar.png"
+            document.getElementById("star177").src = "images/silverStar.png"
+            document.getElementById("star178").src = "images/silverStar.png"
+            document.getElementById("star179").src = "images/silverStar.png"
+            document.getElementById("star180").src = "images/silverStar.png"
+
+            document.getElementById("input2").value = ""
+
+        }
+
+        function clearStarOne3() {
+
+            document.getElementById("star81").src = "images/silverStar.png"
+            document.getElementById("star82").src = "images/silverStar.png"
+            document.getElementById("star83").src = "images/silverStar.png"
+            document.getElementById("star84").src = "images/silverStar.png"
+            document.getElementById("star85").src = "images/silverStar.png"
+            document.getElementById("star86").src = "images/silverStar.png"
+            document.getElementById("star87").src = "images/silverStar.png"
+            document.getElementById("star88").src = "images/silverStar.png"
+            document.getElementById("star89").src = "images/silverStar.png"
+            document.getElementById("star90").src = "images/silverStar.png"
+
+            document.getElementById("star91").src = "images/silverStar.png"
+            document.getElementById("star92").src = "images/silverStar.png"
+            document.getElementById("star93").src = "images/silverStar.png"
+            document.getElementById("star94").src = "images/silverStar.png"
+            document.getElementById("star95").src = "images/silverStar.png"
+            document.getElementById("star96").src = "images/silverStar.png"
+            document.getElementById("star97").src = "images/silverStar.png"
+            document.getElementById("star98").src = "images/silverStar.png"
+            document.getElementById("star99").src = "images/silverStar.png"
+            document.getElementById("star100").src = "images/silverStar.png"
+
+            document.getElementById("star101").src = "images/silverStar.png"
+            document.getElementById("star102").src = "images/silverStar.png"
+            document.getElementById("star103").src = "images/silverStar.png"
+            document.getElementById("star104").src = "images/silverStar.png"
+            document.getElementById("star105").src = "images/silverStar.png"
+            document.getElementById("star106").src = "images/silverStar.png"
+            document.getElementById("star107").src = "images/silverStar.png"
+            document.getElementById("star108").src = "images/silverStar.png"
+            document.getElementById("star109").src = "images/silverStar.png"
+            document.getElementById("star110").src = "images/silverStar.png"
+
+            document.getElementById("star111").src = "images/silverStar.png"
+            document.getElementById("star112").src = "images/silverStar.png"
+            document.getElementById("star113").src = "images/silverStar.png"
+            document.getElementById("star114").src = "images/silverStar.png"
+            document.getElementById("star115").src = "images/silverStar.png"
+            document.getElementById("star116").src = "images/silverStar.png"
+            document.getElementById("star117").src = "images/silverStar.png"
+            document.getElementById("star118").src = "images/silverStar.png"
+            document.getElementById("star119").src = "images/silverStar.png"
+            document.getElementById("star120").src = "images/silverStar.png"
+
+            document.getElementById("star181").src = "images/silverStar.png"
+            document.getElementById("star182").src = "images/silverStar.png"
+            document.getElementById("star183").src = "images/silverStar.png"
+            document.getElementById("star184").src = "images/silverStar.png"
+            document.getElementById("star185").src = "images/silverStar.png"
+            document.getElementById("star186").src = "images/silverStar.png"
+            document.getElementById("star187").src = "images/silverStar.png"
+            document.getElementById("star188").src = "images/silverStar.png"
+            document.getElementById("star189").src = "images/silverStar.png"
+            document.getElementById("star190").src = "images/silverStar.png"
+
+            document.getElementById("input3").value = ""
+
+        }
+
+        function clearStarOne4() {
+
+            document.getElementById("star121").src = "images/silverStar.png"
+            document.getElementById("star122").src = "images/silverStar.png"
+            document.getElementById("star123").src = "images/silverStar.png"
+            document.getElementById("star124").src = "images/silverStar.png"
+            document.getElementById("star125").src = "images/silverStar.png"
+            document.getElementById("star126").src = "images/silverStar.png"
+            document.getElementById("star127").src = "images/silverStar.png"
+            document.getElementById("star128").src = "images/silverStar.png"
+            document.getElementById("star129").src = "images/silverStar.png"
+            document.getElementById("star130").src = "images/silverStar.png"
+
+            document.getElementById("star131").src = "images/silverStar.png"
+            document.getElementById("star132").src = "images/silverStar.png"
+            document.getElementById("star133").src = "images/silverStar.png"
+            document.getElementById("star134").src = "images/silverStar.png"
+            document.getElementById("star135").src = "images/silverStar.png"
+            document.getElementById("star136").src = "images/silverStar.png"
+            document.getElementById("star137").src = "images/silverStar.png"
+            document.getElementById("star138").src = "images/silverStar.png"
+            document.getElementById("star139").src = "images/silverStar.png"
+            document.getElementById("star140").src = "images/silverStar.png"
+
+            document.getElementById("star141").src = "images/silverStar.png"
+            document.getElementById("star142").src = "images/silverStar.png"
+            document.getElementById("star143").src = "images/silverStar.png"
+            document.getElementById("star144").src = "images/silverStar.png"
+            document.getElementById("star145").src = "images/silverStar.png"
+            document.getElementById("star146").src = "images/silverStar.png"
+            document.getElementById("star147").src = "images/silverStar.png"
+            document.getElementById("star148").src = "images/silverStar.png"
+            document.getElementById("star149").src = "images/silverStar.png"
+            document.getElementById("star150").src = "images/silverStar.png"
+
+            document.getElementById("star151").src = "images/silverStar.png"
+            document.getElementById("star152").src = "images/silverStar.png"
+            document.getElementById("star153").src = "images/silverStar.png"
+            document.getElementById("star154").src = "images/silverStar.png"
+            document.getElementById("star155").src = "images/silverStar.png"
+            document.getElementById("star156").src = "images/silverStar.png"
+            document.getElementById("star157").src = "images/silverStar.png"
+            document.getElementById("star158").src = "images/silverStar.png"
+            document.getElementById("star159").src = "images/silverStar.png"
+            document.getElementById("star160").src = "images/silverStar.png"
+
+            document.getElementById("star191").src = "images/silverStar.png"
+            document.getElementById("star192").src = "images/silverStar.png"
+            document.getElementById("star193").src = "images/silverStar.png"
+            document.getElementById("star194").src = "images/silverStar.png"
+            document.getElementById("star195").src = "images/silverStar.png"
+            document.getElementById("star196").src = "images/silverStar.png"
+            document.getElementById("star197").src = "images/silverStar.png"
+            document.getElementById("star198").src = "images/silverStar.png"
+            document.getElementById("star199").src = "images/silverStar.png"
+            document.getElementById("star200").src = "images/silverStar.png"
+
+            document.getElementById("input4").value = ""
+
+        }
+
 
     </script>
 </body>
