@@ -176,8 +176,14 @@ common flex properties */
 .pad-res1{
     padding: 20px 20px 10px 20px;
 }
+.pad-res1:hover{
+    background: #f7f5f5;
+}
 .pad-res2{
     padding: 20px 20px 14px 20px;
+}
+.pad-res2:hover{
+    background: #f7f5f5;
 }
 .pad-top-bottom-10 {
     padding: 10px 0px 10px 0px;
@@ -1545,9 +1551,9 @@ margin: 0px;
     border-radius: 4px;
     cursor: pointer;
 }
-.res-pg:hover{
+/* .res-pg:hover{
     background: #f7f5f5;
-}
+} */
 .font-18{
     font-size: 18px;
 }
