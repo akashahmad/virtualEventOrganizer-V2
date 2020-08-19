@@ -103,6 +103,9 @@ common flex properties */
     background-color: #e7a842;
 }
 
+.ln-height{
+line-height:1.2em!important;
+}
 .width-100 {
     width: 100%;
 }
