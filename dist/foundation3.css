@@ -776,6 +776,10 @@ margin: 0px;
 }
 
 /* .rate session button */
+.popupRating-button{
+    position: fixed;
+    bottom: 0;
+}
 .warning.button {
     background: #5e5e5e !important;
     color: white !important;
