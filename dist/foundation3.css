@@ -104,7 +104,7 @@ common flex properties */
 }
 
 .ln-height{
-line-height:1.2em!important;
+    line-height:1.2em!important;
 }
 .width-100 {
     width: 100%;
@@ -168,7 +168,9 @@ line-height:1.2em!important;
 .pad-10 {
     padding: 10px;
 }
-
+.pad-10-60{
+    padding: 10px 10px 60px 10px;
+}
 .pd-30-5 {
     padding: 30px 0px 5px 0px;
 }
@@ -782,6 +784,7 @@ margin: 0px;
 .popupRating-button{
     position: fixed;
     bottom: 0;
+    background: #171717;
 }
 .warning.button {
     background: #5e5e5e !important;
@@ -1277,7 +1280,7 @@ margin: 0px;
 }
 
 .button-rankingDiv {
-    padding: 10px 0px 20px 0px;
+    padding: 15px 0px 5px 0px;
 }
 
 .rating-popup-isnside-heading {
