@@ -882,6 +882,14 @@ margin: 0px;
     padding: 10px 15px 10px 15px;
 }
 
+.professional-Page-body .below-profeesional-div .timing-section-div .inside-Date-MainDiv {
+    border-radius: 8px;
+    border: solid 1px #d5d5d5;
+    background-color: #ffffff;
+    width: max-content;
+    padding: 10px 15px 10px 15px;
+}
+
 .professional-Page-body .below-profeesional-div .timing-section-div .inside-timing-MainDiv .left-time {
     margin: 0px 8px 0px 0px;
 }
@@ -902,8 +910,27 @@ margin: 0px;
 }
 
 .professional-Page-body .below-profeesional-div .timing-section-div .inside-timing-MainDiv .right-time {
-    margin: 0px 0px 0px 8px;
+    margin: 0px 8px 0px 8px;
     border-left: 1px solid #d5d5d5;
+}
+
+.professional-Page-body .below-profeesional-div .timing-section-div .inside-timing-MainDiv .right-date {
+    margin: 0px 8px 0px 8px;
+    border-left: 1px solid #d5d5d5;
+}
+.professional-Page-body .below-profeesional-div .timing-section-div .inside-timing-MainDiv .right-date h6 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #575252;
+    margin: 0px;
+    padding: 0px 0px 0px 8px;
+}
+.professional-Page-body .below-profeesional-div .timing-section-div .inside-timing-MainDiv .right-date h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #212120;
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
 }
 
 .professional-Page-body .below-profeesional-div .timing-section-div .inside-timing-MainDiv .right-time h6 {
@@ -1916,6 +1943,11 @@ margin: 0px;
         font-weight: bold;
         color: #ec1f1b;
     }
+    .start-and-endtime-MobileBox h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: #212120;
+    }
 
     .start-and-endtime-MobileBox h6 {
         font-size: 18px;
@@ -2209,7 +2241,11 @@ margin: 0px;
         font-weight: bold;
         color: #ec1f1b;
     }
-
+    .start-and-endtime-MobileBox h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: #212120;
+    }
     .start-and-endtime-MobileBox h6 {
         font-size: 18px;
         font-weight: normal;
@@ -2528,7 +2564,11 @@ margin: 0px;
         font-weight: bold;
         color: #ec1f1b;
     }
-
+    .start-and-endtime-MobileBox h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: #212120;
+    }
     .start-and-endtime-MobileBox h6 {
         font-size: 18px;
         font-weight: normal;
@@ -2808,7 +2848,11 @@ margin: 0px;
         font-weight: bold;
         color: #ec1f1b;
     }
-
+    .start-and-endtime-MobileBox h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: #212120;
+    }
     .start-and-endtime-MobileBox h6 {
         font-size: 18px;
         font-weight: normal;
@@ -3051,7 +3095,11 @@ margin: 0px;
         font-weight: bold;
         color: #ec1f1b;
     }
-
+    .start-and-endtime-MobileBox h3{
+        font-size: 18px;
+        font-weight: bold;
+        color: #212120;
+    }
     .start-and-endtime-MobileBox h6 {
         font-size: 18px;
         font-weight: normal;
@@ -3302,7 +3350,11 @@ margin: 0px;
         font-weight: bold;
         color: #ec1f1b;
     }
-
+    .start-and-endtime-MobileBox h3{
+        font-size: 18px!important;
+        font-weight: bold;
+        color: #212120;
+    }
     .start-and-endtime-MobileBox h6 {
         font-size: 18px;
         font-weight: normal;

@@ -153,6 +153,11 @@
                                 <h5>Ends</h5>
                                 <h6>3:30 pm MST</h6>
                             </div>
+                            <div class="right-date grid-x">
+                                <h5>Date</h5>
+                                <h6 id="date"></h6>
+                                <!-- <h6 id="date">08/21/2020</h6> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,6 +196,11 @@
                                     <div class="grid-x">
                                         <h4>Ends </h4>
                                         <h6> 3:30pm MST</h6>
+                                    </div>
+                                    <div class="grid-x">
+                                        <h3>Date</h3>
+                                        <h6 id="mobileDate"></h6>
+                                        <!-- <h6 >08/21/2020</h6> -->
                                     </div>
                                 </div>
                             </div>
@@ -1973,7 +1983,12 @@
 
     <script>
 
+    var d = new Date();
+    document.getElementById("date").innerHTML = d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear();
 
+    var mobileDate = new Date();
+    document.getElementById("mobileDate").innerHTML = d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear();
+    
         function signPopup() {
             $('#siginPopup').foundation('open');
         }
